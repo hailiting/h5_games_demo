@@ -1,0 +1,610 @@
+﻿/** 
+ * -------------------------------------------------------------
+ * Copyright (c) 2014 boyaa All rights reserved. 
+ * http://html5.boyaa.com/ 
+ * ------------------------------------------------------------- 
+ */ 
+
+
+/*!
+ * @overview: 主样式
+ */html {
+	color: #545454;
+	background: url(../img/bg.png);
+	-webkit-text-size-adjust: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,html,img,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+
+body,button,input,select,textarea {
+	font: 14px/1.5 "Helvetica neue",Helvetica,Tahoma,Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",sans-serif
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin: 0;
+	padding: 0;
+	display: block
+}
+
+audio,canvas,video {
+	display: inline-block
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+
+em,i {
+	font-style: normal
+}
+
+ol,ul {
+	list-style: none
+}
+
+button {
+	cursor: pointer;
+	border: 0
+}
+
+a:link,a:visited {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+a:active,a:hover {
+	text-decoration: none
+}
+
+.hide {
+	display: none
+}
+
+body,html {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.page {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 640px;
+	1background-color: rgba(0,0,0,.3);
+	position: relative;
+	overflow: hidden
+}
+
+#index h1 {
+	margin: 0 auto;
+	text-indent: -999px;
+	overflow: hidden;
+	height: 574px;
+	width: 320px;
+	background: url(../img/logo.png);
+	text-align: center;
+	font-size: 30px
+}
+
+#index .btn-wrap {
+	width: 430px;
+	height: 236px;
+	margin: 10px auto 0
+}
+
+#index .btn-start {
+	height: 180px;
+	width: 180px;
+	float: left
+}
+
+#index .btn-cat {
+	background: url(../img/cat.png) no-repeat;
+	margin-right: 35px
+}
+
+#index .btn-dog {
+	background: url(../img/dog.png) no-repeat;
+	margin-left: 35px
+}
+
+#game {
+	cursor: pointer;
+	background: url(../img/header.png) 0 top no-repeat,url(../img/footer.png) 0 bottom no-repeat
+}
+
+#main-box {
+	height: 700px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+
+#player {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 230px;
+	width: 250px;
+	margin-left: -125px
+}
+
+#t1,#t2,#t3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 10px;
+	background-color: #343
+}
+
+#t2 {
+	background-color: #ff3
+}
+
+#t3 {
+	background-color: #34f
+}
+
+#player.cat {
+	background: url(../img/catB.png) no-repeat
+}
+
+#player.dog {
+	background: url(../img/dogB.png) no-repeat
+}
+
+#cart {
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	height: 106px;
+	width: 106px;
+	background: url(../img/cart.png)
+}
+
+#cart em {
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #EB5057;
+	text-align: center;
+	border-radius: 50%;
+	color: #FDD214;
+	font-size: 18px;
+	border: 3px solid #fff;
+	top: -15px;
+	right: -15px
+}
+
+#paw {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	height: 160px;
+	width: 8px;
+	margin-left: 80px;
+	background-color: #FFDA27;
+	overflow: visible!important;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform-origin: right bottom;
+	-webkit-transform-origin: right bottom;
+	-ms-transform-origin: right bottom;
+	-moz-transform-origin: right bottom;
+	-o-transform-origin: right bottom
+}
+
+#paw em {
+	position: absolute;
+	top: -20px;
+	right: 0;
+	height: 48px;
+	width: 48px;
+	background: url(../img/paw.png)
+}
+
+#gameTime {
+	text-align: center;
+	font-size: 30px;
+	color: #FEEB14;
+	text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+	margin-top: 50px
+}
+
+#good {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+#good span {
+	padding: 10px;
+	font-size: 18px;
+	background-color: #FEEB14;
+	color: #E2464E;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	bottom: 0
+}
+
+#good.g1 {
+	width: 76px;
+	height: 94px;
+	background: url(../img/g1.png)
+}
+
+#good.g2 {
+	width: 114px;
+	height: 68px;
+	background: url(../img/g2.png)
+}
+
+#good.g3 {
+	width: 92px;
+	height: 92px;
+	background: url(../img/g3.png)
+}
+
+#good.g4 {
+	width: 94px;
+	height: 86px;
+	background: url(../img/g4.png)
+}
+
+#good.g5 {
+	width: 106px;
+	height: 72px;
+	background: url(../img/g5.png)
+}
+
+#good.g6 {
+	width: 134px;
+	height: 66px;
+	background: url(../img/g6.png)
+}
+
+#good.g7 {
+	width: 104px;
+	height: 90px;
+	background: url(../img/g7.png)
+}
+
+#good.g8 {
+	width: 58px;
+	height: 106px;
+	background: url(../img/g8.png)
+}
+
+#good.g9 {
+	width: 82px;
+	height: 99px;
+	background: url(../img/g9.png)
+}
+
+#good.g10 {
+	width: 152px;
+	height: 80px;
+	background: url(../img/g10.png)
+}
+
+#countDown {
+	font-size: 400px;
+	text-align: center;
+	color: #FEEB14;
+	text-shadow: 5px 5px 1px rgba(0,0,0,.5)
+}
+
+#intro {
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	z-index: 1000
+}
+
+#result {
+	text-align: center;
+	font-size: 30px;
+	color: #fff
+}
+
+#result .logo {
+	height: 180px;
+	width: 180px;
+	margin: 20px auto
+}
+
+#result .cat {
+	background: url(../img/cat.png)
+}
+
+#result .dog {
+	background: url(../img/dog.png)
+}
+
+#result p {
+	padding: 10px
+}
+
+#result .btn {
+	display: block;
+	background-color: #FFF04F;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	box-shadow: 0 3px 0 rgba(0,0,0,.3);
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+	margin: 10px auto
+}
+
+@media all and (max-width:480px) {
+	#index h1 {
+		height: 287px;
+		width: 160px;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%
+	}
+
+	#index .btn-wrap {
+		width: 215px;
+		height: 118px;
+		margin: 15px auto 0
+	}
+
+	#index .btn-start {
+		height: 90px;
+		width: 90px;
+		float: left
+	}
+
+	#index .btn-cat {
+		margin-right: 17px;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%
+	}
+
+	#index .btn-dog {
+		margin-left: 17px;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%
+	}
+
+	#game {
+		cursor: pointer;
+		background: url(../img/header.png) 0 top/100% 21px no-repeat,url(../img/footer.png) 0 bottom/100% 72px no-repeat;
+		-webkit-background-size: 100% 21px,100% 72px
+	}
+
+	#main-box {
+		height: 350px
+	}
+
+	#player {
+		height: 115px;
+		width: 125px;
+		margin-left: -62px
+	}
+
+	#player.cat,#player.dog {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%
+	}
+
+	#cart {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		height: 53px;
+		width: 53px;
+		background: url(../img/cart.png) 0 0/100% 100%;
+		-webkit-background-size: 100% 100%
+	}
+
+	#cart em {
+		width: 35px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 13px;
+		top: -10px;
+		right: -10px
+	}
+
+	#paw {
+		bottom: 30px;
+		height: 160px;
+		width: 4px;
+		margin-left: 40px
+	}
+
+	#paw em {
+		top: -10px;
+		height: 24px;
+		width: 24px;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%
+	}
+
+	#good span {
+		padding: 5px;
+		font-size: 14px
+	}
+
+	#good.g1 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 37px;
+		height: 47px
+	}
+
+	#good.g2 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 58px;
+		height: 34px
+	}
+
+	#good.g3 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 46px;
+		height: 46px
+	}
+
+	#good.g4 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 47px;
+		height: 43px
+	}
+
+	#good.g5 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 53px;
+		height: 36px
+	}
+
+	#good.g6 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 67px;
+		height: 33px
+	}
+
+	#good.g7 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 52px;
+		height: 45px
+	}
+
+	#good.g8 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 29px;
+		height: 53px
+	}
+
+	#good.g9 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 41px;
+		height: 54px
+	}
+
+	#good.g10 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+		width: 76px;
+		height: 40px
+	}
+
+	#intro {
+		font-size: 16px
+	}
+
+	#countDown {
+		font-size: 200px
+	}
+
+	#result {
+		font-size: 14px
+	}
+
+	#result .logo {
+		height: 90px;
+		width: 90px;
+		margin: 20px auto
+	}
+
+	#result .cat {
+		background: url(../img/cat.png) 0 0/100% 100%;
+		-webkit-background-size: 100% 100%
+	}
+
+	#result .dog {
+		background: url(../img/dog.png) 0 0/100% 100%;
+		-webkit-background-size: 100% 100%
+	}
+
+	#result p {
+		padding: 10px
+	}
+
+	#result .btn {
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+		box-shadow: 0 3px 0 rgba(0,0,0,.3);
+		border-radius: 5px;
+		font-weight: 700;
+		font-size: 14px;
+		color: #333;
+		cursor: pointer;
+		margin: 10px auto
+	}
+}
+
+#spn {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	left: 50%;
+	width: 320px;
+	margin-left: -160px;
+	z-index: 1001
+}
+
+.copyright {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #D7CF77
+}
+
+#paw em.l {
+	left: 0;
+	-webkit-transform: scale(-1,1);
+	-moz-transform: scale(-1,1);
+	transform: scale(-1,1)
+}

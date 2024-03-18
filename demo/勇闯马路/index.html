@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>勇闯马路</title>
+    <script type="text/javascript" src="js/load_lufylegend.js"></script>
+    <script type="text/javascript" src="js/load_lufylegend.ui.js"></script>
+    <script src="js/Main.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="http://game.9g.com/css/game9g.css"/>
+	<script src="http://game.9g.com/js/game9g.js"></script>
+</head>
+    <body style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;background-color:#000;">
+        <div id="zbox">loading</div>
+			<div id="game9gtoolbar" style="display:none;position:fixed;z-index:99; bottom:20px; left:0px; font-size:20px; width:100%; text-align:center;">
+	<a href="javascript:void(0);" id="game9gsharegame" style="padding: 8px 20px;background-color: rgb(93, 18, 163);border-radius: 5px;text-decoration: none;color:black;" onclick="dp_share();">炫耀一下</a>
+	<a href="javascript:void(0);" id="game9gmoregame" style="padding: 8px 20px;background-color: rgb(93, 18, 163);border-radius: 5px;text-decoration: none;color:black;" onclick="clickMore();">更多游戏</a>
+</div>
+	<script>
+	    var game9g = new Game9G("ycml");
+	    game9g.shareData.title = "勇闯马路";
+	    game9g.shareData.content = "勇闯马路";
+	    function goHome() {
+	        window.location = game9g.homeurl;
+	    }
+	    function clickMore() {
+	        window.location = game9g.moreurl;
+	    }
+	    function dp_share() {
+	        game9g.share();
+	    }
+	    function dp_Ranking() {
+	        window.location = game9g.rankurl;
+	    }
+	    function showAd() {
+	    }
+	    function hideAd() {
+	    }
+	    function dp_submitScore(score) {
+	        if (score > 0) {
+	            game9g.score = score;
+	            game9g.scoreName = "闯过" + score + "条马路";
+	            game9g.shareData.title = "我成功闯过" + score + "条马路！你也来挑战一下吧！-9G游戏";
+	            game9g.utils.shareConfirm("你成功闯过" + score + "条马路！快通知一下小伙伴吧！", dp_share);
+	        }
+	    }
+</script>
+    </body>
+</html>

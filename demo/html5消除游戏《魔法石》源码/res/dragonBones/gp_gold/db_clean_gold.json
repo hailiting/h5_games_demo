@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "Images/decor.png",
+	"frame": {"x":117,"y":2,"w":14,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+	"sourceSize": {"w":14,"h":14}
+},
+{
+	"filename": "Images/shine.png",
+	"frame": {"x":2,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "db_clean_gold.png",
+	"format": "RGBA8888",
+	"size": {"w":133,"h":120},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:bc21a7d0c80127723706c7a96b3c7571:89f02002ca1d09698f789e2aea3979ff:c7284f97d2d3a66a3fb512ec2feded80$"
+}
+}

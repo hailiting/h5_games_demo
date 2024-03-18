@@ -1,0 +1,172 @@
+{"frames": [
+
+{
+	"filename": "go_bar.png",
+	"frame": {"x":450,"y":923,"w":215,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":215,"h":14},
+	"sourceSize": {"w":215,"h":14}
+},
+{
+	"filename": "go_bar_diamond.png",
+	"frame": {"x":415,"y":953,"w":14,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+	"sourceSize": {"w":14,"h":14}
+},
+{
+	"filename": "go_bg0.png",
+	"frame": {"x":2,"y":2,"w":544,"h":765},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":544,"h":765},
+	"sourceSize": {"w":544,"h":765}
+},
+{
+	"filename": "go_button_continue.png",
+	"frame": {"x":548,"y":300,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "go_button_continue_press.png",
+	"frame": {"x":548,"y":361,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "go_button_replay.png",
+	"frame": {"x":548,"y":178,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "go_button_replay_press.png",
+	"frame": {"x":548,"y":239,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "go_expbar0.png",
+	"frame": {"x":2,"y":953,"w":411,"h":19},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":4,"w":411,"h":19},
+	"sourceSize": {"w":446,"h":28}
+},
+{
+	"filename": "go_expbar1.png",
+	"frame": {"x":2,"y":923,"w":446,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":446,"h":28},
+	"sourceSize": {"w":446,"h":28}
+},
+{
+	"filename": "go_expbar_green.png",
+	"frame": {"x":2,"y":974,"w":411,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":411,"h":16},
+	"sourceSize": {"w":411,"h":16}
+},
+{
+	"filename": "go_expbar_orange.png",
+	"frame": {"x":2,"y":992,"w":411,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":411,"h":16},
+	"sourceSize": {"w":411,"h":16}
+},
+{
+	"filename": "go_nextlvlbox1.png",
+	"frame": {"x":548,"y":2,"w":257,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":257,"h":86},
+	"sourceSize": {"w":257,"h":86}
+},
+{
+	"filename": "go_nextlvlbox2.png",
+	"frame": {"x":548,"y":90,"w":257,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":257,"h":86},
+	"sourceSize": {"w":257,"h":86}
+},
+{
+	"filename": "go_star.png",
+	"frame": {"x":678,"y":422,"w":96,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "go_star_ring.png",
+	"frame": {"x":548,"y":552,"w":116,"h":121},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":8,"w":116,"h":121},
+	"sourceSize": {"w":129,"h":129}
+},
+{
+	"filename": "go_title.png",
+	"frame": {"x":2,"y":769,"w":600,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":600,"h":152},
+	"sourceSize": {"w":600,"h":152}
+},
+{
+	"filename": "lc_star_bronce.png",
+	"frame": {"x":678,"y":520,"w":95,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":95,"h":95},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "lc_star_gold.png",
+	"frame": {"x":666,"y":617,"w":95,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":95,"h":95},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "lc_star_ringlocked.png",
+	"frame": {"x":548,"y":422,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":128,"h":128},
+	"sourceSize": {"w":129,"h":129}
+},
+{
+	"filename": "lc_star_silver.png",
+	"frame": {"x":667,"y":714,"w":95,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":95,"h":95},
+	"sourceSize": {"w":96,"h":96}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_go.png",
+	"format": "RGBA8888",
+	"size": {"w":807,"h":1010},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1ead48509cae8f8bcc5933903f5226f8:b21eedf48ffac4574ceb81394dd0b6d2:493208b5e634451a6ca8e40dc7247513$"
+}
+}

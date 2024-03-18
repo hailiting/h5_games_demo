@@ -1,0 +1,36 @@
+{"frames": {
+
+"env_00_ground_additive_mid_01.png":
+{
+	"frame": {"x":8,"y":8,"w":952,"h":512},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":952,"h":512},
+	"sourceSize": {"w":950,"h":512}
+},
+"env_00_ground_earth_01.png":
+{
+	"frame": {"x":8,"y":1056,"w":256,"h":256},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":256},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_ground_multiply_mid_01.png":
+{
+	"frame": {"x":8,"y":532,"w":952,"h":512},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":952,"h":512},
+	"sourceSize": {"w":950,"h":512}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "environment_00_ground.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:308a99e637524bbef25a611e47e85c1b:0f488629f775fd27a23a7b262d0d7039:56931e2d873ff9a74fb713089d97e0ec$"
+}
+}

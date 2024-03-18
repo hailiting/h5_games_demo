@@ -1,0 +1,25 @@
+{
+"resources":
+	[
+		{"name":"clickSound1","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound2","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound3","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound4","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound5","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound6","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound7","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound8","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound9","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound10","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound11","type":"sound","url":"assets/clickSound.mp3"},
+        {"name":"clickSound12","type":"sound","url":"assets/clickSound.mp3"},
+		{"name":"egretIcon","type":"image","url":"assets/egret_icon.png"},
+		{"name":"logo","type":"image","url":"assets/logo.png"},
+        {"name":"Sprites","type":"sheet","url":"assets/Sprites.json"}
+	],
+
+"groups":
+	[
+        {"name":"preload","keys":"clickSound1,clickSound2,clickSound3,clickSound4,clickSound5,clickSound6,clickSound7,clickSound8,clickSound9,clickSound10,clickSound11,clickSound12,logo,Sprites"}
+	]
+}

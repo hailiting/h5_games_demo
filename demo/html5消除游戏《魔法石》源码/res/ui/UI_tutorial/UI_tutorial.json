@@ -1,0 +1,140 @@
+{"frames": [
+
+{
+	"filename": "1x1.png",
+	"frame": {"x":947,"y":2,"w":1,"h":1},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+	"sourceSize": {"w":1,"h":1}
+},
+{
+	"filename": "ls_book_level_silver.png",
+	"frame": {"x":410,"y":677,"w":73,"h":73},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":4,"w":73,"h":73},
+	"sourceSize": {"w":74,"h":81}
+},
+{
+	"filename": "tutorial18_blocker1.png",
+	"frame": {"x":2,"y":979,"w":392,"h":250},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":392,"h":250},
+	"sourceSize": {"w":462,"h":324}
+},
+{
+	"filename": "tutorial19_blocker2.png",
+	"frame": {"x":644,"y":482,"w":322,"h":289},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":6,"w":322,"h":289},
+	"sourceSize": {"w":462,"h":324}
+},
+{
+	"filename": "tutorial20_blocker3.png",
+	"frame": {"x":396,"y":1051,"w":328,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":6,"w":328,"h":248},
+	"sourceSize": {"w":462,"h":324}
+},
+{
+	"filename": "tutorial23_gameover.png",
+	"frame": {"x":472,"y":773,"w":439,"h":276},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":439,"h":276},
+	"sourceSize": {"w":439,"h":276}
+},
+{
+	"filename": "tutorial5_gainexp.png",
+	"frame": {"x":2,"y":555,"w":406,"h":422},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":406,"h":422},
+	"sourceSize": {"w":406,"h":422}
+},
+{
+	"filename": "tutorial_button_back.png",
+	"frame": {"x":485,"y":677,"w":60,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":45},
+	"sourceSize": {"w":60,"h":45}
+},
+{
+	"filename": "tutorial_button_back_press.png",
+	"frame": {"x":547,"y":677,"w":60,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":45},
+	"sourceSize": {"w":60,"h":45}
+},
+{
+	"filename": "tutorial_button_forward.png",
+	"frame": {"x":485,"y":724,"w":60,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":45},
+	"sourceSize": {"w":60,"h":45}
+},
+{
+	"filename": "tutorial_button_forward_press.png",
+	"frame": {"x":410,"y":752,"w":60,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":45},
+	"sourceSize": {"w":60,"h":45}
+},
+{
+	"filename": "tutorial_close.png",
+	"frame": {"x":410,"y":555,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "tutorial_close_press.png",
+	"frame": {"x":410,"y":616,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "tutorial_libro.png",
+	"frame": {"x":2,"y":2,"w":640,"h":551},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":551},
+	"sourceSize": {"w":640,"h":551}
+},
+{
+	"filename": "tutorial_pj.png",
+	"frame": {"x":644,"y":2,"w":301,"h":478},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":478},
+	"sourceSize": {"w":301,"h":478}
+},
+{
+	"filename": "tutorial_textbubble.png",
+	"frame": {"x":2,"y":1231,"w":382,"h":208},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":382,"h":208},
+	"sourceSize": {"w":382,"h":208}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_tutorial.png",
+	"format": "RGBA8888",
+	"size": {"w":968,"h":1441},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:224b02477e6e4aa008b84aa1e4887ad9:def9865f14b4d93fe8e6db70f615372d:7ae8075b6c847f7dfa14e53091351c4c$"
+}
+}

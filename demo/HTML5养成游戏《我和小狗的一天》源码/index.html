@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>我和狗狗的一天-我爱h5游戏源码</title>
+<link rel="shortcut icon" href="http://www.52h5game.com/images/icon.png">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="keywords" content="我和狗狗的一天,我和狗狗的一天html5游戏" />
+<meta name="description" content="我和狗狗的一天html5游戏,我和狗狗的一天手机在线游戏" />
+<style>
+* {
+margin: 0;
+padding: 0;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-tap-highlight-color: transparent;
+}
+body, html {
+background-color: #66ccff;
+}
+@-webkit-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+#container {
+position: absolute;
+}
+</style>
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript">
+var SpilData = {
+id: '576742227280291587' // You receive this value from Spil Games
+};
+GameAPI.loadAPI (function (apiInstance) {
+// The API is ready for use.
+// It can be accessed by using the "GameAPI" variable
+// For example: GameAPI.Branding.getLogo();
+console.log('GameAPI version ' + GameAPI.version + ' loaded!');
+window.SpilGameAPIInstance = apiInstance;
+}, SpilData);
+</script>
+<script>
+window.AH_navigate = function (url) {
+window.top.location.href = url;
+};
+window.AH_show_branding = true;
+</script>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript" src="pup.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+.nullBox{border:1px outset #FCDAD5;}
+.box{border:1px outset  #FCDAD5;filter:Alpha(opacity=0,FinishOpacity=100,Style=3);background-color:#511F90;}
+.wall{border:2px outset #09F;background-color:#3CF;}
+.target{filter:Alpha(opacity=1000,FinishOpacity=0,Style=2);background-color:#C3F;}
+</style>
+
+<script language="javascript">
+WIDTH=50;
+X=100;
+Y=10;
+var manX,manY;
+var map=[
+"0000wwwww",
+"0000wffmw",
+"www0wbbfw",
+"wtw0wfbfw",
+"wtwwwfwww",
+"wtffffww0",
+"wffffffw0",
+"wwwwfffw0",
+"000wwwww0"
+];
+function printMap()
+{
+	var s="";
+	for(i=0;i<map.length;i++)
+	s+=map[i]+"\n";
+	alert(s);
+}
+function rect(x,y,w,s)
+{
+	document.write("<span style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"' class='"+s+"'></span>");
+	}
+	function man(x,y,w)
+{
+	document.write("<img id='man' src='photo/man1.gif' style='z-index:1; position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"'>");	
+		}
+	function readMap()
+	{
+		x=X;
+		y=Y;
+		for(i=0;i<map.length;i++)
+		{
+			for(j=0;j<map[i].length;j++)
+			{
+				switch(map[i].charAt(j))
+				{
+					case 'f':rect(x,y,WIDTH,"nullBox");
+					break;
+					case 'w':rect(x,y,WIDTH,"wall");
+					break;
+					case 'b':rect(x,y,WIDTH,"nullBox");rect(x,y,WIDTH,"box");
+					break;
+					case 'm':rect(x,y,WIDTH,"nullBox");man(x,y,WIDTH);
+					break;
+					case 't':rect(x,y,WIDTH,"nullBox");rect(x,y,WIDTH,"target");
+					break;
+					default:;
+					}
+					x+=WIDTH;
+				}
+				y+=WIDTH;
+				x=X;
+			}
+		}
+		
+function KeyDown()
+{
+	key=window.event.keyCode;
+	man=document.getElementById('man');
+	leftP=man.offsetLeft;
+	topP=man.offsetTop;
+	if(key==37)
+	{
+		if(map[manX].charAt(manY-1)=='w');
+		else
+		{
+			man.style.left=leftP-WIDTH;
+			map[manX]=map[manX].substring(0,manY-1)+'m'+'f'+map[manX].substring(manY+1);
+			manY--;
+		}
+	}
+	else if(key==38)
+	{
+		if(map[manX-1].charAt(manY)=='w');
+		else
+		{
+			man.style.top=topP-WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+			map[manX-1]=map[manX-1].substring(0,manY)+'m'+map[manX-1].substring(manY+1);
+			manX--;
+		}
+	}
+	else if(key==39)
+	{
+		if(map[manX].charAt(manY+1)=='w');
+		else
+		{
+			man.style.left=leftP+WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+'m'+map[manX].substring(manY+2);
+			manY++;
+		}
+	}
+	else if(key==40)
+	{
+		if(map[manX+1].charAt(manY)=='w');
+		else
+		{
+			man.style.top=topP+WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+			map[manX+1]=map[manX+1].substring(0,manY)+'m'+map[manX+1].substring(manY+1);
+			manX++;
+		}
+	}
+	
+}
+readMap();
+	
+</script>
+<body bgcolor=white onKeydown="KeyDown()">
+</body>
+</html>
+

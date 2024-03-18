@@ -1,0 +1,268 @@
+{"frames": [
+
+{
+	"filename": "ice1.png",
+	"frame": {"x":830,"y":161,"w":15,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+	"sourceSize": {"w":15,"h":15}
+},
+{
+	"filename": "ice10.png",
+	"frame": {"x":530,"y":111,"w":65,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":74},
+	"sourceSize": {"w":65,"h":74}
+},
+{
+	"filename": "ice2.png",
+	"frame": {"x":847,"y":161,"w":11,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":11,"h":15},
+	"sourceSize": {"w":11,"h":15}
+},
+{
+	"filename": "ice3.png",
+	"frame": {"x":992,"y":2,"w":7,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":7,"h":37},
+	"sourceSize": {"w":7,"h":37}
+},
+{
+	"filename": "ice4.png",
+	"frame": {"x":860,"y":161,"w":5,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":5,"h":15},
+	"sourceSize": {"w":5,"h":15}
+},
+{
+	"filename": "water0001.png.png",
+	"frame": {"x":597,"y":107,"w":90,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":4,"w":90,"h":77},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0003.png.png",
+	"frame": {"x":831,"y":2,"w":95,"h":46},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":17,"w":95,"h":46},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0005.png.png",
+	"frame": {"x":689,"y":106,"w":79,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":5,"w":79,"h":76},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0007.png.png",
+	"frame": {"x":2,"y":119,"w":83,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":83,"h":65},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0009.png.png",
+	"frame": {"x":927,"y":50,"w":89,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":19,"w":89,"h":43},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0011.png.png",
+	"frame": {"x":931,"y":95,"w":43,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":15,"w":43,"h":44},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0012.png.png",
+	"frame": {"x":831,"y":50,"w":34,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":13,"w":34,"h":53},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0013.png.png",
+	"frame": {"x":976,"y":134,"w":36,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":27,"w":36,"h":34},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0014.png.png",
+	"frame": {"x":931,"y":2,"w":59,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":24,"w":59,"h":41},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0015.png.png",
+	"frame": {"x":447,"y":115,"w":81,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":18,"w":81,"h":56},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0016.png.png",
+	"frame": {"x":347,"y":118,"w":98,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":18,"w":98,"h":57},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0017.png.png",
+	"frame": {"x":192,"y":118,"w":101,"h":63},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":16,"w":101,"h":63},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0018.png.png",
+	"frame": {"x":87,"y":119,"w":103,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":16,"w":103,"h":64},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "water0019.png.png",
+	"frame": {"x":830,"y":106,"w":99,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":17,"w":99,"h":53},
+	"sourceSize": {"w":114,"h":89}
+},
+{
+	"filename": "waterice0023.png.png",
+	"frame": {"x":931,"y":141,"w":28,"h":31},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":80,"w":28,"h":31},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0024.png.png",
+	"frame": {"x":976,"y":95,"w":39,"h":37},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":73,"w":39,"h":37},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0025.png.png",
+	"frame": {"x":867,"y":50,"w":58,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":58,"w":58,"h":52},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0026.png.png",
+	"frame": {"x":295,"y":118,"w":50,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":48,"w":50,"h":62},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0027.png.png",
+	"frame": {"x":770,"y":106,"w":58,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":36,"w":58,"h":75},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0028.png.png",
+	"frame": {"x":451,"y":2,"w":87,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":15,"w":87,"h":107},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0029.png.png",
+	"frame": {"x":743,"y":2,"w":86,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":15,"w":86,"h":102},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0030.png.png",
+	"frame": {"x":353,"y":2,"w":96,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":13,"w":96,"h":111},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0031.png.png",
+	"frame": {"x":540,"y":2,"w":87,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":15,"w":87,"h":103},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0032.png.png",
+	"frame": {"x":253,"y":2,"w":98,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":10,"w":98,"h":114},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0033.png.png",
+	"frame": {"x":629,"y":2,"w":112,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":19,"w":112,"h":102},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0034.png.png",
+	"frame": {"x":129,"y":2,"w":122,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":14,"w":122,"h":114},
+	"sourceSize": {"w":135,"h":135}
+},
+{
+	"filename": "waterice0035.png.png",
+	"frame": {"x":2,"y":2,"w":125,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":12,"w":125,"h":115},
+	"sourceSize": {"w":135,"h":135}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "water.png",
+	"format": "RGBA8888",
+	"size": {"w":1018,"h":187},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7c0f982a23f09c75c24d885334be88d3:08c368eee624e8fbecbbfeef16889849:915b9e2c60291fd5f1d6c786f7274850$"
+}
+}

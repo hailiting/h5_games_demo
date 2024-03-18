@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #divview ul li {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: lightblue;
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .clean {
+        clear: both;
+    }
+    
+    #divview ul {
+        margin-top: 5px;
+    }
+    
+    #divview {
+        padding: 10px 10px 10px 10px;
+        border: 2px solid black;
+        background-color: #999999;
+    }
+    
+    #divview,
+    #divcontrol {
+        display: block;
+        width: 220px;
+        margin: 50 auto;
+    }
+    
+    #divcontrol input {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #divcontrol p {
+        display: block;
+        margin-left: 36px;
+    }
+    
+    #divcontrol p input {
+        margin-left: 30px;
+    }
+    
+    #divcontrol>input {
+        margin-left: 100px;
+    }
+    
+    #divcontrol {
+        margin-top: 50px;
+    }
+    </style>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        addrandom();
+        //点击向上时的函数处理
+        $("#up").click(function() {
+            merge(1);
+        });
+
+        //点击向右时的函数处理
+        $("#right").click(function() {
+            merge(2);
+        });
+
+        //点击向下时的函数处理
+        $("#down").click(function() {
+            merge(3);
+        });
+
+        //点击向左时函数处理
+        $("#left").click(function() {
+            merge(4);
+        });
+
+        $(window).on("keydown", function(e) {
+            // alert(e.keyCode);
+            switch (true) {
+                case e.keyCode == 87:
+                    merge(1);
+                    break;
+                case e.keyCode == 68:
+                    merge(2);
+                    break;
+                case e.keyCode == 83:
+                    merge(3);
+                    break;
+                case e.keyCode == 65:
+                    merge(4);
+                    break;
+            }
+        })
+    });
+
+    function point(x, y) { //定义一个自定义对象，用于存储x和y
+        this.x = x;
+        this.y = y;
+    }
+
+    function addrandom() {
+        var array = new Array();
+        array.length = 0; //清空数组
+        for (var x = 0; x < 4; x++) {
+            for (var y = 0; y < 4; y++) {
+                var innerval = getVal(1, x, y);
+                var a = new point(x, y);
+                if (!innerval) {
+                    array.push(a);
+                } //获取值为空的坐标并存在一个空的数组里
+            }
+        }
+        if (array.length == 0) {
+            alert("游戏结束！");
+            //TODO:restart
+        } //填满 游戏结束
+        var rdnumLength = Math.random() > 0.8 ? 2 : 1;
+        for (var i = 0; i < rdnumLength && i < array.length; i++) {
+
+            var idx = Math.floor(Math.random() * array.length);
+            var x = array[idx].x;
+            var y = array[idx].y; //获取随机加入数字的坐标
+            var rdnum = 2; //按照4:1比例随机生成2或是4
+            setVal(1, x, y, rdnum);
+            //将生成数赋值给card
+        };
+    }
+    //获取jQuery数组中第index项的值
+    //directionx :1上，2右，3下，4左
+    function getVal(direction, idx1, idx2) {
+        var val = 0;
+        idx2 = direction == 2 || direction == 3 ? 3 - idx2 : idx2;
+        if (direction % 2) {
+            val = parseInt($("#divview ul").eq(idx2).children().eq(idx1).html());
+        } else {
+            val = parseInt($("#divview ul").eq(idx1).children().eq(idx2).html());
+        }
+        if (isNaN(val)) {
+            val = 0;
+        }
+        return val;
+    }
+    var colorList = ["lightblue", "lightcyan", "lightgoldenrodyellow", "lightgreen", "lightpink",
+        "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightslategrey", "lightsteelblue", "lightcoral"
+    ];
+    // 设置第几行第几排的数字
+    function setVal(direction, idx1, idx2, val) {
+        var colorIndex = (val).toString(2).length;
+        idx2 = direction == 2 || direction == 3 ? 3 - idx2 : idx2;
+        if (direction % 2) {
+            return $("#divview ul").eq(idx2).children().eq(idx1).html(val).css("background-color", colorList[colorIndex]);
+        }
+        return $("#divview ul").eq(idx1).children().eq(idx2).html(val).css("background-color", colorList[colorIndex]);
+    }
+    //directionx :1上，2右，3下，4左
+    function merge(direction) {
+        var direction1 = 4;
+        var direction2 = 4;
+        //需要遍历的位置始终,合并后的数组
+        var allArr = [];
+        var flag = false;
+        for (var i = 0; i < direction1; i++) {
+            //合并后的数组
+            var numberArr = [];
+            var flagSpace = 0;
+            var flagMerge = false;
+            for (var j = 0; j < direction2; j++) {
+                //找到非空的值并记录是否有非空值在空值之后
+                var numberVal = getVal(direction, i, j);
+                if (numberVal != 0) {
+                    numberArr.push(numberVal);
+                    if (flagSpace > 0) {
+                        flagSpace = true;
+                    };
+                } else {
+                    flagSpace = flagSpace == 0 ? 1 : flagSpace;
+                }
+            }
+            var endArr = [];
+            //遇到相同的数字合并，并且记录是否有相同数字
+            for (var j = 0; j < numberArr.length; j++) {
+                if (numberArr[j] == numberArr[j + 1] && numberArr[j] != 0) {
+                    endArr.push(numberArr[j] + numberArr[j + 1]);
+                    flagMerge = true;
+                    j++;
+                } else {
+                    endArr.push(numberArr[j]);
+                }
+            }
+            // 只要有一列是有空值或者合并的情况就进行变换
+            flag = flag || (flagSpace === true) || flagMerge;
+            allArr.push(endArr);
+        }
+        if (!flag) {
+            var numLength = 0;
+            for (var i = 0; i < allArr.length; i++) {
+                numLength += allArr[i].length;
+            }
+            if (numLength == 16) {
+                alert("游戏结束");
+                for (var i = 0; i < allArr.length; i++) {
+                    for (var j = 0; j < allArr[i].length; j++) {
+                        setVal(direction, i, j, "");
+                    }
+                }
+                addrandom();
+            } else {
+                alert("此方向不能移动");
+            }
+            return;
+        }
+        for (var i = 0; i < direction1; i++) {
+            var endArr = allArr[i];
+            for (var j = 0; j < direction2; j++) {
+                if (j < endArr.length) {
+                    setVal(direction, i, j, endArr[j]);
+                } else {
+                    setVal(direction, i, j, "");
+                }
+            }
+        }
+        console.log(allArr);
+        addrandom();
+    }
+    </script>
+</head>
+
+<body>
+    <h1>2048:wsad控制方向</h1>
+    <div>
+        <div id="gamecontent">
+            <div id="divview">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <div class="clean"></div>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <div class="clean"></div>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <div class="clean"></div>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <div class="clean"></div>
+                </ul>
+            </div>
+            <div id="divcontrol">
+                <input id="up" type="button" value="↑" />
+                <p>
+                    <input id="left" type="button" value="←" />
+                    <input id="right" type="button" value="→" />
+                </p>
+                <input id="down" type="button" value="↓" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

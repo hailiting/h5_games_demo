@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7' />
+<meta name="viewport" content="width=device-width,  maximum-scale=1.0, minimum-scale=1.0" />
+    <title>奥迪A3</title>
+	<link href="css/global.css" type="text/css" rel="stylesheet"/>
+	<link href="css/css3.css" type="text/css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+	<script src="js/common-utils.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="warp">
+	<div id="puzzleBg"><img src="images/ptBg.jpg" width="100%"></div>
+	<div class="puzzleHead"><span id="timer">00:00</span><b>拼图游戏</b></div>   		 
+       <div id="puzzle">    	
+    	 <div class="listBigImgs clearfix">
+            <div class="listBigImg"  mark="photo1"><div id="listBigImg_01"></div></div>
+            <div class="listBigImg"  mark="photo2"><div id="listBigImg_02"></div></div>
+            <div class="listBigImg"  mark="photo3"><div id="listBigImg_03"></div></div>
+            <div class="listBigImg"  mark="photo4"><div id="listBigImg_04"></div></div>
+            <div class="listBigImg"  mark="photo5"><div id="listBigImg_05"></div></div>
+            <div class="listBigImg"  mark="photo6"><div id="listBigImg_06"></div></div>
+            <div class="listBigImg"  mark="photo7"><div id="listBigImg_07"></div></div>
+            <div class="listBigImg"  mark="photo8"><div id="listBigImg_08"></div></div>
+            <div class="listBigImg"  mark="photo9"><div id="listBigImg_09"></div></div>
+        </div>
+          
+        <div class="listSmallImgs clearfix">
+            <div class="listSmallImg" mark="photo9"><div><img src="images/puzzle_01_09.jpg" mark="photo9" /></div></div>
+            <div class="listSmallImg" mark="photo5"><div><img src="images/puzzle_01_05.jpg" mark="photo5" /></div></div>
+            <div class="listSmallImg" mark="photo4"><div><img src="images/puzzle_01_04.jpg" mark="photo4" /></div></div>
+            <div class="listSmallImg" mark="photo8"><div><img src="images/puzzle_01_08.jpg" mark="photo8" /></div></div>
+            <div class="listSmallImg" mark="photo6"><div><img src="images/puzzle_01_06.jpg" mark="photo6" /></div></div>
+            <div class="listSmallImg" mark="photo2"><div><img src="images/puzzle_01_02.jpg" mark="photo2" /></div></div>
+            <div class="listSmallImg" mark="photo7"><div><img src="images/puzzle_01_07.jpg" mark="photo7" /></div></div>   
+            <div class="listSmallImg" mark="photo1"><div><img src="images/puzzle_01_01.jpg" mark="photo1" /></div></div>
+            <div class="listSmallImg" mark="photo3"><div><img src="images/puzzle_01_03.jpg" mark="photo3" /></div></div>     
+        </div>
+    </div>	   
+ </div>
+ 	<div class="puzzleUp photo">
+        <i class="close" mark="photo">X</i>
+        <div class="photoMid">
+            <img src="images/puzzle_01.jpg">
+        </div>
+    </div>
+    <span class="btnUp puzzlePhoto" mark="photo">查看原图</span>
+    <a href="javascript:void(0);" class="btnUp btnRule" mark="puzzleRule">拼图规则</a>
+ 	<div class="puzzleUp puzzleRule">
+        <i class="close" mark="puzzleRule">X</i>
+        <div class="puzzleRuleMid clearfix">
+            <dl>
+                <dt>系统测试:</dt>
+                <dd>拼图的开放时间没有限制，</dd>
+                <dd>排名第一的用户可获得精美奖品一份。</dd>
+                <dd>拼图次数是无限的。</dd>
+            </dl>
+        </div>
+    </div>  
+    <div class="puzzleUp puzzleComplete">
+        <i class="close" mark="puzzleComplete">X</i>
+        <div class="puzzleCompleteMid clearfix">
+            <p><img src="images/puzzleF.png"></p>
+            <dl>
+                <dd>恭喜您拼图成功！<br>
+您本次所有的时间共计为：<br><span id="timeNum">35：65</span>秒，<br>
+排名为：第<span id="rank">10</span>名！<br>
+成绩不错，继续努力哦！</dd>
+            </dl>
+        </div>
+    </div> 
+    <div class="puzzleUp puzzleStart">开始游戏</div>
+    <div id="photoBg" style="display:none;"></div>
+	<script src="js/puzzle.js" type="text/javascript"></script>
+</body>
+</html>

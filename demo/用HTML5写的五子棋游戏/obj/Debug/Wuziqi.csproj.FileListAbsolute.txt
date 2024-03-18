@@ -1,0 +1,6 @@
+D:\lweiyue\exercise\Wuziqi\Wuziqi\bin\Wuziqi.dll.config
+D:\lweiyue\exercise\Wuziqi\Wuziqi\bin\Wuziqi.dll
+D:\lweiyue\exercise\Wuziqi\Wuziqi\bin\Wuziqi.pdb
+D:\lweiyue\exercise\Wuziqi\Wuziqi\obj\Debug\Wuziqi.csprojResolveAssemblyReference.cache
+D:\lweiyue\exercise\Wuziqi\Wuziqi\obj\Debug\Wuziqi.dll
+D:\lweiyue\exercise\Wuziqi\Wuziqi\obj\Debug\Wuziqi.pdb

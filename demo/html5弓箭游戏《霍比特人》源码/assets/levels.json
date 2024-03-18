@@ -1,0 +1,544 @@
+{
+    "levels": [ {
+        "name": "1",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level01map",
+            "file":"assets/maps/level01.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 10000,
+            "max": 30000
+        }
+    }, {
+        "name": "2",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level02map",
+            "file":"assets/maps/level02.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":15
+        },
+        "score": {
+            "min": 20000,
+            "max": 40000
+        }
+    }, {
+        "name": "3",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level03map",
+            "file":"assets/maps/level03.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 20000,
+            "max": 38000
+        }
+    }, {
+        "name": "4",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level03map",
+            "file":"assets/maps/level04.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":15
+        },
+        "score": {
+            "min": 10000,
+            "max": 30000
+        }
+    }, {
+        "name": "5",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level03map",
+            "file":"assets/maps/level05.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":18
+        },
+        "score": {
+            "min": 10000,
+            "max": 32000
+        }
+    }, {
+        "name": "6",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level03map",
+            "file":"assets/maps/level06.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":40
+        },
+        "score": {
+            "min": 30000,
+            "max": 60000
+        }
+    },{
+        "name": "7",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level07map",
+            "file":"assets/maps/level07.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":15
+        },
+        "score": {
+            "min": 10000,
+            "max": 30000
+        }
+    },{
+        "name": "8",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level08map",
+            "file":"assets/maps/level08.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":25
+        },
+        "score": {
+            "min": 20000,
+            "max": 40000
+        }
+    },{
+        "name": "9",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level09map",
+            "file":"assets/maps/level09.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 10000,
+            "max": 35000
+        }
+    },{
+        "name": "10",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level10map",
+            "file":"assets/maps/level10.json"
+        },
+        "objectives":[{
+            "type" : "killTargets",
+            "targets" : ["EnemyArcher1","EnemyArcher2","EnemyArcher3"]
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 30000,
+            "max": 45000
+        }
+    },{
+        "name": "11",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level11map",
+            "file":"assets/maps/level11.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 25000,
+            "max": 45000
+        }
+    },{
+        "name": "12",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level12map",
+            "file":"assets/maps/level12.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 20000,
+            "max": 45000
+        }
+    },{
+        "name": "13",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level13map",
+            "file":"assets/maps/level13.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":20
+        },
+        "score": {
+            "min": 10000,
+            "max": 30000
+        }
+    },{
+        "name": "14",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level14map",
+            "file":"assets/maps/level14.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 20000,
+            "max": 40000
+        }
+    },{
+        "name": "15",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level15map",
+            "file":"assets/maps/level15.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 20000,
+            "max": 45000
+        }
+    },{
+        "name": "16",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level16map",
+            "file":"assets/maps/level16.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 20000,
+            "max": 45000
+        }
+    },{
+        "name": "17",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level17map",
+            "file":"assets/maps/level17.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 20000,
+            "max": 35000
+        }
+    },{
+        "name": "18",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level18map",
+            "file":"assets/maps/level18.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 40000,
+            "max": 60000
+        }
+    },{
+        "name": "19",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level19map",
+            "file":"assets/maps/level19.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":1
+        },
+        "score": {
+            "min": 15000,
+            "max": 26000
+        }
+    },{
+        "name": "20",
+        "background":{
+            "key":"background01",
+            "image":"img/responsive/background-01-100pc.jpg",
+            "x": 0,
+            "y": 0
+        },
+        "sprites":{
+            "key":"sprites01",
+            "json":"assets/levels/level-sprites.json",
+            "image":"assets/levels/level-sprites.png"
+        },
+        "tilemap":{
+            "key":"level20map",
+            "file":"assets/maps/level20.json"
+        },
+        "objectives":[{
+            "type" : "killAll"
+        }],
+        "arrows":{
+            "normal":30
+        },
+        "score": {
+            "min": 40000,
+            "max": 60000
+        }
+    }]
+}

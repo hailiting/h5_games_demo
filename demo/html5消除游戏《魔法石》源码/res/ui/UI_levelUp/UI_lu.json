@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "lu_bar_diamond.png",
+	"frame": {"x":723,"y":246,"w":14,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+	"sourceSize": {"w":14,"h":14}
+},
+{
+	"filename": "lu_bg.png",
+	"frame": {"x":2,"y":2,"w":508,"h":406},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":508,"h":406},
+	"sourceSize": {"w":508,"h":406}
+},
+{
+	"filename": "lu_button_continue.png",
+	"frame": {"x":426,"y":410,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "lu_button_continue_press.png",
+	"frame": {"x":512,"y":246,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "lu_button_replay.png",
+	"frame": {"x":2,"y":410,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "lu_button_replay_press.png",
+	"frame": {"x":214,"y":410,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "lu_levelring.png",
+	"frame": {"x":512,"y":2,"w":255,"h":242},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":255,"h":242},
+	"sourceSize": {"w":255,"h":242}
+},
+{
+	"filename": "pattern.png",
+	"frame": {"x":739,"y":246,"w":1,"h":1},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+	"sourceSize": {"w":100,"h":100}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_lu.png",
+	"format": "RGBA8888",
+	"size": {"w":769,"h":471},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c40c0d2028af1e3aa5fa3cc493068ece:f682bff8f17f76369d6ad8ddef111789:78a78be39895f0cadbbf1c6691bc4c15$"
+}
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>飞机大战</title>
+
+<script type="text/javascript" src="js/impact.js"></script>
+
+<style>
+html,body{width:100%;height:100%;margin:0;padding:0;}
+img{display:block;border:none;}
+.box{position:relative;overflow:hidden;height:100%;width:100%;min-width:300px;min-height:500px;}
+.bjbox{height:auto;position:absolute;left:0;top:0px;opacity: .6;}
+.bjbox img{width:100%;height:auto;}
+.stata{position:absolute;left:50%;top:50%;margin-left:-125px;margin-top:25px;width:250px;height:50px;font-size:36px;text-align: center;line-height:40px;cursor:pointer;z-index:10;}
+
+.zhandouBox{position:absolute;z-index:1;height:100%;width:100%;}
+.wofang{position: absolute;width:180px;height:60px;cursor:pointer;/* left:50%;margin-left:-100px;bottom:15px; */opacity: .6;}
+.wofang img{position:absolute;left:-35px;top:-30px;}
+.wofang .wo_xue{position: absolute;display:block;border:solid 1px #333;width:150px;height:8px;left:20px;top:40px;background:#ccc;overflow: hidden;}
+.wofang .wo_xue div{width:100%;height:100%;background:green;position: absolute;}
+
+.diji_1{position:absolute;width:200px;height:150px;}
+.diji_1 img{width:100%;height:100%;}
+.diji_1 .xue{position: absolute;display:block;border:solid 1px #333;width:150px;height:8px;left:20px;top:40px;background:#ccc;overflow: hidden;}
+.diji_1 .xue div{width:100%;height:100%;background:green;position: absolute;}
+
+.diji_2{position:absolute;width:300px;height:230px;}
+.diji_2 img{width:100%;height:100%;}
+.diji_2 .xue{position: absolute;display:block;border:solid 1px #333;width:200px;height:12px;left:50px;top:60px;background:#ccc;overflow: hidden;}
+.diji_2 .xue div{width:100%;height:100%;background:green;position: absolute;}
+
+.zongjidefen{position:absolute;width:100%;height: 100%;left:0;top:0;background:rgba(0,0,0,.8);font-size:50px;color:#ddd;text-align: center;line-height:300px;z-index:50;display:none;}
+.zongjidefen button{display:block;width:250px;height:50px;font-size:36px;text-align: center;line-height:40px;cursor:pointer;margin-left:auto;margin-right: auto;}
+
+.paodan{width:15px;height:45px;position: absolute;}
+.paodan img{width:100%;height:100%;}
+
+.img_1{display:block;position: absolute;width:50px;height:50px;}
+.img_2{display:block;position: absolute;width:160px;height:170px;}
+.img_3{display:block;position: absolute;width:250px;height:266px;}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+	<div class="bjbox">
+		<img src="images/bg_dz.jpg">
+		<img src="images/bg_dz.jpg">
+	</div>
+	<button class="stata">开始</button>
+	<div class="zhandouBox">
+		<a class="diji_box">
+		</a>
+		<a class="baozhaxiaoguo_box">
+		</a>
+		<div class="paodan_1"></div>
+		<div class="wofang">
+			<img src="images/wofang_dz.png">
+			<span class="wo_xue">
+				<div></div>
+			</span>
+		</div>
+	</div>
+	<div class="zongjidefen">
+		总计得分：<span>0000</span>
+		<button onClick="zailaiyici()">再来一次</button>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+{
+	"preloader_percentage": {
+		"en": "[VALUE]%",
+		"ru": "[VALUE]%",
+		"ar": "%[VALUE]"
+	},
+	"preloader_loading": {
+		"en": "loading",
+		"ru": "ЗАГРУЗКА",
+		"ar": "جار التحميل"
+	},
+	"STORY_MODE":{
+		"en" : "MISSIONS"
+	},
+	"SURVIVAL_MODE":{
+		"en" : "SURVIVAL"
+	},
+	"COMING_SOON":{
+		"en" : "Coming soon..."
+	},
+	"ARE_YOU_SURE_ARCADE":{
+		"en" : "Are you sure you want \nto visit the Arcade?"
+	},
+	"ARE_YOU_SURE_SKIP_TUTORIAL":{
+		"en" : "Are you sure you want \nto skip training?"
+	},
+	"STORY_MODE_COMING_SOON_TITLE":{
+		"en" : "Missions Mode"
+	},
+	"STORY_MODE_COMING_SOON_DESCRIPTION":{
+		"en" : "Delve into the world of Rogue One, \nas you journey across three planets unlocking \nall your favourite characters along the way.\n\nTest your skills and see if you have \nwhat it takes to lead the Rebellion.\n\n\nComing Soon"
+	},		
+	"PAUSED":{
+		"en": "Paused"
+	},
+	"QUIT_GAME":{
+		"en": "Quit Game"
+	},
+	"ARE_YOU_SURE":{
+		"en": "Are you sure?"
+	},
+	"HOW_TO_PLAY":{
+		"en": "How to Play"
+	},
+	"GAME_OVER":{
+		"en": "Game Over"
+	},
+	"WELL_DONE":{
+		"en": "Well Done {NAME}!"
+	},
+	"TRY_AGAIN":{
+		"en": "Try Again, {NAME}!"
+	},
+	"HIGHSCORE":{
+		"en": "Hi-Score"
+	},
+	"LOADING_SCORES":{
+		"en" : "Loading..."
+	},
+	"NO_SCORES_FOUND":{
+		"en" : "No Scores Found"
+	},
+	"ENTER_YOUR_NAME":{
+		"en" : "Enter Your Name"
+	},
+	"MAP":{
+		"en": "Map"
+	},
+		"MAP_LEGEND_PLAYER":{
+			"en": "You"
+		},
+		"MAP_LEGEND_ENEMY":{
+			"en": "Enemy"
+		},
+		"MAP_LEGEND_GOAL":{
+			"en": "Goal"
+		},
+		"MAP_LEGEND_HEALTH":{
+			"en": "Health"
+		},
+	"TROPHIES":{
+		"en": "Medals"
+	},
+	"LEADERBOARD":{
+		"en": "Leaderboard"
+	},
+	"BEST":{
+		"en": "BEST"
+	},
+	"CURRENT_MISSION":{
+		"en": "Current Goal"
+	},
+	"NEW_MISSION":{
+		"en": "New Goal"
+	},
+	"MISSION_FAILED":{
+		"en": "Mission Failed"
+	},
+	"MISSIONS_COMPLETED":{
+		"en": "Goals\nCompleted"
+	},
+	"MISSION_SUCCESS":{
+		"en": ["Great Work, Troops", "Well Done, Soldiers", "Our Unit Survived", "Mon Mothma would be Proud", "Mission Complete!", "Fine Work, Soldiers", "Great Team Work", "Well Done, Trooper!", "For the Rebellion", "Perfectly Executed", "That Took Guts!", "Good Work, Team"]
+	},
+	"GOALS_TO_GO":{
+		"en": "{value}/{total}!"
+	},
+	"SECONDS_TO_GO":{
+		"en": "{value} seconds to go!"
+	},
+	"MISSION_TUTORIAL1_TITLE":{
+		"en": "How to Play"
+	},
+	"MISSION_TUTORIAL1_DESCRIPTION":{
+		"en": "Follow the Arrow"
+	},
+	"MISSION_TUTORIAL2_TITLE":{
+		"en": "How to Play"
+	},
+	"MISSION_TUTORIAL2_DESCRIPTION":{
+		"en": "Destroy the Target"
+	},
+	"MISSION_TUTORIAL3_TITLE":{
+		"en": "Congratulations!!!"
+	},
+	"MISSION_TUTORIAL3_DESCRIPTION":{
+		"en": "You Completed your Training"
+	},
+	"MISSION_FREE_HOSTAGE_DESCRIPTION":{
+		"en": "Rescue the Pilot"
+	},
+	"MISSION_RECOVER_ITEM_DESCRIPTION":{
+		"en": "Recover the Item"
+	},
+	"MISSION_DESTROY_TARGET_DESCRIPTION":{
+		"en": "Destroy the Targets"
+	},
+		"MISSION_DESTROY_TARGET_STEP_1":{
+			"en": "{value}/{total} destroyed!"
+		},
+	"MISSION_DEFEAT_ENEMY_DESCRIPTION":{
+		"en": "Knock out {value} Enemies"
+	},
+		"MISSION_DEFEAT_ENEMY_STEP_1":{
+			"en": "{value}/{total} defeated!"
+		},
+	"MISSION_ESCORT_DESCRIPTION":{
+		"en": "Find and Protect the Pilot"
+	},
+		"MISSION_ESCORT_STEP_1":{
+			"en": "Find the Pilot"
+		},
+		"MISSION_ESCORT_STEP_2":{
+			"en": "Protect the Pilot"
+		},
+		"MISSION_ESCORT_FAILED":{
+			"en": "The Pilot was Captured"
+		},
+	"MISSION_ENEMY_WAVES_DESCRIPTION":{
+		"en": "Survive for {value} seconds"
+	},
+		"MISSION_ENEMY_WAVES_STEP_1":{
+			"en": "{value} seconds to go!"
+		},
+	"MISSION_PROTECT_CARGO_DESCRIPTION":{
+		"en": "Find and Protect the Cargo"
+	},
+		"MISSION_PROTECT_CARGO_STEP_1":{
+			"en": "Find the Cargo"
+		},
+		"MISSION_PROTECT_CARGO_STEP_2":{
+			"en": "{value} seconds to go!"
+		},
+		"MISSION_PROTECT_CARGO_FAILED":{
+			"en": "The Cargo has been Destroyed"
+		},
+	"MISSION_DESTROY_TANK_DESCRIPTION":{
+		"en": "Find and Destroy the Convoy"
+	},
+		"MISSION_DESTROY_TANK_STEP_1":{
+			"en": "Find and destroy the convoy"
+		},
+		"MISSION_DESTROY_TANK_STEP_2":{
+			"en": "Stop it reaching the base!"
+		},	
+		"MISSION_DESTROY_TANK_FAILED":{
+			"en": "The Convoy reached its Destination"
+		},
+	"HELP_MOVE_PC":{
+		"en": "Click the Ground to move your Troops"
+	},
+	"HELP_MOVE_MOB":{
+		"en": "Tap the ground to move your Troops"
+	},
+	"HELP_SHOOT_PC":{
+		"en": "Click on an Enemy to engage in combat"
+	},
+	"HELP_SHOOT_MOB":{
+		"en": "Tap on an Enemy to engage in combat"
+	},
+	"HELP_MAP_PC":{
+		"en": "Click on the compass to open the map"
+	},
+	"HELP_MAP_MOB":{
+		"en": "Tap on the compass to open the map"
+	},
+	"HELP_AIRSTRIKE":{
+		"en": "Click on Cassian to trigger an Airstrike"
+	},
+	"HELP_GRANADE":{
+		"en": "Click on K-2SO to activate the grenade.\nClick the ground to throw"
+	},
+	"HELP_SNIPER":{
+		"en": "Click the Sniper trooper to prepare his weapon.\nChoose a target to fire"
+	},
+	"TROPHY_ACHIEVED":{
+		"en" : "Medal Achieved!"
+	},
+	"TROPHY_COMING_SOON_1":{
+		"en" : "Coming Soon"
+	},
+	"TROPHY_COMING_SOON_2":{
+		"en" : "In Mission Mode"
+	},
+	"TOKEN_ACHIEVED":{
+		"en" : "Token Won!"
+	},
+	"TOKEN_DESCRIPTION":{
+		"en" : "Spend it in the Star Wars Arcade"
+	},	
+	
+	"game_boots_trophy1_name":{
+		"en" : "Rookie Rebel"
+	},
+	"game_boots_trophy1_description":{
+		"en" : "Complete your first goal in Survival mode"
+	},
+	"game_boots_trophy2_name":{
+		"en" : "Rebel Leader"
+	},
+	"game_boots_trophy2_description":{
+		"en" : "Complete 5 goals in one round of Survival mode"
+	},
+	"game_boots_trophy3_name":{
+		"en" : "Rebel Master"
+	},
+	"game_boots_trophy3_description":{
+		"en" : "Complete 10 goals in one round of Survival mode"
+	},
+	"game_boots_trophy4_name":{
+		"en" : "United We Stand"
+	},
+	"game_boots_trophy4_description":{
+		"en" : "Survive 10 goals with all 3 squad members"
+	},
+	"game_boots_trophy5_name":{
+		"en" : "Great Work, Troops"
+	},
+	"game_boots_trophy5_description":{
+		"en" : "Complete your first mission in Story mode"
+	},
+	"game_boots_trophy6_name":{
+		"en" : "Perfectly executed plan"
+	},
+	"game_boots_trophy6_description":{
+		"en" : "Complete a mission with 3 stars in Story mode"
+	},
+	"game_boots_trophy7_name":{
+		"en" : "Mission complete"
+	},
+	"game_boots_trophy7_description":{
+		"en" : "Complete all missions in Story mode"
+	},
+	"game_boots_trophy8_name":{
+		"en" : "Together in victory"
+	},
+	"game_boots_trophy8_description":{
+		"en" : "Complete all missions with 3 stars in Story mode"
+	},
+	"game_boots_trophy9_name":{
+		"en" : "May the Force be with you"
+	},
+	"game_boots_trophy9_description":{
+		"en" : "Fully upgrade a character in Story mode"
+	}
+}

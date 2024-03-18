@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery拼图</title>
+<link type="text/css" rel="stylesheet" href="css/mgame2.css" />
+<script src="js/jquery.js"></script>
+<script src="js/mgame2.js"></script>
+</head>
+
+<body>
+<!--<div class="test"></div>-->
+<div class="cover">
+    <div class="cover_bg"></div>
+    <div class="cover_inner">
+        <p style="margin-bottom: 10px;">
+            <button class="startGame">开始游戏</button>
+        </p>
+        <p class="choice-level">
+            <select>
+                <option value="3">简单</option>
+                <option value="4">中等难度</option>
+                <option value="5">高难</option>
+                <option value="6">令人发狂的</option>
+                <option value="7">外星人请选择</option>
+            </select>
+        </p>
+    </div>
+</div>
+<div class="piece_container" points="1">
+</div>
+<div class="rule-description">
+    <p>在10秒内完成拼图会有奖励的哦</p>
+    <p>珍惜机会吧，你最多只能移动9步，亲！</p>
+    <p>移动<span class="over-step">0</span>步</p>
+    <p>用时<span class="over-time">0</span>秒</p>
+    <p><button>恢复</button></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+{
+	"locale"   : "en",
+	"r2l"      : false,
+	"webfont"  : false,
+
+	"hiscore":
+	{
+		"sharedKey" : 1234,
+		"gameId"    : 447
+	},
+
+	"arcade":
+	{
+		"difficulty":
+		{
+			"time"              : 30,
+			"health_increase"   : 0.1,
+			"accuracy_increase" : 0.025,
+			"time_increase"     : 10,
+			"count_increase"    : 5,
+			"spawn_delay"       : 30
+		},
+
+		"missions_token" : 3,
+
+		"missions":
+		{
+			"hostage":
+			{
+				"score" : 1000
+			},
+			"item":
+			{
+				"score" : 500
+			},
+			"destroy_target":
+			{
+				"score" : 500
+			},
+			"defeat_enemies":
+			{
+				"score"       : 1000,
+				"count_range" : [5,5]
+			},
+			"escort":
+			{
+				"score" : 1500
+			},
+			"enemy_waves":
+			{
+				"score"       : 750,
+				"wait_time"   : 4,
+				"time"        : 30,
+				"wave_delay"  : 12,
+				"spawn_range" : [1,3]
+			},
+			"protect_cargo":
+			{
+				"score"       : 1500,
+				"time"        : 30,
+				"wave_delay"  : 12,
+				"spawn_range" : [1,4]
+			},
+			"destroy_tank":
+			{
+				"spawn_range" : [2,3]
+			}
+		},
+
+		"units":
+		{
+			"stormtrooper":
+			{
+				"health"       : 10,
+				"accuracy"     : 0.9,
+				"walk_speed"   : 60,
+				"run_speed"    : 120,
+				"los"          : 1,
+				"fov"          : 180,
+				"score"        : 100
+			},
+			"stormtrooper_off":
+			{
+				"health"       : 15,
+				"accuracy"     : 0.9,
+				"walk_speed"   : 60,
+				"run_speed"    : 160,
+				"los"          : 1.3,
+				"fov"          : 270,
+				"score"        : 250
+			},
+			"turret":
+			{
+				"health"           : 50,
+				"rocket_damage"    : 10,
+				"rocket_radius"    : 3,
+				"rocket_time"      : 2.5,
+				"rocket_speed"     : 1000,
+				"explosion_damage" : 10,
+				"explosion_radius" : 5,
+				"score"            : 500
+			},
+			"tank":
+			{
+				"health"           : 100,
+				"accuracy"         : 0.9,
+				"speed"            : 35,
+				"los"              : 1.5,
+				"fov"              : 360,
+				"explosion_damage" : 10,
+				"explosion_radius" : 6,
+				"score"            : 2000
+			},
+			"destroy_target":
+			{
+				"health"           : 20,
+				"explosion_damage" : 10,
+				"explosion_radius" : 5,
+				"score"            : 200
+			},
+			"escort":
+			{
+				"health"        : 100,
+				"speed"         : 60,
+				"threat_radius" : 12,
+				"rescue_radius" : 10
+			},
+			"barrel":
+			{
+				"health"           : 1,
+				"explosion_damage" : 10,
+				"explosion_radius" : 5,
+				"score"            : 0
+			},
+			"cargo":
+			{
+				"health"           : 200,
+				"explosion_damage" : 10,
+				"explosion_radius" : 5
+			}
+		},
+
+		"items":
+		{
+			"medkit":
+			{
+				"health" : 1,
+				"time"   : 3
+			}
+		},
+
+		"abilities":
+		{
+			"medic":
+			{
+				"cooldown" : 20,
+				"health"   : 0.5,
+				"time"     : 1
+			},
+			"stealth":
+			{
+				"cooldown" : 12,
+				"time"     : 10
+			},
+			"hacker":
+			{
+				"cooldown" : 15
+			},
+			"airstrike":
+			{
+				"cooldown" : 25,
+				"time"     : 3.5
+			},
+			"sniper":
+			{
+				"cooldown" : 10
+			},
+			"rocket":
+			{
+				"cooldown" : 11
+			},
+			"granade":
+			{
+				"cooldown" : 9
+			}
+		}
+	}
+}

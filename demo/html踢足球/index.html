@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>足球游戏Demo</title>
+		<script src='js/jquery1.10.js'></script>
+		<script src='js/jQuery.html5Loader.custom.js'></script>
+		<script src='js/underscore-min.js'></script>
+		<script src='js/backbone-min.js'></script>
+		<style>
+body {
+	font: 14px/24px Microsoft Yahei, Arial, sans-serif;
+	color: #FFF;
+	background: #00225b;
+}
+.overlay {
+	background: rgba(0,0,0,0.55);
+	display: none;
+}
+.overlay .close {
+	position: absolute;
+	top: 40px;
+	right: 25px;
+}
+.overlay .lastResult {
+	font: 34px/36px Impact, Arial, "黑体";
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.overlay .lastResult_min {
+	font: 25px/30px Impact, Arial, "黑体";
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 125px;
+}
+.overlay .theBtList {
+	text-align: center;
+}
+.playAgain, .nowShare, .endShare {
+	display: block;
+	clear: both;
+	margin: 10px auto;
+	width: 150px;
+	height: 50px;
+	line-height: 888em;
+	overflow: hidden;
+}
+.playAgain {
+	background: url(images/playAgain.png) no-repeat;
+	background-size: 150px 50px;
+}
+.nowShare {
+	background: url(images/nowShare.png) no-repeat;
+	background-size: 150px 50px;
+}
+.endShare {
+	background: url(images/endShare.png) no-repeat;
+}
+</style>
+		<script>
+			var console = console || {
+				"log" : function() {
+				}
+			};
+			document.addEventListener('touchmove', function(e) {
+				e.preventDefault();
+			}, false);
+			window.track=function(){
+                window._CiQ45954 = window._CiQ45954 || [];
+                window._CiQ45954.push(['_trackEvent', {
+                    type: 1,
+                    labels: [
+                        {'开始':'踢球'}    /*填入*/
+                    ],
+                    values: [
+                        { '数量' :1}
+                    ]
+                }]);
+                window.CClicki && window.CClicki._flushObserver && window.CClicki._flushObserver(function(){});
+				ga.push(['_trackEvent', 'Game', 'Shoot']);
+
+            }
+			 window.currentGameId = 0;
+			 window.currentHash = '';
+		</script>
+		<style>
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+.huan00{width:150px;height:55px;overflow:hidden;margin:0 auto 5px; background:url(images/huan.png) no-repeat -8px -5px;}
+.huan01{background-position: -8px -60px;}
+.huan02{background-position: -8px -120px;}
+.huan03{background-position: -8px -183px;}
+.huan04{background-position: -8px -246px;}
+</style>
+		</head>
+		<body style="margin:0;">
+<!-- Application container. -->
+<div class="templates" data-module='page/football2/game' data-base="{}" style="width: 320px; margin: 0 auto;">
+          <div style='position: absolute'>
+    <div><img src="page/football2/head.jpg" /> </div>
+    <div style="background: url('page/football2/middle.jpg') no-repeat;">
+              <canvas id='football' width="320" height="348" style="margin: 0;padding: 0;border: 0;display: block;"></canvas>
+            </div>
+    <div style="background: url('page/football2/buttom.jpg') no-repeat;height:133px;width: 320px;position:relative;">
+              <!-- <div style="position: absolute; top:10px; left:30%;"><img src="page/football2/logo.png" width="32" ></div> -->
+              <div class="time" style="color: #cccccc;font-size: 15px; margin-left: 146px; padding-top: 15px;"> <b>正在连接</b> </div>
+            </div>
+  </div>
+          <div class='an' style="position: absolute;display: none; width: 100%;top:49%"> <img src="page/football2/title.png"  width="100%"/> </div>
+          <div class='overlay2' style="position: absolute;left:50%;top:18%; margin-left:-90px;width: 200px;;display: none; color: #ffffff; "> <img alt="" width="200" id="p3" src="images/3.png" style="display:none"> <img alt="" width="200" id="p2"  src="images/2.png" style="display:none"> <img alt="" width="200"  id="p1" src="images/1.png" style="display:none"> </div>
+          <div class='overlay' style="position: absolute; display: none; color: #ffffff; "> 
+          <img width="53%" src="images/wrap_page8.png" style="margin:77px auto 0;">
+   		 <div class="lastResult_min" style="background:#000;padding:3px 10px;height:20px;line-height:20px;width:80px;left:50%;margin-left:-50px;font-size:14px;">00:00.00</div>
+   		 <div class="huan00 huan02">
+   		 </div>
+   		 <div style="margin:0 auto 5px;width:100%;"><a href="javascript:void(0)"><img width="100%"src="images/zctxt.png"></a></div>
+   		 <div style="margin:0 auto 3px;width:45%;"><a href="#"><img width="100%"src="images/fx.png"></a></div>
+   		 <div style="margin:0 auto 3px;width:45%;"><a href="#"><img width="100%"src="images/tz.png"></a></div>
+   		 <div style="margin:0 auto 3px;width:45%;"><a href="#"><img width="100%"src="images/cj.png"></a></div>
+   		 
+    <div class="theBtList"> <a class="nowShare" href="#" onclick="_gaq.push(['_trackEvent', 'Social', 'Share_WeChat', '']);">立刻分享</a> <a class="playAgain" href="#" onclick="_gaq.push(['_trackEvent', 'Game', 'Play_Again', '']);">再玩一次</a> </div>
+  </div>
+          
+          <!--<div class='theOverlay overlay' style=" display: block; ">--> 
+          <!--<img alt="现在分享赢控油磁力泵道具战绩立即提升20%" src="images/wrap_page8.png">--> 
+          <!--<div class="lastResult_min">01:11.32</div>--> 
+          <!--<div class="theBtList">--> 
+          <!--<a class="nowShare" href="#">立刻分享</a>--> 
+          <!--<a class="playAgain" href="#">再玩一次</a>--> 
+          <!--</div>--> 
+          <!--</div>--> 
+          <!--<div class='ftps' style="position: absolute; color: #ffffff; ">
+				0
+			</div>--> 
+        </div>
+<!--<div class="templates" data-module='page/animation' data-base="{}">
+		<div class='svg' src='tpl.svg' style="width:1280px; height:720px;">
+		</div>
+		</div>--> 
+<!-- Application source. --> 
+<script type="text/javascript" data-main="js/xm/config.js" src="js/require.js"></script>
+</body>
+		<script type="text/javascript">
+        $(document).ready(function(){
+            $(".nowShare").click(function(){
+
+             //  alert(window.currentHash);
+                //alert("/page/share.html?gameid="+window.currentGameId+"&hash="+window.currentHash);
+                window.location.href="/page/share.html?gameid="+window.currentGameId+"&hash="+window.currentHash;
+            });
+            $(".playAgain").click(function(){
+                window.location.href=window.location.href;
+                $(".theOverlay").hide();
+            });
+
+        });
+    </script>
+		
+</html>

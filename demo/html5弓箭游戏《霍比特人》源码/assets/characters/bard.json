@@ -1,0 +1,639 @@
+{"frames": [
+	{
+		"filename":"Bard_Aim_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 523,"y": 82,"w": 61,"h": 75	},
+		"spriteSourceSize": {"x": 78,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 176,"y": 235,"w": 71,"h": 67	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 103,"y": 157,"w": 86,"h": 76	},
+		"spriteSourceSize": {"x": 59,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 923,"w": 89,"h": 68	},
+		"spriteSourceSize": {"x": 60,"y": 40,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 441,"w": 92,"h": 67	},
+		"spriteSourceSize": {"x": 61,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 368,"w": 95,"h": 71	},
+		"spriteSourceSize": {"x": 61,"y": 37,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 91,"y": 786,"w": 89,"h": 74	},
+		"spriteSourceSize": {"x": 61,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 91,"y": 929,"w": 88,"h": 82	},
+		"spriteSourceSize": {"x": 83,"y": 42,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 74,"w": 102,"h": 81	},
+		"spriteSourceSize": {"x": 84,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 224,"w": 101,"h": 76	},
+		"spriteSourceSize": {"x": 84,"y": 47,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 102,"h": 72	},
+		"spriteSourceSize": {"x": 84,"y": 47,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 157,"w": 101,"h": 65	},
+		"spriteSourceSize": {"x": 81,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 302,"w": 97,"h": 64	},
+		"spriteSourceSize": {"x": 77,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 856,"w": 89,"h": 65	},
+		"spriteSourceSize": {"x": 75,"y": 43,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 91,"y": 862,"w": 88,"h": 65	},
+		"spriteSourceSize": {"x": 71,"y": 43,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 94,"y": 441,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 68,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 93,"y": 708,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 67,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 93,"y": 576,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 68,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 93,"y": 642,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 68,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 97,"y": 368,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 68,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 320,"y": 124,"w": 67,"h": 77	},
+		"spriteSourceSize": {"x": 67,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 182,"y": 755,"w": 67,"h": 77	},
+		"spriteSourceSize": {"x": 67,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 674,"w": 67,"h": 77	},
+		"spriteSourceSize": {"x": 67,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 324,"y": 798,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 328,"y": 203,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 390,"y": 0,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 389,"y": 124,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 328,"y": 282,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 186,"y": 427,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 325,"y": 450,"w": 66,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 325,"y": 370,"w": 66,"h": 78	},
+		"spriteSourceSize": {"x": 68,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 324,"y": 877,"w": 66,"h": 78	},
+		"spriteSourceSize": {"x": 68,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 392,"y": 798,"w": 65,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 393,"y": 361,"w": 65,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 392,"y": 877,"w": 65,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 519,"w": 65,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 393,"y": 440,"w": 65,"h": 77	},
+		"spriteSourceSize": {"x": 68,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 457,"y": 79,"w": 64,"h": 78	},
+		"spriteSourceSize": {"x": 69,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 459,"y": 851,"w": 64,"h": 78	},
+		"spriteSourceSize": {"x": 69,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 460,"y": 682,"w": 64,"h": 78	},
+		"spriteSourceSize": {"x": 69,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 460,"y": 287,"w": 63,"h": 78	},
+		"spriteSourceSize": {"x": 70,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 460,"y": 367,"w": 63,"h": 78	},
+		"spriteSourceSize": {"x": 70,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 461,"y": 447,"w": 63,"h": 79	},
+		"spriteSourceSize": {"x": 70,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 462,"y": 159,"w": 63,"h": 79	},
+		"spriteSourceSize": {"x": 70,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 523,"y": 0,"w": 63,"h": 80	},
+		"spriteSourceSize": {"x": 70,"y": 89,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 240,"w": 63,"h": 81	},
+		"spriteSourceSize": {"x": 70,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 323,"w": 63,"h": 81	},
+		"spriteSourceSize": {"x": 70,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 762,"w": 63,"h": 82	},
+		"spriteSourceSize": {"x": 70,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_28.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 846,"w": 63,"h": 82	},
+		"spriteSourceSize": {"x": 70,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_29.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 930,"w": 63,"h": 82	},
+		"spriteSourceSize": {"x": 70,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_30.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 459,"y": 931,"w": 64,"h": 83	},
+		"spriteSourceSize": {"x": 69,"y": 86,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_31.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 598,"w": 64,"h": 83	},
+		"spriteSourceSize": {"x": 69,"y": 86,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_32.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 683,"w": 64,"h": 83	},
+		"spriteSourceSize": {"x": 69,"y": 86,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_33.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 396,"y": 203,"w": 64,"h": 82	},
+		"spriteSourceSize": {"x": 69,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_34.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 460,"y": 598,"w": 64,"h": 82	},
+		"spriteSourceSize": {"x": 69,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Aim_Bot_35.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 459,"y": 768,"w": 64,"h": 81	},
+		"spriteSourceSize": {"x": 69,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 93,"y": 510,"w": 87,"h": 64	},
+		"spriteSourceSize": {"x": 67,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 786,"w": 89,"h": 68	},
+		"spriteSourceSize": {"x": 65,"y": 40,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 579,"w": 91,"h": 67	},
+		"spriteSourceSize": {"x": 64,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 510,"w": 91,"h": 67	},
+		"spriteSourceSize": {"x": 64,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 648,"w": 91,"h": 67	},
+		"spriteSourceSize": {"x": 64,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Attack_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 717,"w": 91,"h": 67	},
+		"spriteSourceSize": {"x": 64,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 249,"y": 124,"w": 69,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 181,"y": 862,"w": 70,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 103,"y": 235,"w": 71,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 104,"y": 0,"w": 71,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 186,"y": 304,"w": 70,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 177,"y": 0,"w": 70,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 182,"y": 507,"w": 70,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 182,"y": 631,"w": 70,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 249,"y": 0,"w": 69,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 324,"y": 674,"w": 68,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 324,"y": 550,"w": 68,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 550,"w": 68,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 320,"y": 0,"w": 68,"h": 122	},
+		"spriteSourceSize": {"x": 69,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 253,"y": 755,"w": 69,"h": 121	},
+		"spriteSourceSize": {"x": 69,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 258,"y": 247,"w": 68,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 427,"w": 69,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Bard_Idle_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 253,"y": 878,"w": 69,"h": 121	},
+		"spriteSourceSize": {"x": 70,"y": 49,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":1024,"h":1024}
+}
+}

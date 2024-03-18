@@ -1,0 +1,327 @@
+{"frames": [
+	{
+		"filename":"barricade01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 608,"y": 747,"w": 148,"h": 133	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 148,"h": 133	},
+		"sourceSize": {"w": 148,"h": 133	}
+	},
+	{
+		"filename":"bush1.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 544,"y": 1599,"w": 128,"h": 58	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 128,"h": 58	},
+		"sourceSize": {"w": 128,"h": 58	}
+	},
+	{
+		"filename":"bush2.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 603,"y": 1208,"w": 150,"h": 91	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 150,"h": 91	},
+		"sourceSize": {"w": 150,"h": 91	}
+	},
+	{
+		"filename":"bush3.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 365,"y": 1599,"w": 177,"h": 59	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 177,"h": 59	},
+		"sourceSize": {"w": 177,"h": 59	}
+	},
+	{
+		"filename":"cliff01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 608,"y": 415,"w": 153,"h": 228	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 153,"h": 228	},
+		"sourceSize": {"w": 153,"h": 228	}
+	},
+	{
+		"filename":"cliff02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 368,"y": 1301,"w": 249,"h": 296	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 249,"h": 296	},
+		"sourceSize": {"w": 249,"h": 296	}
+	},
+	{
+		"filename":"cliff03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 619,"y": 1301,"w": 142,"h": 186	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 142,"h": 186	},
+		"sourceSize": {"w": 142,"h": 186	}
+	},
+	{
+		"filename":"cliff04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 575,"y": 1879,"w": 165,"h": 164	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 165,"h": 164	},
+		"sourceSize": {"w": 165,"h": 164	}
+	},
+	{
+		"filename":"cliff05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 608,"y": 127,"w": 210,"h": 286	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 210,"h": 286	},
+		"sourceSize": {"w": 210,"h": 286	}
+	},
+	{
+		"filename":"fill01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 614,"w": 606,"h": 452	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 606,"h": 452	},
+		"sourceSize": {"w": 606,"h": 452	}
+	},
+	{
+		"filename":"fill02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 127,"w": 606,"h": 485	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 606,"h": 485	},
+		"sourceSize": {"w": 606,"h": 485	}
+	},
+	{
+		"filename":"ground01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 1025,"h": 125	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 1025,"h": 125	},
+		"sourceSize": {"w": 1025,"h": 125	}
+	},
+	{
+		"filename":"ladder.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 674,"y": 1580,"w": 59,"h": 282	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 59,"h": 282	},
+		"sourceSize": {"w": 59,"h": 282	}
+	},
+	{
+		"filename":"moss1.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 608,"y": 645,"w": 150,"h": 100	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 150,"h": 100	},
+		"sourceSize": {"w": 150,"h": 100	}
+	},
+	{
+		"filename":"moss2.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 451,"y": 1208,"w": 150,"h": 86	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 150,"h": 86	},
+		"sourceSize": {"w": 150,"h": 86	}
+	},
+	{
+		"filename":"moss3.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 619,"y": 1489,"w": 129,"h": 89	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 129,"h": 89	},
+		"sourceSize": {"w": 129,"h": 89	}
+	},
+	{
+		"filename":"platform01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 318,"y": 1973,"w": 226,"h": 44	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 226,"h": 44	},
+		"sourceSize": {"w": 226,"h": 44	}
+	},
+	{
+		"filename":"platform02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 318,"y": 1879,"w": 255,"h": 45	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 255,"h": 45	},
+		"sourceSize": {"w": 255,"h": 45	}
+	},
+	{
+		"filename":"platform03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 318,"y": 1926,"w": 252,"h": 45	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 252,"h": 45	},
+		"sourceSize": {"w": 252,"h": 45	}
+	},
+	{
+		"filename":"pole01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 861,"y": 1509,"w": 43,"h": 363	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 43,"h": 363	},
+		"sourceSize": {"w": 43,"h": 363	}
+	},
+	{
+		"filename":"pole02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 763,"y": 1225,"w": 73,"h": 344	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 73,"h": 344	},
+		"sourceSize": {"w": 73,"h": 344	}
+	},
+	{
+		"filename":"pole03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 820,"y": 127,"w": 54,"h": 293	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 54,"h": 293	},
+		"sourceSize": {"w": 54,"h": 293	}
+	},
+	{
+		"filename":"pole04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 757,"y": 882,"w": 115,"h": 341	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 115,"h": 341	},
+		"sourceSize": {"w": 115,"h": 341	}
+	},
+	{
+		"filename":"rock01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1868,"w": 316,"h": 135	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 316,"h": 135	},
+		"sourceSize": {"w": 316,"h": 135	}
+	},
+	{
+		"filename":"rock02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1301,"w": 366,"h": 184	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 366,"h": 184	},
+		"sourceSize": {"w": 366,"h": 184	}
+	},
+	{
+		"filename":"rock03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1666,"w": 355,"h": 200	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 355,"h": 200	},
+		"sourceSize": {"w": 355,"h": 200	}
+	},
+	{
+		"filename":"rock04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1487,"w": 363,"h": 177	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 363,"h": 177	},
+		"sourceSize": {"w": 363,"h": 177	}
+	},
+	{
+		"filename":"rock05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1068,"w": 449,"h": 231	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 449,"h": 231	},
+		"sourceSize": {"w": 449,"h": 231	}
+	},
+	{
+		"filename":"rock06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 357,"y": 1666,"w": 309,"h": 211	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 309,"h": 211	},
+		"sourceSize": {"w": 309,"h": 211	}
+	},
+	{
+		"filename":"spike1.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 842,"y": 422,"w": 48,"h": 290	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 48,"h": 290	},
+		"sourceSize": {"w": 48,"h": 290	}
+	},
+	{
+		"filename":"spike2.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 838,"y": 1225,"w": 51,"h": 282	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 51,"h": 282	},
+		"sourceSize": {"w": 51,"h": 282	}
+	},
+	{
+		"filename":"spike3.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 874,"y": 967,"w": 31,"h": 238	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 31,"h": 238	},
+		"sourceSize": {"w": 31,"h": 238	}
+	},
+	{
+		"filename":"spike4.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 874,"y": 714,"w": 35,"h": 251	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 35,"h": 251	},
+		"sourceSize": {"w": 35,"h": 251	}
+	},
+	{
+		"filename":"spike5.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 608,"y": 882,"w": 147,"h": 133	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 147,"h": 133	},
+		"sourceSize": {"w": 147,"h": 133	}
+	},
+	{
+		"filename":"tree1a.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 630,"y": 1017,"w": 84,"h": 123	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 84,"h": 123	},
+		"sourceSize": {"w": 84,"h": 123	}
+	},
+	{
+		"filename":"tree1b.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 716,"y": 1017,"w": 37,"h": 91	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 37,"h": 91	},
+		"sourceSize": {"w": 37,"h": 91	}
+	},
+	{
+		"filename":"tree1c.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 760,"y": 645,"w": 80,"h": 137	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 80,"h": 137	},
+		"sourceSize": {"w": 80,"h": 137	}
+	},
+	{
+		"filename":"tree1d.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 758,"y": 784,"w": 45,"h": 75	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 45,"h": 75	},
+		"sourceSize": {"w": 45,"h": 75	}
+	},
+	{
+		"filename":"tree2a.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 451,"y": 1068,"w": 177,"h": 138	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 177,"h": 138	},
+		"sourceSize": {"w": 177,"h": 138	}
+	},
+	{
+		"filename":"tree2b.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 742,"y": 1580,"w": 117,"h": 416	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 117,"h": 416	},
+		"sourceSize": {"w": 117,"h": 416	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":2048,"h":2048}
+}
+}

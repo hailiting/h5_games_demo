@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="x-key" content="11768e03a9f52d1dfcb397f3ddbf40a8" />
+  <title>抽打蛇精猫</title> 
+  <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="full-screen" content="true" /> 
+  <meta name="screen-orientation" content="portrait" /> 
+  <meta name="x5-fullscreen" content="true" /> 
+  <meta name="360-fullscreen" content="true" /> 
+  <link rel="shortcut icon" href="icon.png" /> 
+  <link rel="icon" href="icon.png" /> 
+  <link rel="stylesheet" type="text/css" href="http://game.9g.com/css/game9g.css" /> 
+  <script src="http://game.9g.com/js/game9g.js"></script> 
+  <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+        }
+    </style> 
+  <script type="text/javascript" charset="utf-8" src="http://ic.yhd.com/toolbar/js/content.js"></script>
+  <script type="text/javascript" src="http://ic.yhd.com/toolbar/js/messageEvent.js"></script>
+ </head> 
+ <body style="padding: 0px; border: 0px; margin: 0px;"> 
+  <div style="display:inline-block;width:100%; height:100%;margin: 0 auto; background: black; position:relative;" id="gameDiv"> 
+   <canvas id="gameCanvas" width="480" height="800" style="background-color: rgb(0, 0, 0); width: 480px; height: 800px;"></canvas> 
+  </div> 
+  <input id="bt-game-id" type="hidden" value="smcat" /> 
+  <script>var document_class = "NewGame";</script> 
+  <script src="launcher/egret_loader.js"></script> 
+  <script src="launcher/EgretRuntimeBridge.js"></script> 
+  <script src="egret-1.0-min.js"></script> 
+  <script src="launcher/game-min.js"></script> 
+  <script>
+      egret_h5.startGame();
+</script> 
+  <script>
+      var game9g = new Game9G("cdsjm");
+      game9g.shareData.title = "抽打神经猫-9G游戏";
+      game9g.shareData.content = "抽打神经猫";
+
+      function goHome() {
+          window.location = game9g.homeurl;
+      }
+      function clickMore() {
+          window.location = game9g.moreurl;
+      }
+      function dp_share() {
+          game9g.share();
+      }
+
+      function dp_Ranking() {
+          window.location = game9g.rankurl;
+      }
+
+      function showAd() {
+      }
+      function hideAd() {
+      }
+      function dp_submitScore(score) {
+          if (score > 0) {
+              game9g.score = parseInt(score);
+              game9g.scoreName = score + "下";
+              game9g.shareData.title = "10秒我能抽丫" + score + "次！你行？你试试-【9G游戏】";
+              game9g.utils.shareConfirm("10秒你能抽丫" + score + "次！快通知一下小伙伴吧！", dp_share);
+          }
+      }
+		</script> 
+  <div style="display: none;"> 
+   <script type="text/javascript">
+       game9g.utils.tongji();
+			</script>
+   <span id="cnzz_stat_icon_2947366"><a href="http://www.cnzz.com/stat/website.php?web_id=2947366" target="_blank" title="站长统计">站长统计</a></span>
+   <script src=" http://s5.cnzz.com/stat.php?id=2947366" type="text/javascript"></script>
+   <script src="http://c.cnzz.com/core.php?web_id=2947366&amp;t=z" charset="utf-8" type="text/javascript"></script> 
+  </div> 
+ </body>
+</html>

@@ -1,0 +1,175 @@
+{  
+    "groups":{  
+        
+        "magnets":[  
+            {  
+                "id":"coin_magnet_1",
+                "name" : "STR_SHOP_MAGNET_NAME",
+                "level" : 1,
+                "price":0,
+                "thumbnail":"shop_icon_magnet.png",
+                "lockedThumb" : "shop_icon_magnet_unbought.png",
+                "imageUrl":"shop_icon_magnet.png",
+                "description":"STR_SHOP_MAGNET_1"
+            },
+            {  
+                "id":"coin_magnet_2",
+                "name" : "STR_SHOP_MAGNET_NAME",
+                "level" : 2,
+                "price":500,
+                "thumbnail":"shop_icon_magnet.png",
+                "lockedThumb" : "shop_icon_magnet_unbought.png",
+                "imageUrl":"shop_icon_magnet.png",
+                "description":"STR_SHOP_MAGNET_2"
+            },
+            {  
+                "id":"coin_magnet_3",
+                "name" : "STR_SHOP_MAGNET_NAME",
+                "level" : 3,
+                "price":1000,
+                "thumbnail":"shop_icon_magnet.png",
+                "lockedThumb" : "shop_icon_magnet_unbought.png",
+                "imageUrl":"shop_icon_magnet.png",
+                "description":"STR_SHOP_MAGNET_3"
+            },
+            {  
+                "id":"coin_magnet_4",
+                "name" : "STR_SHOP_MAGNET_NAME",
+                "level" : 4,
+                "price":5000,
+                "thumbnail":"shop_icon_magnet.png",
+                "lockedThumb" : "shop_icon_magnet_unbought.png",
+                "imageUrl":"shop_icon_magnet.png",
+                "description":"STR_SHOP_MAGNET_3"
+            }
+        ],
+        "flips":[  
+            {  
+                "id":"flip_speed_1",
+                "name" : "STR_SHOP_FLIP_NAME",
+                "level" : 1,
+                "price":0,
+                "thumbnail":"shop_icon_flip.png",
+                "lockedThumb" : "shop_icon_flip_unbought.png",
+                "imageUrl":"shop_icon_flip.png",
+                "description":"STR_SHOP_FLIP_1"
+            },
+            {  
+                "id":"flip_speed_2",
+                "name" : "STR_SHOP_FLIP_NAME",
+                "level" : 2,
+                "price":300,
+                "thumbnail":"shop_icon_flip.png",
+                "lockedThumb" : "shop_icon_flip_unbought.png",
+                "imageUrl":"shop_icon_flip.png",
+                "description":"STR_SHOP_FLIP_2"
+            },
+            {  
+                "id":"flip_speed_3",
+                "name" : "STR_SHOP_FLIP_NAME",
+                "level" : 3,
+                "price":1000,
+                "thumbnail":"shop_icon_flip.png",
+                "lockedThumb" : "shop_icon_flip_unbought.png",
+                "imageUrl":"shop_icon_flip.png",
+                "description":"STR_SHOP_FLIP_3"
+            },
+            {  
+                "id":"flip_speed_4",
+                "name" : "STR_SHOP_FLIP_NAME",
+                "level" : 4,
+                "price":5000,
+                "thumbnail":"shop_icon_flip.png",
+                "lockedThumb" : "shop_icon_flip_unbought.png",
+                "imageUrl":"shop_icon_flip.png",
+                "description":"STR_SHOP_FLIP_4"
+            }
+        ],
+
+        "grinds":[  
+            {  
+                "id":"grind_1",
+                "name" : "STR_SHOP_GRIND_NAME",
+                "level" : 1,
+                "price":0,
+                "thumbnail":"shop_icon_grind.png",
+                "lockedThumb" : "shop_icon_grind_unbought.png",
+                "imageUrl":"shop_icon_grind.png",
+                "description":"STR_SHOP_GRIND_1"
+            },
+            {  
+                "id":"grind_2",
+                "name" : "STR_SHOP_GRIND_NAME",
+                "level" : 2,
+                "price":300,
+                "thumbnail":"shop_icon_grind.png",
+                "lockedThumb" : "shop_icon_grind_unbought.png",
+                "imageUrl":"shop_icon_grind.png",
+                "description":"STR_SHOP_GRIND_2"
+            },
+            {  
+                "id":"grind_3",
+                "name" : "STR_SHOP_GRIND_NAME",
+                "level" : 3,
+                "price":1000,
+                "thumbnail":"shop_icon_grind.png",
+                "lockedThumb" : "shop_icon_grind_unbought.png",
+                "imageUrl":"shop_icon_grind.png",
+                "description":"STR_SHOP_GRIND_3"
+            },
+            {  
+                "id":"grind_4",
+                "name" : "STR_SHOP_GRIND_NAME",
+                "level" : 4,
+                "price":3000,
+                "thumbnail":"shop_icon_grind.png",
+                "lockedThumb" : "shop_icon_grind_unbought.png",
+                "imageUrl":"shop_icon_grind.png",
+                "description":"STR_SHOP_GRIND_4"
+            }
+        ],
+
+        "smashes":[  
+            {  
+                "id":"smash_1",
+                "name" : "STR_SHOP_SMASHES_NAME",
+                "level" : 1,
+                "price":0,
+                "thumbnail":"shop_icon_smash.png",
+                "lockedThumb" : "shop_icon_smash_unbought.png",
+                "imageUrl":"shop_icon_smash.png",
+                "description":"STR_SHOP_SMASHES_1"
+            },
+            {  
+                "id":"smash_2",
+                "name" : "STR_SHOP_SMASHES_NAME",
+                "level" : 2,
+                "price":300,
+                "thumbnail":"shop_icon_smash.png",
+                "lockedThumb" : "shop_icon_smash_unbought.png",
+                "imageUrl":"shop_icon_smash.png",
+                "description":"STR_SHOP_SMASHES_2"
+            },
+            {  
+                "id":"smash_3",
+                "name" : "STR_SHOP_SMASHES_NAME",
+                "level" : 3,
+                "price":750,
+                "thumbnail":"shop_icon_smash.png",
+                "lockedThumb" : "shop_icon_smash_unbought.png",
+                "imageUrl":"shop_icon_smash.png",
+                "description":"STR_SHOP_SMASHES_3"
+            },
+            {  
+                "id":"smash_4",
+                "name" : "STR_SHOP_SMASHES_NAME",
+                "level" : 4,
+                "price":1500,
+                "thumbnail":"shop_icon_smash.png",
+                "lockedThumb" : "shop_icon_smash_unbought.png",
+                "imageUrl":"shop_icon_smash.png",
+                "description":"STR_SHOP_SMASHES_4"
+            }
+        ]
+    }
+}

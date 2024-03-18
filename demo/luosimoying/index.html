@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=640, initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta charset="utf-8" />
+<title>罗斯魔影-我爱h5游戏源码</title>
+<link rel="shortcut icon" href="http://www.52h5game.com/images/icon.png">
+<meta name="keywords" content="罗斯魔影,罗斯魔影html5游戏" />
+<meta name="description" content="罗斯魔影html5游戏,罗斯魔影手机在线游戏" />
+<link href="app.css" rel="stylesheet" type="text/css" />
+<script src="lib/easeljs-NEXT.min.js"></script>
+<script src="lib/preloadjs-NEXT.min.js"></script>
+<script src="lib/soundjs-NEXT.min.js"></script>
+<script src="lib/tweenjs-NEXT.min.js"></script>
+<script src="payPanel.js"></script>
+<script src="dedeajax2.js"></script>
+<script src="jquery.min.js"></script>
+<script src="lib/viewporter.js"></script>
+<script src="cave.js"></script>
+</head>
+<body>
+<div id="viewporter">
+<header id="header" class="EaselJS">
+</header>
+<canvas id="canvas" width="640" height="960" style="position: absolute; z-index: 1;"></canvas>
+<div id="portraitLock" class="portraitLock">
+<img class="rotatePhoneIcon" src="assets/lock.jpg" />
+</div>
+</div>
+<script>
+h5api.initGame(100040508, "罗斯魔影",640, 960);
+h5api.progress(100);
+</script>
+</body>
+</html>

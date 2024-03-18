@@ -1,0 +1,1 @@
+﻿{ "resources": [ {"name":"dbg","type":"image","url":"assets/dbg.png"}, {"name":"share","type":"image","url":"assets/share.png"}, {"name":"again","type":"image","url":"assets/again.png"}, {"name":"gotop","type":"image","url":"assets/gotop.png"} ], "groups": [ {"name":"preload","keys":"dbg,share,again,gotop"} ] }

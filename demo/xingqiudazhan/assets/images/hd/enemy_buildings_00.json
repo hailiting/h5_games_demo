@@ -1,0 +1,460 @@
+{"frames": {
+
+"env_00_enemy_barrier_00.png":
+{
+	"frame": {"x":4,"y":490,"w":206,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":78,"w":206,"h":100},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_enemy_barrier_01.png":
+{
+	"frame": {"x":216,"y":490,"w":204,"h":170},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":44,"w":204,"h":170},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_enemy_barrier_02.png":
+{
+	"frame": {"x":498,"y":520,"w":164,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":26,"w":164,"h":206},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_enemy_barrier_03.png":
+{
+	"frame": {"x":210,"y":666,"w":156,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":20,"w":156,"h":218},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_enemy_barrier_04.png":
+{
+	"frame": {"x":944,"y":520,"w":76,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":14,"w":76,"h":230},
+	"sourceSize": {"w":256,"h":256}
+},
+"env_00_enemy_base_01.png":
+{
+	"frame": {"x":498,"y":4,"w":460,"h":510},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":0,"w":460,"h":510},
+	"sourceSize": {"w":512,"h":512}
+},
+"env_00_enemy_beacon_01.png":
+{
+	"frame": {"x":4,"y":1300,"w":84,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":4,"w":84,"h":150},
+	"sourceSize": {"w":128,"h":156}
+},
+"env_00_enemy_bunker_01.png":
+{
+	"frame": {"x":4,"y":4,"w":488,"h":480},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":30,"w":488,"h":480},
+	"sourceSize": {"w":512,"h":512}
+},
+"env_00_enemy_dish_01.png":
+{
+	"frame": {"x":318,"y":1056,"w":92,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":92,"h":94},
+	"sourceSize": {"w":91,"h":95}
+},
+"env_00_enemy_dish_02.png":
+{
+	"frame": {"x":208,"y":1116,"w":90,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":90,"h":96},
+	"sourceSize": {"w":91,"h":95}
+},
+"env_00_enemy_store_01.png":
+{
+	"frame": {"x":836,"y":1058,"w":104,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":90,"w":104,"h":126},
+	"sourceSize": {"w":312,"h":312}
+},
+"env_00_enemy_thing_00.png":
+{
+	"frame": {"x":668,"y":726,"w":114,"h":138},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":0,"w":114,"h":138},
+	"sourceSize": {"w":149,"h":137}
+},
+"env_00_enemy_thing_01.png":
+{
+	"frame": {"x":4,"y":822,"w":150,"h":136},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":136},
+	"sourceSize": {"w":149,"h":137}
+},
+"env_00_enemy_turret_01.png":
+{
+	"frame": {"x":4,"y":596,"w":200,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":48,"y":50,"w":200,"h":220},
+	"sourceSize": {"w":312,"h":312}
+},
+"env_00_enemy_turret_02.png":
+{
+	"frame": {"x":816,"y":520,"w":122,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":40,"w":122,"h":114},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_02_base.png":
+{
+	"frame": {"x":668,"y":520,"w":142,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":26,"w":142,"h":130},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_02_gun.png":
+{
+	"frame": {"x":588,"y":1178,"w":84,"h":14},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":72,"w":84,"h":14},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_02_top.png":
+{
+	"frame": {"x":510,"y":1138,"w":72,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":46,"w":72,"h":66},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_base.png":
+{
+	"frame": {"x":4,"y":964,"w":100,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":42,"w":100,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_00.png":
+{
+	"frame": {"x":844,"y":972,"w":106,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":38,"w":106,"h":80},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_01.png":
+{
+	"frame": {"x":726,"y":940,"w":112,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":32,"w":112,"h":88},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_02.png":
+{
+	"frame": {"x":490,"y":834,"w":112,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":30,"w":112,"h":94},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_03.png":
+{
+	"frame": {"x":608,"y":966,"w":110,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":28,"w":110,"h":98},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_04.png":
+{
+	"frame": {"x":482,"y":1030,"w":104,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":26,"w":104,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_05.png":
+{
+	"frame": {"x":110,"y":1000,"w":100,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":22,"w":100,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_06.png":
+{
+	"frame": {"x":4,"y":1188,"w":94,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":18,"w":94,"h":106},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_07.png":
+{
+	"frame": {"x":304,"y":1156,"w":86,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":14,"w":86,"h":106},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_08.png":
+{
+	"frame": {"x":946,"y":1058,"w":74,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":14,"w":74,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_09.png":
+{
+	"frame": {"x":416,"y":1138,"w":88,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":14,"w":88,"h":108},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_10.png":
+{
+	"frame": {"x":270,"y":890,"w":96,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":16,"w":96,"h":110},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_11.png":
+{
+	"frame": {"x":702,"y":1120,"w":102,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":22,"w":102,"h":106},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_12.png":
+{
+	"frame": {"x":160,"y":890,"w":104,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":26,"w":104,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_13.png":
+{
+	"frame": {"x":908,"y":756,"w":112,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":26,"w":112,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_14.png":
+{
+	"frame": {"x":788,"y":838,"w":114,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":30,"w":114,"h":96},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_15.png":
+{
+	"frame": {"x":372,"y":850,"w":112,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":32,"w":112,"h":90},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_16.png":
+{
+	"frame": {"x":724,"y":1034,"w":106,"h":80},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":36,"w":106,"h":80},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_17.png":
+{
+	"frame": {"x":608,"y":870,"w":112,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":32,"w":112,"h":90},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_18.png":
+{
+	"frame": {"x":498,"y":732,"w":114,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":30,"w":114,"h":96},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_19.png":
+{
+	"frame": {"x":908,"y":864,"w":112,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":26,"w":112,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_20.png":
+{
+	"frame": {"x":592,"y":1070,"w":104,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":28,"w":104,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_21.png":
+{
+	"frame": {"x":810,"y":1190,"w":102,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":26,"w":102,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_22.png":
+{
+	"frame": {"x":216,"y":1006,"w":96,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":30,"w":96,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_23.png":
+{
+	"frame": {"x":208,"y":1218,"w":86,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":32,"w":86,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_24.png":
+{
+	"frame": {"x":946,"y":1166,"w":74,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":38,"w":74,"h":100},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_25.png":
+{
+	"frame": {"x":104,"y":1220,"w":86,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":32,"w":86,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_26.png":
+{
+	"frame": {"x":106,"y":1110,"w":96,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":30,"w":96,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_27.png":
+{
+	"frame": {"x":918,"y":1272,"w":102,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":28,"w":102,"h":102},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_28.png":
+{
+	"frame": {"x":372,"y":946,"w":104,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":26,"w":104,"h":104},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_29.png":
+{
+	"frame": {"x":372,"y":744,"w":112,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":28,"w":112,"h":100},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_30.png":
+{
+	"frame": {"x":788,"y":734,"w":114,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":28,"w":114,"h":98},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_enemy_turret_03_top_31.png":
+{
+	"frame": {"x":490,"y":934,"w":112,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":32,"w":112,"h":90},
+	"sourceSize": {"w":156,"h":156}
+},
+"env_00_orange_crate_00.png":
+{
+	"frame": {"x":426,"y":490,"w":66,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":8,"w":66,"h":106},
+	"sourceSize": {"w":128,"h":128}
+},
+"env_00_orange_crate_01.png":
+{
+	"frame": {"x":816,"y":640,"w":118,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":18,"w":118,"h":88},
+	"sourceSize": {"w":128,"h":128}
+},
+"env_00_orange_crate_02.png":
+{
+	"frame": {"x":372,"y":666,"w":120,"h":72},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":28,"w":120,"h":72},
+	"sourceSize": {"w":128,"h":128}
+},
+"env_00_orange_crate_03.png":
+{
+	"frame": {"x":4,"y":1074,"w":96,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":8,"w":96,"h":108},
+	"sourceSize": {"w":128,"h":128}
+},
+"env_00_orange_crate_04.png":
+{
+	"frame": {"x":668,"y":656,"w":118,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":30,"w":118,"h":64},
+	"sourceSize": {"w":128,"h":128}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "enemy_buildings_00.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7132fd017881ae7a2338b409cb0db7c7:f01350992b87b7d178b8b5509626dd4b:3805eeaf7b62269c5455622da9a14a6b$"
+}
+}

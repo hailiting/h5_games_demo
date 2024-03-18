@@ -1,0 +1,1444 @@
+
+{ 	
+	"width":57,
+	"height":24,
+	"tilewidth":32,
+	"tileheight":32,
+	"orientation":"orthogonal",
+	"renderorder":"right-down",
+	"properties":
+	{
+		
+	},
+
+	"layers":[
+	   {
+		"name":"collisions",
+		"draworder":"topdown",
+		"width":0,
+		"height":0,
+		"opacity":1,
+		"type":"objectgroup",
+		"visible":true,
+		"x":0,
+		"y":0,
+		"objects":[
+			{
+			 	"name":"poly_platform1",
+				"x":0,
+         		"y":0,
+				"width":655,
+         		"height":39,
+			 	"rotation":0,
+         		"type":"",
+         		"visible":true,
+
+            	"polyline":[
+					{
+						"x":1249,
+						"y":499
+					},
+					{
+						"x":1904,
+						"y":500
+					},
+					{
+						"x":1895,
+						"y":527
+					},
+					{
+						"x":1249,
+						"y":537
+					}
+				  ],
+            	"properties":{
+					
+                }
+			},{
+			 	"name":"poly_platform1",
+				"x":0,
+         		"y":0,
+				"width":1851,
+         		"height":73,
+			 	"rotation":0,
+         		"type":"",
+         		"visible":true,
+
+            	"polyline":[
+					{
+						"x":-5,
+						"y":725
+					},
+					{
+						"x":581,
+						"y":704
+					},
+					{
+						"x":963,
+						"y":731
+					},
+					{
+						"x":1841,
+						"y":719
+					},
+					{
+						"x":1846,
+						"y":778
+					},
+					{
+						"x":-5,
+						"y":765
+					}
+				  ],
+            	"properties":{
+					
+                }
+			}
+		]
+	   }, 
+
+		{
+		"name":"back",
+
+		"height":0,
+		"opacity":1,
+		"type":"objectgroup",
+		"visible":true,
+		"width":0,
+		"x":0,
+		"y":0,
+		"objects":[
+			
+			{
+				"gid":1,
+				"name":"fill02.png",
+				"x":222.6394,
+				"y":795.9484,
+				"scaleX":0.9999999,					
+				"scaleY":0.9999999,
+				"rotation":-8.583908,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":1,
+				"name":"fill02.png",
+				"x":1432.663,
+				"y":566.8712,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":2,
+				"name":"platform02.png",
+				"x":1824.016,
+				"y":481.4163,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":2.844627,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":3,
+				"name":"pole03.png",
+				"x":879.4998,
+				"y":716.0403,
+				"scaleX":0.2595545,					
+				"scaleY":0.2595545,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":4,
+				"name":"rock06.png",
+				"x":1458.765,
+				"y":403.3345,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":5,
+				"name":"platform01.png",
+				"x":1587.373,
+				"y":720.853,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":-2.352702,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":6,
+				"name":"rock02.png",
+				"x":1738.512,
+				"y":360.1703,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":7,
+				"name":"rock03.png",
+				"x":1522.813,
+				"y":314.7338,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":12.56934,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":8,
+				"name":"cliff02.png",
+				"x":1154.802,
+				"y":597.042,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":8,
+				"name":"cliff02.png",
+				"x":146.9138,
+				"y":653.6246,
+				"scaleX":0.9999999,					
+				"scaleY":0.9999999,
+				"rotation":8.079093,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":15,
+				"name":"moss1.png",
+				"x":320.3762,
+				"y":519.0823,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":15,
+				"name":"moss1.png",
+				"x":1470.35,
+				"y":463.4152,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":16,
+				"name":"rock01.png",
+				"x":666.1118,
+				"y":732.8488,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":-3.444343,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":17,
+				"name":"cliff01.png",
+				"x":1315.026,
+				"y":447.7947,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":18,
+				"name":"bush3.png",
+				"x":1745.573,
+				"y":325.6864,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":19,
+				"name":"cliff05.png",
+				"x":339.7029,
+				"y":525.4133,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":24.94682,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":15,
+				"name":"moss1.png",
+				"x":1469.565,
+				"y":123.374,
+				"scaleX":0.5923202,					
+				"scaleY":0.5923202,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":21,
+				"name":"tree1c.png",
+				"x":1423.242,
+				"y":124.2344,
+				"scaleX":-0.5328267,					
+				"scaleY":0.5328267,
+				"rotation":-46.35297,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":22,
+				"name":"tree1d.png",
+				"x":1470.764,
+				"y":143.5165,
+				"scaleX":-0.7577895,					
+				"scaleY":0.7577895,
+				"rotation":37.69275,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":23,
+				"name":"moss2.png",
+				"x":1606.568,
+				"y":269.6588,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":15,
+				"name":"moss1.png",
+				"x":26.51172,
+				"y":721.9483,
+				"scaleX":0.7026322,					
+				"scaleY":0.7026322,
+				"rotation":14.08933,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":24,
+				"name":"ladder.png",
+				"x":1614.939,
+				"y":352.7768,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":25,
+				"name":"ground01.png",
+				"x":511.0223,
+				"y":761.6878,
+				"scaleX":0.9999999,					
+				"scaleY":0.9999999,
+				"rotation":1.249669,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":25,
+				"name":"ground01.png",
+				"x":1531.677,
+				"y":772.5566,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":26,
+				"name":"bush2.png",
+				"x":116.527,
+				"y":718.9119,
+				"scaleX":0.6238435,					
+				"scaleY":0.6238435,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":18,
+				"name":"bush3.png",
+				"x":870.8066,
+				"y":732.7707,
+				"scaleX":0.7930109,					
+				"scaleY":0.7930109,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":18,
+				"name":"bush3.png",
+				"x":75.04089,
+				"y":734.3125,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":15,
+				"name":"moss1.png",
+				"x":1460.435,
+				"y":207.6716,
+				"scaleX":0.4552765,					
+				"scaleY":0.4552765,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":29,
+				"name":"tree1a.png",
+				"x":1440.94,
+				"y":188.5858,
+				"scaleX":0.6682744,					
+				"scaleY":0.6682744,
+				"rotation":15.48739,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":30,
+				"name":"pole02.png",
+				"x":1748.045,
+				"y":558.7693,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":2,
+				"name":"platform02.png",
+				"x":1384.93,
+				"y":515.9836,
+				"scaleX":1.0875,					
+				"scaleY":0.9374989,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":31,
+				"name":"platform03.png",
+				"x":1607.908,
+				"y":511.3367,
+				"scaleX":0.93,					
+				"scaleY":0.93,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":32,
+				"name":"bush1.png",
+				"x":167.8374,
+				"y":730.5129,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":33,
+				"name":"pole01.png",
+				"x":1251.44,
+				"y":596.0242,
+				"scaleX":0.8064839,					
+				"scaleY":0.7955849,
+				"rotation":-6.059847,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":5,
+				"name":"platform01.png",
+				"x":1798.969,
+				"y":509.4714,
+				"scaleX":0.87,					
+				"scaleY":0.87,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":23,
+				"name":"moss2.png",
+				"x":1438.404,
+				"y":89.0578,
+				"scaleX":0.7403589,					
+				"scaleY":0.7403589,
+				"rotation":-6.974489,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":23,
+				"name":"moss2.png",
+				"x":1754.257,
+				"y":697.7057,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			}
+		]
+	   },
+	   
+	   {
+		"name":"objects",
+		"draworder":"topdown",
+		"width":0,
+		"height":0,
+		"opacity":1,
+		"type":"objectgroup",
+		"visible":true,
+		"x":0,
+		"y":0,
+		"objects":[
+			
+			{
+				"gid":9,
+				"name":"powerup_health.png",
+				"x":784.8031,
+				"y":385.2391,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"health", "value":300, "delay":0, "duration":0
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":10,
+				"name":"powerup_arrows.png",
+				"x":826.3804,
+				"y":426.5839,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"arrows", "value":10, "delay":0, "duration":0
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":11,
+				"name":"powerup_shield.png",
+				"x":867.193,
+				"y":475.3093,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"shield", "value":10, "delay":0, "duration":0
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":12,
+				"name":"orc_idle_00.png",
+				"x":1342.35,
+				"y":668.6573,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"orc", "move":1, "patrol":0, "velocity":200
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":13,
+				"name":"torch.png",
+				"x":1084.884,
+				"y":645.8174,
+				"scaleX":0.9999999,					
+				"scaleY":0.9999999,
+				"rotation":-0.2467825,
+				"properties":
+				{
+					"objtype":"torch", "radius":150
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":14,
+				"name":"wargidle_00.png",
+				"x":1672.876,
+				"y":678.5256,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"warg", "move":1, "patrol":0, "velocity":400
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":12,
+				"name":"orc_idle_00.png",
+				"x":1505.937,
+				"y":430.8229,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"orc", "move":1, "patrol":1
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":20,
+				"name":"orc_archer_idle_00.png",
+				"x":1788.232,
+				"y":655.51,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"orc_archer", "move":1, "patrol":0, "level":0
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":27,
+				"name":"legolas_idle_00.png",
+				"x":640.8403,
+				"y":628.9244,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"player1"
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":28,
+				"name":"sensor_uturn.png",
+				"x":1868.586,
+				"y":467.5671,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"sensor_uturn"
+				},
+				"type":"",
+				"visible":true
+			},
+			{
+				"gid":28,
+				"name":"sensor_uturn.png",
+				"x":1279.415,
+				"y":466.9763,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					"objtype":"sensor_uturn"
+				},
+				"type":"",
+				"visible":true
+			}
+		]
+
+	   }, 
+	   {
+		"name":"front",
+		"draworder":"topdown",
+		"height":0,
+		"opacity":1,
+		"type":"objectgroup",
+		"visible":true,
+		"width":0,
+		"x":0,
+		"y":0,
+		"objects":[
+			
+			{
+				"gid":24,
+				"name":"ladder.png",
+				"x":1330.878,
+				"y":595.2962,
+				"scaleX":1,					
+				"scaleY":1,
+				"rotation":0,
+				"properties":
+				{
+					
+				},
+				"type":"",
+				"visible":true
+			}
+		]
+	   }],
+
+	"tilesets":[
+		
+		{
+			"firstgid":1,
+			"image":"fill02.png",	
+			"name":"fill02",
+
+			"imagewidth": 606,
+			"imageheight": 485,
+			"tilewidth": 606,
+			"tileheight": 485,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":2,
+			"image":"platform02.png",	
+			"name":"platform02",
+
+			"imagewidth": 255,
+			"imageheight": 45,
+			"tilewidth": 255,
+			"tileheight": 45,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":3,
+			"image":"pole03.png",	
+			"name":"pole03",
+
+			"imagewidth": 54,
+			"imageheight": 293,
+			"tilewidth": 54,
+			"tileheight": 293,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":4,
+			"image":"rock06.png",	
+			"name":"rock06",
+
+			"imagewidth": 309,
+			"imageheight": 211,
+			"tilewidth": 309,
+			"tileheight": 211,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":5,
+			"image":"platform01.png",	
+			"name":"platform01",
+
+			"imagewidth": 226,
+			"imageheight": 44,
+			"tilewidth": 226,
+			"tileheight": 44,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":6,
+			"image":"rock02.png",	
+			"name":"rock02",
+
+			"imagewidth": 366,
+			"imageheight": 184,
+			"tilewidth": 366,
+			"tileheight": 184,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":7,
+			"image":"rock03.png",	
+			"name":"rock03",
+
+			"imagewidth": 355,
+			"imageheight": 200,
+			"tilewidth": 355,
+			"tileheight": 200,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":8,
+			"image":"cliff02.png",	
+			"name":"cliff02",
+
+			"imagewidth": 249,
+			"imageheight": 296,
+			"tilewidth": 249,
+			"tileheight": 296,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":9,
+			"image":"powerup_health.png",	
+			"name":"powerup_health",
+
+			"imagewidth": 50,
+			"imageheight": 52,
+			"tilewidth": 50,
+			"tileheight": 52,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":10,
+			"image":"powerup_arrows.png",	
+			"name":"powerup_arrows",
+
+			"imagewidth": 50,
+			"imageheight": 52,
+			"tilewidth": 50,
+			"tileheight": 52,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":11,
+			"image":"powerup_shield.png",	
+			"name":"powerup_shield",
+
+			"imagewidth": 50,
+			"imageheight": 52,
+			"tilewidth": 50,
+			"tileheight": 52,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":12,
+			"image":"orc_idle_00.png",	
+			"name":"orc_idle_00",
+
+			"imagewidth": 210,
+			"imageheight": 210,
+			"tilewidth": 210,
+			"tileheight": 210,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":13,
+			"image":"torch.png",	
+			"name":"torch",
+
+			"imagewidth": 47,
+			"imageheight": 167,
+			"tilewidth": 47,
+			"tileheight": 167,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":14,
+			"image":"wargidle_00.png",	
+			"name":"wargidle_00",
+
+			"imagewidth": 288,
+			"imageheight": 162,
+			"tilewidth": 288,
+			"tileheight": 162,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":15,
+			"image":"moss1.png",	
+			"name":"moss1",
+
+			"imagewidth": 150,
+			"imageheight": 100,
+			"tilewidth": 150,
+			"tileheight": 100,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":16,
+			"image":"rock01.png",	
+			"name":"rock01",
+
+			"imagewidth": 316,
+			"imageheight": 135,
+			"tilewidth": 316,
+			"tileheight": 135,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":17,
+			"image":"cliff01.png",	
+			"name":"cliff01",
+
+			"imagewidth": 153,
+			"imageheight": 228,
+			"tilewidth": 153,
+			"tileheight": 228,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":18,
+			"image":"bush3.png",	
+			"name":"bush3",
+
+			"imagewidth": 177,
+			"imageheight": 59,
+			"tilewidth": 177,
+			"tileheight": 59,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":19,
+			"image":"cliff05.png",	
+			"name":"cliff05",
+
+			"imagewidth": 210,
+			"imageheight": 286,
+			"tilewidth": 210,
+			"tileheight": 286,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":20,
+			"image":"orc_archer_idle_00.png",	
+			"name":"orc_archer_idle_00",
+
+			"imagewidth": 210,
+			"imageheight": 210,
+			"tilewidth": 210,
+			"tileheight": 210,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":21,
+			"image":"tree1c.png",	
+			"name":"tree1c",
+
+			"imagewidth": 80,
+			"imageheight": 137,
+			"tilewidth": 80,
+			"tileheight": 137,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":22,
+			"image":"tree1d.png",	
+			"name":"tree1d",
+
+			"imagewidth": 45,
+			"imageheight": 75,
+			"tilewidth": 45,
+			"tileheight": 75,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":23,
+			"image":"moss2.png",	
+			"name":"moss2",
+
+			"imagewidth": 150,
+			"imageheight": 86,
+			"tilewidth": 150,
+			"tileheight": 86,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":24,
+			"image":"ladder.png",	
+			"name":"ladder",
+
+			"imagewidth": 59,
+			"imageheight": 282,
+			"tilewidth": 59,
+			"tileheight": 282,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":25,
+			"image":"ground01.png",	
+			"name":"ground01",
+
+			"imagewidth": 1024,
+			"imageheight": 124,
+			"tilewidth": 1024,
+			"tileheight": 124,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":26,
+			"image":"bush2.png",	
+			"name":"bush2",
+
+			"imagewidth": 150,
+			"imageheight": 91,
+			"tilewidth": 150,
+			"tileheight": 91,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":27,
+			"image":"legolas_idle_00.png",	
+			"name":"legolas_idle_00",
+
+			"imagewidth": 125,
+			"imageheight": 130,
+			"tilewidth": 125,
+			"tileheight": 130,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":28,
+			"image":"sensor_uturn.png",	
+			"name":"sensor_uturn",
+
+			"imagewidth": 64,
+			"imageheight": 64,
+			"tilewidth": 64,
+			"tileheight": 64,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":29,
+			"image":"tree1a.png",	
+			"name":"tree1a",
+
+			"imagewidth": 84,
+			"imageheight": 123,
+			"tilewidth": 84,
+			"tileheight": 123,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":30,
+			"image":"pole02.png",	
+			"name":"pole02",
+
+			"imagewidth": 73,
+			"imageheight": 344,
+			"tilewidth": 73,
+			"tileheight": 344,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":31,
+			"image":"platform03.png",	
+			"name":"platform03",
+
+			"imagewidth": 252,
+			"imageheight": 45,
+			"tilewidth": 252,
+			"tileheight": 45,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":32,
+			"image":"bush1.png",	
+			"name":"bush1",
+
+			"imagewidth": 128,
+			"imageheight": 58,
+			"tilewidth": 128,
+			"tileheight": 58,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        },
+		{
+			"firstgid":33,
+			"image":"pole01.png",	
+			"name":"pole01",
+
+			"imagewidth": 43,
+			"imageheight": 363,
+			"tilewidth": 43,
+			"tileheight": 363,
+
+			"properties":
+			{
+
+			},
+			"spacing":0,
+			"margin": 0
+        }
+	]
+}

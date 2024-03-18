@@ -1,0 +1,290 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+#big #aa {
+	width: 703px;
+	height: 500px;
+	float: left;
+	background-color: #999;
+	background-image: url(photo/11.jpg);
+	position: relative;
+	right: -250px;
+}
+#big #bb {
+	float: right;
+	height: 500px;
+	width: 145px;
+	background-color: #999;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #00F;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(photo/11.jpg);
+	background-position: 430px;
+}
+#big {
+	width: 1100px;
+
+}
+.botton {
+	height: 30px;
+	width: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+</style>
+</head>
+<style>
+.nullBox{border:1px outset #FCDAD5;}
+.box{border:1px outset  #FCDAD5;filter:Alpha(opacity=0,FinishOpacity=100,Style=3);background-color:#511F90;}
+.wall{border:2px outset #09F;background-color:#3CF;}
+.target{filter:Alpha(opacity=1000,FinishOpacity=0,Style=2);background-color:#C3F;}
+</style>
+
+
+<body bgcolor=white>
+<div id="big">
+<div id="aa"><script language="javascript">
+WIDTH=50;
+X=100;
+Y=50;
+boxNum=0;
+targetNum=0;
+var manX,manY;
+var boxXY=[];
+var targetXY=[];
+var map=[
+"000wwwwww0",
+"0wwwffffw0",
+"wwtfbwwfww",
+"wttbfbffmw",
+"wttfbfbfww",
+"wwwwwwffw0",
+"00000wwww0"
+];
+function printMap()
+{
+	var s="";
+	for(i=0;i<map.length;i++)
+	s+=map[i]+"\n";
+	//alert(s);
+}
+function rect(x,y,w,s)
+{
+	if(s=="box")
+	{
+	document.write("<span id='box"+boxNum+"'onClick='alert(this.id)' style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"' class='"+s+"'></span>");
+	}
+	else
+	{
+		document.write("<span style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"' class='"+s+"'></span>");
+	}
+	}
+	function man(x,y,w)
+{
+	document.write("<img id='man' src='photo/man.gif' style='z-index:1; position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"'>");	
+		}
+	function readMap()
+	{
+		x=X;
+		y=Y;
+		for(i=0;i<map.length;i++)
+		{
+			for(j=0;j<map[i].length;j++)
+			{
+				switch(map[i].charAt(j))
+				{
+					case 'f':rect(x,y,WIDTH,"nullBox");
+					break;
+					case 'w':rect(x,y,WIDTH,"wall");
+					break;
+					case 'b':rect(x,y,WIDTH,"nullBox");rect(x,y,WIDTH,"box");
+					boxXY[boxNum]=[];
+					boxXY[boxNum][0]=i;boxXY[boxNum][1]=j;
+					boxNum++;
+					break;
+					case 'm':rect(x,y,WIDTH,"nullBox");man(x,y,WIDTH);
+					manX=i;manY=j;
+					break;
+					case 't':rect(x,y,WIDTH,"nullBox");rect(x,y,WIDTH,"target");
+					targetXY[targetNum]=[];
+					targetXY[targetNum][0]=i;targetXY[targetNum][1]=j;
+					targetNum++;
+					break;
+					default:;
+					}
+					x+=WIDTH;
+				}
+				y+=WIDTH;
+				x=X;
+			}
+		}
+		function selectBox(x,y)
+		{
+		    for(i=0;i<boxNum;i++)
+			{
+				if(boxXY[i][0]==x&&boxXY[i][1]==y)
+				return i;
+			}
+			return -1;	
+		}
+		function checkTarget(index)
+		{
+			for(i=0;i<targetXY.length;i++)
+			{
+				if(boxXY[index][0]==targetXY[i][0]&&boxXY[index][1]==targetXY[i][1])
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		function checkAnswer()
+		{
+			index=0;
+			while(index<boxNum)
+			{
+				if(!checkTarget(index))
+				return false;
+				else
+				index++;
+			}
+			return true;
+		}
+		
+function KeyDown()
+{
+	key=window.event.keyCode;
+	man=document.getElementById('man');
+	leftP=man.offsetLeft;
+	topP=man.offsetTop;
+	if(key==37)
+	{
+		if(map[manX].charAt(manY-1)=='w');
+		else if(map[manX].charAt(manY-1)=='b')
+		{
+			if (map[manX].charAt(manY-2)=='f'||map[manX].charAt(manY-2)=='t')
+			{
+				id=selectBox(manX,manY-1);
+				box=document.getElementById('box'+id);
+				boxXY[id][1]--;
+				box.style.left=box.offsetLeft-WIDTH;
+				man.style.left=leftP-WIDTH;
+				map[manX]=map[manX].substring(0,manY-2)+'b'+'m'+'f'+map[manX].substring(manY+1);
+				manY--;
+			}
+		}
+		else
+		{
+			man.style.left=leftP-WIDTH;
+			map[manX]=map[manX].substring(0,manY-1)+'m'+'f'+map[manX].substring(manY+1);
+			manY--;
+		}
+	}
+	else if(key==38)
+	{
+		if(map[manX-1].charAt(manY)=='w');
+		else if(map[manX-1].charAt(manY)=='b')
+		{
+			if (map[manX-2].charAt(manY)=='f'||map[manX-2].charAt(manY)=='t')
+			{
+				id=selectBox(manX-1,manY);
+				box=document.getElementById('box'+id);
+				boxXY[id][0]--;
+				box.style.top=box.offsetTop-WIDTH;
+				man.style.top=topP-WIDTH;
+				map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+				map[manX-1]=map[manX-1].substring(0,manY)+'m'+map[manX-1].substring(manY+1);
+				map[manX-2]=map[manX-2].substring(0,manY)+'b'+map[manX-2].substring(manY+1);
+				manX--;
+			}
+		}
+		else
+		{
+			man.style.top=topP-WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+			map[manX-1]=map[manX-1].substring(0,manY)+'m'+map[manX-1].substring(manY+1);
+			manX--;
+		}
+	}
+	else if(key==39)
+	{
+		if(map[manX].charAt(manY+1)=='w')
+		return;
+		else if(map[manX].charAt(manY+1)=='b')
+		{
+			if (map[manX].charAt(manY+2)=='f'||map[manX].charAt(manY+2)=='t')
+			{
+				id=selectBox(manX,manY+1);
+				box=document.getElementById('box'+id);
+				boxXY[id][1]++;
+				box.style.left=box.offsetLeft+WIDTH;
+				man.style.left=leftP+WIDTH;
+				map[manX]=map[manX].substring(0,manY)+'f'+'m'+'b'+map[manX].substring(manY+3);
+				manY++;
+			}
+		}
+		else
+		{
+			man.style.left=leftP+WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+'m'+map[manX].substring(manY+2);
+			manY++;
+		}
+	}
+	else if(key==40)
+	{
+		if(map[manX+1].charAt(manY)=='w')
+		return;
+		else if(map[manX+1].charAt(manY)=='b')
+		{
+			if (map[manX+2].charAt(manY)=='f'||map[manX+2].charAt(manY)=='t')
+			{
+				id=selectBox(manX+1,manY);
+				box=document.getElementById('box'+id);
+				boxXY[id][0]++;
+				box.style.top=box.offsetTop+WIDTH;
+				man.style.top=topP+WIDTH;
+				map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+				map[manX+1]=map[manX+1].substring(0,manY)+'m'+map[manX+1].substring(manY+1);
+				map[manX+2]=map[manX+2].substring(0,manY)+'b'+map[manX+2].substring(manY+1);
+				manX++;
+			}
+		}
+		else
+		{
+			man.style.top=topP+WIDTH;
+			map[manX]=map[manX].substring(0,manY)+'f'+map[manX].substring(manY+1);
+			map[manX+1]=map[manX+1].substring(0,manY)+'m'+map[manX+1].substring(manY+1);
+			manX++;
+		}
+	}
+	if(checkAnswer())
+	{
+		alert("恭喜您过关！");
+		document.onkeydown=null;
+		window.location.href =("游戏7.html");
+	}
+}
+	readMap();
+	document.onkeydown=KeyDown
+	
+</script></div>
+<div id="bb">
+  <p>
+    <input name="button" type="button" class="botton" id="button" value="下一关" onClick="window.open('游戏7.html','_parent')">
+    </p>
+  <p>
+    <input name="button2" type="submit" class="botton" id="button2" value="上一关" onClick="window.open('游戏5.html','_parent')" >
+  </p>
+  <p>
+    <input name="button" type="button" class="botton" id="button" value="重 完" onClick="window.open('游戏6.html','_parent')">
+    </p>
+</div>
+</div>
+</body>
+</html>

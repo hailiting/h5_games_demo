@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "eg_1.png",
+	"frame": {"x":2,"y":2,"w":512,"h":494},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":494},
+	"sourceSize": {"w":512,"h":494}
+},
+{
+	"filename": "lo_bg.png",
+	"frame": {"x":516,"y":2,"w":321,"h":473},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":321,"h":473},
+	"sourceSize": {"w":321,"h":473}
+},
+{
+	"filename": "lo_close.png",
+	"frame": {"x":839,"y":423,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "lo_close_press.png",
+	"frame": {"x":1050,"y":423,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "lo_gold1.png",
+	"frame": {"x":1250,"y":2,"w":376,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":376,"h":390},
+	"sourceSize": {"w":376,"h":390}
+},
+{
+	"filename": "lo_medals1.png",
+	"frame": {"x":839,"y":2,"w":409,"h":419},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":409,"h":419},
+	"sourceSize": {"w":416,"h":419}
+},
+{
+	"filename": "lo_text.png",
+	"frame": {"x":1261,"y":394,"w":281,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":281,"h":86},
+	"sourceSize": {"w":281,"h":86}
+},
+{
+	"filename": "lo_title.png",
+	"frame": {"x":1628,"y":2,"w":359,"h":162},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":359,"h":162},
+	"sourceSize": {"w":359,"h":162}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_lo.png",
+	"format": "RGBA8888",
+	"size": {"w":1989,"h":498},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:61984f6711de464a5fa68b9bfe6a9eeb:9be6ac7399d9e72a2a36af4e32ca03f2:10a24a53a3d9a1d99040e87bcb6f82c2$"
+}
+}

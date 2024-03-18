@@ -1,0 +1,45 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 移动拼图 </title>
+
+<link rel="stylesheet" href="css/puzzleGame.css" />
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!-- 以下两个js文件，一个是面向过程开发(process)，一个是面向对象开发(object)，修改引入文件既可以切换不同开发代码 -->
+<!-- <script src="js/puzzleGame_process.js"></script> -->
+<script type="text/javascript" src="js/puzzleGame_object.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrap">
+		<div id="left">
+			<ul>
+				<li id="start">
+					开始游戏:<span>开始</span>
+				</li>
+				<li id="level">
+					难度选择:<span>3x3</span>
+				</li>
+				<li id="gameRule">
+					游戏介绍：
+					<p>1、点击游戏难度以更改</p>
+					<p>2、点击开始游戏，打乱图片</p>
+					<p>3、交换图片位置，复原图片</p>
+				</li>			
+			</ul>
+		</div>
+		<div id="right">
+			<div id="imgArea"></div>
+		</div>
+	</div>
+	
+</body>
+
+
+
+</html>

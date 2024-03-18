@@ -1,0 +1,299 @@
+{
+  "strings": {
+
+    "STR_PRESENTS": "Presents...",
+
+    "STR_CHARACTER_SELECT": "Select a descendant",
+
+    "STR_CHARACTER_MAL": "Mal",
+
+    "STR_CHARACTER_JAY": "Jay",
+
+    "STR_CHARACTER_EVIE": "Evie",
+
+    "STR_CHARACTER_CARLOS": "Carlos",
+
+    "STR_UNLOCK_CHARACTER_JAY": "Unlocks at level 4",
+
+    "STR_UNLOCK_CHARACTER_EVIE": "Unlocks at level 7",
+
+    "STR_UNLOCK_CHARACTER_CARLOS": "Unlocks at level 10",
+
+    "STR_TUTORIAL_TITLE" : "How to play",
+
+    "STR_PAUSED_TITLE": "Paused",
+
+    "STR_TUTORIAL_JUMP_DESKTOP": "Press up to jump",
+
+    "STR_TUTORIAL_JUMP_MOBILE": "Tap right side of screen to jump",
+
+    "STR_TUTORIAL_FLIP_DESKTOP": "Press and hold up to flip",
+
+    "STR_TUTORIAL_FLIP_MOBILE": "Tap and hold right side of screen to flip",
+
+    "STR_TUTORIAL_SLIDE_DESKTOP": "Press down to slide",
+
+    "STR_TUTORIAL_SLIDE_MOBILE": "Tap left side of screen to slide",
+
+    "STR_TUTORIAL_SHOP": "Buy upgrades in the shop",
+
+
+    "STR_BILLBOARDS_JUMP_MOBILE_1": "TAP RIGHT OF SCREEN \n TO JUMP",
+
+    "STR_BILLBOARDS_JUMP_DESKTOP_1": "PRESS \n TO JUMP",
+
+
+    "STR_BILLBOARDS_FLIP_MOBILE_1": "TAP AND HOLD \n TO FLIP",
+
+    "STR_BILLBOARDS_FLIP_DESKTOP_1": "HOLD \n TO FLIP",
+
+
+    "STR_BILLBOARDS_SLIDE_MOBILE_1": "TAP LEFT OF SCREEN \n TO SLIDE",
+
+    "STR_BILLBOARDS_SLIDE_DESKTOP_1": "PRESS \n TO SLIDE",
+
+
+    "STR_BILLBOARDS_SHOP_1": "SPEND COINS \n IN THE SHOP",
+
+
+    "STR_ACHIEVEMENTS_TITLE": "Results",
+
+    "STR_ACHIEVEMENTS_CHALLENGES": "Challenges: ",
+
+    "STR_ACHIEVEMENTS_CHARACTER_TITLE" : "Character unlocked :",
+
+    "STR_PAUSED_CHALLENGES" : "Current Challenges",
+
+    "STR_GAMEOVER_TITLE":"Results",
+
+    "STR_GAMEOVER_DISTANCE":"Distance Run: ",
+
+    "STR_GAMEOVER_COINS":"Coins: ",
+
+    "STR_GAMEOVER_BADGE":"Best Score!",
+
+    "STR_GAMEOVER_TRICKS":"Tricks: ",
+
+    "STR_GAMEOVER_SCORE":"Score: ",
+
+    "STR_GAMEOVER_BESTSCORE": "Best score : ",
+
+
+    "STR_SHOP_TITLE": "Shop",
+
+    "STR_SHOP_LEVEL":"Level",
+
+    "STR_SHOP_MAGNET_NAME" : "Coin Magnet",
+
+    "STR_SHOP_FLIP_NAME" : "Flip Speed",
+
+    "STR_SHOP_GRIND_NAME" : "Grind Speed",
+
+    "STR_SHOP_SMASHES_NAME" : "Smash Multiplier",
+
+
+    "STR_SHOP_MAGNET_1" : "Increases the duration of the Coin Magnet.",
+
+    "STR_SHOP_MAGNET_2" : "Increases the duration of the Coin Magnet.",
+
+    "STR_SHOP_MAGNET_3" : "Increases the duration of the Coin Magnet.",
+
+    "STR_SHOP_MAGNET_4" : "Increases the duration of the Coin Magnet",
+
+    "STR_SHOP_FLIP_1" : "Increases the speed the player rotates when performing a flip.",
+
+    "STR_SHOP_FLIP_2" : "Increases the speed the player rotates when performing a flip.",
+
+    "STR_SHOP_FLIP_3" : "Increases the speed the player rotates when performing a flip.",
+
+    "STR_SHOP_FLIP_4" : "Increases the speed the player rotates when performing a flip.",
+
+    "STR_SHOP_GRIND_1" : "Gives you a score bonus when you're grinding.",
+
+    "STR_SHOP_GRIND_2" : "Gives you a score bonus when you're grinding.",
+
+    "STR_SHOP_GRIND_3" : "Gives you a score bonus when you're grinding.",
+
+    "STR_SHOP_GRIND_4" : "Gives you a score bonus when you're grinding.",
+
+    "STR_SHOP_SMASHES_1" : "Increases your multiplier when you smash an obstacle.",
+
+    "STR_SHOP_SMASHES_2" : "Increases your multiplier when you smash an obstacle.",
+
+    "STR_SHOP_SMASHES_3" : "Increases your multiplier when you smash an obstacle.",
+
+    "STR_SHOP_SMASHES_4" : "Increases your multiplier when you smash an obstacle.",
+
+
+    "STR_GOALS_LEVEL_1_TITLE" : "Level 1",
+
+    "STR_GOALS_LEVEL_2_TITLE" : "Level 2",
+
+    "STR_GOALS_LEVEL_3_TITLE" : "Level 3",
+
+    "STR_GOALS_LEVEL_4_TITLE" : "Level 4",
+
+    "STR_GOALS_LEVEL_5_TITLE" : "Level 5",
+
+    "STR_GOALS_LEVEL_6_TITLE" : "Level 6",
+
+    "STR_GOALS_LEVEL_7_TITLE" : "Level 7",
+
+    "STR_GOALS_LEVEL_8_TITLE" : "Level 8",
+
+    "STR_GOALS_LEVEL_9_TITLE" : "Level 9",
+
+    "STR_GOALS_LEVEL_10_TITLE" : "Level 10",
+
+    "STR_GOALS_LEVEL_11_TITLE" : "Level 11",
+
+    "STR_GOALS_LEVEL_12_TITLE" : "Level 12",
+
+    "STR_GOALS_LEVEL_13_TITLE" : "Level 13",
+
+    "STR_GOALS_LEVEL_14_TITLE" : "Level 14",
+
+    "STR_GOALS_LEVEL_15_TITLE" : "Level 15",
+
+    "STR_GOALS_LEVEL_16_TITLE" : "Level 16",
+
+    "STR_GOALS_LEVEL_17_TITLE" : "Level 17",
+
+    "STR_GOALS_LEVEL_18_TITLE" : "Level 18",
+
+    "STR_GOALS_LEVEL_19_TITLE" : "Level 19",
+
+    "STR_GOALS_LEVEL_20_TITLE" : "Level 20",
+
+    
+    
+    "STR_GOALS_RUN_LEVEL_1" : "Run 100m in one run",
+
+    "STR_GOALS_RUN_LEVEL_2" : "Run 300m in one run",
+
+    "STR_GOALS_RUN_LEVEL_3" : "Run 500m in one run",
+
+    "STR_GOALS_RUN_LEVEL_4" : "Run 1000m in one run",
+
+    "STR_GOALS_RUN_LEVEL_5" : "Run 2000m in one run",
+
+    "STR_GOALS_RUN_LEVEL_6" : "Run 5000m in one run",
+
+    "STR_GOALS_RUN_LEVEL_CUMULATIVE_1" : "Run a total of 500m",
+
+    "STR_GOALS_RUN_LEVEL_CUMULATIVE_2" : "Run a total of 2000m",
+
+    "STR_GOALS_RUN_LEVEL_CUMULATIVE_3" : "Run a total of 3000m",
+
+    "STR_GOALS_RUN_LEVEL_CUMULATIVE_4" : "Run a total of 10000m",
+
+    "STR_GOALS_CRASH" : "Crash",
+
+    "STR_GOALS_GRIND_LEVEL_1" : "Grind 10m in one run",
+
+    "STR_GOALS_GRIND_LEVEL_2" : "Grind 100m in one run",
+
+    "STR_GOALS_GRIND_LEVEL_3" : "Grind 500m in one run",
+
+    "STR_GOALS_GRIND_LEVEL_4" : "Grind 1000m in one run",
+
+    "STR_GOALS_GRIND_LEVEL_CUMULATIVE_1" : "Grind 50m",
+
+    "STR_GOALS_GRIND_LEVEL_CUMULATIVE_2" : "Grind 100m",
+
+    "STR_GOALS_GRIND_LEVEL_CUMULATIVE_3" : "Grind 200m",
+
+    "STR_GOALS_GRIND_LEVEL_CUMULATIVE_4" : "Grind 500m",
+
+    "STR_GOALS_SMASH_LEVEL_1" : "Smash 2 crates or barrels in one run",
+
+    "STR_GOALS_SMASH_LEVEL_2" : "Smash 10 crates or barrels in one run",
+
+    "STR_GOALS_SMASH_LEVEL_3" : "Smash 20 crates or barrels in one run",
+
+    "STR_GOALS_SMASH_LEVEL_4" : "Smash 30 crates or barrels in one run",
+
+    "STR_GOALS_SMASH_LEVEL_5" : "Smash 50 crates or barrels in one run",
+
+    "STR_GOALS_SMASH_LEVEL_1_CUMULATIVE" : "Smash 20 crates or barrels",
+
+    "STR_GOALS_SMASH_LEVEL_2_CUMULATIVE" : "Smash 30 crates or barrels",
+
+    "STR_GOALS_SMASH_LEVEL_3_CUMULATIVE" : "Smash 50 crates or barrels",
+
+    "STR_GOALS_SMASH_LEVEL_4_CUMULATIVE" : "Smash 100 crates or barrels",
+
+    "STR_GOALS_COIN_LEVEL_1" : "Collect 100 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_2" : "Collect 300 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_3" : "Collect 750 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_4" : "Collect 1500 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_5" : "Collect 2000 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_6" : "Collect 5000 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_7" : "Collect 15000 coins in one run",
+
+    "STR_GOALS_COIN_LEVEL_1_CUMULATIVE" : "Collect 1000 coins",
+
+    "STR_GOALS_COIN_LEVEL_2_CUMULATIVE" : "Collect 3000 coins",
+
+    "STR_GOALS_COIN_LEVEL_3_CUMULATIVE" : "Collect 5000 coins",
+
+    "STR_GOALS_COIN_LEVEL_4_CUMULATIVE" : "Collect 10000 coins",
+
+    "STR_GOALS_COMBO_LEVEL_1" : "Get a x2 Combo",
+
+    "STR_GOALS_COMBO_LEVEL_2" : "Get a x5 Combo",
+
+    "STR_GOALS_COMBO_LEVEL_3" : "Get a x7 Combo",
+
+    "STR_GOALS_COMBO_LEVEL_4" : "Get a x10 Combo",
+
+    "STR_GOALS_COMBO_LEVEL_5" : "Get a x10 Combo",
+
+    "STR_GOALS_SCORE_LEVEL_1" : "Get a trick score of 2000",
+
+    "STR_GOALS_SCORE_LEVEL_2" : "Get a trick score of 4000",
+
+    "STR_GOALS_SCORE_LEVEL_3" : "Get a trick score of 15000",
+
+    "STR_GOALS_SCORE_LEVEL_4" : "Get a trick score of 50000",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_1" : "Get a single trick score of 200",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_2" : "Get a single trick score of 4000",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_3" : "Get a single trick score of 10000",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_4" : "Get a single trick score of 15000",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_5" : "Get a single trick score of over 17500",
+
+    "STR_GOALS_SCORE_TRICK_LEVEL_6" : "Get a single trick score of over 20000",
+
+    "STR_GOALS_FLIP_LEVEL_1" : "Do a flip",
+
+    "STR_GOALS_FLIP_LEVEL_2" : "Flip 2 times in one run",
+
+    "STR_GOALS_FLIP_LEVEL_3" : "Flip 5 times in one run",
+
+    "STR_GOALS_FLIP_LEVEL_4" : "Flip 25 times in one run",
+
+    "STR_GOALS_FLIP_LEVEL_5" : "Flip 50 times in one run",
+
+    "STR_GOALS_DOUBLE_FLIP_LEVEL_1" : "Do a Double flip",
+
+    "STR_GOALS_DOUBLE_FLIP_LEVEL_2" : "Double flip 3 times in one run",
+
+    "STR_GOALS_DOUBLE_FLIP_LEVEL_4" : "Double flip 10 times in one run",
+
+    "STR_GOALS_TRIPLE_FLIP_LEVEL_1" : "Do a Triple flip 3",
+
+    "STR_GOALS_TRIPLE_FLIP_LEVEL_2" : "Triple flip 5 times in one run"
+
+  }
+}

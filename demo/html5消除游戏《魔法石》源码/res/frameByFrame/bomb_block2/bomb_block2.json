@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "gp_wall2_anim0.png",
+	"frame": {"x":2,"y":609,"w":56,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":17,"w":56,"h":56},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim1.png",
+	"frame": {"x":2,"y":667,"w":56,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":17,"w":56,"h":56},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim2.png",
+	"frame": {"x":2,"y":551,"w":57,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":17,"w":57,"h":56},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim3.png",
+	"frame": {"x":2,"y":486,"w":57,"h":63},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":16,"w":57,"h":63},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim4.png",
+	"frame": {"x":2,"y":407,"w":58,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":13,"w":58,"h":77},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim5.png",
+	"frame": {"x":2,"y":2,"w":58,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":58,"h":79},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim6.png",
+	"frame": {"x":2,"y":83,"w":58,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":58,"h":79},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim7.png",
+	"frame": {"x":2,"y":164,"w":58,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":58,"h":79},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim8.png",
+	"frame": {"x":2,"y":245,"w":58,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":58,"h":79},
+	"sourceSize": {"w":90,"h":90}
+},
+{
+	"filename": "gp_wall2_anim9.png",
+	"frame": {"x":2,"y":326,"w":58,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":11,"w":58,"h":79},
+	"sourceSize": {"w":90,"h":90}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bomb_block2.png",
+	"format": "RGBA8888",
+	"size": {"w":62,"h":725},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f9f66d0e02f906583251e6aa733fd0c5:4670f0baeede02b48bd65552ceda9550:e2684d91e5dd729d59146e2df5c2bde4$"
+}
+}

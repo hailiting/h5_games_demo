@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>激射神经猫</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <base href=".">
+    
+    <script src="./index_files/jquery.min.js"></script>
+    <style>
+        *{padding: 0; margin: 0;}
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            
+        }
+        #ranklist{
+            display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;color:#fff;font-size:24px;background:rgba(255,255,255,1); text-align: left;overflow-y:auto;
+        }
+        #ranklist ul{}
+        #ranklist ul li{height:50px;border-bottom:1px #bbb dashed;list-style-type:none;}
+        #ranklist ul .avatar{float:left;width:30px;height:30px;padding:10px 0; margin-left: 10px}
+        #ranklist ul .avatar img{width:30px;height:30px;}
+        #ranklist ul .name{float:left;height:30px;padding:10px 0 10px 10px;font-size:10px;color:#838383;}
+        #ranklist ul .num{float:left;height:30px;padding:10px 0 10px 0;font-size:20px;color:#b20204; margin-right: 10px}
+        #ranklist ul .fst{text-align:center;line-height:50px;font-size:18px;color:#777777;font-weight:bold;border:none;}
+
+        #top_bar{height: 45px; width: 100% ; line-height: 45px;background: #000; display: block; text-align: right; font-size: 1em}
+
+        .sbgshow{display:block;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;color:#fff;font-size:30px;line-height:1.7em;background:rgba(0,0,0,0.85);}
+        .sbgshow .arron{ position:absolute;top:8px;right:8px;width:100px;height:100px;background:url(http://baby.ci123.com/yunqi/m/weixin/images/arron.png) no-repeat; background-size:100px 100px;}
+        .sbgshow p{padding-top:78px;}
+        .sbg{display:none;position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;color:#fff;font-size:26px;line-height:1.7em;background:rgba(0,0,0,0.85);}
+        .sbg .arron{ position:absolute;top:8px;right:8px;width:100px;height:100px;background:url(http://baby.ci123.com/yunqi/m/weixin/images/arron.png) no-repeat; background-size:100px 100px;}
+        .sbg p{padding-top:78px;}
+        #myfav{display: none;}
+    </style>
+
+    <style type="text/css">.app2{position:fixed;z-index:1000;left:0;top:0; width:100%;padding:5px 12px;color:#fff;background:rgba(0,0,0,0.5);}.app2 .a{font-size:18px;font-weight:bold;padding-bottom:4px;}.app2 .b{font-size:10px;}.app2 .load{float:left;background:#f66;color:#fff;font-size:16px;margin-top:4px;padding:7px 14px;border-radius:5px;}
+    </style>
+<script type="text/javascript" charset="utf-8" src="http://ic.yhd.com/toolbar/js/content.js"></script><script type="text/javascript" src="http://ic.yhd.com/toolbar/js/messageEvent.js"></script></head>
+<body style="padding: 0px; border: 0px; margin: 0px;">
+<div style="display:inline-block;width:100%; height:100%;margin: 0 auto; background: black; position:relative;" id="gameDiv">
+    <canvas id="gameCanvas" width="480" height="800" style="width: 480px; height: 800px; background-color: rgb(0, 0, 0);"></canvas>
+</div>
+<div id="ranklist" style="height: 274px;">
+    <div id="top_bar">
+        <a onclick="close_rank()">关闭</a>
+    </div>
+    <ul style="height: 229px;">
+    </ul>
+</div>
+
+<div id="myfav">
+</div>
+<div id="sbg" class="sbg">
+    <div class="arron"></div>
+    <p id="msg">请点击右上角<br>点击【分享到朋友圈】<br>邀请好友一起来玩！</p>
+</div>
+
+<script>var document_class = "GameApp";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<script src="./index_files/egret_loader.js"></script>
+<script src="./index_files/game-min2.js"></script>
+<script>
+    Date.prototype.Format = function (fmt) {
+        var o = {
+            "M+": this.getMonth() + 1,                 //月份 
+            "d+": this.getDate(),                    //日 
+            "h+": this.getHours(),                   //小时 
+            "m+": this.getMinutes(),                 //分 
+            "s+": this.getSeconds(),                 //秒 
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+            "S": this.getMilliseconds()             //毫秒 
+        };
+        if (/(y+)/.test(fmt))
+            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt))
+                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+    var ranks = [];
+    var info = {};
+    var userid = 0;
+
+    //获取好友列表,取得前二十
+    function friendlist() {
+        return ranks;
+    }
+    //获得我的信息
+    function getMyInfo() {
+        return info;
+    }
+
+    function getTime() {
+        return new Date().Format("yyyy-MM-dd hh:mm");
+    }
+
+    function showTop(list) {
+        $("#ranklist ul").html("");
+
+        var len = list.length;
+        var rank;//名次
+        var name;//名字
+        var avatar;//头像
+        var score;//比分
+        var date;//时间
+        for (var i = 0 ; i < len ; i++) {
+            rank = list[i].idx;
+            name = list[i].nick;
+            avatar = list[i].avatar;
+            score = list[i].score;
+            date = list[i].time;
+            var str = '<li><div class="num">' + rank + '</div><div class="avatar"><img src="' + avatar + '" alt="avatar" /></div><div class="name"><span>' + name + '</span><p>' + score + '米  ' + date + '</p></div><div class="clear"></div></li>';
+
+            $("#ranklist ul").append(str);
+        }
+
+
+        $("#ranklist").css("display", "block");
+    }
+
+    function close_rank() {
+        $("#ranklist").css("display", "none");
+    }
+
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+    var GID = 'jssjm';
+    var APP_SHARE_URL = 'http://wx.qipagame.com/static/'
+    var APP_LIST_URL = 'http://1251002861.cdn.myqcloud.com/1251002861/';
+    var mebtnopenurl = APP_LIST_URL + '?src=' + GID;
+    window.shareData = {
+        "imgUrl": APP_LIST_URL + GID + '/img/ico_large.png',
+        "timeLineLink": APP_SHARE_URL + GID + '/',
+        "tTitle": "激射神经猫-根本停不下来，玩过之后我整个人都精神了！",
+        "tContent": "一棒能把神经猫打飞多远呢?"
+    };
+
+    function showme() {
+        window.open(mebtnopenurl);
+    }
+
+    function share(str) {
+        document.title = window.shareData.tTitle = str;
+        document.getElementById("sbg").className = "sbgshow";
+        window.setTimeout(hiddenMe, 5000);
+        $("#myfav").css("display", "none");
+    }
+
+    function hiddenMe() {
+        document.getElementById("sbg").className = "sbg";
+    }
+
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('showOptionMenu');
+        WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "img_url": window.shareData.imgUrl,
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, function (res) {
+                document.location.href = mebtnopenurl;
+            })
+        });
+
+        WeixinJSBridge.on('menu:share:timeline', function (argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": window.shareData.imgUrl,
+                "img_width": "640",
+                "img_height": "640",
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, function (res) {
+                document.location.href = mebtnopenurl;
+            });
+        });
+
+
+        WeixinJSBridge.on('menu:share:weibo', function (argv) {
+            WeixinJSBridge.invoke('shareWeibo', {
+                "content": window.shareData.tContent,
+                "url": window.shareData.timeLineLink
+            }, function (res) {
+                document.location.href = mebtnopenurl;
+            });
+        });
+
+
+        WeixinJSBridge.call('hideToolbar');
+
+    }, false)
+
+    $(document).ready(function () {
+        ranks = {};
+        info = {};
+        egret_h5.startGame();
+        var height = $(window).height();
+        $("#ranklist").css("height", height + "px");
+        $("#ranklist ul").css("height", (height - 45) + "px");
+    });
+
+
+</script>
+<script type="text/javascript">
+    document.write(unescape("%3Cscript src='http://hm.baidu.com/h.js%3F35db9ef8ae536bf38ed608c8995f81ea' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="http://hm.baidu.com/h.js?35db9ef8ae536bf38ed608c8995f81ea" type="text/javascript"></script>
+</body></html>

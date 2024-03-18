@@ -1,0 +1,631 @@
+{"frames": [
+	{
+		"filename":"Legolas_Aim_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 110,"y": 1105,"w": 76,"h": 74	},
+		"spriteSourceSize": {"x": 69,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 176,"y": 1935,"w": 76,"h": 67	},
+		"spriteSourceSize": {"x": 67,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 110,"y": 1026,"w": 84,"h": 77	},
+		"spriteSourceSize": {"x": 57,"y": 42,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1961,"w": 86,"h": 73	},
+		"spriteSourceSize": {"x": 57,"y": 36,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 89,"y": 1692,"w": 86,"h": 72	},
+		"spriteSourceSize": {"x": 58,"y": 35,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 88,"y": 1961,"w": 86,"h": 76	},
+		"spriteSourceSize": {"x": 60,"y": 36,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1364,"w": 99,"h": 84	},
+		"spriteSourceSize": {"x": 43,"y": 37,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1531,"w": 94,"h": 83	},
+		"spriteSourceSize": {"x": 75,"y": 40,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1026,"w": 108,"h": 80	},
+		"spriteSourceSize": {"x": 76,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1281,"w": 106,"h": 81	},
+		"spriteSourceSize": {"x": 77,"y": 40,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1108,"w": 108,"h": 85	},
+		"spriteSourceSize": {"x": 75,"y": 38,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1195,"w": 106,"h": 84	},
+		"spriteSourceSize": {"x": 72,"y": 34,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1450,"w": 99,"h": 79	},
+		"spriteSourceSize": {"x": 70,"y": 31,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1616,"w": 90,"h": 74	},
+		"spriteSourceSize": {"x": 69,"y": 31,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 108,"y": 1272,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 69,"y": 31,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 96,"y": 1531,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 65,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 89,"y": 1766,"w": 86,"h": 75	},
+		"spriteSourceSize": {"x": 64,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 108,"y": 1195,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 65,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 96,"y": 1608,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 65,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 101,"y": 1364,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 65,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 411,"y": 1470,"w": 54,"h": 80	},
+		"spriteSourceSize": {"x": 74,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 405,"y": 1592,"w": 54,"h": 80	},
+		"spriteSourceSize": {"x": 74,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 403,"y": 1188,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 403,"y": 1107,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 386,"y": 1955,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 386,"y": 1874,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 472,"y": 1266,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 461,"y": 1552,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 348,"y": 1026,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 442,"y": 1754,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 467,"y": 1429,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 1954,"w": 54,"h": 79	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 498,"y": 1795,"w": 53,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 472,"y": 1347,"w": 53,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 498,"y": 1633,"w": 53,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 498,"y": 1714,"w": 53,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 515,"y": 1106,"w": 53,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 498,"y": 1876,"w": 53,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 515,"y": 1186,"w": 53,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 498,"y": 1956,"w": 53,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 1874,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 1714,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 1794,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 347,"y": 1228,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 442,"y": 1674,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 386,"y": 1714,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 347,"y": 1148,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 442,"y": 1835,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_28.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 442,"y": 1915,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_29.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 459,"y": 1106,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_30.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 459,"y": 1186,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_31.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 460,"y": 1026,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_32.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 386,"y": 1794,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_33.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 1026,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_34.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 416,"y": 1269,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Aim_Bot_35.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 416,"y": 1349,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 101,"y": 1441,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 65,"y": 32,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 89,"y": 1843,"w": 86,"h": 90	},
+		"spriteSourceSize": {"x": 63,"y": 23,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1782,"w": 87,"h": 87	},
+		"spriteSourceSize": {"x": 62,"y": 25,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1871,"w": 87,"h": 88	},
+		"spriteSourceSize": {"x": 62,"y": 25,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1692,"w": 87,"h": 88	},
+		"spriteSourceSize": {"x": 62,"y": 25,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 260,"y": 1470,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 1760,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 188,"y": 1349,"w": 75,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 183,"y": 1518,"w": 75,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 195,"y": 1105,"w": 75,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 177,"y": 1806,"w": 75,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 177,"y": 1685,"w": 75,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 1639,"w": 74,"h": 119	},
+		"spriteSourceSize": {"x": 68,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 195,"y": 1226,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 265,"y": 1348,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 336,"y": 1470,"w": 73,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 341,"y": 1348,"w": 73,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 1592,"w": 73,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 254,"y": 1882,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 271,"y": 1226,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Legolas_Idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 272,"y": 1026,"w": 74,"h": 120	},
+		"spriteSourceSize": {"x": 68,"y": 50,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"legolas.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 1024,"h": 1024	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 1024,"h": 1024	},
+		"sourceSize": {"w": 1024,"h": 1024	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":2048,"h":2048}
+}
+}

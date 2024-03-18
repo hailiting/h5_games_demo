@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game of the Poker</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="./js/base.js"></script>
+		<script type="text/javascript" src="./js/enumeration.js"></script>
+		<script type="text/javascript" src="./js/poker.js"></script>
+		<script type="text/javascript" src="./js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.js"></script>
+		<script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="./js/transition.js"></script>
+		<script type="text/javascript" src="./js/modal.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/button.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap-combined.min.css">
+		<link rel="stylesheet" type="text/css" href="./themes/ui-lightness/theme.css">
+		<style type="text/css">
+			.poker,.pokerCover{width: 100px;border: 1px solid rgba(221, 199, 234, 0.3);height: 150px;float: left;margin-right: 14px;background: white;}
+			.pfont{position: absolute; left: 5px; top: 5px;opacity: 0;}
+			.poker:hover{box-shadow: -2px -2px 2px #E6E62D, 2px 2px 2px #E5E62F;cursor: pointer;}
+			.tipCss{box-shadow: -2px -2px 2px #E6E62D, 2px 2px 2px #E5E62F;}
+			.pokerList{width: 100px;float: left;margin-right: 14px;position: relative;background-color: white;}
+			.pokerCover{background: -webkit-gradient(linear, left top, left bottom, from(#3B5407), to(#9A9A86));background:-ms-linear-gradient(#3B5407 0%,#9A9A86 100%);background: -moz-linear-gradient(center top , #3b5407, #9a9a86);}
+			.pokerShow{background:white;}
+			.pokerShowSpan {opacity:1;}
+			.selectSpan{background: -webkit-gradient(linear, left top, left bottom, from(#EEF1E9), to(#E4E40E));background:-ms-linear-gradient(#EEF1E9 0%,#E4E40E 100%);background: -moz-linear-gradient(center top , #EEF1E9, #E4E40E);}
+			.emptyPoker{top: 0px;border: 1px solid rgb(59, 84, 7);}
+			.emptyPoker span {background: -webkit-gradient(linear, left top, left bottom, from(#3B5407), to(#3B5407));background:-ms-linear-gradient(#3B5407 0%,#3B5407 100%);background: -moz-linear-gradient(center top , #3B5407, #3B5407);}
+			.smallPoker{float: left; display: inline-block;padding-left: 300px; margin-right: 200px;background-color: yellow; position: relative;margin-bottom: 150px;}
+			.spoker{position: absolute;height: 140px;width: 100px;background:-webkit-gradient(linear, left top, left bottom, from(#3B5407), to(#9A9A86));background:-ms-linear-gradient(#3B5407 0%,#9A9A86 100%);border: 1px solid rgb(255, 255, 255);display: inline-block;background: -moz-linear-gradient(center top , #3B5407, #9A9A86);}
+			.spker_1{right: 20px;}
+			.spker_2{right: 0px;}
+			.spker_3{right: -20px;}
+			.spker_4{right: -40px;}
+		</style>
+	</head>
+	<body style="background-color:#3B5407;">
+		<div class="container">
+			<div class="breadcrumb" style="background: -webkit-gradient(linear, left top, left bottom, from(#3B5407), to(#9A9A86));background:-ms-linear-gradient(#3B5407 0%,#9A9A86 100%);background: -moz-linear-gradient(center top , #3B5407, #9A9A86);"></div>
+			<div id="pokerList_1" class="pokerList">
+			</div>
+			<div id="pokerList_2" class="pokerList">
+			</div>
+			<div id="pokerList_3" class="pokerList"></div>
+			<div id="pokerList_4" class="pokerList"></div>
+			<div id="pokerList_5" class="pokerList"></div>
+			<div id="pokerList_6" class="pokerList"></div>
+			<div id="pokerList_7" class="pokerList"></div>
+			<div id="pokerList_8" class="pokerList"></div>
+			<div id="pokerList_9" class="pokerList"></div>
+			<div id="pokerList_10" class="pokerList"></div>
+			<script type="text/tpl" id="pokerTpl">
+				<div class="poker" style="top:${top};{{if num > 0}}position:absolute;{{/if}}">
+					<span class="pokerCover {{if num >= 3 || (num == 2 && i > 7)}}pokerShow{{/if}}"></span>
+					<span class="pfont {{if num >= 3 || (num == 2 && i > 7)}}pokerShowSpan{{/if}}" style="color:${Data.suit.value};" value="${Data.rank.name}">${Data.rank.value}</span>
+				</div>
+			</script>
+			<div class="btn-group navbar-fixed-bottom" style="margin: 0px auto;width: 1170px;">
+				<div class="smallPoker">
+					<a href="javascript:void(0);" class="spoker spker_1">1</a>
+					<a href="javascript:void(0);" class="spoker spker_2">2</a>
+					<a href="javascript:void(0);" class="spoker spker_3">3</a>
+					<a href="javascript:void(0);" class="spoker spker_4">4</a>
+				</div>
+				<button class="btn btn-info btn-large shuffle" style="float:none;margin-bottom: 100px;" onclick="Game.fapai()">发牌</button>
+				<button class="btn btn-large shuffle" style="float:none;margin-bottom: 100px;margin-left: 20px;" onclick="Game.reSet()">重玩</button>
+			</div>
+		</div>
+
+		<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="mydialog" style="width:660px;background:none;">
+		</div><!-- /.modal -->
+		
+	</body>
+</html>
+<!--弹框-->
+<script type="text/tml" id="dialogDiv">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">${title}</h4>
+            </div>
+            <div class="modal-body">
+                <p>${tbody}</p>
+            </div>
+            <!--
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>-->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+ </script>
+
+
+
+
+<script type="text/javascript">
+	//假设全是黑桃的牌
+	var game = function(){
+		this.num = 0;
+		this.degree = 1;
+		this.cards = '';
+		this.poker = function(){
+			var that = this;//初始化卡牌
+			return (new GameOfPoker).init(that.degree);
+		};
+		this.fapai = function(){
+			var num = this.num;
+			var that = this;
+			if (num == 7) {
+				$('.shuffle').addClass('disabled').attr('disabled','disabled');
+				//return;
+			};
+			if ($(".poker").hasClass('emptyPoker')) {
+				$('#mydialog').html($('#dialogDiv').tmpl({"title":"温馨提示","tbody":"有空白处，无法发牌！"}));
+				$('#mydialog').modal('show');
+				return;
+			};
+			if (num > 3) {
+				$(".smallPoker").find(".spker_"+(8 - num)).hide();
+			};
+			//console.log(that.cards);
+			for(var i = 0;i < that.cards[that.num].length; i++){
+				var top = "0px";
+				var len = $('#pokerList_'+(i+1)).find('.poker').length - 1;
+				var emptyLen = $('#pokerList_'+(i+1)).find('.emptyPoker').length; 
+				if (emptyLen > 0) {
+					 $('#pokerList_'+(i+1)).find('.emptyPoker').remove();
+				}else if (len >= 0) {
+					top = $('#pokerList_'+(i+1)).find('.poker').eq(len).css("top");
+					top = that.topToNum(top) + 30 + "px";
+					//console.log(top);
+				};
+				$('#pokerList_'+(i+1)).append($('#pokerTpl').tmpl({"Data":that.cards[num][i],"num":num,"i":i,"top":top}));
+				if (emptyLen > 0) {
+					 $('#pokerList_'+(i+1)).find('.poker').css("position","");
+				}
+			}
+			that.num++;
+			
+			//console.log(that.num);
+		};
+		this.autoFapai = function(){
+			var that = this;
+			for (var i = 0; i < 4; i++) {
+				this.fapai();
+			};
+		};
+		this.movePoker = function(){
+			var that = this;
+			$('.pokerList').on('click','.poker',function(){
+				if ($(this).find('.pokerCover').hasClass('selectSpan')) {
+					$(this).find('.pokerCover').removeClass('selectSpan');
+					return;//不能自己挪到自己的位置
+				}
+				//console.log($(this));
+				
+				if (!$(this).hasClass('emptyPoker') && !$(this).find('.pokerCover').hasClass('pokerShow')) return;//明牌才可以挪动,挪动到空白处
+				$(this).find('.pokerCover').addClass('selectSpan');
+				var len = $('.poker').find('.selectSpan').length;
+				if (len == 1 && $(this).hasClass('emptyPoker')) {
+					$(this).find('.pokerCover').removeClass('selectSpan');
+					return;
+				};
+				if (len == 2) {
+					$(this).find('.pokerCover').removeClass('selectSpan');
+					var pre = $('.poker').find('.selectSpan');
+					var curV = Number($(this).find('.pfont').attr('value'));
+					var preV = Number(pre.siblings().attr('value'));
+					var preObj = pre.parent();
+					var preIndex = preObj.index();//要移动的牌 在哪个位置
+					var curTop = that.topToNum($(this).css("top")) + 30;
+					var preParentObj = preObj.parent();
+					//判断目标牌点是否是空牌
+					if ($(this).hasClass('emptyPoker')) {
+						curV = 99;//定义一个最大牌点，所有牌都可以移到空牌位置
+						curTop = 0;
+					};
+					
+					console.log(curV+"=="+preV);
+					if (curV <= preV || (curV != 99 && curV - preV > 1)) {
+						$('.poker').find('.pokerCover').removeClass('selectSpan');
+						return;//必须小的挪到大的位置，并大小相隔1
+					}
+					//通过以上检测 可以开始挪牌了
+				
+					var preHtml = '';//要挪动的牌
+					var preLen = preParentObj.find('.poker').length;//判断移动的牌 有几个
+					var _preIndex = preIndex;
+					var _preV = preV;
+					var _isMove = true;//是否可以移动
+					var _stopIndex = 0;//记录不能移动的第一个牌
+					for (var i = preIndex + 1; i < preLen; i++) {
+						if (_preV - preParentObj.find('.poker').eq(i).find('.pfont').attr('value') != 1) {
+							_isMove = false;
+							_stopIndex = i;
+							preParentObj.find('.poker').eq(i).addClass('tipCss');
+							break;
+						};
+						_preV = preParentObj.find('.poker').eq(i).find('.pfont').attr('value');
+					};
+					if (_stopIndex > 0) {
+						setTimeout(function(){
+							preParentObj.find('.poker').eq(_stopIndex).removeClass('tipCss');
+						},1000);
+					};
+					if (!_isMove) return;
+					if (preIndex == 0) preObj.css("position","absolute");
+					//要移动的牌
+					for (var i = preIndex ; i < preLen; i++) {
+						if (curTop == 0 && i == preIndex) {
+							preParentObj.find('.poker').eq(preIndex).css("position","");
+							//console.log(preParentObj.find('.poker').eq(preIndex).prop("outerHTML"));
+						};
+						preParentObj.find('.poker').eq(i).css("top",(curTop + (i - preIndex) * 30 + "px"));
+						preHtml += preParentObj.find('.poker').eq(i).prop("outerHTML");
+					};
+					//console.log(preIndex);
+					preParentObj.find('.poker').eq(preIndex).nextAll().remove();//删除要移动的节点
+					preParentObj.find('.poker').eq(preIndex).remove();//删除自己
+					//preObj.css("top",curTop);
+					//$(this).find('.selectSpan').parent().css("top",top);
+					//console.log(preIndex);
+					//var preHtml = preObj.prop("outerHTML");
+					preParentObj.find('.poker').eq(preIndex -1).children('.pokerCover').addClass('pokerShow');
+					preParentObj.find('.poker').eq(preIndex -1).children('.pfont').addClass('pokerShowSpan');
+					//preObj.remove();
+					//console.log(preHtml);
+					if (preIndex == 0) {
+						var emptyPokerHtml = "<div class='poker emptyPoker'><span class='pokerCover'></span></div>"
+						preParentObj.html(emptyPokerHtml);
+					};
+					$(this).parent().append(preHtml);
+					if ($(this).hasClass('emptyPoker')) {$(this).parent().find('.emptyPoker').remove();};
+					//console.log(preHtml);
+					$('.poker').find('.pokerCover').removeClass('selectSpan');
+					//挪动完牌后,判断是否能集齐一组
+					that.isGet($(this).parent());
+				}
+			});
+		};
+		this.isGet = function(obj){
+			//查看当前列 是否收集好一列
+			var len = obj.find('.poker').length;
+			var _isPerfect = false;//是否存在K 牌
+			var _isGo = true;//是否完成一组
+			var _preV = 13;
+			var _preIndex = 0;//存储k牌的位置
+			for (var i = 0; i < len; i++) {
+				if (obj.find('.poker').eq(i).find('.pfont').attr('value') == 13) {
+					_isPerfect = true;
+					_preIndex = i;
+					break;
+				};
+			};
+			if (!_isPerfect) return;
+			if (obj.find('.poker').eq(_preIndex).nextAll().length != 12) return;
+			for (var j = _preIndex + 1; j < len; j++) {
+				if (_preV - obj.find('.poker').eq(j).find('.pfont').attr('value') != 1) {
+					_isPerfect = false;
+					break;
+				};
+				_preV = obj.find('.poker').eq(j).find('.pfont').attr('value');
+			};
+			if (!_preV) return;
+			obj.find('.poker').eq(_preIndex).nextAll().remove();//删除要移动的节点
+			obj.find('.poker').eq(_preIndex).remove();//删除自己
+			if (len == 13) {
+				obj.html("<div class='poker emptyPoker'><span class='pokerCover'></span></div>");
+			}else{
+				obj.find('.poker').eq(_preIndex - 1).children('.pokerCover').addClass('pokerShow');
+				obj.find('.poker').eq(_preIndex - 1).children('.pfont').css('opacity','1');
+			}
+		};
+		this.topToNum = function(top){
+			return Number(top.replace(/px/g,""));
+		};
+		this.reSet = function(){
+			$('.pokerList').html('');
+			$('.spoker').show();
+			this.init();
+		};
+		this.init = function(num,degree){
+			var that = this;
+			that.num = num ? num : 0;
+			that.degree = degree ? degree : 1;
+			that.cards = that.poker().shuffle(1);
+			that.autoFapai();
+			that.movePoker();
+		};
+		this.init();
+	}
+</script>
+<script type="text/javascript">
+	Game =  (new game);
+	$(function(){
+
+
+
+		//鼠标选中方法
+		function selectFun(){
+
+		}
+
+		//闪现方法
+		function showPoker(obj){
+			$(obj).fadeIn();
+		}
+
+	});
+</script>

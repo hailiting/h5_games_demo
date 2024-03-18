@@ -1,0 +1,124 @@
+{"frames": {
+
+"projectile_bullet_00.png":
+{
+	"frame": {"x":86,"y":88,"w":8,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":6,"w":8,"h":38},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_laser_00.png":
+{
+	"frame": {"x":2,"y":196,"w":24,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":24,"h":48},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_laser_01.png":
+{
+	"frame": {"x":28,"y":196,"w":24,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":24,"h":48},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_laser_02.png":
+{
+	"frame": {"x":54,"y":196,"w":24,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":24,"h":48},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_mine_00.png":
+{
+	"frame": {"x":86,"y":46,"w":34,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":34,"h":40},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_mine_01.png":
+{
+	"frame": {"x":86,"y":2,"w":38,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":38,"h":42},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_rail_00.png":
+{
+	"frame": {"x":98,"y":88,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24}
+},
+"projectile_rail_01.png":
+{
+	"frame": {"x":98,"y":114,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24}
+},
+"projectile_rail_02.png":
+{
+	"frame": {"x":98,"y":140,"w":24,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24}
+},
+"projectile_rocket_00.png":
+{
+	"frame": {"x":98,"y":210,"w":12,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":6,"w":12,"h":38},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_rocket_01.png":
+{
+	"frame": {"x":80,"y":196,"w":16,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":2,"w":16,"h":42},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_rocket_02.png":
+{
+	"frame": {"x":98,"y":166,"w":16,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":2,"w":16,"h":42},
+	"sourceSize": {"w":48,"h":48}
+},
+"projectile_tielaser_00.png":
+{
+	"frame": {"x":2,"y":2,"w":40,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":0,"w":40,"h":192},
+	"sourceSize": {"w":192,"h":192}
+},
+"projectile_xwinglaser_00.png":
+{
+	"frame": {"x":44,"y":2,"w":40,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":0,"w":40,"h":192},
+	"sourceSize": {"w":192,"h":192}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "char_weapons_00.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d26c0f8863700708a0f3148870b80c6f:852da65d05038d8229a09a211f4acdff:54b64aea28857bf65e0a3e68fcf73473$"
+}
+}

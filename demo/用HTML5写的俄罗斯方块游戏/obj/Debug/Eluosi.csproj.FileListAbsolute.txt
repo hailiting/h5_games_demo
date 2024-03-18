@@ -1,0 +1,6 @@
+D:\lweiyue\exercise\Eluosi\Eluosi\bin\Eluosi.dll.config
+D:\lweiyue\exercise\Eluosi\Eluosi\bin\Eluosi.dll
+D:\lweiyue\exercise\Eluosi\Eluosi\bin\Eluosi.pdb
+D:\lweiyue\exercise\Eluosi\Eluosi\obj\Debug\Eluosi.csprojResolveAssemblyReference.cache
+D:\lweiyue\exercise\Eluosi\Eluosi\obj\Debug\Eluosi.dll
+D:\lweiyue\exercise\Eluosi\Eluosi\obj\Debug\Eluosi.pdb

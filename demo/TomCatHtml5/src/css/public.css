@@ -1,0 +1,20 @@
+*{margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-moz-overflow-scrolling:touch;-o-overflow-scrolling:touch;overflow-scrolling:touch;}
+a{text-decoration:none; font-family:ubuntu, helvetica, arial; color:#999;}
+body{background:#f6f6f6;color:#999;font-size:62.5%;font-family:ubuntu, helvetica, arial;}
+a,body{font-family:"微软雅黑";-webkit-tap-highlight-color:rgba(0,0,0,0)}
+a,input,button{ outline:none; }
+::-moz-focus-inner{border:0px;}
+img{border:0;vertical-align: top;}
+ol,ul,li{list-style:none}
+dl,dt,dd,ul,li{margin:0;padding:0}
+input,textarea{outline:0}
+input[type=button],input[type=text],input[type=password]{-webkit-appearance:none;outline:none}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none; font-weight: normal;}
+input,select,textarea {font-family:"arial","微软雅黑";}
+.clear{clear: both;}
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1;}
+.fr{float: right;}
+.fl{float: left;}
+.none{display: none;}

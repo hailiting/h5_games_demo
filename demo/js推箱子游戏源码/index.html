@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+}
+#map{
+	width:826px;
+	height:620px;
+	background:url(img/bg.PNG);
+}
+#cont{
+	width:150px;
+	position:absolute;
+	left:630px;
+	top:100px;
+}
+#rw{
+	position:absolute;
+}
+img{
+	width:30px;
+	height:30px;
+}
+#rw{
+	z-index:10;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+<!--<img src="img/头0.png" width="30" height="30" id="rw" style="left:-50px; top:-50px;" />
+-->
+<div id="cont">
+<button type="button" onclick="cl1()">第一关</button>
+<button type="button" onclick="cl2()">第二关</button>
+更新：判断点与箱子是否全部重合过关
+6.25：更新第二关。
+6.26：解决换关bug。
+</div>
+</body>
+</html>
+
+<script language="javascript">
+function clear()
+{
+	var imgs=document.getElementsByTagName("img")
+	//alert(imgs.length)
+/*	for(a=0;a<41;a++)
+	{
+		document.body.removeChild(imgs[a])
+		}
+*/
+	while(imgs.length>0)
+	{
+	document.body.removeChild(imgs[0])
+	}
+}
+function cl1()//第一关
+{
+	clear()
+		//人物
+	var ren=document.createElement("img")
+	ren.style.position="absolute"
+	ren.src="img/头0.png"
+	document.body.appendChild(ren)
+	ren.style.left=10+30*7+"px"
+	ren.style.top=10+30*7+"px"
+	ren.id="rw"
+	
+	 bianjie=new Array()//储存边界
+	 dian=new Array()//储存点
+	 xiangzi=new Array()//储存箱子
+	 renwu=document.getElementById("rw")
+	for(a=0;a<10;a++)//产生边界
+	{
+		for(b=0;b<10;b++)
+		{
+			if(a<1||a>8||b<1||b>8)
+			{
+				var bj=document.createElement("img")
+				bj.style.position="absolute"
+				bj.style.top=10+30*a+"px"
+				bj.style.left=10+30*b+"px"
+				bj.src="img/body.png"
+				document.body.appendChild(bj)
+				bianjie.push(bj)
+			}
+		}
+	}
+	//
+	for(a=0;a<10;a++)//产生点
+	{
+		for(b=0;b<10;b++)
+		{
+			if((a==2&&b==2)||(a==2&&b==3))
+			{
+				var di=document.createElement("img")
+				di.style.position="absolute"
+				di.style.top=10+30*a+"px"
+				di.style.left=10+30*b+"px"
+				di.src="img/点.png"
+				document.body.appendChild(di)
+				dian.push(di)
+			}
+		}
+	}
+	//
+	for(a=0;a<10;a++)//产生箱子
+	{
+		for(b=0;b<10;b++)
+		{
+			if((a==5&&b==2)||(a==5&&b==3))
+			{
+				var xz=document.createElement("img")
+				xz.style.position="absolute"
+				xz.style.top=10+30*a+"px"
+				xz.style.left=10+30*b+"px"
+				xz.src="img/豆.png"
+				xz.style.zIndex="10"
+				document.body.appendChild(xz)
+				xiangzi.push(xz)
+			}
+		}
+	}
+
+	
+}//cl1()结束
+/////
+function cl2()//第二关
+{
+	clear()
+	//人物
+	var ren=document.createElement("img")
+	ren.style.position="absolute"
+	ren.src="img/头0.png"
+	document.body.appendChild(ren)
+	ren.style.left=10+30*7+"px"
+	ren.style.top=10+30*4+"px"
+	ren.id="rw"
+	
+	 bianjie=new Array()//储存边界
+	 dian=new Array()//储存点
+	 xiangzi=new Array()//储存箱子
+	 renwu=document.getElementById("rw")
+	
+	for(a=0;a<7;a++)//产生边界
+	{
+		for(b=0;b<9;b++)
+		{
+			if(a==0||a==6||b==0||b==8||(a==1&&b==0)||(a==1&&b==7)||(a==2&&b==4)||(a==2&&b==7)||(a==3&&b==4)||(a==3&&b==6)||(a==3&&b==7)||(a==4&&b==2)||(a==4&&b==4)||(a==5&&b==4))
+			{
+				var bj=document.createElement("img")
+				bj.style.position="absolute"
+				bj.style.top=10+30*a+"px"
+				bj.style.left=10+30*b+"px"
+				bj.src="img/body.png"
+				document.body.appendChild(bj)
+				bianjie.push(bj)
+			}
+		}
+	}
+	//
+	for(a=0;a<10;a++)//产生点
+	{
+		for(b=0;b<10;b++)
+		{
+			if((a==1&&b==1)||(a==5&&b==1)||(a==5&&b==3))
+			{
+				var di=document.createElement("img")
+				di.style.position="absolute"
+				di.style.top=10+30*a+"px"
+				di.style.left=10+30*b+"px"
+				di.src="img/点.png"
+				document.body.appendChild(di)
+				dian.push(di)
+			}
+		}
+	}
+	//
+	for(a=0;a<10;a++)//产生箱子
+	{
+		for(b=0;b<10;b++)
+		{
+			if((a==2&&b==2)||(a==3&&b==2)||(a==4&&b==6))
+			{
+				var xz=document.createElement("img")
+				xz.style.position="absolute"
+				xz.style.top=10+30*a+"px"
+				xz.style.left=10+30*b+"px"
+				xz.src="img/豆.png"
+				xz.style.zIndex="10"
+				document.body.appendChild(xz)
+				xiangzi.push(xz)
+			}
+		}
+	}
+	//人物
+	
+}//cl2()结束
+
+
+////
+document.onkeyup=function(event)//键盘输入
+{
+	event=event||window.event
+	switch(event.keyCode)
+	{
+		//左
+		case 37:
+		renwu.src="img/头2.png"
+		left()
+		break
+		//上
+		case 38:
+		renwu.src="img/头1.png"
+		up()
+		break
+		//右
+		case 39:
+		renwu.src="img/头0.png"
+		right()
+		break
+		//下
+		case 40:
+		renwu.src="img/头3.png"
+		down()
+		break
+		//重置
+		case 13:
+		window.location.reload()
+		break
+	}
+}
+/////////////判断部分
+//判断移动后是否是边界
+//判断移动后是否是箱子
+//判断箱子移动后是否是边界
+////////////////箱子移动后是否是其他箱子！！！！
+//判断箱子是否和点重合
+//判断箱子是否全部和点重合
+//移动		renwu.style.left=parseInt(renwu.style.left)-30+"px"
+//			break
+function left()
+{
+	offleft=true//开关为开
+	for(a=0;a<bianjie.length;a++)
+	{//判断移动后是否是边界
+		if(bianjie[a].style.top==renwu.style.top&&bianjie[a].style.left==parseInt(renwu.style.left)-30+"px")
+		{//是边界不做动作
+			offleft=false//开关开掉
+			break
+		}
+	}
+	//开关：
+	//true：不是边界继续运行
+	//false：是边界不做动作
+	if(offleft==true)
+	{//开关打开继续运行
+		for(b=0;b<xiangzi.length;b++)
+		{//判断移动后是否是箱子
+			if(xiangzi[b].style.top==renwu.style.top&&xiangzi[b].style.left==parseInt(renwu.style.left)-30+"px")
+			{//移动后是箱子
+				offleft=false//开关关 
+				break
+			}
+		}
+	}
+	else
+	{
+		return
+	}
+	//开关：false：移动后是箱子
+	//true：不是箱子 正常移动
+	if(offleft==true)
+	{
+		renwu.style.left=parseInt(renwu.style.left)-30+"px"
+		return
+	}
+	else
+	{
+		for(c=0;c<bianjie.length;c++)
+		{//判断箱子后是否是边界
+			if(bianjie[c].style.top==renwu.style.top&&bianjie[c].style.left==parseInt(renwu.style.left)-60+"px")
+			{//是边界不做动作
+				offleft=true
+			}
+		}
+		for(c=0;c<xiangzi.length;c++)
+		{//判断箱子后是否是箱子
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)-60+"px")
+			{//是箱子不做动作
+				offleft=true
+			}
+
+		}
+
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动
+	//true：箱子后是边界不做动作
+	if(offleft==true)
+	{
+		return
+	}
+	else
+	{//false：箱子后不是边界 人物箱子动
+		renwu.style.left=parseInt(renwu.style.left)-30+"px"
+		for(d=0;d<xiangzi.length;d++)
+		{//找到移动后是哪个箱子
+			if(xiangzi[d].style.top==renwu.style.top&&xiangzi[d].style.left==renwu.style.left)
+			{//移动箱子
+				xiangzi[d].style.left=parseInt(xiangzi[d].style.left)-30+"px"
+			}
+		}
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动 判断箱子和点的关系
+	for(d=0;d<dian.length;d++)
+	{
+		if(dian[d].style.top==renwu.style.top&&dian[d].style.left==parseInt(renwu.style.left)-30+"px")
+		{//箱子和点重合
+			offleft=true
+			break
+		}
+	}
+	//true//箱子和点重合
+	//false箱子和点不重合
+	if(offleft==true)
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)-30+"px")
+			{
+				xiangzi[c].src="img/超级豆.png"
+				break
+			}
+		}
+	}
+	else
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)-30+"px")
+			{
+				xiangzi[c].src="img/豆.png"
+				break
+			}
+		}
+	}
+	gc()
+}//left()结束
+
+
+function up()
+{
+	offleft=true//开关为开
+	for(a=0;a<bianjie.length;a++)
+	{//判断移动后是否是边界
+		if(bianjie[a].style.left==renwu.style.left&&bianjie[a].style.top==parseInt(renwu.style.top)-30+"px")
+		{//是边界不做动作
+			offleft=false//开关开掉
+			
+		}
+	}
+	//开关：
+	//true：不是边界继续运行
+	//false：是边界不做动作
+	if(offleft==true)
+	{//开关打开继续运行
+		for(b=0;b<xiangzi.length;b++)
+		{//判断移动后是否是箱子
+			if(xiangzi[b].style.left==renwu.style.left&&xiangzi[b].style.top==parseInt(renwu.style.top)-30+"px")
+			{//移动后是箱子
+				offleft=false//开关关 
+				
+			}
+		}
+	}
+	else
+	{
+		return
+	}
+	//开关：false：移动后是箱子
+	//true：不是箱子 正常移动
+	
+	if(offleft==true)
+	{
+		renwu.style.top=parseInt(renwu.style.top)-30+"px"
+		return
+	}
+	else
+	{
+		for(c=0;c<bianjie.length;c++)
+		{//判断箱子移动后是否是边界
+			if(bianjie[c].style.left==renwu.style.left&&bianjie[c].style.top==parseInt(renwu.style.top)-60+"px")
+			{//是边界不做动作
+				offleft=true
+			}
+		}
+		for(c=0;c<xiangzi.length;c++)
+		{//判断箱子后是否是箱子
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)-60+"px")
+			{//是箱子不做动作
+				offleft=true
+			}
+		}
+	}
+	//开关：
+	//true：箱子后不是边界 人物箱子动
+	//false：箱子后是边界不做动作
+	if(offleft==true)
+	{
+		return
+	}
+	else
+	{
+		renwu.style.top=parseInt(renwu.style.top)-30+"px"
+		for(d=0;d<xiangzi.length;d++)
+		{//找到移动后是哪个箱子
+			if(xiangzi[d].style.top==renwu.style.top&&xiangzi[d].style.left==renwu.style.left)
+			{//移动箱子
+				xiangzi[d].style.top=parseInt(xiangzi[d].style.top)-30+"px"
+			}
+		}
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动 判断箱子和点的关系
+	for(d=0;d<dian.length;d++)
+	{
+		if(dian[d].style.left==renwu.style.left&&dian[d].style.top==parseInt(renwu.style.top)-30+"px")
+		{//箱子和点重合
+			offleft=true
+			break
+		}
+	}
+	//true//箱子和点重合
+	//false箱子和点不重合
+	if(offleft==true)
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)-30+"px")
+			{
+				xiangzi[c].src="img/超级豆.png"
+				break
+			}
+		}
+	}
+	else
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)-30+"px")
+			{
+				xiangzi[c].src="img/豆.png"
+				break
+			}
+		}
+	}
+	gc()
+}//top()结束
+
+function right()
+{
+	offleft=true//开关为开
+	for(a=0;a<bianjie.length;a++)
+	{//判断移动后是否是边界
+		if(bianjie[a].style.top==renwu.style.top&&bianjie[a].style.left==parseInt(renwu.style.left)+30+"px")
+		{//是边界不做动作
+			offleft=false//开关开掉
+			break
+		}
+	}
+	//开关：
+	//true：不是边界继续运行
+	//false：是边界不做动作
+	if(offleft==true)
+	{//开关打开继续运行
+		for(b=0;b<xiangzi.length;b++)
+		{//判断移动后是否是箱子
+			if(xiangzi[b].style.top==renwu.style.top&&xiangzi[b].style.left==parseInt(renwu.style.left)+30+"px")
+			{//移动后是箱子
+				offleft=false//开关关 
+				break
+			}
+		}
+	}
+	else
+	{
+		return
+	}
+	//开关：false：移动后是箱子
+	//true：不是箱子 正常移动
+	if(offleft==true)
+	{
+		renwu.style.left=parseInt(renwu.style.left)+30+"px"
+		return
+	}
+	else
+	{
+		for(c=0;c<bianjie.length;c++)
+		{//判断箱子后是否是边界
+			if(bianjie[c].style.top==renwu.style.top&&bianjie[c].style.left==parseInt(renwu.style.left)+60+"px")
+			{//是边界不做动作
+				offleft=true
+			}
+		}
+		for(c=0;c<xiangzi.length;c++)
+		{//判断箱子后是否是箱子
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)+60+"px")
+			{//是箱子不做动作
+				offleft=true
+			}
+
+		}
+
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动
+	//true：箱子后是边界不做动作
+	if(offleft==true)
+	{
+		return
+	}
+	else
+	{//false：箱子后不是边界 人物箱子动
+		renwu.style.left=parseInt(renwu.style.left)+30+"px"
+		for(d=0;d<xiangzi.length;d++)
+		{//找到移动后是哪个箱子
+			if(xiangzi[d].style.top==renwu.style.top&&xiangzi[d].style.left==renwu.style.left)
+			{//移动箱子
+				xiangzi[d].style.left=parseInt(xiangzi[d].style.left)+30+"px"
+			}
+		}
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动 判断箱子和点的关系
+	for(d=0;d<dian.length;d++)
+	{
+		if(dian[d].style.top==renwu.style.top&&dian[d].style.left==parseInt(renwu.style.left)+30+"px")
+		{//箱子和点重合
+			offleft=true
+			break
+		}
+	}
+	//true//箱子和点重合
+	//false箱子和点不重合
+	if(offleft==true)
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)+30+"px")
+			{
+				xiangzi[c].src="img/超级豆.png"
+				break
+			}
+		}
+	}
+	else
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.top==renwu.style.top&&xiangzi[c].style.left==parseInt(renwu.style.left)+30+"px")
+			{
+				xiangzi[c].src="img/豆.png"
+				break
+			}
+		}
+	}
+	gc()
+}//right()结束
+
+
+function down()
+{
+	offleft=true//开关为开
+	for(a=0;a<bianjie.length;a++)
+	{//判断移动后是否是边界
+		if(bianjie[a].style.left==renwu.style.left&&bianjie[a].style.top==parseInt(renwu.style.top)+30+"px")
+		{//是边界不做动作
+			offleft=false//开关开掉
+			
+		}
+	}
+	//开关：
+	//true：不是边界继续运行
+	//false：是边界不做动作
+	if(offleft==true)
+	{//开关打开继续运行
+		for(b=0;b<xiangzi.length;b++)
+		{//判断移动后是否是箱子
+			if(xiangzi[b].style.left==renwu.style.left&&xiangzi[b].style.top==parseInt(renwu.style.top)+30+"px")
+			{//移动后是箱子
+				offleft=false//开关关 
+				
+			}
+		}
+	}
+	else
+	{
+		return
+	}
+	//开关：false：移动后是箱子
+	//true：不是箱子 正常移动
+	
+	if(offleft==true)
+	{
+		renwu.style.top=parseInt(renwu.style.top)+30+"px"
+		return
+	}
+	else
+	{
+		for(c=0;c<bianjie.length;c++)
+		{//判断箱子移动后是否是边界
+			if(bianjie[c].style.left==renwu.style.left&&bianjie[c].style.top==parseInt(renwu.style.top)+60+"px")
+			{//是边界不做动作
+				offleft=true
+			}
+		}
+		for(c=0;c<xiangzi.length;c++)
+		{//判断箱子后是否是箱子
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)+60+"px")
+			{//是箱子不做动作
+				offleft=true
+			}
+		}
+	}
+	//开关：
+	//true：箱子后不是边界 人物箱子动
+	//false：箱子后是边界不做动作
+	if(offleft==true)
+	{
+		return
+	}
+	else
+	{
+		renwu.style.top=parseInt(renwu.style.top)+30+"px"
+		for(d=0;d<xiangzi.length;d++)
+		{//找到移动后是哪个箱子
+			if(xiangzi[d].style.top==renwu.style.top&&xiangzi[d].style.left==renwu.style.left)
+			{//移动箱子
+				xiangzi[d].style.top=parseInt(xiangzi[d].style.top)+30+"px"
+			}
+		}
+	}
+	//开关：
+	//false：箱子后不是边界 人物箱子动 判断箱子和点的关系
+	for(d=0;d<dian.length;d++)
+	{
+		if(dian[d].style.left==renwu.style.left&&dian[d].style.top==parseInt(renwu.style.top)+30+"px")
+		{//箱子和点重合
+			offleft=true
+			break
+		}
+	}
+	//true//箱子和点重合
+	//false箱子和点不重合
+	if(offleft==true)
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)+30+"px")
+			{
+				xiangzi[c].src="img/超级豆.png"
+				break
+			}
+		}
+	}
+	else
+	{
+		for(c=0;c<xiangzi.length;c++)
+		{
+			if(xiangzi[c].style.left==renwu.style.left&&xiangzi[c].style.top==parseInt(renwu.style.top)+30+"px")
+			{
+				xiangzi[c].src="img/豆.png"
+				break
+			}
+		}
+	}
+	gc()
+}//down()结束
+
+function gc()
+{
+	x=0
+	for(a=0;a<dian.length;a++)
+	{
+		for(b=0;b<xiangzi.length;b++)
+		{
+			if(dian[a].style.top==xiangzi[b].style.top&&dian[a].style.left==xiangzi[b].style.left)
+			{
+				x++
+			}
+		}
+	}
+	if(x==dian.length)
+	{
+	alert("恭喜过关！")
+	}
+}
+</script>

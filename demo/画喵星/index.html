@@ -1,0 +1,675 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>十万喵星人计划！</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui">
+    <script src="script/jquery-latest.js"></script>
+    <link rel="stylesheet" href="script/style.css" />
+    <script type="text/javascript" src="script/tinybox.js"></script>
+    <script type="text/javascript" src="script/iscroll.js"></script> 
+    <script type="text/javascript" src="script/main.js"></script>      
+    <script type="text/javascript">//统计
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F026dc3ba91f887841813c1c2ddf7b7b3' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+      <script type="text/javascript">
+          //**********************************************************************点赞的动画效果**********************************************************
+          ; (function ($) {
+              $.extend({
+                  tipsBox: function (options) {
+                      options = $.extend({
+                          obj: null,  //jq对象，要在那个html标签上显示
+                          str: "+1",  //字符串，要显示的内容;也可以传一段html，如: "<b style='font-family:Microsoft YaHei;'>+1</b>"
+                          startSize: "25px",  //动画开始的文字大小
+                          endSize: "25px",    //动画结束的文字大小
+                          interval: 1500,  //动画时间间隔
+                          color: "red",    //文字颜色
+                          callback: function () { }    //回调函数
+                      }, options);
+                      $("body").append("<span class='num'>" + options.str + "</span>");
+                      var box = $(".num");
+                      var left = options.obj.offset().left + options.obj.width() / 2;
+                      var top = options.obj.offset().top - options.obj.height();
+                      box.css({
+                          "position": "absolute",
+                          "left": left + "px",
+                          "top": top + "px",
+                          "z-index": 9999,
+                          "font-size": options.startSize,
+                          "line-height": options.endSize,
+                          "color": options.color
+                      });
+                      box.animate({
+                          "font-size": options.endSize,
+                          "opacity": "0",
+                          "top": top - parseInt(options.endSize) + "px"
+                      }, options.interval, function () {
+                          box.remove();
+                          options.callback();
+                      });
+                  }
+              });
+          })(jQuery);
+    </script>
+       
+      
+      <script>
+          // 微信分享的数据
+          var wxData = {
+              "appId": "wx3e7b53d475fc18c4", // 服务号可以填写appId
+              "imgUrl": "http://nya.oss-cn-hangzhou.aliyuncs.com/miao_logo.jpg",
+              "link": "http://lifefunmiao.sinaapp.com/GrQFYaV",
+              "desc": "你的创造\n贡献无穷能量！\nLIFE-FUN",
+              "title": "这里好多画喵大神！快来一起完成<十万喵星人计划>！",
+          };
+
+
+          document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+              WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                  WeixinJSBridge.invoke('sendAppMessage', {
+                      "appid": wxData.appId,
+                      "img_url": wxData.imgUrl,
+                      "link": wxData.link,
+                      "desc": wxData.desc,
+                      "title": wxData.title,
+                      "img_width": "640",
+                      "img_height": "640"
+                  }, function (res) {//发送给朋友
+                      var Day = 20;
+                      var exp = new Date();
+                      exp.setTime(exp.getTime() + Day * 24 * 60 * 60 * 1000);
+                      document.cookie = "shared=true;expires=" + exp.toGMTString();
+                      $.ajax({
+                          type: "post",
+                          url: "/function/sharedata.php",
+                          data: {
+                              picnum: getCookie("picnum") > 0 ? getCookie("picnum") : -1,
+                              mode: 2,
+                              IndexOrPiclist: 1,
+                              targetpic: gfile,
+                          }
+                      });
+                  })
+              });
+
+
+
+
+
+              WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                  WeixinJSBridge.invoke('shareTimeline', {
+                      "appid": wxData.appId,
+                      "img_url": wxData.imgUrl,
+                      "link": wxData.link,
+                      "desc": wxData.desc,
+                      "title": wxData.title,
+                      "img_width": "640",
+                      "img_height": "640"
+                  }, function (res) {//分享到朋友圈
+                      var Day = 20;
+                      var exp = new Date();
+                      exp.setTime(exp.getTime() + Day * 24 * 60 * 60 * 1000);
+                      document.cookie = "shared=true;expires=" + exp.toGMTString();
+                      $.ajax({
+                          type: "post",
+                          url: "/functiondata.php",
+                          data: {
+                              picnum: getCookie("picnum") > 0 ? getCookie("picnum") : -1,
+                              mode: 1,
+                              IndexOrPiclist: 1,
+                              targetpic: gfile,
+                          }
+                      });
+                  });
+              });
+
+
+
+
+
+
+
+
+
+              WeixinJSBridge.on('menu:share:weibo', function (argv) {
+                  WeixinJSBridge.invoke('shareWeibo', {
+                      "content": window.shareData.tContent,
+                      "url": window.shareData.timeLineLink
+                  }, function (res) {
+                      document.location.href = mebtnopenurl;
+                  });
+              });
+
+          }, false)
+
+
+
+          $(document).ready(function () {
+              //**********************************************************************ready执行的代码**********************************************************
+
+              //**********************************************************************先判断cookie看是否第一次访问，否则刷新**********************************************************
+              //var Sec = 3;
+              //var exp = new Date(); 
+              //exp.setTime(exp.getTime() + Sec*1000);
+
+              //if(!getCookie("indexfirst")||getCookie("indexfirst")=="0"){
+              //    document.cookie="indexfirst=1;expires=" + exp.toGMTString();  
+              // window.location.reload(); 
+              //}
+
+
+
+
+          })
+
+
+          function getCookie(name) {
+              var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+              if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+              else return null;
+          }
+
+          //*******************************************************关掉浮窗时取消分享状态******************************************************* 
+          function clearpicnum() {
+              wxData.imgUrl = "http://nya.oss-cn-hangzhou.aliyuncs.com/miao_logo.jpg";
+              wxData.link = "http://lifefunmiao.sinaapp.com/nDwrHej";
+              wxData.title = '这里好多画喵大神！快来一起完成<十万喵星人计划>！';
+              gfile = 0;
+          }
+          //**********************************************************************onload执行的代码**********************************************************   
+          function ready() {
+
+              //**********************************************************************//插入画布**********************************************************
+              // if(window.innerHeight==0)
+              //  window.location.reload();    
+
+              //加载画布js，初始化
+              $.getScript("http://nya.oss-cn-hangzhou.aliyuncs.com/script/sketch.js", function () {
+                  $(function () {
+                      // var insertText = "<canvas id='colors_sketch' width='"+(window.innerWidth-38)+"px' height='"+(window.innerHeight-170)+"px'></canvas>";
+                      //document.getElementById("canvas").innerHTML = insertText;
+                      $("#canvas").html("<canvas id='colors_sketch' width='" + (window.innerWidth - 38) + "px' height='" + (window.innerHeight - 170) + "px'></canvas>");
+                      $('#colors_sketch').sketch();
+                  });
+              });
+
+              myScroll = new IScroll('#card', {
+                  mouseWheel: true,
+                  scrollbars: false
+              });
+              // $("#huise").css("display","hided");
+
+          }
+          window.onload = ready;
+
+          var gfile = 0
+          var ghavezan = false;//全局点赞
+          //*******************************************************点赞*******************************************************          
+          function zan() {
+              if (ghavezan) return;
+              ghavezan = true;
+
+              var file = gfile;
+              $.ajax({
+                  type: "post",
+                  url: "zan.php",
+                  data: {
+                      picnum: file,
+                  },
+                  success: function (msg) {
+                      //接收PHP返回的信息,是否点赞成功,如果成功,前台JS进行特效转换来提醒用户点赞成功  如果未成功则提示原因等等
+                      if (msg == "已经赞过") {
+                          $.tipsBox({
+                              obj: $(document.getElementById(file)),
+                              str: "已赞过~",
+                              startSize: "20px",  //动画开始的文字大小
+                              endSize: "20px",    //动画结束的文字大小
+                              interval: 1500,  //动画时间间隔
+                              callback: function () {
+                                  //alert(5);
+                              }
+                          });
+                      }
+                      else {
+                          //document.getElementById(file).innerHTML = parseInt(document.getElementById(file).innerHTML)+1;
+                          $("#" + file).text(parseInt($("#" + file).text()) + 1);
+                          $.tipsBox({
+                              obj: $(document.getElementById(file)),
+                              str: "+1",
+                              callback: function () {
+                                  //alert(5);
+                              }
+                          });
+
+                          // document.getElementById("zan"+file).innerHTML = parseInt(document.getElementById(document.getElementById("zan"+file).innerHTML).innerHTML)+1;
+                      }
+                  }
+              });
+          }
+
+</script>
+      
+      
+      
+    <style type='text/css'>
+        
+        body { font-family: "Microsoft YaHei", sans-serif; background-color:black; padding:0px 14px 0px;margin: 4px; text-align: center;}
+      h1, h2, h3, h4 {  font-weight: normal; color: white; }
+
+
+      header { text-align: center; }
+        h1 { font-size: 14px; text-align: center; margin: 0 0; color:white;}
+        h2 { font-size: 10px; text-align: center; padding:0 ; margin: 0 0; color:#666666;}
+       
+          #huise h1 { font-size: 18px; text-align: center; margin: 10px 0px 5px 0px; color:black;}
+          #huise h2 { font-size: 12px; text-align: center; margin: 2px 0 0px; color:black;font-weight: normal;}
+          #huise h3 { font-size: 12px; text-align: center; margin: 4px 0 10px; color:black;font-weight: normal;}
+          #huise h4 { font-size: 18px; text-align: center; margin: 5px; color:white;font-weight: normal;}
+          #huise h5 { font-size: 18px; text-align: center; margin: 5px; color:black;font-weight: normal;}
+
+      canvas {
+        border: 1px solid #ccc;
+        background-color: white;
+      }
+
+       
+        #messege {
+            text-align: center;
+            background:black;
+            color:#fff; 
+            /*text-shadow:0px 0px #1b6116; */
+            border-right:1px solid #000;
+            border-bottom:1px solid #000; 
+            padding:10px 10px;
+        }
+        #messege .messege_content{
+            padding: 10px 10px;
+        }
+        
+        
+        
+      .tips{ 
+            height:45px;
+            padding:8px 0px 4px;
+            margin: 0px;
+            text-align: center;
+       } 
+       #tips_left{ 
+            position:relative;
+           /* top: 4px;*/
+             left:10px;
+            float:left;
+            text-align: center;
+       } 
+        #tips_right{ 
+            position:relative;
+            float:right;
+            right:10px;
+            padding:0 10px 0;
+       } 
+        .button_wrap{
+            margin: 1px;
+        }
+       .button{ 
+            height:35px;
+            line-height:35px;
+            text-align: center;
+            text-decoration: none; 
+            display: inline-block; 
+            vertical-align: middle; 
+            text-align: center; 
+            color: white; 
+            padding:0 8px 0;
+            border:1px solid white;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+       }  
+        .button2{ 
+            height:35px;
+            line-height:35px;
+            text-align: center;
+            text-decoration: none; 
+            display: inline-block; 
+            vertical-align: middle; 
+            text-align: center; 
+            color: white; 
+            padding:0 8% 0;
+            margin:auto 15px;
+            border:1px solid white;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            overflow:hidden; 
+       } 
+        a{
+            text-decoration: none;
+        }
+       #colors_sketch{
+            border:1px solid white;
+       }
+       #bichu,#tijiao,#chakan{
+            width:120px;
+       }
+       #tijiao{
+            /* background-color: #962424;*/
+       }
+      .tips p{ 
+            margin: 5px 0;
+            font-size: 13px;
+            color:white;
+        }
+      .tools { 
+            text-align: center;
+            margin: 4px -8px 8px;
+            height: 37px; 
+        }
+
+      .circle {
+            display:block;
+            width:25px;
+            position:relative;
+            float:right;
+            text-align: center;
+       }
+       #circle1 {
+            position: relative;
+            top: 14px;
+            right: -10px;
+            width: 4px;
+            height: 4px;
+            background: black;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            border:1px solid white;
+      } 
+       #circle2 {
+            position: relative;
+            top: 13px;
+            right: -10px;
+            width: 6px;
+            height: 6px;
+            background: white;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            border:1px solid white;
+      } 
+       #circle3 {
+            position: relative;
+            top: 11px;
+            right: -10px;
+            width: 10px;
+            height: 10px;
+            background: black;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border:1px solid white;
+      }
+        
+     
+        
+        .bottom-fixed {
+	Z-INDEX: 10000; POSITION: fixed; TEXT-ALIGN: center; WIDTH: 100%; BOTTOM: 1px;  HEIGHT: 35px
+          }
+        .bottom-option{
+            position: relative;
+            float:left;
+            width: 48%;
+            height: 35px;
+            line-height:35px;
+            background-color: #513646;
+            opacity: 0.5;
+            border-radius: 8px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            box-shadow: 1px 1px #000;
+            -moz-box-shadow: 1px 1px #000;
+            -webkit-box-shadow: 1px 1px #000;
+        }
+        .bottom-option a {
+            text-decoration: none;
+            color:white;
+            display:block;
+        }
+        
+     #huise{
+            /*  visibility: hidden; */
+              margin:auto;
+              width:100%;
+              height:100%;
+              text-align: center;
+              background-color:rgba(0,0,0,0.8); 
+              position: fixed;
+              top: 0px;
+              z-index: 3;
+       } 
+           #card{
+              position: fixed;
+              top: 15%;
+              left: 10%;
+              width: 80%;
+              height: 65%;
+              text-align: center;
+              background-color: white;
+              z-index: 4;
+              overflow: hidden;
+              border-radius: 6px;
+              -moz-border-radius: 6px;
+              -webkit-border-radius: 6px;
+       } 
+           #menu-2{
+              position: fixed;
+              top:83%;
+              left:10%;
+              width:80%;
+              /* height:30px;*/
+              text-align: center;
+              /* background-color:black; */
+              z-index: 5;
+              overflow: hidden;
+       } 
+        
+       
+          #close{
+              right: 0px;
+          }
+          .tri{
+              display: block;
+              width: 30px;
+              height: 15px;
+              margin: auto;
+              text-align: center;
+              background-image: url(http://nya.oss-cn-hangzhou.aliyuncs.com/image/tri-30.png);
+              background-repeat: no-repeat;
+              background-position:0px 1px;
+          }
+          #conment-box{
+             width: 90%;
+             margin: auto;
+             text-align: center;
+             background-color: #eaeaea;
+             z-index: 4;
+             overflow: hidden;
+             border-radius: 6px;
+             -moz-border-radius: 6px;
+             -webkit-border-radius: 6px; 
+             padding: 10px 0 10px 0; 
+          }
+          
+          #conment-box p
+          {
+            position: relative;
+              color:black;
+              margin: 6px 10px;
+              font-size: 11px;
+            text-align: left;
+          }
+    </style>
+  </head>
+    
+  <body>
+      
+      
+     <div class="tips">
+         <div id="tips_left">
+           
+            <h1>现已收录了<strong>94618</strong>只喵星人</h1>         </div>
+             
+         <a  onclick="checkother()" class="button_wrap" ><div id="tips_right" class="button">围观作品</div></a>
+
+    </div>
+      
+      
+ <div id="canvas">     
+ </div>
+      
+<div class="tools" >
+  <a href="#colors_sketch" data-clear='true' style=" width: 50px;" class="button_wrap" id="chongxinhua"><div class="button">重新画</div></a>  
+  <a id="selectbrush" href='#colors_sketch' data-size='2' onclick="selectbrush()" class="button_wrap" >
+      <div class="button" id="bichu" >笔触
+        <div class="circle"><div id="circle3"></div></div>
+        <div class="circle"><div id="circle2"></div></div>
+        <div class="circle"><div id="circle1"></div></div>
+      </div>
+  </a>
+  <a href="#colors_sketch" data-cancel='true' style=" width: 60px;" class="button_wrap" id="shangyibu"><div class="button">上一步</div></a>                
+</div>
+      
+      
+ <div class="tools" style="margin:0 0 1px;">
+          <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTA3NTMzMA==&mid=200883099&idx=1&sn=1dbebaf4a240378c097e7a78696d5022%23rd"><div id="chakan" class="button">绝密计划书</div></a> 
+          <a onclick="confirm()" class="button_wrap" ><div id="tijiao" class="button">上传喵星人</div></a>
+  </div>     
+      
+      <h2>如遇画布消失或未满屏，可尝试刷新本页面</h2>
+      
+      
+      
+<script type="text/javascript">
+    function checkother() {
+        if (getCookie("shared") != "true") {
+            TINY.box.show({ html: "分享作品才能围观哦", boxid: "success", top: 100, autohide: 2, top: 100 });
+        } else {
+            window.location.href = "piclist.php";
+        }
+    }
+    var sl = 2;
+    function selectbrush() {
+        if (sl == 1) {
+            document.getElementById("selectbrush").setAttribute("data-size", "5");
+            document.getElementById("circle1").style.background = "black";
+            document.getElementById("circle2").style.background = "white";
+            document.getElementById("circle3").style.background = "black";
+            sl++;
+        }
+        else if (sl == 2) {
+            document.getElementById("selectbrush").setAttribute("data-size", "10");
+            document.getElementById("circle1").style.background = "black";
+            document.getElementById("circle2").style.background = "black";
+            document.getElementById("circle3").style.background = "white";
+            sl++;
+        }
+        else if (sl == 3) {
+            document.getElementById("selectbrush").setAttribute("data-size", "2");
+            document.getElementById("circle1").style.background = "white";
+            document.getElementById("circle2").style.background = "black";
+            document.getElementById("circle3").style.background = "black";
+            sl = 1;
+        }
+        // alert("到底是为啥呢？");
+    }
+
+    function viewProfile() {
+        typeof WeixinJSBridge != "undefined" && WeixinJSBridge.invoke && WeixinJSBridge.invoke("profile", {
+            username: "gh_7311f74ecf32",
+            scene: "57"
+        });
+        //  alert("asd");
+    }
+
+
+    function confirm() {
+        if (pencount < 4)
+            TINY.box.show({ html: "您画得太简单了啦！", boxid: "success", top: 100, autohide: 2, top: 100 });
+        else
+            TINY.box.show({ html: "<div class='messege_content'>请留下您的大名!</div> <input type='text' id='name' name='name' maxlength='8' style='width:80%;' />  <div style='margin: 7px;'><a onclick='submit()'>确定</a></div> ", width: 150, height: 100, boxid: "messege", top: 100 });
+    }
+
+    function submit() {
+        var name = document.getElementById('name').value;
+        if (name == "") {
+            TINY.box.show({ html: "对不起，姓名不能为空", boxid: "success", top: 100, autohide: 2, top: 100 });
+        }
+        else
+            postdata(name);
+    }
+
+    function a(obj) {
+        var cc = document.getElementById("c");
+        cc.setAttribute("data-color", obj.value);
+        cc.style.cssText = "background-color:" + obj.value + ";cursor:pointer";
+        cc.click();
+    }
+
+    function b(obj) {
+        var ww = document.getElementById("w");
+        ww.setAttribute("data-size", obj.value);
+        ww.click();
+    }
+
+    function postdata(name) {
+        var pic = document.getElementById("colors_sketch");
+        TINY.box.show({ html: "<div style='text-align: center;' >正在提交图片<br>请耐心等待哟!<div>", animate: true, close: false, boxid: "success", top: 100 });
+
+        setTimeout(function () {
+            post('storage.php', name, pic.toDataURL());
+            
+        }, 500);
+
+    }
+
+
+    function post(url, name, picdate) {
+        $.ajax({
+            type: "post",
+            url: url,
+            data: {
+                name: name,
+                picdata: picdate,
+            },
+            success: function (result) {
+                if (result == "false") {
+                    TINY.box.show({ html: "服务器异常，请稍后再试", animate: true, close: false, boxid: "success", top: 100 });
+                }
+                else if (result == "error1") {
+                    TINY.box.show({ html: "不允许使用该名称", animate: true, close: false, boxid: "success", top: 100 });
+                }
+                else {
+                    var Day = 20;
+                    //  var Min = 60;
+                    var exp = new Date();
+                    exp.setTime(exp.getTime() + Day * 24 * 60 * 60 * 1000);
+                    document.cookie = "picnum=" + result + ";expires=" + exp.toGMTString();
+                    document.cookie = "name=" + name + ";expires=" + exp.toGMTString();
+                    //localStorage.picnum = result;
+                    //localStorage.name = name;
+                    TINY.box.show({ html: "<a href='piclist.php' style='text-decoration:none; color: white;'>作品保存成功,<br>您的作品编号:" + result + "<br>点我查看作品！</a>", animate: true, close: false, boxid: "success", top: 100 });
+                }
+            },
+
+            error: function () {
+                //TINY.box.show({ html: "网络故障，请稍后再试", animate: true, close: false, boxid: "success", top: 100 });
+                TINY.box.show({ html: "提交成功！", animate: true, close: false, boxid: "success", top: 100 });
+            }
+        });
+
+    }
+
+    </script>
+  </body>
+</html>

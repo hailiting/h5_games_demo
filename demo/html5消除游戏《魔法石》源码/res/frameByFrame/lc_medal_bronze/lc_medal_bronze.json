@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "lc_medal_anim0.png",
+	"frame": {"x":2,"y":2,"w":121,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":8,"w":121,"h":106},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim1.png",
+	"frame": {"x":618,"y":2,"w":116,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":11,"w":116,"h":103},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim10.png",
+	"frame": {"x":499,"y":2,"w":117,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":15,"w":117,"h":99},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim11.png",
+	"frame": {"x":375,"y":2,"w":122,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":15,"w":122,"h":99},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim12.png",
+	"frame": {"x":250,"y":2,"w":123,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":15,"w":123,"h":99},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim13.png",
+	"frame": {"x":125,"y":2,"w":123,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":15,"w":123,"h":100},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim14.png",
+	"frame": {"x":736,"y":2,"w":114,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":15,"w":114,"h":103},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim15.png",
+	"frame": {"x":852,"y":2,"w":114,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":15,"w":114,"h":104},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim16.png",
+	"frame": {"x":101,"y":110,"w":96,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":15,"w":96,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim17.png",
+	"frame": {"x":101,"y":110,"w":96,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":15,"w":96,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim2.png",
+	"frame": {"x":199,"y":107,"w":112,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":112,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim3.png",
+	"frame": {"x":864,"y":108,"w":102,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":19,"w":102,"h":94},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim4.png",
+	"frame": {"x":2,"y":110,"w":97,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":16,"w":97,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim5.png",
+	"frame": {"x":761,"y":108,"w":101,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":15,"w":101,"h":96},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim6.png",
+	"frame": {"x":653,"y":107,"w":106,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":15,"w":106,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim7.png",
+	"frame": {"x":543,"y":107,"w":108,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":15,"w":108,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim8.png",
+	"frame": {"x":430,"y":103,"w":111,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":15,"w":111,"h":99},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medal_anim9.png",
+	"frame": {"x":313,"y":103,"w":115,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":15,"w":115,"h":99},
+	"sourceSize": {"w":127,"h":127}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lc_medal_bronze.png",
+	"format": "RGBA8888",
+	"size": {"w":968,"h":207},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ecfa222e4c905780248d5b879c5b66e2:d1e2e0f7bf317060fbb53103b60823d7:3e6c3d6c9447baf4ee2c70d45be09627$"
+}
+}

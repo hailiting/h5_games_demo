@@ -1,0 +1,152 @@
+{
+    "translation" : {
+        "msg_loading"                    : "LOADING",
+        "msg_chooseLevel"                : "CHOOSE A LEVEL",
+        "msg_chooseHero"                 : "CHOOSE YOUR ARCHER",
+        "msg_play"                       : "PLAY",
+        "msg_share"                      : "SHARE",
+        "msg_follow"                     : "FOLLOW",
+        "msg_credits"                    : "CREDITS",
+        "msg_back"                       : "BACK",
+        "msg_select"                     : "SELECT",
+        "msg_range"                      : "RANGE",
+        "msg_health"                     : "HEALTH",
+        "msg_reloadSpeed"                : "RELOAD SPEED",
+        "msg_power"                      : "POWER",
+        "msg_defense"                    : "DEFENSE",
+        "msg_howToPlay"                  : "HOW TO PLAY",
+        "msg_legolasName"                : "LEGOLAS",
+        "msg_bardName"                   : "BARD",
+        "msg_tarielName"                 : "TAURIEL",
+        "msg_gamePaused"                 : "GAME PAUSED",
+        "msg_home"                       : "HOME",
+        "msg_sound"                      : "SOUND",
+        "msg_resume"                     : "RESUME",
+        "msg_title"                      : "ORC ATTACK",
+        "msg_start"                      : "START",
+        "msg_levelFailedTitle"           : "LEVEL FAILED",
+        "msg_levelFailedMessage"         : "<p>THE LONELY MOUNTAIN IS OVERRUN BY AZOG'S ARMY.</p><p>ALL IS NOT LOST - PLAY AGAIN TO DEFEAT THE ORC HORDE.</p>",
+        "msg_arrowsEmptyMessage"         : "<p>YOU HAVE RUN OUT OF ARROWS.</p> <p>ALL IS NOT LOST, PLAY AGAIN TO RECLAIM THIS LAND.</p>",
+        "msg_levelSelect"                : "SELECT LEVEL",
+        "msg_retry"                      : "RETRY",
+        "msg_levelCompleted"             : "LEVEL $ COMPLETE",
+        "msg_healthBonus"                : "HEALTH BONUS",
+        "msg_arrowBonus"                 : "ARROW BONUS",
+        "msg_accuracyBonus"              : "ACCURACY BONUS",
+        "msg_nextLevel"                  : "NEXT LEVEL",
+        "msg_help"                       : "HELP",
+        "msg_privacyPolicy"              : "PRIVACY POLICY",
+        "msg_termsOfUse"                 : "TERMS OF USE",
+        "lnk_privacyPolicy"              : "/www.warnerbros.com/privacy/policy.html",
+        "lnk_termsOfUse"                 : "/www.warnerbros.com/privacy/terms.html",
+        "msg_copyright"                  : "&copy; 2014 WARNER BROS. ENT. TM SAUL ZAENTZ CO.",
+        "msg_threeArrowsLeft"            : "3 ARROWS LEFT",
+        "msg_lastArrow"                  : "LAST ARROW",
+        "msg_victoryTitle"               : "VICTORIOUS",
+        "msg_victoryDescription"         : "<p>THE BATTLE HAS BEEN WON.</p><p>AZOG'S FORCES HAVE BEEN VANQUISHED...<br />BUT FOR HOW LONG?</p>",
+        "msg_help1"                      : "<p>EACH ARCHER HAS DIFFERENT SKILLS AND ABILITIES. CHOOSE YOUR HERO WISELY</p>",
+        "msg_help2"                      : "<p>CLICK/TAP YOUR ARCHER AND DRAG TO AIM AND SET POWER.</p><p>RELEASE TO FIRE.</p>",
+        "msg_help3"                      : "<p>CLICK/TAP AND DRAG TO SCROLL THE TERRAIN.</p><p>CLICK/TAP TO RETURN TO YOUR ARCHER.</p>",
+        "msg_help4"                      : "<p>COLLECT THESE BONUS ITEMS TO HELP DEFEAT AZOG'S ARMY.</p>",
+        "msg_help_stat_range"            : "<p>RANGE</p>",
+        "msg_help_stat_health"           : "<p>HEALTH</p>",
+        "msg_help_stat_reloadSpeed"      : "<p>RELOAD SPEED</p>",
+        "msg_help_stat_power"            : "<p>POWER</p>",
+        "msg_help_stat_defense"          : "<p>DEFENSE</p>",
+        "msg_help_healthBonus"           : "<p>HEALTH BONUS</p>",
+        "msg_help_arrowBonus"            : "<p>ARROW BONUS</p>",
+        "msg_help_shieldBonus"           : "<p>SHIELD BONUS</p>",
+        "msg_help_torches_copy"          : "SHOOT TORCHES TO DAMAGE NEARBY ENEMIES.",
+        "msg_share_levelCompleted_long"  : "I JUST BEAT LEVEL {{level}} OF THE NEW HOBBIT GAME 'ORC ATTACK' WITH {{character}}. CAN YOU BEAT MY SCORE - {{score}}?",
+        "msg_share_levelCompleted_short" : "I JUST BEAT LEVEL {{level}} OF THE NEW HOBBIT GAME CAN YOU BEAT MY SCORE - {{score}}?",
+        "msg_share_gameCompleted_long"   : "I JUST FINISHED THE HOBBIT GAME 'ORC ATTACK' DO YOU HAVE THE SKILL TO BEAT {{stars}}/{{maxStars}} ARROWS? CLICK HERE TO PLAY NOW. ",
+        "msg_share_gameCompleted_short"  : "I JUST FINISHED THE NEW HOBBIT GAME. DO YOU HAVE THE SKILL TO BEAT {{stars}}/{{maxStars}} ARROWS? ",
+        "msg_share_hashtags"             : "ORCATTACK,THEHOBBIT,ONELASTTIME",
+        "msg_share_twitterDefault"       : "PLAY ORC ATTACK AND DEFEAT AZOG'S ARMY ",
+        "msg_reloading"                  : "RELOADING",
+        "msg_numeric_delimiter"          : ",",
+
+        "levels": {
+            "level1": {
+                "msg_levelName"          : "LEVEL 1",
+                "msg_levelObjectives"    : "<p>TARGET PRACTICE</p><p>HIT THE 3 ENEMY ORCS ON THE MAP.</p>"
+            },
+            "level2": {
+                "msg_levelName"          : "LEVEL 2",
+                "msg_levelObjectives"    : "<p>MOVING TARGETS ARE MORE DIFFICULT.</p><p>TAKE OUT THE PATROLLING ORCS AND THEIR WARG.</p>"
+            },
+            "level3": {
+                "msg_levelName"          : "LEVEL 3",
+                "msg_levelObjectives"    : "<p>PLAN YOUR SHOTS TO DEFEAT THE ORCS.</p><p>CLICK AND DRAG TO SCROLL THE MAP.</p>"
+            },
+            "level4": {
+                "msg_levelName"          : "LEVEL 4",
+                "msg_levelObjectives"    : "<p>NEED HELP TAKING OUT ENEMIES?</p><p>SHOOT THE BONUS ITEMS.</p>"
+            },
+            "level5": {
+                "msg_levelName"          : "LEVEL 5",
+                "msg_levelObjectives"    : "<p>SPEED IS ESSENTIAL.</p><p>DESTROY THE WARGS BEFORE THEY REACH YOU.</p>"
+            },
+            "level6": {
+                "msg_levelName"          : "LEVEL 6",
+                "msg_levelObjectives"    : "<p>THE ORCS HAVE OCCUPIED HIGHER GROUND.</p><p>CONTROLLING YOUR SHOT POWER<br />IS VITAL FOR THIS ENGAGEMENT.</p>"
+            },
+            "level7": {
+                "msg_levelName"          : "LEVEL 7",
+                "msg_levelObjectives"    : "<p>THE ENEMY HAVE SENT MORE POWERFUL TROOPS.</p><p>FOCUS ON HEADSHOTS TO CLAIM SWIFT VICTORY.</p>"
+            },
+            "level8": {
+                "msg_levelName"          : "LEVEL 8",
+                "msg_levelObjectives"    : "<p>YOU ARE BESET ON ALL SIDES.</p><p>REMEMBER YOUR TRAINING TO SURVIVE THIS BATTLE.</p>"
+            },
+            "level9": {
+                "msg_levelName"          : "LEVEL 9",
+                "msg_levelObjectives"    : "<p>PRIORITISING ENEMIES IS A MUST.</p><p>DEFEAT THE ARCHERS, THEN DEAL WITH REMAINING ORCS.</p>"
+            },
+            "level10": {
+                "msg_levelName"          : "LEVEL 10",
+                "msg_levelObjectives"    : "<p>AN ARCHER OF EREBOR IS FOREVER VIGILANT.</p><p>REMAIN ALERT DURING THIS ENGAGEMENT.</p>"
+            },
+            "level11": {
+                "msg_levelName"          : "LEVEL 11",
+                "msg_levelObjectives"    : "<p>YOU'VE BEEN FLANKED BY ORCS AND WARGS.</p><p>KEEP CALM AND KEEP FIRING.</p>"
+            },
+            "level12": {
+                "msg_levelName"          : "LEVEL 12",
+                "msg_levelObjectives"    : "<p>ACCURACY WILL BE THE KEY TO<br />BRINGING DOWN THIS ORC FORT.</p>"
+            },
+            "level13": {
+                "msg_levelName"          : "LEVEL 13",
+                "msg_levelObjectives"    : "<p>IT'LL TAKE TRIAL AND ERROR TO DEFEAT THESE ORCS.</p><p>KEEP A CLOSE EYE ON YOUR ARROW COUNT.</p>"
+            },
+            "level14": {
+                "msg_levelName"          : "LEVEL 14",
+                "msg_levelObjectives"    : "<p>IF YOU FIND THIS GROUP OF ORCS AND WARGS<br />OVERWHELMING, LOOK UP FOR ASSISTANCE.</p>"
+            },
+            "level15": {
+                "msg_levelName"          : "LEVEL 15",
+                "msg_levelObjectives"    : "<p>AZOG'S FORCES ARE AMASSING.</p><p>PROVE YOUR SKILLS WITH A DECISIVE VICTORY.</p>"
+            },
+            "level16": {
+                "msg_levelName"          : "LEVEL 16",
+                "msg_levelObjectives"    : "<p>THIS FIGHT MAY SEEM SIMPLE AT FIRST, HOWEVER<br />THE ENEMY HAS LEARNED TO USE CAMOUFLAGE.</p>"
+            },
+            "level17": {
+                "msg_levelName"          : "LEVEL 17",
+                "msg_levelObjectives"    : "<p>THE WARGS ARE AFTER YOUR BLOOD.</p><p>DON'T LET THEM PASS OR YOU'LL<br />BE FIGHTING ON TWO FRONTS.</p>"
+            },
+            "level18": {
+                "msg_levelName"          : "LEVEL 18",
+                "msg_levelObjectives"    : "<p>THE ORCS' TACTICS HAVE RESULTED<br />IN A FIENDISHLY DIFFICULT BATTLE.</p><p>GOOD LUCK.</p>"
+            },
+            "level19": {
+                "msg_levelName"          : "LEVEL 19",
+                "msg_levelObjectives"    : "<p>ONE ARROW. MANY WARGS.</p><p>SPEED AND PRECISION ARE ALL THAT CAN SAVE YOU NOW.</p>"
+            },
+            "level20": {
+                "msg_levelName"          : "LEVEL 20",
+                "msg_levelObjectives"    : "<p>THE FINAL BATTLE FOR LONELY MOUNTAIN IS UPON US.</p><p>DELIVER US TO GLORIOUS VICTORY.</p>"
+            }
+        }
+    }
+}

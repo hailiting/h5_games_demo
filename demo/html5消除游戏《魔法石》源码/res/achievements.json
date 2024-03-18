@@ -1,0 +1,106 @@
+{
+  "achievement_1":{
+    "id": 1, "name": "achievement_1.name", "desc": "achievement_1.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Reach player level 5", "signal": "level5", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_2":{
+    "id": 2, "name": "achievement_2.name", "desc": "achievement_2.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Reach player level 10", "signal": "level10", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_3":{
+    "id": 3, "name": "achievement_3.name", "desc": "achievement_3.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Reach player level 15", "signal": "level15", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_4":{
+    "id": 4, "name": "achievement_4.name", "desc": "achievement_4.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Reach player level 20", "signal": "level20", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_5":{
+    "id": 5, "name": "achievement_5.name", "desc": "achievement_5.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Reach player level 25", "signal": "level25", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_6":{
+    "id": 6, "name": "achievement_6.name", "desc": "achievement_6.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Clear all stages", "signal": "clear_all", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_7":{
+    "id": 7, "name": "achievement_7.name", "desc": "achievement_7.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Collect gems", "signal": "get_gem", "number": 20, "completed": false}
+    ]
+  },
+
+  "achievement_8":{
+    "id": 8, "name": "achievement_8.name", "desc": "achievement_8.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Use fire power", "signal": "fire_power", "number": 50, "completed": false}
+    ]
+  },
+
+  "achievement_9":{
+    "id": 9, "name": "achievement_9.name", "desc": "achievement_9.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Use lightning power", "signal": "lightning_power", "number": 50, "completed": false}
+    ]
+  },
+
+  "achievement_10":{
+    "id": 10, "name": "achievement_10.name", "desc": "achievement_10.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Use leaf power", "signal": "leaf_power", "number": 50, "completed": false}
+    ]
+  },
+
+  "achievement_11":{
+    "id": 11, "name": "achievement_11.name", "desc": "achievement_11.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Use ice power", "signal": "ice_power", "number": 50, "completed": false}
+    ]
+  },
+
+  "achievement_12":{
+    "id": 12, "name": "achievement_12.name", "desc": "achievement_12.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Win level with only 2 seconds left", "signal": "two_seconds_remaining_win", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_13":{
+    "id": 13, "name": "achievement_13.name", "desc": "achievement_13.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Destroy vines with bombs", "signal": "bomb_vine", "number": 20, "completed": false}
+    ]
+  },
+
+  "achievement_14":{
+    "id": 14, "name": "achievement_14.name", "desc": "achievement_14.desc", "type": "multi", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Get 3 medallions on half of all the stages", "signal": "get_half_medallions", "number": 1, "completed": false}
+    ]
+  },
+
+  "achievement_15":{
+    "id": 15, "name": "achievement_15.name", "desc": "achievement_15.desc", "type": "single", "completed": false, "objectives":
+    [
+      {"id": 0, "desc": "Get 3 medallions on every stage", "signal": "get_all_medallions", "number": 1, "completed": false}
+    ]
+  }
+}

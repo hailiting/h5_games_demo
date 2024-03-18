@@ -1,0 +1,316 @@
+{"frames": [
+
+{
+	"filename": "gp_earth_explosion0.png",
+	"frame": {"x":129,"y":73,"w":54,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":2,"w":54,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion1.png",
+	"frame": {"x":66,"y":73,"w":61,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":61,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion10.png",
+	"frame": {"x":2,"y":2,"w":63,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":63,"h":69},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion11.png",
+	"frame": {"x":67,"y":2,"w":63,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":63,"h":69},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion12.png",
+	"frame": {"x":392,"y":72,"w":62,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":62,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion13.png",
+	"frame": {"x":456,"y":72,"w":40,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":2,"w":40,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion2.png",
+	"frame": {"x":2,"y":73,"w":62,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":62,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion3.png",
+	"frame": {"x":262,"y":2,"w":63,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":63,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion4.png",
+	"frame": {"x":262,"y":72,"w":63,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":63,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion5.png",
+	"frame": {"x":327,"y":2,"w":63,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":63,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion6.png",
+	"frame": {"x":327,"y":72,"w":63,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":63,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion7.png",
+	"frame": {"x":392,"y":2,"w":63,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":63,"h":68},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion8.png",
+	"frame": {"x":132,"y":2,"w":63,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":63,"h":69},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_explosion9.png",
+	"frame": {"x":197,"y":2,"w":63,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":63,"h":69},
+	"sourceSize": {"w":63,"h":71}
+},
+{
+	"filename": "gp_earth_move0.png",
+	"frame": {"x":102,"y":201,"w":47,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":47,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move1.png",
+	"frame": {"x":102,"y":143,"w":47,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":2,"w":47,"h":56},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move10.png",
+	"frame": {"x":102,"y":201,"w":47,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":47,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move2.png",
+	"frame": {"x":2,"y":143,"w":48,"h":58},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":1,"w":48,"h":58},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move3.png",
+	"frame": {"x":102,"y":143,"w":47,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":2,"w":47,"h":56},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move4.png",
+	"frame": {"x":102,"y":201,"w":47,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":47,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move5.png",
+	"frame": {"x":52,"y":143,"w":48,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":2,"w":48,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move6.png",
+	"frame": {"x":185,"y":73,"w":48,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":48,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move7.png",
+	"frame": {"x":185,"y":135,"w":48,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":48,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move8.png",
+	"frame": {"x":185,"y":73,"w":48,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":48,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_move9.png",
+	"frame": {"x":52,"y":143,"w":48,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":2,"w":48,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_over.png",
+	"frame": {"x":52,"y":200,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine0.png",
+	"frame": {"x":235,"y":142,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine1.png",
+	"frame": {"x":151,"y":197,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine10.png",
+	"frame": {"x":285,"y":142,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine11.png",
+	"frame": {"x":335,"y":142,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine2.png",
+	"frame": {"x":385,"y":142,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine3.png",
+	"frame": {"x":435,"y":142,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine4.png",
+	"frame": {"x":201,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine5.png",
+	"frame": {"x":251,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine6.png",
+	"frame": {"x":301,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine7.png",
+	"frame": {"x":351,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine8.png",
+	"frame": {"x":401,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_earth_shine9.png",
+	"frame": {"x":451,"y":198,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":3,"w":48,"h":54},
+	"sourceSize": {"w":60,"h":60}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tiles_earth.png",
+	"format": "RGBA8888",
+	"size": {"w":501,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4f4481068a529c108a964260c7e7a866:b0b2e13162999c3198a0aaa779e77650:ce908febe239f6ab587b0e4c47444613$"
+}
+}

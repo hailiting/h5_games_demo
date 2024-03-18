@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.riaidea.com/html5/ddz/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="flashlizi - www.riaidea.com">
+<meta name="Keywords" content="HTML5,canvas,casual framework">
+<meta name="Description" content="HTML5 canvas experiment">
+<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+<title>开心斗地主-我爱h5游戏源码</title>
+<link rel="shortcut icon" href="http://www.52h5game.com/images/icon.png">
+
+<style>
+body
+{
+	padding: 0;
+	margin: 0;	
+	height: 100%;
+	background-color: #eee;
+	font-size: 12px;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+}
+
+#main
+{
+	margin: 0 auto;
+	width: 1008px;
+}
+
+#textContainer
+{
+	margin: 0 auto;
+	font: 24px arial, verdana;
+	font-weight: bold;
+	color: #333;
+	position: absolute;
+	top: 200px;
+	left: 450px;
+	text-align: center;
+    text-shadow: 0 2px 2px #ccc;
+}
+
+</style>
+
+<script type="text/javascript" src="./douzizhu_files/casual-0.1.min.js"></script>
+<script type="text/javascript" src="./douzizhu_files/ddz.min.js"></script>
+
+<script type="text/javascript">
+function startGame()
+{
+	if (!document.createElement('canvas').getContext)
+	{
+		alert("Sorry, your browser doesn't support canvas, please use Firefox3.6+, Safari5+, Chrome, IE9+ etc.");
+		return;
+	}
+	
+	//adjust canvas
+	var bw = window.innerWidth || document.body.offsetWidth;
+	var bh = window.innerHeight || document.body.offsetHeight;
+	var canvas = document.getElementById("canvas");
+	if(navigator.userAgent.match(/ipad/i))
+	{
+		//full screen for ipad
+		canvas.width = bw;
+		canvas.height = bh;
+		document.getElementById("main").style.width = bw + "px";
+	}	
+	if(canvas.height < bh) canvas.style.marginTop = (bh - canvas.height >> 1) + "px";
+	
+	var txt = document.getElementById("textContainer");
+	txt.style.left = (bw - txt.offsetWidth >> 1) + "px";
+	
+	playAudio();
+	//start game
+	ddz.startup();
+}
+
+
+function playAudio()
+{
+	audioObj = createAudio("myAudioObj");
+	fakeClick(function()
+	{
+		audioObj.play();
+	});
+}
+
+function createAudio(id)
+{
+	var audio = new Audio("sounds/bg.mp3");
+	audio.loop = true;
+	audio.autoPlay = true;
+	audio.id = id;
+	document.body.appendChild(audio);
+	return audio;
+}
+
+function fakeClick(callback)
+{
+	var aTag = document.createElement("a");
+	aTag.id = "fakeClickLink";
+	aTag.addEventListener("click", function(e)
+	{
+		e.preventDefault();
+		callback();
+	}, false);
+	document.body.appendChild(aTag);
+
+	if (document.createEvent)
+	{
+		var evt = document.createEvent("MouseEvents");
+		if (evt.initMouseEvent)
+		{
+			evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+			aTag.dispatchEvent(evt);
+		}
+	}	
+	document.body.removeChild(aTag);
+}
+</script>
+
+</head>
+
+<body onload="startGame();">	
+	<div id="main" style="width: 1280px;">
+		<div id="canvasContainer">
+			<canvas id="canvas" width="1280" height="666" style="background-image: url(http://www.riaidea.com/html5/ddz/images/bg.png); background-position: 50% 50%;">Sorry, your browser doesn't support canvas, please use Firefox3.6+, Safari5+, Chrome, IE9+ etc.</canvas>
+		</div>  
+		<div id="textContainer" style="left: 451px;">
+			<span id="status"></span>
+		</div>
+	</div>	
+
+
+
+<audio preload="auto" src="sounds/bg.mp3" loop="" id="myAudioObj"></audio><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?15c167d58ea80d658e1af956a753f461";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body></html>

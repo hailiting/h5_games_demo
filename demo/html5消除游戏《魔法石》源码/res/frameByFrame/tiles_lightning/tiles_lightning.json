@@ -1,0 +1,316 @@
+{"frames": [
+
+{
+	"filename": "gp_lightning_explosion0.png",
+	"frame": {"x":2,"y":558,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion1.png",
+	"frame": {"x":2,"y":624,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion10.png",
+	"frame": {"x":2,"y":2,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion11.png",
+	"frame": {"x":2,"y":72,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion12.png",
+	"frame": {"x":2,"y":352,"w":69,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":69,"h":67},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion13.png",
+	"frame": {"x":2,"y":282,"w":69,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":69,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion2.png",
+	"frame": {"x":2,"y":690,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion3.png",
+	"frame": {"x":2,"y":756,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion4.png",
+	"frame": {"x":2,"y":822,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion5.png",
+	"frame": {"x":2,"y":888,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion6.png",
+	"frame": {"x":2,"y":490,"w":69,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":3,"w":69,"h":66},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion7.png",
+	"frame": {"x":2,"y":421,"w":69,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":69,"h":67},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion8.png",
+	"frame": {"x":2,"y":142,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_explosion9.png",
+	"frame": {"x":2,"y":212,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "gp_lightning_move0.png",
+	"frame": {"x":2,"y":954,"w":52,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":5,"w":52,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move1.png",
+	"frame": {"x":74,"y":63,"w":52,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move10.png",
+	"frame": {"x":2,"y":954,"w":52,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":5,"w":52,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move2.png",
+	"frame": {"x":74,"y":2,"w":52,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":1,"w":52,"h":59},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move3.png",
+	"frame": {"x":74,"y":63,"w":52,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move4.png",
+	"frame": {"x":2,"y":954,"w":52,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":5,"w":52,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move5.png",
+	"frame": {"x":74,"y":175,"w":52,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":53},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move6.png",
+	"frame": {"x":74,"y":119,"w":52,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":52,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move7.png",
+	"frame": {"x":73,"y":932,"w":51,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":51,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move8.png",
+	"frame": {"x":74,"y":119,"w":52,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":52,"h":54},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_move9.png",
+	"frame": {"x":74,"y":175,"w":52,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":53},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_over.png",
+	"frame": {"x":74,"y":230,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine0.png",
+	"frame": {"x":73,"y":284,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine1.png",
+	"frame": {"x":73,"y":338,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine10.png",
+	"frame": {"x":73,"y":392,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine11.png",
+	"frame": {"x":73,"y":446,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine2.png",
+	"frame": {"x":73,"y":500,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine3.png",
+	"frame": {"x":73,"y":554,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine4.png",
+	"frame": {"x":73,"y":608,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine5.png",
+	"frame": {"x":73,"y":662,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine6.png",
+	"frame": {"x":73,"y":716,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine7.png",
+	"frame": {"x":73,"y":770,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine8.png",
+	"frame": {"x":73,"y":824,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_lightning_shine9.png",
+	"frame": {"x":73,"y":878,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":52,"h":52},
+	"sourceSize": {"w":60,"h":60}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tiles_lightning.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":1006},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:67cee82dad9356539075d172539c476f:e4e314bd00a25245fbd45d95ed63de31:765c6606653133f3c18b283faaf15c31$"
+}
+}

@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "map_ring.png",
+	"frame": {"x":257,"y":2,"w":49,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+	"sourceSize": {"w":49,"h":49}
+},
+{
+	"filename": "mm_play_button_light3.png.png",
+	"frame": {"x":2,"y":2,"w":138,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":138,"h":137},
+	"sourceSize": {"w":150,"h":150}
+},
+{
+	"filename": "shine.png",
+	"frame": {"x":142,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ls_ring.png",
+	"format": "RGBA8888",
+	"size": {"w":308,"h":141},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:dcd1b3509ef02b53409303914329789b:c4111d5b91974e88d3070c5e320a6904:0c96ede3cced28a54915cc3a2f1a9c95$"
+}
+}

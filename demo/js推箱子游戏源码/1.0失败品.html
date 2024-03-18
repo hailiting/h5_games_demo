@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+}
+#map{
+	width:826px;
+	height:620px;
+	background:url(img/bg.PNG);
+	float:left;
+}
+#cont{
+	width:100px;
+	position:absolute;
+	left:630px;
+	top:100px;
+}
+#rw{
+	position:absolute;
+}
+</style>
+<script language="javascript">
+for (a=0;a<10;a++)//遍历模板
+{
+	for(b=0;b<10;b++)
+	{
+	}
+}
+var fangxiang=0
+var bianjie=[]//边界
+var dian=[]//点
+var xiangzi=[]//箱子
+var renwu=[]
+for (a=0;a<10;a++)//遍历三个数组使初始值全部为0
+{
+	bianjie[a]=new Array()
+	dian[a]=new Array()
+	xiangzi[a]=new Array()
+	renwu[a]=new Array()
+	for(b=0;b<10;b++)
+	{
+		bianjie[a][b]=0
+		dian[a][b]=0
+		xiangzi[a][b]=0
+		renwu[a][b]=0
+	}
+}
+	
+function creat()//将数组转换成图
+{
+	for (a=0;a<10;a++)
+	{
+		for(b=0;b<10;b++)
+		{
+			if(bianjie[a][b]==1)//边界
+			{
+					var bj=document.createElement("img")
+					//创建元素
+					bj.style.position="absolute"
+					bj.style.top=10+30*a+"px"
+					bj.style.left=10+30*b+"px"
+					bj.src="img/body.png"
+					document.body.appendChild(bj)
+			}
+		}
+	}
+//
+for (a=0;a<10;a++)//点
+{
+	for(b=0;b<10;b++)
+	{
+			if(dian[a][b]==1)//点
+			{
+					var di=document.createElement("img")
+					//创建元素
+					di.style.position="absolute"
+					di.style.top=18+30*a+"px"
+					di.style.left=18+30*b+"px"
+					di.src="img/点.png"
+					document.body.appendChild(di)
+			}
+	}
+}
+
+//
+for (a=0;a<10;a++)//箱子
+{
+	for(b=0;b<10;b++)
+	{
+			if(xiangzi[a][b]==1)//箱子
+			{
+					var xz=document.createElement("img")
+					//创建元素
+					xz.style.position="absolute"
+					xz.style.top=10+30*a+"px"
+					xz.style.left=10+30*b+"px"
+					xz.src="img/豆.png"
+					document.body.appendChild(xz)
+			}
+
+	}
+}
+
+//人物
+for (a=0;a<10;a++)//人物
+{
+	for(b=0;b<10;b++)
+	{
+			if(renwu[a][b]==1)//人物
+			{
+					var rw=document.createElement("img")
+					//创建元素
+					rw.style.position="absolute"
+					rw.style.top=10+30*a+"px"
+					rw.style.left=10+30*b+"px"
+					rw.src="img/头0.png"
+					document.body.appendChild(rw)
+			}
+
+	}
+}
+//
+}
+	
+function cl1()//创建第一关
+{
+	for (a=0;a<10;a++)//创建边界
+	{
+		for(b=0;b<10;b++)
+		{
+			if(a<1||a>8||b<1||b>8)
+			{
+				bianjie[a][b]=1
+			}
+		}
+	}
+	
+	//创建点
+	dian[1][2]=1
+	dian[1][3]=1
+	dian[1][4]=1
+	//创建箱子
+	xiangzi[5][2]=1
+	xiangzi[5][3]=1
+	xiangzi[5][4]=1
+	//人物位置
+	renwu[7][7]=1
+////////将数组变成图片
+	creat()
+}
+document.onkeyup=function(event)//键盘输入
+{
+	event=event||window.event
+	switch(event.keyCode)
+	{
+		//左
+		case 37:
+		fangxiang=2
+		document.getElementById("rw").src="img/头2.png"
+		left()
+		break
+		//上
+		case 38:
+		fangxiang=1
+		document.getElementById("rw").src="img/头1.png"
+		top()
+		break
+		//右
+		case 39:
+		fangxiang=0
+		document.getElementById("rw").src="img/头0.png"
+		right()
+		break
+		//下
+		case 40:
+		fangxiang=3
+		document.getElementById("rw").src="img/头3.png"
+		down()
+		break
+		//重置
+		case 13:
+		window.location.reload()
+		break
+	}
+}
+function left()
+{
+	offleft=true
+	//判断移动后是否是边界
+	for(a=0;a<10;a++)
+	{
+		for(b=0;b<10;b++)
+		{
+			if(bianjie[a][b]==1&&renwu[a][b+1]==1)
+			{
+				offleft=false//是边界
+			}
+		}
+	}
+	//判断移动后是否是箱子
+	if(offleft==true)
+	{
+		for(a=0;a<10;a++)
+		{
+			for(b=0;b<10;b++)
+			{
+				if(xiangzi[a][b]==1&&renwu[a][b+1]==1)
+				{
+					offleft=false//是箱子
+					//判断箱子后面是否是边界
+				}
+				else
+				{
+					//不是箱子 
+					//正常移动
+					renwu[a][b+1]=0
+					renwu[a][b]=1
+					creat()
+				}
+			}
+		}
+	}
+	//判断箱子移动后是否是边界
+
+	
+}
+function right()
+{
+}
+function top()
+{
+}
+function down()
+{
+}
+/////////////判断部分
+//判断移动后是否是边界
+//判断移动后是否是箱子
+//判断箱子移动后是否是边界
+//判断箱子是否和点重合
+//判断箱子是否全部和点重合
+</script>
+</head>
+
+<body>
+<div id="map">
+</div>
+<img src="img/头0.png" width="30" height="30" id="rw" style="left:-50px; top:-50px;" />
+<div id="cont">
+<button type="button" onclick="cl1()">第一关</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{"frames": [
+
+{
+	"filename": "Images/shine_bronce.png",
+	"frame": {"x":2,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+},
+{
+	"filename": "Images/shine_gold.png",
+	"frame": {"x":117,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+},
+{
+	"filename": "Images/shine_silver.png",
+	"frame": {"x":232,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+},
+{
+	"filename": "Images/star_bronce.png",
+	"frame": {"x":396,"y":53,"w":39,"h":44},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":39,"h":44},
+	"sourceSize": {"w":49,"h":49}
+},
+{
+	"filename": "Images/star_gold.png",
+	"frame": {"x":347,"y":2,"w":48,"h":49},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":49},
+	"sourceSize": {"w":49,"h":49}
+},
+{
+	"filename": "Images/star_silver.png",
+	"frame": {"x":347,"y":53,"w":47,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":47,"h":48},
+	"sourceSize": {"w":49,"h":49}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "gp_medals.png",
+	"format": "RGBA8888",
+	"size": {"w":437,"h":120},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3cc54ceb15971eeedd001e65589de1a1:5e8d87a7f96271b20ac1c4f8c15113d4:a03fbe69c8d5d32eca91cadcf4109ea3$"
+}
+}

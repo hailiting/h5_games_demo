@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("pattern.png");
+    background-repeat: repeat;
+}
+
+#rotate-device-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    background-size: auto
+}
+
+.rotate-device-image {
+    background: #26252e url('rotation_screen.png') no-repeat center center
+}
+
+#DevelopmentDebugBar a {
+    color: #b3ff96;
+
+}
+
+#DevelopmentDebugBar ul {
+    list-style-type: none;
+}
+
+#DevelopmentDebugBarContent, #DevelopmentDebugBarHidden {
+    padding: 10px;
+}
+
+a:link { color: #d07500;}
+a:visited { color:#d07500;}
+a:hover { color:#ffffff;}
+a:active { color:#f0f0f0;}

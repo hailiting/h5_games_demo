@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "light1.png",
+	"frame": {"x":152,"y":2,"w":150,"h":146},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":4,"w":150,"h":146},
+	"sourceSize": {"w":150,"h":150}
+},
+{
+	"filename": "light2.png",
+	"frame": {"x":2,"y":2,"w":148,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":148,"h":150},
+	"sourceSize": {"w":150,"h":150}
+},
+{
+	"filename": "light3.png",
+	"frame": {"x":304,"y":2,"w":138,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":138,"h":137},
+	"sourceSize": {"w":150,"h":150}
+},
+{
+	"filename": "profile_base.png",
+	"frame": {"x":444,"y":2,"w":113,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":113,"h":116},
+	"sourceSize": {"w":116,"h":116}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "profile_shine.png",
+	"format": "RGBA8888",
+	"size": {"w":559,"h":154},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d0170e7471048722629b044fa89c9e68:3ef82a7c06f8ea9e811bb796d9824d63:4d9441664cb2bd547649795085409b0f$"
+}
+}

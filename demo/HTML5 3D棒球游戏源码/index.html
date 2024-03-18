@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baseball</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/createjs-2014.12.12.min.js"></script>
+        <script type="text/javascript" src="js/ctl_utils.js"></script>
+        <script type="text/javascript" src="js/sprite_lib.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+        <script type="text/javascript" src="js/CLang.js"></script>
+        <script type="text/javascript" src="js/CPreloader.js"></script>
+        <script type="text/javascript" src="js/CMain.js"></script>
+        <script type="text/javascript" src="js/CTextButton.js"></script>
+        <script type="text/javascript" src="js/CToggle.js"></script>
+        <script type="text/javascript" src="js/CGfxButton.js"></script>
+        <script type="text/javascript" src="js/CMenu.js"></script>
+        <script type="text/javascript" src="js/CGame.js"></script>
+        <script type="text/javascript" src="js/CInterface.js"></script>
+        <script type="text/javascript" src="js/CEndPanel.js"></script>
+        <script type="text/javascript" src="js/CBatter.js"></script>
+        <script type="text/javascript" src="js/CPitcher.js"></script>
+        <script type="text/javascript" src="js/CBall.js"></script>
+        <script type="text/javascript" src="js/CStadium.js"></script>
+        <script type="text/javascript" src="js/CStadiumBall.js"></script>
+        <script type="text/javascript" src="js/CPanel.js"></script>
+    </head>
+    <body ondragstart="return false;" ondrop="return false;" >
+	<div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+          <script>
+            $(document).ready(function(){
+                     var oMain = new CMain({
+                                            ball_to_throw: 10,     //THIS PARAM SET THE NUMBER OF BALL LAUNCHING
+                                            offset_hit: 80,        //INCREASE THIS VALUE (PIXEL MEASURED) IF YOU WANT TO INCREASE PIXEL RANGE FOR BALL HITTING. IN THIS WAY BALL WILL BE MORE EASY TO HIT.
+																   //DECREASE IT, IF YOU WANT TO MAKE THE GAME HARDER.
+                                            offset_perfect_hit:10, //LIKE OFFSET_HIT PARAM, THIS VALUE MANAGE THE PIXEL RANGE TO PERFORM A PERFECT HIT (HOME RUN). INCREASE/DECREASE THIS VALUE TO GET PERFECT HIT MORE EASILY/BARELY
+                                            step_spd_stadium: 0.5, //BALL SPEED IN STADIUM PANEL
+                                            score_area1: 10,       //SCORE FOR BALL THROWN IN SECTOR 1
+                                            score_area2: 40,	   //SCORE FOR BALL THROWN IN SECTOR 2
+                                            score_area3: 100       //SCORE FOR HOME RUN
+                                           });
+                                           
+                                           
+                     $(oMain).on("game_start", function(evt) {
+                             //alert("game_start");
+                     });
+
+                     $(oMain).on("save_score", function(evt,iScore) {
+                             //alert("iScore: "+iScore);
+                     });
+
+                     $(oMain).on("restart", function(evt) {
+                             //alert("restart");
+                     });
+                     
+                     $(oMain).on("next_launch", function(evt) {
+                             //alert("next_launch");
+                     });
+                     
+                     sizeHandler();
+           });
+
+        </script>
+        <canvas id="canvas" class='ani_hack' width="790" height="960"> </canvas>
+		
+<!--百度统计 //-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?cbf20f554ba43aeba396a009eb4ab5f7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+		
+</html>

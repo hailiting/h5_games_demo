@@ -1,0 +1,575 @@
+{"frames": [
+	{
+		"filename":"Tauriel_Aim_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 84,"y": 483,"w": 61,"h": 65	},
+		"spriteSourceSize": {"x": 81,"y": 57,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 81,"y": 959,"w": 56,"h": 61	},
+		"spriteSourceSize": {"x": 87,"y": 59,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 160,"y": 114,"w": 54,"h": 56	},
+		"spriteSourceSize": {"x": 88,"y": 64,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 102,"y": 0,"w": 54,"h": 56	},
+		"spriteSourceSize": {"x": 88,"y": 64,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 964,"w": 54,"h": 57	},
+		"spriteSourceSize": {"x": 88,"y": 63,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 81,"y": 888,"w": 78,"h": 69	},
+		"spriteSourceSize": {"x": 88,"y": 51,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 100,"h": 72	},
+		"spriteSourceSize": {"x": 87,"y": 48,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 74,"w": 91,"h": 74	},
+		"spriteSourceSize": {"x": 86,"y": 44,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 150,"w": 86,"h": 76	},
+		"spriteSourceSize": {"x": 85,"y": 42,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 81,"y": 809,"w": 78,"h": 77	},
+		"spriteSourceSize": {"x": 79,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 806,"w": 79,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 727,"w": 79,"h": 77	},
+		"spriteSourceSize": {"x": 71,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 569,"w": 80,"h": 77	},
+		"spriteSourceSize": {"x": 71,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 648,"w": 80,"h": 77	},
+		"spriteSourceSize": {"x": 71,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 340,"y": 237,"w": 55,"h": 74	},
+		"spriteSourceSize": {"x": 72,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 918,"w": 55,"h": 74	},
+		"spriteSourceSize": {"x": 72,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 340,"y": 81,"w": 55,"h": 74	},
+		"spriteSourceSize": {"x": 72,"y": 93,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 338,"y": 841,"w": 55,"h": 75	},
+		"spriteSourceSize": {"x": 72,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 337,"y": 925,"w": 55,"h": 75	},
+		"spriteSourceSize": {"x": 72,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 337,"y": 478,"w": 55,"h": 75	},
+		"spriteSourceSize": {"x": 72,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 397,"y": 79,"w": 54,"h": 75	},
+		"spriteSourceSize": {"x": 73,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 337,"y": 321,"w": 55,"h": 76	},
+		"spriteSourceSize": {"x": 73,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 290,"y": 662,"w": 55,"h": 76	},
+		"spriteSourceSize": {"x": 73,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 290,"y": 583,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 73,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 340,"y": 157,"w": 55,"h": 78	},
+		"spriteSourceSize": {"x": 73,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 397,"y": 156,"w": 54,"h": 78	},
+		"spriteSourceSize": {"x": 74,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 337,"y": 399,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 342,"y": 0,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 343,"y": 740,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 347,"y": 555,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 282,"y": 242,"w": 56,"h": 77	},
+		"spriteSourceSize": {"x": 74,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 347,"y": 634,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 313,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 392,"w": 55,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 394,"y": 471,"w": 55,"h": 76	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 395,"y": 819,"w": 55,"h": 76	},
+		"spriteSourceSize": {"x": 75,"y": 92,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 279,"y": 504,"w": 56,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 279,"y": 925,"w": 56,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 285,"y": 762,"w": 56,"h": 77	},
+		"spriteSourceSize": {"x": 75,"y": 91,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 279,"y": 344,"w": 56,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 279,"y": 424,"w": 56,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 90,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 282,"y": 81,"w": 56,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 89,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_28.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 284,"y": 0,"w": 56,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 89,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_29.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 282,"y": 162,"w": 56,"h": 78	},
+		"spriteSourceSize": {"x": 75,"y": 89,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_30.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 220,"y": 916,"w": 57,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_31.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 161,"y": 916,"w": 57,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_32.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 226,"y": 762,"w": 57,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_33.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 225,"y": 0,"w": 57,"h": 79	},
+		"spriteSourceSize": {"x": 75,"y": 88,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_34.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 279,"y": 843,"w": 57,"h": 80	},
+		"spriteSourceSize": {"x": 75,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Aim_Bot_35.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 81,"y": 727,"w": 78,"h": 80	},
+		"spriteSourceSize": {"x": 55,"y": 87,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 885,"w": 79,"h": 77	},
+		"spriteSourceSize": {"x": 71,"y": 41,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 483,"w": 82,"h": 84	},
+		"spriteSourceSize": {"x": 68,"y": 34,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 313,"w": 83,"h": 83	},
+		"spriteSourceSize": {"x": 67,"y": 35,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 228,"w": 83,"h": 83	},
+		"spriteSourceSize": {"x": 67,"y": 35,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 398,"w": 83,"h": 83	},
+		"spriteSourceSize": {"x": 67,"y": 35,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 149,"y": 458,"w": 64,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 149,"y": 572,"w": 64,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 82,"y": 569,"w": 65,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 93,"y": 74,"w": 65,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 85,"y": 228,"w": 65,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 85,"y": 343,"w": 65,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 152,"y": 189,"w": 64,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 161,"y": 801,"w": 63,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 161,"y": 686,"w": 63,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 218,"y": 114,"w": 62,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 226,"y": 647,"w": 62,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 218,"y": 229,"w": 62,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 215,"y": 532,"w": 62,"h": 113	},
+		"spriteSourceSize": {"x": 72,"y": 55,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 215,"y": 418,"w": 62,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 160,"y": 0,"w": 63,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	},
+	{
+		"filename":"Tauriel_Idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 152,"y": 304,"w": 63,"h": 112	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 200,"h": 208	},
+		"sourceSize": {"w": 200,"h": 208	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":1024,"h":1024}
+}
+}

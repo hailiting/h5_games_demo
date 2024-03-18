@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <title>Poker Pinball</title>
+
+    <style>
+      body {
+         background: skyblue;
+      }
+      
+      #showPolygonsOnlyToast {
+         color: black;
+         position: absolute;
+         top: 20px;
+         left: 10px;
+      }
+
+    </style>
+  </head>
+
+   <body>
+      <link rel='stylesheet' type='text/css' href='pinball.css'/>
+
+      <audio id='ballRolling' preload='auto'>
+         <source src='sounds/ballRolling.ogg' type='audio/ogg'>
+      </audio>
+
+      <audio id='flipper' preload='auto'>
+         <source src='sounds/flipper.ogg' type='audio/ogg'>
+      </audio>
+
+      <audio id='bumper' preload='auto'>
+         <source src='sounds/bumper.ogg' type='audio/ogg'>
+      </audio>
+
+      <audio id='pinball' preload='auto'>
+         <source src='sounds/pinball.ogg' type='audio/ogg'>
+      </audio>
+
+      <!-- Game canvas........................................................... -->
+
+      <canvas id='gameCanvas' width='535' height='936'>
+         Canvas not supported
+      </canvas>
+
+      <div id='showPolygonsOnlyToast' class='toast'>
+         <input type='checkbox' id='showPolygonsOnlyCheckbox'/>
+         Polygons
+      </div>
+      
+      <!-- Loading................................................................ -->
+
+      <div id='loadingToast' class='toast'>
+         <span id='loadingToastTitle' class='title'>Core HTML5 Canvas Pinball</span>
+
+         <div id='loadingMessage'>Loading...</div>
+         <div id='progressDiv'></div>
+      </div>
+
+      <!-- Scores................................................................ -->
+
+      <div id='scoreToast' class='toast'></div>
+
+
+      <!-- Paused................................................................ -->
+
+      <div id='pausedToast' class='toast'>
+        <p class='title'>Paused</p>
+        <p>Click here to start</p>
+      </div>    
+
+      
+      <!-- Game Over............................................................. -->
+
+      <div id='gameOverToast' class='toast'>
+         <p class='title'>Game Over</p><br/>
+         <p><input id='clearHighScoresCheckbox' type='checkbox'/> clear high scores</p>
+         <input id='newGameButton' type='button' value='new game' autofocus='true'/>
+      </div>
+
+      <!-- High scores........................................................... -->
+
+      <p id='highScoreParagraph'></p>
+
+      <div id='highScoreToast' width='300' style='display: none'>
+        <p class='title'>High score!</p>
+        <p>What's your name?</p>
+        <input id='nameInput' type='text' autofocus='true' display='none'>
+        <input id='addMyScoreButton' type='button' value='add my score' disabled='true'>
+        <input id='newGameFromHighScoresButton' type='button' value='new game'>
+
+        <p class='title' id='previousHighScoresTitle' display='none'>Previous High Scores</p>
+        <ol id='highScoreList'>
+        </ol>
+      </div>
+
+      <!-- Lose Life.............................................................. -->
+
+    <script src = 'requestNextAnimationFrame.js'></script>
+    <script src = 'stopwatch.js'></script>
+    <script src = 'animationTimer.js'></script>
+    <script src = 'progressbar.js'></script>
+    <script src = 'sprites.js'></script>
+    <script src = 'gameEngine.js'></script>
+    <script src = 'shapes.js'></script>
+    <script src = 'pinball.js'></script>
+  </body>
+</html>

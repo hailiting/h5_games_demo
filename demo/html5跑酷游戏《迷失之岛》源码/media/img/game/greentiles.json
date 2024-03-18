@@ -1,0 +1,75 @@
+{"frames": {
+
+"blanket4.png":
+{
+	"frame": {"x":133,"y":182,"w":100,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":121},
+	"sourceSize": {"w":100,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"decal_moss.png":
+{
+	"frame": {"x":22,"y":0,"w":149,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":149,"h":38},
+	"sourceSize": {"w":149,"h":38},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"graffiti_carlos.png":
+{
+	"frame": {"x":22,"y":182,"w":109,"h":163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":109,"h":163},
+	"sourceSize": {"w":109,"h":163},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"graffiti_mal.png":
+{
+	"frame": {"x":22,"y":40,"w":122,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":140},
+	"sourceSize": {"w":122,"h":140},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"grass1.png":
+{
+	"frame": {"x":133,"y":305,"w":97,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":72},
+	"sourceSize": {"w":97,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"grass2.png":
+{
+	"frame": {"x":22,"y":379,"w":97,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":72},
+	"sourceSize": {"w":97,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"hole_fill.png":
+{
+	"frame": {"x":0,"y":0,"w":20,"h":458},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":458},
+	"sourceSize": {"w":20,"h":458},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "greentiles.png",
+	"format": "RGBA8888",
+	"size": {"w":233,"h":458},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:81b278650b8e128ee3b41d387678934d:4b953a3ab55543d29fd4d72cc26c7b90:2b5dd6396a8c6a587ad61e26541730d0$"
+}
+}

@@ -1,0 +1,48 @@
+#box{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    background-color: #d5e3bd;
+    border: 1px solid #000;
+    margin: 30px auto;
+}
+#snake{
+    /*position: absolute;*/
+    /*top: 200px;*/
+    /*left: 350px;*/
+}
+.heihei{
+    width: 20px;
+    height: 20px;
+    /*border: 1px solid #000;*/
+    border-radius: 10px;
+    background-color: rgb(13, 113, 85);
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    color: white;
+}
+#head img{
+    width: 20px;
+}
+#apple{
+    width: 20px;
+    height: 20px;
+    background-color: darkred;
+    position: absolute;
+    top: 140px;
+    left: 400px;
+}
+#score{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    left: 1100px;
+    z-index: 1;
+}

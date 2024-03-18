@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: "微软雅黑", "宋体", "黑体";
+	font-size: 13px;
+}
+
+.piece_container {
+	width: 320px;
+    height: 310px;
+	margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.piece_container div {
+    float: left;
+    margin: 1px;
+}
+
+.cover {
+    position: relative;
+    z-index: 998;
+}
+
+.cover_bg {
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 999;
+    background: #000;
+}
+.cover_inner {
+    position: absolute;
+    z-index: 1000;
+}
+
+.rule-description {
+    text-align: center;
+}
+.rule-description .over-time {
+    color: red;
+}
+.rule-description p {
+    text-align: center;
+    margin: auto;
+}
+.rule-description .over-step {
+    color: green;
+}

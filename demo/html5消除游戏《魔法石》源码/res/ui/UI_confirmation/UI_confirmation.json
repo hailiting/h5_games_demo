@@ -1,0 +1,60 @@
+{"frames": [
+
+{
+	"filename": "popup_conf_bg.png",
+	"frame": {"x":2,"y":2,"w":544,"h":247},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":544,"h":247},
+	"sourceSize": {"w":544,"h":247}
+},
+{
+	"filename": "popup_conf_button_no.png",
+	"frame": {"x":548,"y":2,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "popup_conf_button_no_press.png",
+	"frame": {"x":548,"y":63,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "popup_conf_button_yes.png",
+	"frame": {"x":548,"y":124,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_conf_button_yes_press.png",
+	"frame": {"x":548,"y":185,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_conf_diamond.png",
+	"frame": {"x":759,"y":124,"w":14,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+	"sourceSize": {"w":14,"h":14}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_confirmation.png",
+	"format": "RGBA8888",
+	"size": {"w":775,"h":251},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f7fccdb4d6da3db876f082316717cda1:990f8909035ccbe7974ddd2256d59bf8:399eaa4d4d08657fff8cc8540f08d161$"
+}
+}

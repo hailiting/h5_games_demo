@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>俄罗斯方块</title>
+</head>
+<body>
+
+<div id="app">
+	<div class="wrap-game">
+		<div class="wrap-layer"></div>
+		<div class="wrap-block"></div>
+	</div>
+	<div class="wrap-control">
+		<div class="wrap-next"></div>
+		<div class="wrap-info">已消除：{{ config.num_line }}行</div>
+		<div class="wrap-info">{{ config.f_state }}</div>
+		<div class="button" v-on:click="game_reset">重新开始</div>
+		<div class="button" v-on:click="game_pause">暂停游戏</div>
+		<div class="button" v-on:click="game_play">开始游戏</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="vue.min.js"></script>
+<script type="text/javascript" src="node.js"></script>
+<script type="text/javascript" src="node_next.js"></script>
+<script type="text/javascript">
+var app = new Vue({
+	el: '#app',
+	data: {
+		config: {
+			px: 30,
+			is_game_over: false,
+			f_state: 'in game',
+			rnd_curr: 0,
+			rnd_next: 0,
+			num_line: 0,
+			timer: false
+		},
+		layer: {
+			width: 10,
+			height: 20
+		},
+		block: {
+			len: 3,
+			x: 3,
+			y: 0
+		},
+		block_next: {
+			len: 3,
+			x: 3,
+			y: 0
+		},
+		back: {
+			block: {},
+			arr_node_layer: [],
+			arr_node_block: []
+		},
+		arr_node_layer: [],
+		arr_node_block: [],
+		arr_node_next: []
+	},
+	created: function () {
+		this.config.rnd_next = Math.ceil(Math.random()*8);
+		this.layer_init();
+		this.layer_display();
+		this.next_setting();
+		this.next_display();
+		this.block_setting();
+		this.block_display();
+		
+		var _this = this;
+		this.config.timer = setInterval(function(){ 
+			_this.backup();
+			_this.block.y++;
+			if( _this.chk_bottom() || _this.chk_knock() ){
+				_this.restore();
+				_this.do_solidity();
+				_this.chk_game_over();
+				_this.chk_full_line();
+				_this.layer_display();
+				_this.next_setting();
+				_this.next_display();
+				_this.block_setting();
+				_this.block_display();
+				return;
+			}
+			_this.block_display();
+		}, 1000);
+		
+		document.onkeydown = function(e) {
+			if( _this.config.is_game_over == true ){
+				console.log('game over');
+				return;
+			}
+			_this.backup();
+			let key = window.event.keyCode;
+			if (key == 37) { //left
+				_this.block.x--;
+			}
+			if (key == 38) { //up
+				_this.do_rotate();
+			}
+			if (key == 39) { //right
+				_this.block.x++;
+			}
+			if (key == 40) { //down
+				_this.block.y++;
+				if( _this.chk_bottom() || _this.chk_knock() ){
+					_this.restore();
+					_this.do_solidity();
+					_this.chk_game_over();
+					_this.chk_full_line();
+					_this.layer_display();
+					_this.next_setting();
+					_this.next_display();
+					_this.block_setting();
+					_this.block_display();
+					
+					return;
+				}
+			}
+			// show
+			if( _this.chk_overflow() || _this.chk_knock() ){
+				_this.restore();
+			}else{
+				_this.block_display();
+			}
+		};
+	},
+	methods: {
+		backup: function(){
+			this.back.block = JSON.parse(JSON.stringify(this.block));
+			this.back.arr_node_block = JSON.parse(JSON.stringify(this.arr_node_block));
+		},
+		restore: function(){
+			this.block = this.back.block;
+			this.arr_node_block = this.back.arr_node_block;
+		},
+		
+		layer_init: function(){
+			for(i=1;i<=this.layer.width;i++){
+				let _node = [];
+				for(j=-4;j<=this.layer.height;j++){
+					_node[j] = {
+						x: i,
+						y: j,
+						left: (i-1) * this.config.px + 'px',
+						top: (j-1) * this.config.px + 'px',
+						is_block: 0,
+						id: 'y' + i + '_' + j,
+						txt: i + ',' + j
+					};
+					this.arr_node_layer[i] = _node;
+				}
+			}
+		},
+		layer_display: function(){
+			var html = "";
+			for(i=1;i<=this.layer.width;i++){
+				for(j=1;j<=this.layer.height;j++){
+					html += '<div class="node bg'+this.arr_node_layer[i][j].is_block+'" id="'+this.arr_node_layer[i][j].id+'"></div>';
+				}
+			}
+			$(".wrap-layer").html(html);
+			for(i=1;i<=this.layer.width;i++){
+				for(j=1;j<=this.layer.height;j++){
+					document.getElementById(this.arr_node_layer[i][j].id).style.left = this.arr_node_layer[i][j].left;
+					document.getElementById(this.arr_node_layer[i][j].id).style.top = this.arr_node_layer[i][j].top;
+				}
+			}
+		},
+		
+		block_init: function(){
+			for(i=1,jj=1;i<=this.block.len;i++,jj++){
+				let _node = [];
+				for(j=1,ii=this.block.len;j<=this.block.len;j++,ii--){
+					_node[j] = {
+						x: i,
+						y: j,
+						x90: ii,
+						y90: jj,
+						left: (i-1) * this.config.px,
+						top: (j-1) * this.config.px,
+						is_block: 0,
+						id: 'b' + i + '_' + j,
+						aid: 'a' + i + '_' + j,
+						txt: i + ',' + j
+					};
+					this.arr_node_block[i] = _node;
+				}
+			}
+		},
+		block_setting: function(){
+			//this.config.rnd_curr = this.config.rnd_next;
+			eval('node_'+this.config.rnd_curr+'(this);');
+		},
+		block_display: function(){
+			var html = "";
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					html += '<div class="node bg'+this.arr_node_block[i][j].is_block+'" id="'+this.arr_node_block[i][j].id+'"></div>';
+				}
+			}
+			$(".wrap-block").html(html);
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					document.getElementById(this.arr_node_block[i][j].id).style.left =
+						this.arr_node_block[i][j].left + this.block.x * this.config.px + 'px';
+					document.getElementById(this.arr_node_block[i][j].id).style.top =
+						this.arr_node_block[i][j].top + this.block.y * this.config.px + 'px';
+				}
+			}
+		},
+		
+		next_init: function(){
+			for(i=1;i<=this.block_next.len;i++){
+				let _node = [];
+				for(j=1;j<=this.block_next.len;j++){
+					_node[j] = {
+						x: i,
+						y: j,
+						left: (i-1) * this.config.px,
+						top: (j-1) * this.config.px,
+						is_block: 0,
+						id: 'a' + i + '_' + j
+					};
+					this.arr_node_next[i] = _node;
+				}
+			}
+		},
+		next_setting: function(){
+			this.config.rnd_curr = this.config.rnd_next;
+			this.config.rnd_next = Math.ceil(Math.random()*8);
+			eval('node_next_'+this.config.rnd_next+'(this);');
+		},
+		next_display: function(){
+			var html = "";
+			for(i=1;i<=this.block_next.len;i++){
+				for(j=1;j<=this.block_next.len;j++){
+					html += '<div class="node bg'+this.arr_node_next[i][j].is_block+'" id="'+this.arr_node_next[i][j].id+'"></div>';
+				}
+			}
+			$(".wrap-next").html(html);
+			for(i=1;i<=this.block_next.len;i++){
+				for(j=1;j<=this.block_next.len;j++){
+					document.getElementById(this.arr_node_next[i][j].id).style.left = this.arr_node_next[i][j].left + 'px';
+					document.getElementById(this.arr_node_next[i][j].id).style.top = this.arr_node_next[i][j].top + 'px';
+				}
+			}
+		},
+		
+		do_rotate: function(){
+			let _node = JSON.parse(JSON.stringify(this.arr_node_block));
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					let x90 = _node[i][j].x90;
+					let y90 = _node[i][j].y90;
+					this.arr_node_block[i][j].txt = _node[x90][y90].txt;
+					this.arr_node_block[i][j].is_block = _node[x90][y90].is_block;
+				}
+			}
+		},
+		
+		chk_overflow: function(){
+			let is_overflow = false;
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					let _node = this.arr_node_block[i][j];
+					if( this.block.x + _node.x <= 0 ){
+						if( _node.is_block == 1 ){
+							is_overflow = true;
+						}
+					}
+					if( this.block.x + _node.x > this.layer.width ){
+						if( _node.is_block == 1 ){
+							is_overflow = true;
+						}
+					}
+					if( this.block.y + _node.y > this.layer.height ){
+						if( _node.is_block == 1 ){
+							is_overflow = true;
+						}
+					}
+				}
+			}
+			return is_overflow;
+		},
+		
+		chk_knock: function(){
+			let is_knock = false;
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					let _node = this.arr_node_block[i][j];
+					let i_layer = this.block.x + _node.x;
+					let j_layer = this.block.y + _node.y;
+					if( _node.is_block == 1 && this.arr_node_layer[i_layer][j_layer].is_block == 1 ){
+						is_knock = true;
+					}
+				}
+			}
+			return is_knock;
+		},
+		chk_bottom: function(){
+			let is_bottom = false;
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					let _node = this.arr_node_block[i][j];
+					if( this.block.y + _node.y > this.layer.height ){
+						if( _node.is_block == 1 ){
+							is_bottom = true;
+						}
+					}
+				}
+			}
+			return is_bottom;
+		},
+		do_solidity: function(){
+			for(i=1;i<=this.block.len;i++){
+				for(j=1;j<=this.block.len;j++){
+					let _node = this.arr_node_block[i][j];
+					let i_layer = this.block.x + _node.x;
+					let j_layer = this.block.y + _node.y;
+					if( _node.is_block == 1 ){
+						this.arr_node_layer[i_layer][j_layer].is_block = 1;
+					}
+				}
+			}
+		},
+		chk_full_line: function(){
+			this.back.arr_node_layer = JSON.parse(JSON.stringify(this.arr_node_layer));
+			let j_full_line;
+			for(j=1;j<=this.layer.height;j++){
+				j_full_line = j;
+				for(i=1;i<=this.layer.width;i++){
+					if( this.arr_node_layer[i][j].is_block == 0 ){
+						j_full_line = 0;
+					}
+				}
+				if( j_full_line > 0 ){
+					j = 100;
+				}
+			}
+			if( j_full_line > 0 ){
+				this.do_delete_line(j_full_line);
+				this.chk_full_line();
+				this.config.num_line++;
+			}
+		},
+		do_delete_line: function(j_full_line){
+			for(j=this.layer.height,jj=this.layer.height;jj>=1;j--,jj--){
+				if( j == j_full_line ){
+					--jj;
+				}
+				for(i=1;i<=this.layer.width;i++){
+					this.arr_node_layer[i][j].is_block = this.back.arr_node_layer[i][jj].is_block;
+				}
+			}
+			for(i=1;i<this.layer.width;i++){
+				this.arr_node_layer[i][1].is_block = 0;
+			}
+		},
+		chk_game_over: function(){
+			for(j=-4;j<=0;j++){
+				for(i=1;i<=this.layer.width;i++){
+					if( this.arr_node_layer[i][j].is_block == 1 ){
+						this.config.is_game_over = true;
+					}
+				}
+			}
+			if( this.config.is_game_over == true ){
+				this.config.f_state = 'game over';
+				console.log('game over');
+				clearInterval(this.config.timer);
+			}
+		},
+		game_pause: function(){
+			clearInterval(this.config.timer);
+		},
+		game_play: function(){
+			let _this = this;
+			this.config.timer = setInterval(function(){ 
+				_this.backup();
+				_this.block.y++;
+				if( _this.chk_bottom() || _this.chk_knock() ){
+					_this.restore();
+					_this.do_solidity();
+					_this.chk_game_over();
+					_this.chk_full_line();
+					_this.layer_display();
+					_this.next_setting();
+					_this.next_display();
+					_this.block_setting();
+					_this.block_display();
+					return;
+				}
+				_this.block_display();
+			}, 1000);
+		},
+		game_reset: function(){
+			clearInterval(this.config.timer);
+			
+			this.config.is_game_over = false;
+			this.config.f_state = 'in game';
+			this.config.num_line = 0;
+		
+			this.config.rnd_next = Math.ceil(Math.random()*8);
+			this.layer_init();
+			this.layer_display();
+			this.next_setting();
+			this.next_display();
+			this.block_setting();
+			this.block_display();
+			
+			var _this = this;
+			this.config.timer = setInterval(function(){ 
+				_this.backup();
+				_this.block.y++;
+				if( _this.chk_bottom() || _this.chk_knock() ){
+					_this.restore();
+					_this.do_solidity();
+					_this.chk_game_over();
+					_this.chk_full_line();
+					_this.layer_display();
+					_this.next_setting();
+					_this.next_display();
+					_this.block_setting();
+					_this.block_display();
+					return;
+				}
+				_this.block_display();
+			}, 1000);
+		}
+	}
+})
+</script>
+
+<style type="text/css">
+	body{font-size:12px;color:#DDD;}
+	#app{display:flex;}
+	.wrap-game{width:300px;height:600px;border:1px solid #DDD;}
+	
+	.wrap-layer{position:relative;}
+	.wrap-layer .node{width:30px;height:30px;position:absolute;border:1px solid #EEE;}
+	.wrap-layer .bg1{background-color:#CCC;}
+	
+	.wrap-block{position:relative;}
+	.wrap-block .node{width:30px;height:30px;position:absolute;}
+	.wrap-block .bg1{background-color:#CCC;}
+	
+	.wrap-control{margin-left:10px;}
+	.wrap-next {position:relative;height:130px;}
+	.wrap-next .node{width:30px;height:30px;position:absolute;border:1px solid #EEE;}
+	.wrap-next .bg1{background-color:#CCC;}
+	.wrap-info{color:#666;padding:8px 0;}
+	
+	.button:hover {
+		border-color: #009688;
+		color: #333;
+		opacity: .8;
+	}
+	.button {
+		margin-bottom: 8px;
+		border: 1px solid #C9C9C9;
+		background-color: #fff;
+		color: #555;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 12px;
+		font-size: 14px;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+</style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

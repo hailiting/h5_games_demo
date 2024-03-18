@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "credits_logo.png",
+	"frame": {"x":2,"y":652,"w":188,"h":188},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":188},
+	"sourceSize": {"w":188,"h":188}
+},
+{
+	"filename": "logo_powerup.png",
+	"frame": {"x":213,"y":713,"w":150,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":129},
+	"sourceSize": {"w":150,"h":129}
+},
+{
+	"filename": "popup_conf_button_yes.png",
+	"frame": {"x":2,"y":842,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_conf_button_yes_press.png",
+	"frame": {"x":213,"y":652,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_credits_bg.png",
+	"frame": {"x":2,"y":2,"w":475,"h":648},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":475,"h":648},
+	"sourceSize": {"w":475,"h":648}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_credits.png",
+	"format": "RGBA8888",
+	"size": {"w":479,"h":903},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:da6da8a02d306128656d7bbbe027562f:29b471379136f43487a65abd5097a050:7722a56766abbc40446fc838728efa9b$"
+}
+}

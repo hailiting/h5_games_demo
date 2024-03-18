@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+<title>中世纪的国防-7724小游戏</title>
+<script type="text/javascript">document.domain='7k7k.com'</script>
+<link rel="stylesheet" href="assets/css/app.css" type="text/css"/>
+</head>
+<body>
+<div id="content"></div>
+<div id="dummy" style="position:fixed;right:0;bottom:0"></div>
+<div id="orientation"></div>
+<script type="text/javascript">
+    var gameName = "medieval-defense-z.min.js";
+
+    //This all here is for cache busting;
+    function addScript(src, buster, callback) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src + '?v=' + buster);
+        if (typeof callback === 'function') {
+            s.onload = callback;
+        }
+        document.body.appendChild(s);
+    }
+
+    addScript('version.js', Date.now(), function () {
+        addScript(gameName, version, function () {
+            /**
+             * Here we create the game
+             */
+            var game = new MedievalDefenseZ.Game.getInstance();
+
+            /**
+             * Below here are all the events that are fired by the game.\
+             * Use these events to show ads or implement highscore
+             *
+             * The events can only be added when the document is done loading (ready), so we have to wait for this
+             */
+            game.device.whenReady(function () {
+                game.events.onGameStart.add(function () {
+                    //Fired when the game starts
+                });
+                game.events.onGameEnd.add(function (score) {
+                    //Fired when the game ends
+                });
+                game.events.onLevelStart.add(function () {
+                    //Fired when the game starts
+                });
+                game.events.onLevelEnd.add(function () {
+                    //Fired when the game starts
+                });
+            });
+            game.start();
+        })
+    })
+</script>
+<script src="http://play.7724.com/olgames/code_statistics/7724loading.js" language="JavaScript"></script>
+<div style="display:none">
+<script src="http://play.7724.com/olgames/code_statistics/cnzz.js" language="JavaScript"></script>
+</div>
+</body>
+</html>

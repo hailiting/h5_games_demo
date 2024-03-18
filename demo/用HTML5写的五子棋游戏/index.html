@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        var white_or_black = 1;
+        var data = new Array();
+
+        var pre_color = 0;
+        var same_count = 0;
+
+        function GetContainerCanvas() {
+            if (cxt == null) {
+                var cnv = document.getElementById("chess_container");
+                var cxt = cnv.getContext("2d");
+            }
+            return cxt;
+        }
+
+        function GetCursorCanvas() {
+            if (cxt == null) {
+                var cnv = document.getElementById("chess_cursor");
+                var cxt = cnv.getContext("2d");
+            }
+            return cxt;
+        }
+
+        function GetMouse(ele) {
+            var mouse = { x: 0, y: 0 };
+            mouse.x = window.event.pageX - ele.offsetLeft;
+            mouse.y = window.event.pageY - ele.offsetTop;
+
+            return mouse;
+        }
+
+        function MouseMove(ele) {
+            var mouse = GetMouse(ele);
+            var cxt = GetCursorCanvas();
+
+            cxt.clearRect(0, 0, 856, 800);
+            cxt.drawImage(white_or_black == 1 ? white_chess : black_chess, mouse.x - 20, mouse.y - 20);
+        }
+
+        function MouseDown(ele) {
+            var mouse = GetMouse(ele);
+
+            var col = Math.floor((mouse.x - 27 + 22.39) / 44.78);
+            var row = Math.floor((mouse.y - 25 + 20.8) / 41.6);
+
+            if (data[row][col] != 0) {
+                //alert("此处不能落子");
+                return;
+            }
+
+            var cxt = GetContainerCanvas();
+            cxt.drawImage(white_or_black == 1 ? white_chess : black_chess, col * 44.78 + 27 - 20, row * 41.6 + 25 - 20);
+
+            data[row][col] = white_or_black;
+            white_or_black = 3 - white_or_black;
+
+            if (CheckFinish()) {
+                alert("游戏结束。" + (white_or_black == 2 ? "白方胜！" : "黑方胜！"))
+            }
+        }
+
+        function CheckFinish() {
+            for (i = 0; i < 19; i++) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (j = 0; j < 19; j++) {
+                    if (HandleData(data[i][j])) {
+                        return true;
+                    }
+                }
+            }
+
+            for (j = 0; j < 19; j++) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (i = 0; i < 19; i++) {
+                    if (HandleData(data[i][j])) {
+                        return true;
+                    }
+                }
+            }
+
+            for (i = 18; i >= 0; i--) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (j = i; j < 19; j++) {
+                    if (HandleData(data[j][j - i])) {
+                        return true;
+                    }
+                }
+            }
+            for (i = 1; i < 19; i++) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (j = i; j < 19; j++) {
+                    if (HandleData(data[j - i][j])) {
+                        return true;
+                    }
+                }
+            }
+
+            for (i = 18; i >= 0; i--) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (j = i; j < 19; j++) {
+                    if (HandleData(data[j - i][18 - j])) {
+                        return true;
+                    }
+                }
+            }
+            for (i = 1; i < 19; i++) {
+                pre_color = 0;
+                same_count = 0;
+
+                for (j = i; j < 19; j++) {
+                    if (HandleData(data[18 - j][j - i])) {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        function HandleData(num) {
+            if (num == 0) {
+                pre_color = 0;
+                same_count = 0;
+            }
+            else if (num == pre_color) {
+                same_count++;
+            }
+            else {
+                pre_color = num;
+                same_count = 1;
+            }
+
+            if (same_count >= 5) {
+                return true;
+            }
+            return false;
+        }
+
+        window.onload = function () {
+            for (i = 0; i < 19; i++) {
+                data[i] = new Array();
+                for (j = 0; j < 19; j++) {
+                    data[i][j] = 0;
+                }
+            }
+        }
+    </script>
+</head>
+<body style="margin:0;padding:0;">
+    <div style="width:856px;height:800px;position:relative;">
+        <img id="black_chess" src="img/black.png" style="display:none;" />
+        <img id="white_chess" src="img/white.png" style="display:none;" />
+
+        <img src="img/board.jpg" style="display:block;position:absolute;left:0;top:0;" />
+        <canvas id="chess_container" width="856" height="800" style="display:block;position:absolute;left:0;top:0;"></canvas>
+        <canvas id="chess_cursor" width="856" height="800" style="display:block;position:absolute;left:0;top:0;" onmousemove="MouseMove(this)" onmousedown="MouseDown(this)"></canvas>
+    </div>
+    <div id="message"></div>
+</body>
+</html>

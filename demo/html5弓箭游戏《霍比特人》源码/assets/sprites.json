@@ -1,0 +1,1551 @@
+{"frames": [
+	{
+		"filename":"arrow.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 2033,"w": 56,"h": 3	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 56,"h": 4	},
+		"sourceSize": {"w": 56,"h": 4	}
+	},
+	{
+		"filename":"critical_hit.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 847,"y": 1739,"w": 90,"h": 88	},
+		"spriteSourceSize": {"x": 2,"y": 5,"w": 99,"h": 100	},
+		"sourceSize": {"w": 99,"h": 100	}
+	},
+	{
+		"filename":"enemy-arrow.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 2038,"w": 56,"h": 4	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 56,"h": 4	},
+		"sourceSize": {"w": 56,"h": 4	}
+	},
+	{
+		"filename":"feedback_no_icon.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 2044,"w": 1,"h": 1	},
+		"spriteSourceSize": {"x": -2,"y": -2,"w": 105,"h": 106	},
+		"sourceSize": {"w": 105,"h": 106	}
+	},
+	{
+		"filename":"health-frame.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 58,"y": 2034,"w": 30,"h": 6	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 30,"h": 6	},
+		"sourceSize": {"w": 30,"h": 6	}
+	},
+	{
+		"filename":"hud_arrows.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 173,"y": 1971,"w": 25,"h": 41	},
+		"spriteSourceSize": {"x": 2,"y": 2,"w": 28,"h": 44	},
+		"sourceSize": {"w": 28,"h": 44	}
+	},
+	{
+		"filename":"hud_darken.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 1024,"h": 90	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 1024,"h": 90	},
+		"sourceSize": {"w": 1024,"h": 90	}
+	},
+	{
+		"filename":"hud_shield.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 886,"y": 1028,"w": 28,"h": 33	},
+		"spriteSourceSize": {"x": 0,"y": 1,"w": 28,"h": 34	},
+		"sourceSize": {"w": 28,"h": 34	}
+	},
+	{
+		"filename":"objectives_kill.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 932,"y": 2002,"w": 45,"h": 44	},
+		"spriteSourceSize": {"x": 2,"y": 2,"w": 48,"h": 48	},
+		"sourceSize": {"w": 48,"h": 48	}
+	},
+	{
+		"filename":"pie-bg.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 173,"y": 2014,"w": 24,"h": 24	},
+		"spriteSourceSize": {"x": 4,"y": 4,"w": 32,"h": 32	},
+		"sourceSize": {"w": 32,"h": 32	}
+	},
+	{
+		"filename":"powerup_arrows_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 885,"y": 1220,"w": 49,"h": 50	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 50,"h": 52	},
+		"sourceSize": {"w": 50,"h": 52	}
+	},
+	{
+		"filename":"powerup_health_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 886,"y": 811,"w": 49,"h": 50	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 50,"h": 52	},
+		"sourceSize": {"w": 50,"h": 52	}
+	},
+	{
+		"filename":"powerup_hit_arrows.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 738,"y": 1451,"w": 101,"h": 102	},
+		"spriteSourceSize": {"x": 2,"y": 1,"w": 105,"h": 106	},
+		"sourceSize": {"w": 105,"h": 106	}
+	},
+	{
+		"filename":"powerup_hit_health.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 742,"y": 1843,"w": 101,"h": 102	},
+		"spriteSourceSize": {"x": 2,"y": 1,"w": 105,"h": 106	},
+		"sourceSize": {"w": 105,"h": 106	}
+	},
+	{
+		"filename":"powerup_hit_shield.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 744,"y": 1739,"w": 101,"h": 102	},
+		"spriteSourceSize": {"x": 2,"y": 1,"w": 105,"h": 106	},
+		"sourceSize": {"w": 105,"h": 106	}
+	},
+	{
+		"filename":"powerup_shield_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 875,"y": 337,"w": 49,"h": 50	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 50,"h": 52	},
+		"sourceSize": {"w": 50,"h": 52	}
+	},
+	{
+		"filename":"powerups_arrows_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 469,"y": 967,"w": 62,"h": 57	},
+		"spriteSourceSize": {"x": 94,"y": 94,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1050,"y": 69,"w": 66,"h": 59	},
+		"spriteSourceSize": {"x": 92,"y": 93,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1044,"y": 964,"w": 69,"h": 59	},
+		"spriteSourceSize": {"x": 91,"y": 93,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1022,"y": 1854,"w": 72,"h": 62	},
+		"spriteSourceSize": {"x": 89,"y": 92,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 492,"w": 75,"h": 63	},
+		"spriteSourceSize": {"x": 88,"y": 92,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1015,"y": 1511,"w": 78,"h": 66	},
+		"spriteSourceSize": {"x": 86,"y": 91,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 967,"y": 1028,"w": 81,"h": 68	},
+		"spriteSourceSize": {"x": 85,"y": 90,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 939,"y": 1779,"w": 83,"h": 70	},
+		"spriteSourceSize": {"x": 84,"y": 89,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 880,"y": 1628,"w": 85,"h": 72	},
+		"spriteSourceSize": {"x": 83,"y": 88,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 886,"y": 735,"w": 85,"h": 74	},
+		"spriteSourceSize": {"x": 83,"y": 87,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 873,"y": 474,"w": 88,"h": 76	},
+		"spriteSourceSize": {"x": 81,"y": 85,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 873,"y": 394,"w": 90,"h": 78	},
+		"spriteSourceSize": {"x": 80,"y": 84,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 845,"y": 1843,"w": 92,"h": 75	},
+		"spriteSourceSize": {"x": 79,"y": 83,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 841,"y": 1451,"w": 93,"h": 70	},
+		"spriteSourceSize": {"x": 78,"y": 82,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 837,"y": 1947,"w": 93,"h": 70	},
+		"spriteSourceSize": {"x": 78,"y": 82,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 834,"y": 1555,"w": 93,"h": 71	},
+		"spriteSourceSize": {"x": 79,"y": 81,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 742,"y": 1947,"w": 93,"h": 71	},
+		"spriteSourceSize": {"x": 79,"y": 81,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 738,"y": 1555,"w": 94,"h": 69	},
+		"spriteSourceSize": {"x": 78,"y": 82,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 874,"y": 1366,"w": 87,"h": 68	},
+		"spriteSourceSize": {"x": 78,"y": 83,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 929,"y": 1523,"w": 84,"h": 65	},
+		"spriteSourceSize": {"x": 78,"y": 82,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_arrows_death_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 939,"y": 1851,"w": 81,"h": 65	},
+		"spriteSourceSize": {"x": 79,"y": 81,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1051,"y": 1579,"w": 62,"h": 60	},
+		"spriteSourceSize": {"x": 92,"y": 95,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1050,"y": 1025,"w": 66,"h": 61	},
+		"spriteSourceSize": {"x": 90,"y": 95,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1049,"y": 163,"w": 69,"h": 62	},
+		"spriteSourceSize": {"x": 89,"y": 94,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1048,"y": 1360,"w": 73,"h": 64	},
+		"spriteSourceSize": {"x": 87,"y": 93,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1026,"y": 0,"w": 76,"h": 67	},
+		"spriteSourceSize": {"x": 86,"y": 91,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 973,"y": 630,"w": 79,"h": 68	},
+		"spriteSourceSize": {"x": 85,"y": 90,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 967,"y": 92,"w": 81,"h": 69	},
+		"spriteSourceSize": {"x": 84,"y": 89,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 963,"y": 474,"w": 83,"h": 71	},
+		"spriteSourceSize": {"x": 84,"y": 88,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 884,"y": 1274,"w": 85,"h": 72	},
+		"spriteSourceSize": {"x": 83,"y": 87,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 879,"y": 92,"w": 86,"h": 73	},
+		"spriteSourceSize": {"x": 82,"y": 86,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 875,"y": 262,"w": 86,"h": 73	},
+		"spriteSourceSize": {"x": 82,"y": 85,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 875,"y": 186,"w": 87,"h": 74	},
+		"spriteSourceSize": {"x": 81,"y": 84,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 936,"y": 1436,"w": 84,"h": 73	},
+		"spriteSourceSize": {"x": 84,"y": 83,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 886,"y": 951,"w": 85,"h": 75	},
+		"spriteSourceSize": {"x": 83,"y": 81,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 939,"y": 1702,"w": 84,"h": 75	},
+		"spriteSourceSize": {"x": 83,"y": 80,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 887,"y": 552,"w": 85,"h": 76	},
+		"spriteSourceSize": {"x": 83,"y": 79,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 880,"y": 1063,"w": 85,"h": 77	},
+		"spriteSourceSize": {"x": 83,"y": 78,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 963,"y": 1348,"w": 83,"h": 77	},
+		"spriteSourceSize": {"x": 83,"y": 77,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 973,"y": 700,"w": 79,"h": 77	},
+		"spriteSourceSize": {"x": 83,"y": 77,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 972,"y": 1098,"w": 80,"h": 73	},
+		"spriteSourceSize": {"x": 83,"y": 76,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_health_death_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1024,"y": 1779,"w": 76,"h": 73	},
+		"spriteSourceSize": {"x": 84,"y": 76,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 810,"y": 492,"w": 60,"h": 56	},
+		"spriteSourceSize": {"x": 94,"y": 95,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 967,"w": 63,"h": 57	},
+		"spriteSourceSize": {"x": 93,"y": 94,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1049,"y": 309,"w": 66,"h": 59	},
+		"spriteSourceSize": {"x": 91,"y": 93,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 973,"y": 964,"w": 69,"h": 61	},
+		"spriteSourceSize": {"x": 90,"y": 92,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1048,"y": 243,"w": 71,"h": 64	},
+		"spriteSourceSize": {"x": 89,"y": 90,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1048,"y": 1293,"w": 75,"h": 65	},
+		"spriteSourceSize": {"x": 87,"y": 90,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1022,"y": 1427,"w": 77,"h": 68	},
+		"spriteSourceSize": {"x": 86,"y": 88,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 973,"y": 893,"w": 79,"h": 69	},
+		"spriteSourceSize": {"x": 85,"y": 87,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 971,"y": 1220,"w": 81,"h": 71	},
+		"spriteSourceSize": {"x": 84,"y": 86,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 963,"y": 262,"w": 83,"h": 73	},
+		"spriteSourceSize": {"x": 83,"y": 84,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 964,"y": 167,"w": 83,"h": 74	},
+		"spriteSourceSize": {"x": 83,"y": 83,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 887,"y": 630,"w": 84,"h": 75	},
+		"spriteSourceSize": {"x": 83,"y": 82,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 885,"y": 1142,"w": 85,"h": 76	},
+		"spriteSourceSize": {"x": 82,"y": 81,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 967,"y": 1590,"w": 82,"h": 77	},
+		"spriteSourceSize": {"x": 82,"y": 80,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 965,"y": 337,"w": 82,"h": 78	},
+		"spriteSourceSize": {"x": 82,"y": 79,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 932,"y": 1920,"w": 84,"h": 80	},
+		"spriteSourceSize": {"x": 82,"y": 78,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 885,"y": 868,"w": 85,"h": 81	},
+		"spriteSourceSize": {"x": 82,"y": 77,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 972,"y": 811,"w": 80,"h": 80	},
+		"spriteSourceSize": {"x": 84,"y": 77,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1018,"y": 1918,"w": 78,"h": 77	},
+		"spriteSourceSize": {"x": 86,"y": 79,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 974,"y": 547,"w": 78,"h": 77	},
+		"spriteSourceSize": {"x": 86,"y": 78,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"powerups_shield_death_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1048,"y": 417,"w": 71,"h": 75	},
+		"spriteSourceSize": {"x": 90,"y": 78,"w": 250,"h": 250	},
+		"sourceSize": {"w": 250,"h": 250	}
+	},
+	{
+		"filename":"sensor_decision.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 1639,"w": 36,"h": 60	},
+		"spriteSourceSize": {"x": 14,"y": 4,"w": 64,"h": 64	},
+		"sourceSize": {"w": 64,"h": 64	}
+	},
+	{
+		"filename":"sensor_drop.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1213,"y": 755,"w": 36,"h": 60	},
+		"spriteSourceSize": {"x": 14,"y": 4,"w": 64,"h": 64	},
+		"sourceSize": {"w": 64,"h": 64	}
+	},
+	{
+		"filename":"sensor_left.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 1577,"w": 36,"h": 60	},
+		"spriteSourceSize": {"x": 14,"y": 4,"w": 64,"h": 64	},
+		"sourceSize": {"w": 64,"h": 64	}
+	},
+	{
+		"filename":"sensor_right.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1147,"y": 1948,"w": 36,"h": 60	},
+		"spriteSourceSize": {"x": 14,"y": 4,"w": 64,"h": 64	},
+		"sourceSize": {"w": 64,"h": 64	}
+	},
+	{
+		"filename":"sensor_uturn.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1152,"y": 1710,"w": 36,"h": 60	},
+		"spriteSourceSize": {"x": 14,"y": 4,"w": 64,"h": 64	},
+		"sourceSize": {"w": 64,"h": 64	}
+	},
+	{
+		"filename":"torch-burnt_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1054,"y": 661,"w": 47,"h": 145	},
+		"spriteSourceSize": {"x": 0,"y": 20,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_explosion_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1025,"y": 1669,"w": 76,"h": 77	},
+		"spriteSourceSize": {"x": 54,"y": 41,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 573,"y": 304,"w": 158,"h": 160	},
+		"spriteSourceSize": {"x": 29,"y": 38,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 400,"y": 1315,"w": 169,"h": 161	},
+		"spriteSourceSize": {"x": 26,"y": 30,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 304,"w": 167,"h": 163	},
+		"spriteSourceSize": {"x": 24,"y": 31,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 398,"y": 1499,"w": 179,"h": 171	},
+		"spriteSourceSize": {"x": 6,"y": 23,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 396,"y": 1790,"w": 187,"h": 180	},
+		"spriteSourceSize": {"x": 5,"y": 14,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1601,"w": 194,"h": 187	},
+		"spriteSourceSize": {"x": 6,"y": 8,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1027,"w": 198,"h": 191	},
+		"spriteSourceSize": {"x": 2,"y": 4,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 277,"w": 200,"h": 193	},
+		"spriteSourceSize": {"x": 0,"y": 2,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 482,"w": 200,"h": 194	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 285,"w": 200,"h": 195	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 92,"w": 200,"h": 191	},
+		"spriteSourceSize": {"x": 0,"y": 4,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 842,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 863,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 678,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 657,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 472,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1048,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 92,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1786,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1601,"w": 200,"h": 183	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1417,"w": 200,"h": 182	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1233,"w": 200,"h": 182	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1315,"w": 196,"h": 182	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_explosion_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 2044,"w": 1,"h": 1	},
+		"spriteSourceSize": {"x": -2,"y": -2,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"torch_idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1152,"y": 1563,"w": 47,"h": 145	},
+		"spriteSourceSize": {"x": 0,"y": 20,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1152,"y": 977,"w": 47,"h": 145	},
+		"spriteSourceSize": {"x": 0,"y": 20,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1152,"y": 463,"w": 47,"h": 149	},
+		"spriteSourceSize": {"x": 0,"y": 16,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1152,"y": 614,"w": 47,"h": 153	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1164,"y": 769,"w": 47,"h": 149	},
+		"spriteSourceSize": {"x": 0,"y": 16,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1167,"y": 0,"w": 47,"h": 147	},
+		"spriteSourceSize": {"x": 0,"y": 18,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1170,"y": 149,"w": 47,"h": 152	},
+		"spriteSourceSize": {"x": 0,"y": 13,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1170,"y": 303,"w": 47,"h": 154	},
+		"spriteSourceSize": {"x": 0,"y": 11,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 1422,"w": 47,"h": 153	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 606,"w": 47,"h": 147	},
+		"spriteSourceSize": {"x": 0,"y": 18,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 459,"w": 47,"h": 145	},
+		"spriteSourceSize": {"x": 0,"y": 20,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1201,"y": 920,"w": 47,"h": 145	},
+		"spriteSourceSize": {"x": 0,"y": 20,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1199,"y": 1273,"w": 47,"h": 147	},
+		"spriteSourceSize": {"x": 0,"y": 18,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1174,"y": 1124,"w": 47,"h": 147	},
+		"spriteSourceSize": {"x": 0,"y": 18,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1150,"y": 1413,"w": 47,"h": 148	},
+		"spriteSourceSize": {"x": 0,"y": 17,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1147,"y": 1797,"w": 47,"h": 149	},
+		"spriteSourceSize": {"x": 0,"y": 16,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1196,"y": 1869,"w": 47,"h": 150	},
+		"spriteSourceSize": {"x": 0,"y": 15,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1121,"y": 310,"w": 47,"h": 151	},
+		"spriteSourceSize": {"x": 0,"y": 14,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1121,"y": 156,"w": 47,"h": 152	},
+		"spriteSourceSize": {"x": 0,"y": 13,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1118,"y": 0,"w": 47,"h": 154	},
+		"spriteSourceSize": {"x": 0,"y": 11,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1115,"y": 820,"w": 47,"h": 155	},
+		"spriteSourceSize": {"x": 0,"y": 10,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1196,"y": 1710,"w": 47,"h": 157	},
+		"spriteSourceSize": {"x": 0,"y": 8,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1103,"y": 494,"w": 47,"h": 159	},
+		"spriteSourceSize": {"x": 0,"y": 6,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1103,"y": 1088,"w": 47,"h": 160	},
+		"spriteSourceSize": {"x": 0,"y": 5,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1125,"y": 1250,"w": 47,"h": 161	},
+		"spriteSourceSize": {"x": 0,"y": 4,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1103,"y": 655,"w": 47,"h": 163	},
+		"spriteSourceSize": {"x": 0,"y": 2,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1054,"y": 1088,"w": 47,"h": 163	},
+		"spriteSourceSize": {"x": 0,"y": 2,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1054,"y": 494,"w": 47,"h": 165	},
+		"spriteSourceSize": {"x": 0,"y": 0,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_28.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1101,"y": 1426,"w": 47,"h": 151	},
+		"spriteSourceSize": {"x": 0,"y": 14,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_29.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1054,"y": 808,"w": 47,"h": 153	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_30.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1098,"y": 1854,"w": 47,"h": 153	},
+		"spriteSourceSize": {"x": 0,"y": 12,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"torch_idle_31.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1103,"y": 1641,"w": 47,"h": 154	},
+		"spriteSourceSize": {"x": 0,"y": 11,"w": 47,"h": 167	},
+		"sourceSize": {"w": 47,"h": 167	}
+	},
+	{
+		"filename":"warg_attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 788,"w": 161,"h": 92	},
+		"spriteSourceSize": {"x": 61,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 698,"w": 163,"h": 88	},
+		"spriteSourceSize": {"x": 56,"y": 49,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 398,"y": 1672,"w": 172,"h": 95	},
+		"spriteSourceSize": {"x": 41,"y": 42,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1905,"w": 173,"h": 92	},
+		"spriteSourceSize": {"x": 32,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 598,"w": 165,"h": 98	},
+		"spriteSourceSize": {"x": 36,"y": 39,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 958,"w": 152,"h": 103	},
+		"spriteSourceSize": {"x": 49,"y": 34,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 1180,"w": 151,"h": 92	},
+		"spriteSourceSize": {"x": 56,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 574,"y": 92,"w": 157,"h": 92	},
+		"spriteSourceSize": {"x": 59,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 571,"y": 557,"w": 159,"h": 92	},
+		"spriteSourceSize": {"x": 61,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 572,"y": 1090,"w": 159,"h": 88	},
+		"spriteSourceSize": {"x": 62,"y": 49,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_attack_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 574,"y": 186,"w": 157,"h": 92	},
+		"spriteSourceSize": {"x": 63,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 585,"y": 1929,"w": 155,"h": 98	},
+		"spriteSourceSize": {"x": 71,"y": 39,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 285,"w": 140,"h": 107	},
+		"spriteSourceSize": {"x": 77,"y": 30,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 1633,"w": 146,"h": 104	},
+		"spriteSourceSize": {"x": 81,"y": 35,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 186,"w": 140,"h": 97	},
+		"spriteSourceSize": {"x": 79,"y": 52,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 394,"w": 138,"h": 96	},
+		"spriteSourceSize": {"x": 76,"y": 61,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 1366,"w": 140,"h": 83	},
+		"spriteSourceSize": {"x": 73,"y": 74,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 469,"w": 165,"h": 65	},
+		"spriteSourceSize": {"x": 64,"y": 92,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 536,"w": 165,"h": 60	},
+		"spriteSourceSize": {"x": 61,"y": 97,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 402,"y": 1027,"w": 169,"h": 61	},
+		"spriteSourceSize": {"x": 61,"y": 96,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 401,"y": 1220,"w": 169,"h": 59	},
+		"spriteSourceSize": {"x": 61,"y": 97,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 377,"y": 1972,"w": 170,"h": 60	},
+		"spriteSourceSize": {"x": 61,"y": 96,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1971,"w": 171,"h": 60	},
+		"spriteSourceSize": {"x": 61,"y": 96,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 402,"y": 1152,"w": 168,"h": 60	},
+		"spriteSourceSize": {"x": 61,"y": 96,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 402,"y": 1090,"w": 168,"h": 60	},
+		"spriteSourceSize": {"x": 61,"y": 96,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 585,"y": 1758,"w": 157,"h": 83	},
+		"spriteSourceSize": {"x": 64,"y": 54,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 579,"y": 1548,"w": 157,"h": 83	},
+		"spriteSourceSize": {"x": 64,"y": 54,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 572,"y": 1180,"w": 158,"h": 83	},
+		"spriteSourceSize": {"x": 64,"y": 54,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 571,"y": 1281,"w": 159,"h": 83	},
+		"spriteSourceSize": {"x": 63,"y": 54,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 571,"y": 1366,"w": 159,"h": 88	},
+		"spriteSourceSize": {"x": 63,"y": 49,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 571,"y": 469,"w": 160,"h": 86	},
+		"spriteSourceSize": {"x": 62,"y": 51,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 567,"y": 875,"w": 160,"h": 87	},
+		"spriteSourceSize": {"x": 62,"y": 50,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 567,"y": 788,"w": 161,"h": 85	},
+		"spriteSourceSize": {"x": 61,"y": 52,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 882,"w": 161,"h": 83	},
+		"spriteSourceSize": {"x": 61,"y": 54,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 569,"y": 698,"w": 160,"h": 84	},
+		"spriteSourceSize": {"x": 60,"y": 53,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 572,"y": 1672,"w": 158,"h": 84	},
+		"spriteSourceSize": {"x": 61,"y": 53,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 573,"y": 964,"w": 157,"h": 80	},
+		"spriteSourceSize": {"x": 61,"y": 57,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 729,"y": 875,"w": 154,"h": 81	},
+		"spriteSourceSize": {"x": 62,"y": 56,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 557,"w": 153,"h": 82	},
+		"spriteSourceSize": {"x": 63,"y": 55,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 730,"y": 784,"w": 154,"h": 82	},
+		"spriteSourceSize": {"x": 63,"y": 55,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 731,"y": 651,"w": 154,"h": 82	},
+		"spriteSourceSize": {"x": 64,"y": 55,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_idle_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 585,"y": 1843,"w": 155,"h": 84	},
+		"spriteSourceSize": {"x": 64,"y": 53,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 579,"y": 1456,"w": 157,"h": 90	},
+		"spriteSourceSize": {"x": 75,"y": 48,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 188,"w": 168,"h": 114	},
+		"spriteSourceSize": {"x": 72,"y": 27,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1790,"w": 192,"h": 113	},
+		"spriteSourceSize": {"x": 69,"y": 19,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1220,"w": 197,"h": 93	},
+		"spriteSourceSize": {"x": 61,"y": 27,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 202,"y": 1499,"w": 194,"h": 100	},
+		"spriteSourceSize": {"x": 54,"y": 37,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 404,"y": 92,"w": 168,"h": 94	},
+		"spriteSourceSize": {"x": 54,"y": 42,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 1063,"w": 145,"h": 95	},
+		"spriteSourceSize": {"x": 56,"y": 45,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 733,"y": 92,"w": 144,"h": 92	},
+		"spriteSourceSize": {"x": 61,"y": 46,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	},
+	{
+		"filename":"warg_run_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 732,"y": 1274,"w": 150,"h": 90	},
+		"spriteSourceSize": {"x": 66,"y": 46,"w": 288,"h": 162	},
+		"sourceSize": {"w": 288,"h": 162	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":2048,"h":2048}
+}
+}

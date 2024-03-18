@@ -1,0 +1,129 @@
+@media screen and (orientation:landscape) and (max-width: 800px) { 
+	body { font-size: 16px; }
+}
+@media screen and (orientation:landscape) and (min-width: 801px) and (max-width: 860px) { 
+	body { font-size: 20px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 861px) and (max-width: 920px) { 
+	body { font-size: 22px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 921px) and (max-width: 980px) { 
+	body { font-size: 26px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 981px) and (max-width: 1100px) { 
+	body { font-size: 29px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 1101px) and (max-width: 1160px) { 
+	body { font-size: 34px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 1161px) and (max-width: 1220px) { 
+	body { font-size: 36px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 1221px) and (max-width: 1540px) { 
+	body { font-size: 37px; } 
+}
+@media screen and (orientation:landscape) and (min-width: 1541px) { 
+	body { font-size: 48px; } 
+}
+
+@media screen and (orientation:portrait) and (max-width: 640px) { 
+	body { font-size: 18px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 641px) and (max-width: 800px) { 
+	body { font-size: 18px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 801px) and (max-width: 860px) { 
+	body { font-size: 20px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 861px) and (max-width: 980px) { 
+	body { font-size: 25px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 981px) and (max-width: 1100px) { 
+	body { font-size: 28px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 1101px) and (max-width: 1160px) { 
+	body { font-size: 34px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 1161px) and (max-width: 1220px) { 
+	body { font-size: 36px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 1221px) and (max-width: 1540px) { 
+	body { font-size: 38px; } 
+}
+@media screen and (orientation:portrait) and (min-width: 1541px) { 
+	body { font-size: 42px; } 
+}
+
+@media screen and (orientation:landscape) and (max-height: 640px) and (max-width: 1024px) {
+	Carousel { display: none; }
+}
+@media screen and (orientation:landscape) and (max-height: 640px) {
+
+	body > header > .header-ratings, body > header > .header-signin { display: none; }
+	body > header > .header-categories { left: auto; right: 0px; width: 12em; }
+	body > header > .header-categories .categories-menu { font-size: 0.5em; height: 15.5em; }
+	TilesList > GameTile h2 { text-align: center; }
+}
+
+@media screen and (orientation:portrait) and (max-width: 640px) {
+
+	body > header > .header-ratings, body > header > .header-signin { display: none; }
+	body > header > .header-categories { left: auto; right: 0em; width: 3em; }
+	body > header > .header-categories .categories-menu { font-size: 1em; width: 10em; height: 15.5em; left: -7em; }
+	body > header > .header-categories .categories-caption { text-align: center; }
+	body > header > .header-categories .categories-caption > .categories-caption-text { display:none; }
+	body > header > .header-categories .categories-caption > .icon-full { display:none; }
+	body > header > .header-categories .categories-caption > .icon-short { display:inline !important; }
+	body > header > .header-categories .categories-caption > .categories-arrow { position: inherit; margin: 0em; }
+	
+	body > section.main-content { width: 100%; padding: 0em 0.2em; }
+	
+	Carousel { display: none; }
+	TilesList { margin-top: 0.5em; }
+	TilesList > GameTile { font-size: 1.2em; }
+	TilesList > GameTile h2 { text-align: center; }
+	
+	section.game-details > section.screenshots > .scroll-wrapper { width: 100%; }
+}
+
+@media screen and (orientation:portrait) and (max-width: 600px) {
+
+	TilesList > GameTile { font-size: 1em; }
+	TilesList > GameTile h2 { text-align: center; }
+}
+
+@media screen and (orientation:portrait) and (min-device-width: 480px) {
+	TilesList > GameTile { font-size: 150%; }
+}
+
+/* special for iphone4 */
+@media screen and (orientation:portrait) and (device-width: 320px) and (device-height: 480px) {
+	TilesList > GameTile { font-size: 0.9em; }
+}
+/* special for iphone5 */
+@media screen and (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	TilesList > GameTile { font-size: 0.8em !important; }
+	body.with-overlay > footer { height: 24em !important; padding-bottom: 20em !important; }
+}
+
+/* iPad */
+@media screen and (orientation:portrait) and (device-width: 768px) and (device-height: 1024px) {
+	body > section.main-content { width: 36em; }
+	body > section.main-content > section.games-carousel { font-size: 1.2em; }
+	body > section.main-content > Carousel { font-size: 1.2em; }
+	
+	TilesList > GameTile { font-size: 1.2em; }
+
+	body.iPad2 { font-size: 24px; }
+	body.iPad2 > section.main-content { width: 30em; }
+	body.iPad2 > section.main-content > Carousel { font-size: 1em; }
+	body.iPad2 TilesList > GameTile { font-size: 1em; }
+}
+
+@media screen and (orientation:landscape) and (device-width: 768px) and (device-height: 1024px) {
+	body > section.main-content { width: 36em; }
+	body > section.main-content > Carousel { font-size: 1.2em; }
+	TilesList > GameTile { font-size: 1.2em; }
+
+	body.iPad2 > section.main-content { width: 34em; }
+}

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" style="min-height: 274px;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>手撕鬼子</title>
+    <style>
+     body { background-color: black; margin-top: 0px; margin-left: 0px; }
+	#share { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: none; z-index: 110; }
+	#share img { height: 150px; width: 180px; position: absolute; right: 0; top: 0; }
+	#spn { position: fixed; left: 50% !important; margin-left: -160px; width: 320px; height: 50px; bottom: 0; z-index: 100;display: none; }
+	.hide { display: none; }
+    </style>
+    <script src="d.js"></script>
+    <script>
+        var _czc = _czc || [];
+	</script>	
+<script type="text/javascript" charset="utf-8" src="js/content.js"></script><script type="text/javascript" src="http://ic.yhd.com/toolbar/js/messageEvent.js"></script></head>
+<body>
+	<div id="spn"></div>
+	<div class="hide">
+     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253513578'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1253513578' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1253513578"></span><script src=" http://s23.cnzz.com/z_stat.php?id=1253513578" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253513578&amp;t=z" charset="utf-8" type="text/javascript"></script>
+	</div>
+	<div id="share" ontouchstart="document.getElementById('share').style.display='none';" onclick="document.getElementById('share').style.display='none';">
+	  <img src="http://wbpkh5001.17c.cn/h5mini/common/img/share.png" alt="">
+    </div>
+    <div id="gameDiv"><canvas width="640" height="960" style="display: block; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 183px; height: 274px; margin-left: 592px; margin-top: 0px; cursor: inherit;"></canvas></div>
+
+    <script language="javascript">
+        var _timer = parseInt(Date.now() + Math.random() * 100000000000);
+        window.shareData = {
+            "imgUrl": "http://wbpkh5001.17c.cn/html5/h5mini/tearDevils/assets/icon.jpg",
+            "timeLineLink": "http://url.cn/V1BV8F?timer=" + _timer,
+            "tTitle": "手撕鬼子",
+            "tContent": "大侠！小鬼子太凶残，快来撕了他们！"
+        };
+
+
+        function clickMore() {
+            _czc.push(['_trackEvent', '点击', '更多游戏']);
+            window.location = "http://mp.weixin.qq.com/s?__biz=MjM5NzAzODA0Ng==&mid=200533929&idx=1&sn=95644f093189b86639325100da7f0c2a#rd";
+        }
+        function dp_share() {
+            _czc.push(['_trackEvent', '点击', '分享游戏按钮']);
+            document.getElementById("share").style.display = "block";
+        }
+
+        function showAd() {
+        }
+        function hideAd() {
+        }
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+            WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "img_url": window.shareData.imgUrl,
+                    "link": window.shareData.timeLineLink,
+                    "desc": window.shareData.tContent,
+                    "title": window.shareData.tTitle
+                }, onShareFriends);
+            });
+
+            WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "img_url": window.shareData.imgUrl,
+                    "img_width": "640",
+                    "img_height": "640",
+                    "link": window.shareData.timeLineLink,
+                    "desc": window.shareData.tContent,
+                    "title": window.shareData.tTitle
+                }, onShareCircle);
+            });
+        }, false);
+		</script>
+
+		<script type="text/javascript">
+		    var myData = { gameid: "tearDevils" };
+		    function dp_submitScore(score) {
+		        myData.score = parseInt(score);
+		        myData.scoreName = "撕了" + score + "个鬼子";
+		        document.title = "我在【手撕鬼子】中得了" + score + "分，谁能超越我？"
+		        window.shareData.tTitle = document.title;
+		        document.getElementById("spn").style.display = "block";
+		    }
+		    function onShareFriends(res) {
+		        _czc.push(['_trackEvent', '分享好友']);
+		    }
+
+		    function onShareCircle(res) {
+		        _czc.push(['_trackEvent', '分享朋友圈']);
+		    }
+
+     </script>
+
+
+<script type="text/javascript" src="jssdk/jssdk.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var AD266 = new adwojs({
+        eid: 'spn', //节点id
+        aid: '316a0284415b4aada3d0aa0567923456', //android安卓PID
+        pid: '2b029f1e733c49e1adebdbb2a85074ae', //iOS PID
+        bt: false,
+        width: 320, //图片宽
+        height: 50 //图片高
+    });
+    AD266.send();
+</script>
+</body></html>

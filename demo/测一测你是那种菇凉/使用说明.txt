@@ -1,0 +1,35 @@
+var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http://1251008728.cdn.myqcloud.com/1251008728/aiqing/faner_cover.jpg",
+              url: "http://www.lanrenmb.com/wcs/1",
+              title: "测一测你是那种范儿的菇凉？",
+              desc: "文艺女青年、小清新、物质女？没人能三言两语就解释清楚，但人们往往能通过直觉和气场判定。菇凉菇凉，测测你是哪种范儿吧！"
+        };
+
+1、把以上url的网址，换成你的那个微测试网址，否则分享以后，你的朋友打开是我们的分享喔！
+2、找到两处如下代码：
+share_callback_hy();
+setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+
+
+share_callback_pyq();
+setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+
+把以上两处的网址换成，你在你的公众平台发布文章地址。之所以要用到以上两点，也是增加别人关注你机会。具体图文操作看图1  图2
+
+
+3、最后就是分享代码：
+<div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+	  把里面网址换成你那个关注你微信公众号文章网址。
+
+
+4、修改js文件里面最后面这里window.location.href.indexOf("wcs")<0){var d=new Date();h=d.getHours();if(h>18&&h<23)   其中把"wcs"这个里面换成你目录文件夹名字。
+例如微测试目录是http://www.lanrenmb.com/wcs/1/   www.XX.com/a/1/  那就把"wcs"替换成  “a”  

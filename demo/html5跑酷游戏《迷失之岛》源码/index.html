@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="apple-mobile-web-app-title" content="[#game.name.long#]">
+	<meta name="robots" content="noindex,nofollow" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="minimal-ui, initial-scale=1, maximum-scale=1, width=device-width, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="msapplication-TileColor" content="#000000">
+
+	<!-- #GAME CSS START# -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/cleanup.css">
+
+    <!-- #GAME CSS END# -->
+    <style>
+        #ios7 { display:none } 
+    </style>
+    
+    <!-- Prevent console.log crashes in IE! -->
+    <script type="text/javascript">
+        if (!window.console || !window.console.log) console = {log: function() {}, error: function() {}};
+    </script>
+
+    <script type="text/javascript" src="./gameContainer_30/require.min.js"></script>
+    <script type="text/javascript" src="./gameContainer_30/modules/Modules.min.js"></script>
+    <script type="text/javascript" src="./gameContainer_30/UI/UIObjects.min.js"></script>
+    <script type="text/javascript" src="./gameContainer_30/modules/suggestionengine/SuggestionEngine.min.js"></script>
+  
+	<script type="text/javascript" src="gameTrackingProps.js"></script>
+
+    <script type="text/javascript" src="./gameProps.js"></script>
+	<!-- #GAME SCRIPTS 1 START# --> 
+    <script type="text/javascript" src="gameTrackingProps.js"></script> 
+    <!-- #GAME SCRIPTS 1 END# -->
+    <script>
+        window.onload = function(){
+            ih5game.start();
+        }
+    </script>
+
+</head>
+<body>
+	<!-- #GAME DIVS START# --> 
+       <div id="container" style="width:100%; height:100%; overflow:hidden;"></div>
+    <!-- #GAME DIVS END# -->
+
+	<!-- Begin iOS 7 HTML -->
+	<div id="ios7">
+		<div id="box">
+			<div id="message">
+				<img src="./gameContainer/overlay/ios7fix/ios7-close-button.png" width="20" height="20" alt="Close Button" id="close-button">
+				<img src="media/images/icons/apple-icon-114x114.png" width="60" height="60" alt="Galactic Rescue Icon" id="icon">
+				<img src="./gameContainer/overlay/ios7fix/ios7-add-to-home-screen.png" width="60" height="60" alt="Add To Home Screen Button" id="add-button">
+				Tap <img src="./gameContainer/overlay/ios7fix/ios7-options-button.png" width="19" height="26" alt="iOS 7 Options Button" id="options-button"> and then<br />
+				<strong>Add to Home Screen</strong><br />
+				for the best play experience.
+			</div>
+		</div>
+		<center><img src="./gameContainer/overlay/ios7fix/ios7-arrow.png" width="16" height="18" alt="Arrow"></center>
+	</div>
+	<!-- End iOS 7 HTML -->
+
+    <!-- #GAME SCRIPTS 2 START# --> 
+    <script>
+
+    function gameStart()
+    {
+        var game = require(['js/game.min.js?v0'], function(game){
+
+        });
+    }
+
+    </script>
+    <!-- #GAME SCRIPTS 2 END# -->
+
+	<script type="text/javascript">
+        window.onload = function(){
+            if(window.containerLoaded){
+                window.continue();
+            }
+            
+            window.loadFired = true;
+        }
+        
+        window.continue = function(){
+            runISL();
+           // cto.track();
+        }
+	</script>
+    <!--
+    <script src="./js/jweixin-1.0.0.js"></script>
+    <script>
+        var mainDesc="荒岛迷行";
+        var mainTitle="  全新风格，炫酷画面，带你体验真正的超速奔跑";
+       // var mainURL = "http://mp.weixin.qq.com/s?__biz=MzA4MTgxODQyMg==&mid=210372828&idx=1&sn=d908657962f31eec85b8949b1547bd7d#rd";
+        var mainImgUrl = "http://dev.g.wanh5.com/cwf/jghd/media/images/icons/apple-icon-114x114.png";
+        //document.title = mainTitle;
+
+        wx.ready(function () {
+            //朋友圈
+            wx.onMenuShareTimeline({
+                title: mainTitle,
+                link: mainURL,
+                imgUrl: mainImgUrl,
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+        });
+
+    </script>
+    -->
+</body>
+</html>

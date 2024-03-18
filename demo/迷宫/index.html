@@ -1,0 +1,345 @@
+<html>
+    <head>
+        <style>
+        #stage {
+            border: 1px solid lightgray;
+        }
+        .rebuild {
+            width:110px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            background-color:#000000;
+            color:#fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <table><tr>
+          <td><canvas id="stage"></canvas></td>
+          <td valign="top" style="padding:10px"> 
+          
+              <div class="rebuild">重新开始</div>  
+              当前步数: <span id="goNum"></span> 
+              <br><br>当前位置 <span id="XY">(x: 1,y: 1)</span>
+              
+              <br><br><input id="runBtn" type="button" value="自动寻路">
+              <br><br><div id="autoOut"></div>
+          </td></tr></table>
+    </body>
+    <script>
+    var si = 8;
+    var mapSize = 40;
+    window.onload = function () {
+        var stage = document.querySelector('#stage'),
+            ctx = stage.getContext('2d');
+        stage.width = si * (mapSize * 2 - 1);
+        stage.height = si * (mapSize * 2 - 1);
+        
+        //取区域随机数x>=min && x<max
+        function randInt(min, max) {
+            max = max || 0;
+            min = min || 0;
+            var step = Math.abs(max - min);
+            var st = (arguments.length < 2) ? 0 : min; //参数只有一个的时候，st = 0;
+            var result;
+            result = st + (Math.ceil(Math.random() * step)) - 1;
+            return result;
+        }
+        
+        //普里姆算法生成连通图的二维数组
+        // row 行 column 列
+        function primMaze(r, c) {
+            //初始化数组
+            function init(r, c) {
+                var a = new Array(2 * r + 1);
+                //全部置1
+                for (let i = 0, len = a.length; i < len; i++) {
+                    var cols = 2 * c + 1;
+                    a[i] = new Array(cols);
+                    for (let j = 0, len1 = a[i].length; j < len1; j++) {
+                        a[i][j] = 1;
+                    }
+                }
+                //a[0][1] = 0;
+                a[a.length - 1][a[0].length - 2] = 0;
+                //中间格子为0
+                for (let i = 0; i < r; i++)
+                    for (let j = 0; j < c; j++) {
+                        a[2 * i + 1][2 * j + 1] = 0;
+                }
+                return a;
+            }
+
+            //处理数组，产生最终的数组
+            function process(arr) {
+                //acc存放已访问队列，noacc存放没有访问队列
+                var acc = [],
+                    noacc = [];
+                var r = arr.length >> 1,
+                    c = arr[0].length >> 1;
+                var count = r * c;
+                for (var i = 0; i < count; i++) {
+                    noacc[i] = 0;
+                }
+                //定义空单元上下左右偏移
+                var offs = [-c, c, -1, 1],
+                    offR = [-1, 1, 0, 0],
+                    offC = [0, 0, -1, 1];
+                //随机从noacc取出一个位置
+                var pos = randInt(count);
+                noacc[pos] = 1;
+                acc.push(pos);
+                while (acc.length < count) {
+                    var ls = -1,
+                        offPos = -1;
+                    offPos = -1;
+                    //找出pos位置在二维数组中的坐标
+                    var pr = pos / c | 0,
+                        pc = pos % c,
+                        co = 0,
+                        o = 0;
+                    //随机取上下左右四个单元
+                    while (++co < 5) {
+                        o = randInt(0, 5);
+                        ls = offs[o] + pos;
+                        var tpr = pr + offR[o];
+                        var tpc = pc + offC[o];
+                        if (tpr >= 0 && tpc >= 0 && tpr <= r - 1 && tpc <= c - 1 && noacc[ls] == 0) {
+                            offPos = o;
+                            break;
+                        }
+                    }
+                    if (offPos < 0) {
+                        pos = acc[randInt(acc.length)];
+                    } else {
+                        pr = 2 * pr + 1;
+                        pc = 2 * pc + 1;
+                        //相邻空单元中间的位置置0
+                        arr[pr + offR[offPos]][pc + offC[offPos]] = 0;
+                        pos = ls;
+                        noacc[pos] = 1;
+                        acc.push(pos);
+                    }
+                }
+            }
+            var a = init(r, c);
+            process(a);
+            return a;
+            //返回一个二维数组，行的数据为2r+1个,列的数据为2c+1个
+        }
+        
+        //栅格线条
+        function drawGrid(context, color, stepx, stepy) {
+            context.strokeStyle = color;
+            context.lineWidth = 0.5;
+            for (var i = stepx + 0.5; i < context.canvas.width; i += stepx) {
+                context.beginPath();
+                context.moveTo(i, 0);
+                context.lineTo(i, context.canvas.height);
+                context.stroke();
+            }
+            for (var i = stepy + 0.5; i < context.canvas.height; i += stepy) {
+                context.beginPath();
+                context.moveTo(0, i);
+                context.lineTo(context.canvas.width, i);
+                context.stroke();
+            }
+        }
+        
+        function createRect(x, y, r, c) {
+            ctx.beginPath();
+            ctx.fillStyle = c;
+            ctx.rect(x, y, r, r);
+            ctx.fill();
+        }
+
+        var region = 0; //可探索区域
+        function update() {
+            ctx.clearRect(0, 0, mapSize * si * 2, mapSize * si * 2);
+            drawGrid(ctx, 'lightgray', si, si);
+            var mapArr = primMaze(mapSize - 1, mapSize - 1);
+            console.log(mapArr);
+            //根据地图二维数组创建色块
+            region = 0;
+            for (var i = 0, len = mapArr.length; i < len; i++) {
+                for (var j = 0, len1 = mapArr[i].length; j < len1; j++) {
+                    if (mapArr[i][j]) {
+                        createRect(i * si, j * si, si, "#999999");
+                    }else{
+                        region++;
+                    }
+                }
+            }
+            return mapArr;
+        }
+        
+        function draw(x,y,c){createRect(x * si+2, y * si+2, si-4, c);}
+        function drawMove(x,y){createRect(x * si+1, y * si+1, si-2, "#66aaff");md[x][y]=2; }
+        function drawMove1(x,y){createRect(x * si+2, y * si+2, si-4, "#3333ff");}
+        function clearMove(x,y){ctx.clearRect(x*si,y*si, si, si);}
+        
+        var md;
+        var currentXY;
+        var onceXY;
+        var goNums = 0;
+        var timeout = 10;
+        var walk = 0;
+        var Stop = true;
+        function init(){
+            document.getElementById("autoOut").innerHTML = "";
+            md = update();
+            currentXY = [1,1];
+            document.getElementById("XY").innerHTML = "x: "+currentXY[0]+"&emsp;y: "+currentXY[1];
+            onceXY = [1,1];
+            goNums = 0;
+            drawMove(currentXY[0],currentXY[1]);
+            document.getElementById("goNum").innerHTML = goNums;
+            control = true;
+            walk = 0;
+            pathList = [];
+            Stop = true;
+        }
+        init();
+        
+        function moveIt(){
+            if(!control)return;
+            var oxy = [currentXY[0],currentXY[1]]; //记录原来位置
+            var moveIs = true;
+            switch (event.keyCode){
+              case 37: currentXY[0]--; break;  // left
+              case 38: currentXY[1]--; break;  // up
+              case 39: currentXY[0]++; break;  // right
+              case 40: currentXY[1]++; break;  // down
+            }
+            if(currentXY[0]>=md[0].length || currentXY[1]>=md.length){ // 重新开始
+                clearMove(currentXY[0],currentXY[1]);
+                init();
+                return;
+            }
+            if(md[currentXY[0]][currentXY[1]]==1){moveIs=false;}             //有墙
+            if(moveIs){
+                clearMove(oxy[0],oxy[1]);              //清除原来位置的色块
+                drawMove1(oxy[0],oxy[1]);              //留下印记
+                if(md[currentXY[0]][currentXY[1]]==2){clearMove(onceXY[0],onceXY[1]);md[onceXY[0]][onceXY[1]]=0;} //曾经走过则清除上一次的印记
+                drawMove(currentXY[0],currentXY[1]);   //画出新位置的色块
+                goNums++;
+            }else{
+                currentXY=[oxy[0],oxy[1]]; //回原位
+            }
+            
+            onceXY=[currentXY[0],currentXY[1]];
+            
+            document.getElementById("goNum").innerHTML = goNums;
+            document.getElementById("XY").innerHTML = "x: "+currentXY[0]+"&emsp;y: "+currentXY[1];
+        }
+        var control = true;
+        document.onkeydown = moveIt;
+        document.querySelector('.rebuild').addEventListener('click', init);
+        
+        var pathList;        //当前路径
+        var pathOkList;      //成功的路径
+        var pathNode;        //分叉路口数
+        var LukouList;
+
+        function endAuto(){  //寻路成功回调
+            var pathCount = pathOkList.length; //可行的路径条数
+            var pNum = region;
+            var zIndex = 0;  // 最短路径索引
+           
+
+            for(var i=0;i<pathOkList.length;i++){
+               if(pathOkList[i].length<pNum){pNum=pathOkList[i].length;zIndex=i;}
+            }
+            
+            var zdPath = pathOkList[zIndex];
+
+            for(var j=0;j<zdPath.length;j++){       //画出最短路径
+                 drawMove1(zdPath[i][0],zdPath[i][1]);
+            }
+            control = true;
+        }
+        
+        function distance(p1,p2){ return Math.sqrt(Math.pow(p1[0]-p2[0],2)+Math.pow(p1[1]-p2[1],2));  };
+        var clearPath = true;
+        function autoFx(){
+            if(Stop)return;
+            var x = currentXY[0];
+            var y = currentXY[1];
+            var oxy = [currentXY[0],currentXY[1]]; //记录原来位置
+            var wayout = 0;  
+            if(md[x+1][y]==0){ wayout++;pathNode.push([x+1,y]); }
+            if(md[x-1][y]==0){ wayout++;pathNode.push([x-1,y]); }
+            if(md[x][y+1]==0){ wayout++;pathNode.push([x,y+1]); }
+            if(md[x][y-1]==0){ wayout++;pathNode.push([x,y-1]); }
+
+            var htmlStr = "已探索区域："+Math.round(walk/region*100) + "%";
+            htmlStr += "<br><br> 有效步数: "+pathList.length;
+            document.getElementById("autoOut").innerHTML = htmlStr;
+            document.getElementById("XY").innerHTML = "x: "+currentXY[0]+"&emsp;y: "+currentXY[1];
+            document.getElementById("goNum").innerHTML = goNums;
+            
+            var ts = function(){
+                if(pathNode.length==0){endAuto(); return;}
+                var lastGo = pathNode.pop();                            //取出上一个节点
+                while(distance(lastGo,pathList[pathList.length-1])>1){  //清除无效路径
+                    var p=pathList.pop();
+                    setTimeout(clearMove(p[0],p[1]),timeout); 
+                    draw(p[0],p[1],"#aaaaaa");
+                }
+                currentXY[0]=lastGo[0];                                 //从记录的新节点开始移动
+                currentXY[1]=lastGo[1];      
+                walk++;
+                
+                setTimeout(function(){autoFx()},timeout);               //自调用递归
+            };
+
+            if(x>=md[0].length-2 && y>=md.length-2){ //探索成功
+                var ppi = pathOkList.length;
+                pathOkList[ppi]=[];
+                for(var i=0;i<pathList.length;i++){
+                    pathOkList[ppi][i]=[];
+                    pathOkList[ppi][i][0]=pathList[i][0];      // 记录成功路径
+                    pathOkList[ppi][i][1]=pathList[i][1];
+                }
+                //if(pathNode.length>0){ ts(); }  // 还有未探索路径 继续探索
+                endAuto(); 
+            }
+
+            if(wayout>0){  //有路走
+                    goNums++;
+                    pathList.push([x,y]);                // 记录当前路径
+                    drawMove1(x,y);                      // 画路径
+                    var newPath = pathNode.pop();        // 取出一个节点
+                    currentXY[0] = newPath[0];
+                    currentXY[1] = newPath[1];           // 移向节点
+                    md[oxy[0]][oxy[1]]=2;                // 标记走过
+                    walk++;
+                    setTimeout(function(){autoFx()},timeout);               // 自调用递归
+            }else{ //死路
+                if(pathNode.length>0){
+                    ts();
+                }else{
+                    endAuto();  //没有分叉可走结束  
+                }
+            }
+        }
+        
+        document.getElementById("runBtn").onclick = function(){
+            if(!control) return;
+            document.getElementById("autoOut").innerHTML = "";
+            currentXY = [1,1];
+            pathList=[];
+            pathOkList=[];
+            pathNode =[];
+            walk = 0;
+            control = false;
+            Stop = false;
+            autoFx();
+        };
+    };
+    </script>
+</html>

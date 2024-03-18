@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "Images/pfire.png",
+	"frame": {"x":2,"y":2,"w":137,"h":138},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":138},
+	"sourceSize": {"w":137,"h":138}
+},
+{
+	"filename": "Images/pice.png",
+	"frame": {"x":141,"y":2,"w":100,"h":115},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":115},
+	"sourceSize": {"w":100,"h":115}
+},
+{
+	"filename": "Images/plightning.png",
+	"frame": {"x":433,"y":2,"w":127,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":144},
+	"sourceSize": {"w":127,"h":144}
+},
+{
+	"filename": "Images/pplant.png",
+	"frame": {"x":312,"y":111,"w":119,"h":143},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":143},
+	"sourceSize": {"w":119,"h":143}
+},
+{
+	"filename": "Images/rfire.png",
+	"frame": {"x":336,"y":2,"w":95,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":99},
+	"sourceSize": {"w":95,"h":99}
+},
+{
+	"filename": "Images/rice.png",
+	"frame": {"x":2,"y":142,"w":106,"h":93},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":106,"h":93},
+	"sourceSize": {"w":106,"h":93}
+},
+{
+	"filename": "Images/rlightning.png",
+	"frame": {"x":243,"y":2,"w":91,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":91,"h":107},
+	"sourceSize": {"w":91,"h":107}
+},
+{
+	"filename": "Images/rplant.png",
+	"frame": {"x":110,"y":142,"w":93,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":93,"h":105},
+	"sourceSize": {"w":93,"h":105}
+},
+{
+	"filename": "Images/sfire.png",
+	"frame": {"x":525,"y":148,"w":91,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":2,"w":91,"h":95},
+	"sourceSize": {"w":95,"h":99}
+},
+{
+	"filename": "Images/sice.png",
+	"frame": {"x":205,"y":119,"w":105,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":93},
+	"sourceSize": {"w":106,"h":93}
+},
+{
+	"filename": "Images/slightning.png",
+	"frame": {"x":562,"y":2,"w":89,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":89,"h":104},
+	"sourceSize": {"w":91,"h":107}
+},
+{
+	"filename": "Images/splant.png",
+	"frame": {"x":433,"y":148,"w":90,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":103},
+	"sourceSize": {"w":91,"h":103}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "db_lvl_up.png",
+	"format": "RGBA8888",
+	"size": {"w":653,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:271b91b9c5ede82364b1ce67f8b00cb9:c90715a6abcb9235c770a3839af1f83f:01607b4e4e6ca773bc397179b236970a$"
+}
+}

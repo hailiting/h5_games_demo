@@ -1,0 +1,201 @@
+{"frames": {
+
+"coin_symbol.png":
+{
+	"frame": {"x":439,"y":199,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":5,"w":66,"h":65},
+	"sourceSize": {"w":70,"h":70},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"item_purchased.png":
+{
+	"frame": {"x":0,"y":420,"w":158,"h":159},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":158,"h":159},
+	"sourceSize": {"w":158,"h":159},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"purchased_frame.png":
+{
+	"frame": {"x":0,"y":581,"w":116,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":116},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_button_bg_active.png":
+{
+	"frame": {"x":118,"y":642,"w":111,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":111,"h":111},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_button_bg_inactive.png":
+{
+	"frame": {"x":0,"y":699,"w":111,"h":111},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":111,"h":111},
+	"sourceSize": {"w":111,"h":111},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_button_bg_purchased.png":
+{
+	"frame": {"x":287,"y":617,"w":116,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":116},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_flip.png":
+{
+	"frame": {"x":172,"y":337,"w":167,"h":177},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":5,"w":167,"h":177},
+	"sourceSize": {"w":188,"h":188},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_flip_small.png":
+{
+	"frame": {"x":439,"y":58,"w":70,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":18,"w":70,"h":76},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_flip_unbought.png":
+{
+	"frame": {"x":439,"y":329,"w":56,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":25,"w":56,"h":61},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_grind.png":
+{
+	"frame": {"x":249,"y":0,"w":188,"h":175},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":188,"h":175},
+	"sourceSize": {"w":188,"h":188},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_grind_small.png":
+{
+	"frame": {"x":430,"y":392,"w":82,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":17,"w":82,"h":76},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_grind_unbought.png":
+{
+	"frame": {"x":439,"y":136,"w":69,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":25,"w":69,"h":61},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_magnet.png":
+{
+	"frame": {"x":0,"y":249,"w":170,"h":169},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":170,"h":169},
+	"sourceSize": {"w":188,"h":188},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_magnet_unbought.png":
+{
+	"frame": {"x":439,"y":266,"w":60,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":60,"h":61},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_smash.png":
+{
+	"frame": {"x":249,"y":177,"w":188,"h":158},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":15,"w":188,"h":158},
+	"sourceSize": {"w":188,"h":188},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_smash_small.png":
+{
+	"frame": {"x":341,"y":337,"w":87,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":24,"w":87,"h":70},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_icon_smash_unbought.png":
+{
+	"frame": {"x":439,"y":0,"w":72,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":31,"w":72,"h":56},
+	"sourceSize": {"w":116,"h":116},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_item_affordable.png":
+{
+	"frame": {"x":172,"y":249,"w":47,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":47},
+	"sourceSize": {"w":47,"h":47},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_item_bg.png":
+{
+	"frame": {"x":0,"y":0,"w":247,"h":247},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":247},
+	"sourceSize": {"w":247,"h":247},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_item_highlight.png":
+{
+	"frame": {"x":160,"y":516,"w":125,"h":124},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":125,"h":124},
+	"sourceSize": {"w":125,"h":124},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"shop_item_icon_flip.png":
+{
+	"frame": {"x":341,"y":470,"w":128,"h":145},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":145},
+	"sourceSize": {"w":128,"h":145},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "shop.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:285f78fdaf8f6b8e8ce593712107a525:03d9cf18af8aad230ed7aacf5fbc4a0a:cf84fc8e4b4fc6a45db7057fa579b60a$"
+}
+}

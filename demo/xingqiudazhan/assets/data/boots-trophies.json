@@ -1,0 +1,67 @@
+{
+  "trophies": {
+    "trophy1": {
+      "id": 0,
+      "name": "game_boots_trophy1_name",
+      "description": "game_boots_trophy1_description",
+      "texture": "medals/hub_icon_medal_01",
+      "achieved": true
+    },
+    "trophy2": {
+      "id": 1,
+      "name": "game_boots_trophy2_name",
+      "description": "game_boots_trophy2_description",
+      "texture": "medals/hub_icon_medal_02",
+      "achieved": false
+    },
+    "trophy3": {
+      "id": 2,
+      "name": "game_boots_trophy3_name",
+      "description": "game_boots_trophy3_description",
+      "texture": "medals/hub_icon_medal_03",
+      "achieved": true
+    },
+    "trophy4": {
+      "id": 3,
+      "name": "game_boots_trophy4_name",
+      "description": "game_boots_trophy4_description",
+      "texture": "medals/hub_icon_medal_04",
+      "achieved": false
+    },
+    "trophy5": {
+      "id": 4,
+      "name": "game_boots_trophy5_name",
+      "description": "game_boots_trophy5_description",
+      "texture": "medals/hub_icon_medal_05",
+      "achieved": false
+    },
+    "trophy6": {
+      "id": 5,
+      "name": "game_boots_trophy6_name",
+      "description": "game_boots_trophy6_description",
+      "texture": "medals/hub_icon_medal_06",
+      "achieved": true
+    },
+    "trophy7": {
+      "id": 6,
+      "name": "game_boots_trophy7_name",
+      "description": "game_boots_trophy7_description",
+      "texture": "medals/hub_icon_medal_07",
+      "achieved": false
+    },
+    "trophy8": {
+      "id": 7,
+      "name": "game_boots_trophy8_name",
+      "description": "game_boots_trophy8_description",
+      "texture": "medals/hub_icon_medal_08",
+      "achieved": false
+    },
+    "trophy9": {
+      "id": 8,
+      "name": "game_boots_trophy9_name",
+      "description": "game_boots_trophy9_description",
+      "texture": "medals/hub_icon_medal_9",
+      "achieved": false
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "lc_medalsilver_anim0.png",
+	"frame": {"x":840,"y":102,"w":118,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":7,"w":118,"h":104},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim1.png",
+	"frame": {"x":493,"y":101,"w":113,"h":101},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":11,"w":113,"h":101},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim10.png",
+	"frame": {"x":725,"y":2,"w":117,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":16,"w":117,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim11.png",
+	"frame": {"x":2,"y":98,"w":122,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":16,"w":122,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim12.png",
+	"frame": {"x":126,"y":98,"w":123,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":16,"w":123,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim13.png",
+	"frame": {"x":368,"y":99,"w":123,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":16,"w":123,"h":99},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim14.png",
+	"frame": {"x":608,"y":101,"w":114,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":16,"w":114,"h":102},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim15.png",
+	"frame": {"x":724,"y":102,"w":114,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":16,"w":114,"h":103},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim16.png",
+	"frame": {"x":305,"y":2,"w":96,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":16,"w":96,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim17.png",
+	"frame": {"x":305,"y":2,"w":96,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":16,"w":96,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim2.png",
+	"frame": {"x":102,"y":2,"w":102,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":17,"w":102,"h":94},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim3.png",
+	"frame": {"x":2,"y":2,"w":98,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":17,"w":98,"h":93},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim4.png",
+	"frame": {"x":206,"y":2,"w":97,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":17,"w":97,"h":94},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim5.png",
+	"frame": {"x":403,"y":2,"w":102,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":16,"w":102,"h":95},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim6.png",
+	"frame": {"x":507,"y":2,"w":106,"h":97},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":16,"w":106,"h":97},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim7.png",
+	"frame": {"x":615,"y":2,"w":108,"h":97},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":16,"w":108,"h":97},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim8.png",
+	"frame": {"x":844,"y":2,"w":111,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":16,"w":111,"h":98},
+	"sourceSize": {"w":127,"h":127}
+},
+{
+	"filename": "lc_medalsilver_anim9.png",
+	"frame": {"x":251,"y":99,"w":115,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":16,"w":115,"h":98},
+	"sourceSize": {"w":127,"h":127}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lc_medal_silver.png",
+	"format": "RGBA8888",
+	"size": {"w":960,"h":208},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3fb3b1eb09e0e91f5598056a7d37228f:6e49e51caa0c60af639f3b842f40e093:6b58f8778816992695a233ee195f554d$"
+}
+}

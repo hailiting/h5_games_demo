@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>公主与勇士</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #484848;
+			background-image:url(data/pics/tile.jpg);
+		}
+	</style>
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<script>window.scrollTo(0, 0);</script>
+	<script src="soundjs-0.5.2.min.js"></script>
+	<script src="visibility.fallback.js"></script>
+    <script src="visibility.core.js"></script>
+    <script src="visibility.timers.js"></script>
+	<script src="save_map.js"></script>
+	<script src="pixi.js"></script>
+    <script src="avk_game.js"></script>
+	<script src="avk_body.js"></script>
+	<script>
+        var GLOB_M=false;
+	    var GLOB_in_menu=0;
+	    function handleLoad(event) 
+	    {
+	    	GLOB_SND_TO_LOAD--;
+	        if (GLOB_SND_TO_LOAD==0)
+	        {
+	            GLOB_in_menu=createjs.Sound.play("in_menu","none",0,0,-1);
+	            GLOB_in_menu.stop();
+	        }
+	    }
+
+		if (createjs.Sound.initializeDefaultPlugins())
+        {     
+        	GLOB_M=true;
+            var audioPath = "data/snd/";
+            var manifest = [{id:"in_menu", src:"in_menu.ogg"}];
+            var GLOB_SND_TO_LOAD=manifest.length;
+            createjs.Sound.alternateExtensions = ["mp3"];
+            createjs.Sound.addEventListener("fileload", handleLoad);
+            createjs.Sound.registerManifest(manifest, audioPath)[0];
+        }
+
+        avk_start();
+	</script>
+	</body>
+</html>

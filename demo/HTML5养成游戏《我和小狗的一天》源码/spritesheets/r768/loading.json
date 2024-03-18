@@ -1,0 +1,68 @@
+{"frames": {
+
+"AH_logo_watermark_dolphin.png":
+{
+	"frame": {"x":209,"y":388,"w":120,"h":120},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":120},
+	"sourceSize": {"w":120,"h":120}
+},
+"btn_moregames_404.png":
+{
+	"frame": {"x":331,"y":388,"w":202,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":202,"h":45},
+	"sourceSize": {"w":202,"h":45}
+},
+"ggg_logo.png":
+{
+	"frame": {"x":2,"y":388,"w":205,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":205,"h":122},
+	"sourceSize": {"w":205,"h":122}
+},
+"loading_bar_frame.png":
+{
+	"frame": {"x":331,"y":465,"w":512,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":28},
+	"sourceSize": {"w":512,"h":28}
+},
+"loading_bar_marker.png":
+{
+	"frame": {"x":331,"y":435,"w":512,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":28},
+	"sourceSize": {"w":512,"h":28}
+},
+"mainmenu_logo.png":
+{
+	"frame": {"x":2,"y":2,"w":384,"h":384},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":384,"h":384},
+	"sourceSize": {"w":384,"h":384}
+},
+"missing.png":
+{
+	"frame": {"x":845,"y":2,"w":100,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":25},
+	"sourceSize": {"w":100,"h":25}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "loading.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":512},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:d4972937f7073b6ac3fad8982e54dda6:81dc5275c8947a36edf7264b46bb1185:5294b8b30e478db5089d68a09bebcee6$"
+}
+}

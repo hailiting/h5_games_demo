@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "Images/shine1.png",
+	"frame": {"x":2,"y":332,"w":537,"h":436},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":0,"w":537,"h":436},
+	"sourceSize": {"w":614,"h":436}
+},
+{
+	"filename": "Images/shine2.png",
+	"frame": {"x":2,"y":2,"w":614,"h":328},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":614,"h":328},
+	"sourceSize": {"w":614,"h":328}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lu_shine.png",
+	"format": "RGBA8888",
+	"size": {"w":618,"h":770},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c47e8274f1514b4014e054f5695034ed:1ad34c8b3d0909ed9aa342986d0eac8b:e10fbf43069376883f950b565fafe61d$"
+}
+}

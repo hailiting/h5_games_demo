@@ -1,0 +1,1002 @@
+﻿<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,minimal-ui">
+<meta charset="UTF-8">
+<title>杭州别克 抢钱大战</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="images\zepto-1.js"></script>
+    <script>
+        document.documentElement.style.webkitUserSelect = 'none';
+        var _Mvar = {
+            myGroup: '11',
+            groupID: 73,
+            // groupID: 6,
+            wxNum: "",
+            username: "",
+            phone: "",
+            nickname: "",
+            headimg: "",
+            id: 15
+            // id: 13
+        };
+        var myUrl = "http://" + location.hostname + location.pathname + "?gid=" + _Mvar.groupID;
+        function init2() {
+            _Mvar.wxNum = "a";
+            _Mvar.nickname = "b";
+            _Mvar.headimg = "c";
+            //$.ajax({
+            //    type: "get",
+            //    url: "http://wx.qqauto.cn/CommonApi/OAuth2?id=" + _Mvar.id + "&gid=" + _Mvar.groupID + "&myUrl=" + encodeURIComponent(myUrl) + "&_r=" + Math.random(),
+            //    dataType: "json",
+            //    async: false,
+            //    success: function (data) {
+            //        if (data.success == true) {
+            //            _Mvar.wxNum = data.wxnum;
+            //            _Mvar.nickname = data.nickname;
+            //            _Mvar.headimg = data.headimg;
+
+            //        } else {
+            //            window.location.href = data.msg;
+            //        }
+            //    },
+            //    timeout: 15000,
+            //    error: function (xhr, type) {
+            //        alert("网络异常，请刷新重试。");
+            //    }
+            //});
+        }
+        init2();
+    </script>
+
+<style>
+    a[title="站长统计"] {
+        display: none;
+    }
+</style>
+<link rel="stylesheet" href="images\css.css">
+
+</head>
+<body>
+<div class="loading"><img src="images\loading.gif"></div>
+    <div onclick="document.getElementById(_mcover_).style.display=_none_;" id="mcover" class="hide"><img src="images\guide.png"></div>
+
+<!--首页导航 开始-->
+    <dl class="nav hide lazyLoad">
+        <dt>
+            <p>参加人数<br><a href="javascript:;" class="top100"><b id="manycount"></b></a></p>
+        </dt>
+        <dd><a href="javascript:;" id="qqgl">游戏玩法</a></dd>
+        <dd><a href="javascript:;" class="top100">TOP100</a></dd>
+        <dd><a href="javascript:;" class="myquan">我的抵用券</a></dd>
+    </dl>
+<!--首页导航 结束-->
+
+<!--首页-->
+    <div class="cover lazyLoad hide">
+        <div class="title_b">
+            <img class="t_am01 lazyLoad" src="images\bt.png">
+            <span><img class="strat lazyLoad" src="images\start.png"></span>
+
+        </div>
+        <div class="am_03">
+            <div class="gold_b01 lazyLoad" style="opacity:0;"></div>
+            <div class="gold_b02 lazyLoad" style="opacity:0;"></div>
+        </div>
+        <div class="car01">
+            <img class="lazyLoad" src="images\car01.png">
+        </div>
+        <div class="car02">
+            <img class="lazyLoad" src="images\car02.png">
+        </div>
+
+        <div class="footer">Copyright©金贝贝互动传媒</div>
+    </div>
+<!--首页-->
+
+<!--游戏页面-->
+    <div class="game gameresult hide">
+        <div class="play">
+            <div class="timer ">
+                <span><strong class="second">15</strong><strong class="ms">00</strong></span>
+            </div>
+            <div class="playbtn" id="playbtn">
+                <div class="txt">
+                    连续<br>
+                    戳我
+                </div>
+            </div>
+            <div class="game_tip yjyxhb">
+                您的历史最高抵用金：<b></b><br>
+                已经有<strong></strong>小伙伴参加了活动<br>
+                <a href="javascript:;" class="top100">查看二牛戳神榜>></a><br>
+            </div>
+        </div>
+        <div class="footer">Copyright©金贝贝互动传媒</div>
+    </div>
+<!--游戏页面-->
+
+<!--游戏得分-->
+    <div class="game gameresult1 hide">
+        <div class="point">
+            恭喜您！戳到了<br>
+            <b></b><br>
+            <i></i>
+        </div>
+        <div class="game_msn">
+            亲，您的历史最高记录是<br>
+            <b></b>
+            <a class="btn03" onclick="reStart()" href="javascript:;"></a>
+            <h4><a href="javascript:;" class="top100">查看排行</a></h4>
+            <h4><a href="javascript:;" class="myquan">我的抵用券</a></h4>
+        </div>
+        <div class="footer2">Copyright©金贝贝互动传媒</div>
+    </div>
+<!--游戏得分-->
+
+    <div class="game gameresult2 hide">
+        <div class="point">
+            恭喜您！戳到了<br>
+            <b></b><br>
+            <i></i>
+        </div>
+        <div class="game_result hide">
+            马上领取↓↓<b><i></i>别克购车基金</b>
+        </div>
+        <div class="from_box hide">
+            <form id="saveform">
+                <input type="hidden" name="myGroup" value="11" />
+                <input type="hidden" name="nickname" value="" />
+                <input type="hidden" name="headimg" value="" />
+                <input type="hidden" name="allowMulti" value="" />
+                <input type="hidden" name="num" value="" />
+                <input type="hidden" name="otherid" value="" />
+                <input type="hidden" name="isVerify" value="0" />
+                <input type="hidden" name="remark" value="" id="remark" />
+                <p class="text-container inputIn mt0"><span class="required">姓　　名<em>*</em></span><input name="username" class="inputText" type="text" placeholder="请输入您的姓名" /></p>
+                <p class="text-container inputIn"><span class="required">联系电话<em>*</em></span><input name="phone" class="inputText" type="tel" placeholder="请输入您的手机号" maxlength="11" /></p>
+                <p class="select-container inputIn mt0 fs18"><span>意向车型</span><select class="select" id="remark1"><option>君威</option><option>君威GS</option><option>君越</option><option>英朗GT</option><option>英朗XT</option>
+                                                                                  <option>凯越</option><option>昂科拉</option><option>昂科雷</option><option>GL8
+</option>
+                    </select></p>
+                <p class="select-container inputIn mt0 fs18 hide"><span>是否置换</span><select class="select" id="remark2"><option>是</option><option>否</option></select></p>
+                <p class="text-container inputIn sfzh hide"><span class="required">旧&nbsp;&nbsp;车&nbsp;&nbsp;型<em>*</em></span><input id="remark3" class="inputText" type="text" placeholder="请输入您的旧车型" /></p>
+                <!--<a href="javascript:;">点击参与旧车置换，现金抵扣马上翻4倍>></a>-->
+                <a class="btn" onclick="saveData()" href="javascript:;"></a>
+                </form>
+                <h4><a href="javascript:;" onclick="reStart()">不满意？<b>再玩一次</b>>></a></h4>
+</div>
+        <div class="footer2">Copyright©金贝贝互动传媒</div>
+    </div>
+
+    <div class="intro hide intro1">
+        <div class="box">
+            <div class="close"></div>
+            <div class="title"><h3>游戏攻略</h3></div>
+            <div class="content">
+                <p><strong>游戏玩法</strong>：在15秒时间内点击按钮，根据点击数量获取相应的金币，金币可以1:1进行购车现金抵扣，不限制次数游戏，最高金额为2000元。</p>
+                <p><strong>如何领取现金抵扣</strong>：完成游戏后，在报名框填入相应信息，系统会自己的记录您的抵扣金额，并发放注明姓名和金额的现金券一张。</p>
+                <p><strong>如何使用现金抵扣</strong>：2014年7月28日—8月31日，凭本活动抵用券至杭州各别克专营店购买别克品牌任一车型，除享受正常优惠外，还可享受到活动专属现金减免，让您不误砍价，更享购车折上折！（实例：在本活动游戏环节获得1800元抵用券，即可在购车时，减免车款1800元）</p>
+                <p><strong>友情提示</strong>：可以在和销售顾问谈好团购价格后再出示现金券。</p>
+                <p>马上参与游戏吧！</p>
+            </div>
+        </div>
+        <div class="footer">Copyright©金贝贝互动传媒</div>
+    </div>
+
+    <div class="intro intro2 hide">
+        <!--<div class="prizeLayer1">-->
+            <div class="prizeLayer hide">
+                <div class="close1"></div>
+                <div class="frombox">
+                    <p class="text-container inputIn"><input id="pwd" class="inputText" type="text" placeholder="请输入使用密码"></p>
+                    <a class="btn01c" href="javascript:;" id="btnOK">确定使用</a>
+                </div>
+
+            <!--</div>-->
+            </div>
+            <div class="quan">
+                <div class="close"></div>
+                <div class="tophead">
+                    <div class="topbg01"></div>
+                    <dl>
+                        <dt><img src=""></dt>
+                        <dd>
+                            <p class="gray" id="myid"></p>
+                            <h3></h3>
+                            <p></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="my_con">
+                    <div class="gold">
+                        <h3>别克<span id="zh"></span>购车现金抵用券</h3>
+                        <p>￥<b></b><a href="javascript:prizeDown()" id="usequan">使用抵用券</a></p>
+                    </div>
+                    <div class="a_rule">
+                        <p>有效日期：2014年7月28日—8月31日；</p>
+                        <p>
+                            使用规则：<br />
+                            本现金抵用券可用于杭州各别克专营店购买别克品牌任一车型，享受专属现金减免。<br />
+                            分享到朋友圈，还可获得精美礼品一份。
+                        </p>
+                    </div>
+
+                    <div class="footbottom"></div>
+                </div>
+            </div>
+            <a class="btn01" href="javascript:;" onclick="document.getElementById(_mcover_).style.display=_block_;"></a>
+            <div class="footer">Copyright©金贝贝互动传媒</div>
+        </div>
+
+    <div class="intro hide intro3">
+        <div class="box box2">
+            <div class="close"></div>
+            <div class="title"><i>人参加</i><h3>二牛戳神TOP100</h3></div>
+            <div class="content">
+                <div class="toplist">
+                    <dl>
+                        <dt><i></i><span class="name">昵称</span><b class="money1">金额</b></dt>
+                    </dl>
+                    <dl id="list1" class="listmain" style="height:350px; overflow:scroll;" id="list1">
+                    </dl>
+                    <dl>
+                        <dd class="mytop" id="mypm">
+                            <!--<i>1</i><span class="name"><img src="images\headpic.jpg"><em>居于的愿望</em></span><b class="money1">400元</b>-->
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var Gamer = {
+            coverStartBtn: $(".cover .strat"),//首页按钮
+            coverLayer: $(".cover,.nav"),//首页
+            robberyBtn: $("#qqgl"),//抢钱攻略按钮
+            robberyLayer: $(".intro1"),//抢钱攻略
+            topBtn: $(".top100"),//排行版按钮
+            topLayer: $(".intro3"),//排行版
+            gameBtn: $("#playbtn"),//游戏开始按钮
+            gamePlayLayer: $(".gameresult"),//游戏开始
+            gamePlayResult: $(".gameresult1"),//游戏结束
+            gameResultLayer: $(".game_msn"),
+            showResult: function () { this.gamePlayResult.removeClass("hide"); setTimeout(function () { this.Gamer.gameResultLayer.removeClass("hide"); }, 1500) },
+            gamePlayForm: $(".gameresult2"),//游戏结束报名
+            gameFormLayer: $(".game_result,.from_box"),
+            showForm: function () { this.gamePlayForm.removeClass("hide"); setTimeout(function () { this.Gamer.gameFormLayer.removeClass("hide"); }, 1500) },
+            hideGame: function () { $(".game,.game_result,.game_msn,.from_box").addClass("hide"); },
+            introBtn: $(".myquan"),//我的信息按钮
+            introLayer: $(".intro2"),//我的信息
+            gameQuanBtn: $(""),//我的优惠券按钮
+            gameQuanLayer: $(""),//我的优惠券
+            AllLayer: $(".game,.cover,.intro,.nav"),
+            htmlTap: "touchstart MSPointerDown",
+            domain: "",
+            getMainInfoUrl: "/Mobile/UpCoinDZ1/" + _Mvar.id + "?gid=" + _Mvar.groupID + "&cantest=",
+            getPMUrl: "",
+            getResultListUrl: "",
+
+            loadLayer: $(".loading"),
+            showLoading: function () { this.loadLayer.removeClass("hide"); },
+            hideLoading: function () { this.loadLayer.addClass("hide"); }
+
+        };
+        var upCoinData, canbb, wxID, myCoin = 0, backtofirst = 1, clickdate, retmyOrder = 1, headimg, myid, addPoint = parseInt("2"),
+    tap = 'touchstart MSPointerDown', xz,
+    playbtn = $('#playbtn'),
+    point = 0,
+    ifstart = false, setOpen, canp, otherID = 0, cantj = 0,final=0;
+        function init() {
+            $.ajax({
+                url: Gamer.domain + "/Mobile/UpCoinDZ1/" + _Mvar.id + "?gid=" + _Mvar.groupID + "&cantest=", dataType: "json", success: function (ret) {
+                    if (ret && ret.success) {
+                        if (ret.success) {
+                            if (ret.msg) {
+                                upCoinData = ret.msg;
+                              //  upCoinData.MaxCoin /= 4;
+                                final = ret.coin;
+                                if (ret.remark && ret.remark != "") {
+                                    var r = ret.remark.split(' ');
+                                    if (r.length > 0)
+                                        $("#remark1").val(r[0]);
+                                    if (false) {
+                                   // if (r.length > 1) {
+                                        //final = ret.coin * 4;
+                                        $("#remark3").val(r[1]);
+                                        $(".sfzh").removeClass('hide');
+                                        $("#zh").html("旧车置换");
+                                       // ret.coin /= 4;
+                                    }else
+                                    {
+                                        $("#remark2").val("否");
+                                    }
+                                } else
+                                {
+                                    $("#remark2").val("否");
+                                    
+                                }
+
+
+                                retmyOrder = ret.myOrder;
+                                $(".game_msn b").html(ret.coin + "元,第" + ret.myOrder + "名!");
+                                if (ret.coin > 0) {
+                                    dataForWeixin.title = "我在杭州别克“抢钱大战”抢到现金" + final + "元，小伙伴快上！";
+                                }
+                                myid = ret.myID;
+                                if (ret.Sts == "")
+                                    $("#usequan").hide();
+                                else if (ret.Sts == "U") {
+                                    $("#usequan").removeAttr("href").html("抵用券已使用");
+                                    $(".gold p").addClass("no_useful");
+                                }
+                                //otherID = ret.OtherID;
+                                //upCoinData.MaxCoin += ret.OtherID;
+                                $(".second").html(upCoinData.CountDown);
+                                $(".game_tip b").html(ret.coin + "元");
+                                $(".quan .gold b").html(final);
+                                $(".yjyxhb strong").html(ret.List + "名");
+                                $("#manycount").html(ret.List);
+                                
+                                myCoin = ret.coin;
+                                headimg = _Mvar.headimg.length > 1 ? _Mvar.headimg.substr(0, _Mvar.headimg.length - 1) + "46" : _Mvar.headimg;
+                                $(".tophead img").attr("src", headimg);
+                                $("#mypm img").attr("src", headimg);
+
+                                $("input[name='username']").val(ret.username);
+                                $("input[name='phone']").val(ret.tel);
+                            
+                                $(".tophead p").html(ret.tel);
+                                $(".tophead h3").html(_Mvar.nickname + "<i>" + ret.username + "</i>");
+                                canbb = ret.canbm;
+                                addPoint = upCoinData.EachCoin;
+                                cantj = ret.maxTime;
+                                init1();
+                            }
+
+                        } else if (ret.msg) {
+                            alert(ret.msg)
+                        }
+                    } else {
+                        alert("参数错误")
+
+                    }
+
+                }
+            })
+        }
+
+        function init1() {
+            document.addEventListener('touchmove', preventDefault, false);
+            //document.removeEventListener("touchmove", preventDefault, false);
+            // 拖动，划开
+            Gamer.coverStartBtn.on(tap, function () {
+                if (canbb) {
+                    alert("活动已结束!");
+                    return;
+                }
+
+                Gamer.gamePlayLayer.removeClass("hide");
+                var scale = "scale(2, 2)";
+                $(".cover").animate({
+                    '-webkit-transform': scale,
+                    '-moz-transform': scale,
+                    '-o-transform': scale,
+                    '-ms-transform': scale,
+                    'transform': scale,
+                    opacity: 0
+                }, 500, 'linear', function () { Gamer.coverLayer.addClass("hide"); backtofirst = 0; });
+                // $('.cover').animate({translate3d: '0,-100%,0'}, 1000, 'linear');
+                // document.addEventListener('touchmove', preventDefault, false);
+            });
+            // 点击Play按钮
+            Gamer.gameBtn.on(tap, function () {
+                $(this).find('.txt').addClass('hide');
+                $(this).addClass('down');
+                jump();
+                if (!ifstart) {
+                    getDate(upCoinData.CountDown * 1000);
+                    ifstart = true;
+                }
+            }).on('touchend', function () {
+                $(this).removeClass('down');
+            })
+            //我的优惠券
+            Gamer.introBtn.on(Gamer.htmlTap, function () {
+                Gamer.showLoading();
+                clickdate = new Date();
+                if (!myid || myid == "0")
+                    $.ajax({
+                        url: Gamer.domain + "/Mobile/GetPM/" + upCoinData.WxAccountID + "?type=1&gid=" + upCoinData.UpCoinID + "&wxid=" + _Mvar.wxNum + "&" + Math.random() + "",
+                        dataType: "json",
+
+                        success: function (ret) {
+                            if (ret.error == 0 && ret.List) {
+                                myid = ret.List;
+                                $("#myid").html("ID:" + myid);
+                                $("#usequan").attr("dataid", myid);
+                            }
+
+                        }, complete: function () {
+
+                            Gamer.AllLayer.addClass("hide");
+                            Gamer.introLayer.removeClass("hide");
+                            Gamer.hideLoading();
+                        }
+                    })
+                else {
+                    $("#myid").html("ID:" + myid);
+                    $("#usequan").attr("dataid", myid);
+
+                    Gamer.AllLayer.addClass("hide");
+                    Gamer.introLayer.removeClass("hide");
+                    Gamer.hideLoading();
+                }
+                document.removeEventListener("touchmove", preventDefault, false);
+            });
+            //抢钱攻略
+            Gamer.robberyBtn.on(tap, function () {
+                document.removeEventListener("touchmove", preventDefault, false);
+                Gamer.AllLayer.addClass("hide");
+                Gamer.robberyLayer.removeClass("hide");
+            });
+            //排行版
+            Gamer.topBtn.on(tap, function () {
+                document.removeEventListener("touchmove", preventDefault, false);
+                Gamer.AllLayer.addClass("hide");
+                Gamer.topLayer.removeClass("hide");
+                Gamer.showLoading();
+                $.ajax({
+                    url: Gamer.domain + "/Mobile/UpCoinLog/" + upCoinData.WxAccountID + "?gid=" + upCoinData.UpCoinID + "&wxid=" + _Mvar.wxNum + "&num=100",
+                    dataType: "json",
+                    error: function (ret) {
+                        alert("error");
+                    },
+                    success: function (ret) {
+                        Gamer.hideLoading();
+                        $(".listmain").html("");
+                        $(".listmain dd").remove();
+                        var str = "", str1;
+                        if (ret.error == 0) {
+                            $(".box2 .title i").html(ret.List + "人参加");
+                            var data = ret.data, len = data.length;
+                            if (len > 0) {
+                                for (var i = 0; i < len; i += 1) {
+                                    str += "<dd><i " + (i < 3 ? "class='top1'" : "") + ">" + (i + 1) + "</i><span class='name'><img width='65' height='65' src='" + (data[i].Img.length > 1 ? data[i].Img.substr(0, data[i].Img.length - 1) + "46" : data[i].Img.length) + "'><em>" + data[i].Name + "</em></span><b class='money1'>" + data[i].Coin + "元</b></dd>";
+                                }
+                            } else
+                                str = "暂无用户参与";
+                            var myoyder = "";
+                            if (ret.data1 && ret.data1.count != "")
+                                myoyder = ret.data1.count;
+                            if (ret.data1) {
+                                str1 = "<i class='top1'>" + myoyder + "</i><span class='name'><img width='65' height='65' src='" + (ret.data1.Img.length > 1 ? ret.data1.Img.substr(0, ret.data1.Img.length - 1) + "46" : ret.data1.Img) + "'><em>" + ret.data1.Name + "</em></span><b class='money1'>" + ret.data1.Coin + "元</b>";
+                            }
+                        }
+                        else
+                            str = "<dd>" + data.message + "</dd>";
+                        $(".listmain").append(str);
+                        if (str1 != "")
+                            $("#mypm").html(str1);
+                    }, error: function () {
+                        alert("可能是网络原因，请点击关闭按钮重试!");
+                        Gamer.hideLoading();
+                    }
+                })
+            });
+            //关闭
+            $(".close").click(function () {
+                Gamer.hideLoading();
+                document.addEventListener('touchmove', preventDefault, false);
+                Gamer.AllLayer.addClass("hide");
+                if (backtofirst)
+                    Gamer.coverLayer.removeClass("hide");
+                else
+                    reStart();
+
+            })
+            //关闭兑奖
+            $(".close1,.close").click(function () { $(".prizeLayer").addClass("hide"); Gamer.hideLoading(); })
+            //兑奖
+            $('#btnOK').click(function () {
+                if (canp)
+                    return;
+                //  var txh = $(this);
+                var pwd = $("#pwd").val();
+                if (pwd == "") {
+                    alert("密码不能为空!");
+                    return;
+                }
+
+                //  txh.html('操作中...');
+                Gamer.showLoading();
+                var id = $('#usequan').attr('dataid');
+                lurl = Gamer.domain + "/Mobile/GetPrize/" + upCoinData.WxAccountID + "?ids=" + upCoinData.UpCoinID + "&wxid=&myGroup=11&pwd=" + pwd + "&" + Math.random();
+
+                $.ajax({
+                    url: lurl,
+                    type: "post",
+                    data: { activeid: id },
+                    dataType: "json",
+                    success: function (xd) {
+
+                        if (xd.error == 0) {
+                            canp = 1;
+                            alert("用券使用成功!");
+                            $(".gold p").addClass("no_useful");
+                            $('#usequan').removeAttr("href").html("抵用券已使用");
+                            $(".prizeLayer").addClass("hide");
+
+                        } else if (xd.message) {
+                            alert(xd.message);
+                        }
+
+                    }, error: function () {
+                        alert("可能是网络原因，请刷新页面重试!");
+
+                    }, complete: function () {
+                        Gamer.hideLoading();
+                    }
+                })
+
+                return false;
+            });
+
+
+        }
+
+        function preventDefault(e) { e.preventDefault(); }
+
+        function checkdate() {
+            if (!clickdate)
+                return true;
+            if (nowtiem - clickdate > 1500) {
+                clickdate = 0;
+                return true;
+            }
+            return false;
+        }
+
+        // 跳金币
+        function jump() {
+            point += addPoint;
+            $('<div>').html("￥" + addPoint).addClass('coin')
+              .appendTo(playbtn)
+              .animate({
+                  translate3d: '0,-400px,0',
+                  opacity: 0
+              }, 400, 'ease-in', function () {
+                  $(this).detach();
+
+                  //        $('.pts').text(point);
+              });
+        }
+
+        // 时钟
+        function getDate(num) {
+            var sdate = new Date();
+            var edate;
+            var num1;
+            var second = $('.second'),
+                ms1 = $('.ms'),
+                ms, s,
+                timer = null;
+            //  second.html(upCoinData.CountDown - 1);
+            //  ms1.html('99');
+
+            timer = setInterval(function () {
+                edate = new Date();
+                num1 = (edate - sdate);
+                //   num -= 1;
+
+                ms = (num - num1);
+
+                s = parseInt(ms / 1000);
+                if (s < 10)
+                    s = '0' + s;
+
+                second.html(s);
+                ms = parseInt(ms % 1000 / 10);
+                if (ms < 10)
+                    ms = '0' + ms;
+
+                ms1.html(ms);
+                if (num1 > num) {
+                    clearInterval(timer);
+                    playbtn.off();
+                    result();
+                }
+            }, 10)
+        };
+
+        // 显示结果
+        function result() {
+            $(".game_msn b").html(myCoin + "元,第" + retmyOrder + "名!");
+            $(".point i").html("");
+            Gamer.gamePlayLayer.addClass('hide');
+            // point += otherID;
+            if (false) 
+            //if ($("#remark2").val() == "是")
+                point *= 4;
+            if (point > upCoinData.MaxCoin) point = upCoinData.MaxCoin;
+
+            if (point > myCoin)
+                dataForWeixin.title = '我在杭州别克“抢钱大战”抢到现金' + point + '元，小伙伴快上！';
+            $('.game_tip b').text('顶到' + point + '元');
+           // if($("#remark2").val()=="是")
+          //      $('.game_result i').text((point > myCoin ? point : myCoin) * 4 + "元");
+           // else
+                $('.game_result i').text((point > myCoin ? point : myCoin) + "元");
+            //saveData2();
+            var username = $("input[name='username']").val();
+            var phone = $("input[name='phone']").val();
+            if (username == "" && phone == "") {
+                Gamer.showForm();
+                document.removeEventListener('touchmove', preventDefault, false);
+            }
+            else {
+                if (point > parseInt(myCoin)){
+                    Gamer.showForm();
+                    document.removeEventListener('touchmove', preventDefault, false);
+                } else
+                    Gamer.showResult();
+            }
+            $('.point b').text(point + "元");
+            $.ajax({
+                url: Gamer.domain + "/Mobile/GetPM/" + upCoinData.WxAccountID + "?gid=" + upCoinData.UpCoinID + "&wxid=" + _Mvar.wxNum + "&num=" + point + "&" + Math.random() + "",
+                dataType: "json",
+
+                success: function (ret) {
+                    if (ret.error == 0 && ret.List) {
+                        retmyOrder = parseInt(ret.List) < retmyOrder ? parseInt(ret.List) : retmyOrder;
+                        $(".point i").html("第" + parseInt(ret.List) + "名");
+                        saveData2();
+                    }
+                }
+            })
+        }
+        function getQuery(name) { var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); var r = window.location.search.substr(1).match(reg); if (r != null) { return unescape(r[2]); } return null; }
+        function readCookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length)); } return null; }
+        //报名
+        //$(".btn").click(saveData);
+
+        //手动提交数据
+        function saveData() {
+            if (canbb) {
+                alert("活动已过期!");
+                return;
+            }
+
+            if (setOpen)
+                return;
+            setOpen = 1;
+            //   var login = readCookie('clubUserShow');
+            if (point < 0) {
+                alert('金币数小于0！');
+                setOpen = 0;
+                return;
+            }
+
+            if ($("input[name=username]").val() == "") {
+                alert("请留下你的称呼!");
+                setOpen = 0;
+                return;
+            }
+
+            var tel = $("input[name=phone]").val();
+            if (isNaN(tel) || tel.length != 11) {
+                alert("请留下你正确的联系方式!");
+                setOpen = 0;
+                return;
+            }
+            var r1 = $("#remark1").val();
+          //  if(false){
+            if (r1 == "") {
+                alert("请选择车型");
+                setOpen = 0;
+                return;
+            }
+            var r2 = $("#remark2").val();
+            var r = r1;
+
+            if (r2 == "是") {
+                var r3 = $("#remark3").val();
+                if(r3==""){
+                alert("请输入置换的车型");
+                setOpen = 0;
+                return;
+                }
+                r +=" "+ r3;
+            }
+
+            $("input[name=nickname]").val(_Mvar.nickname);
+            $("input[name=headimg]").val(_Mvar.headimg);
+            $("input[name=num]").val(point);
+            $("input[name=remark]").val(r);
+         //   $("input[name=otherid]").val(cantj + 0 + otherID);
+            Gamer.showLoading();
+            $.ajax({
+                url: Gamer.domain + '/CommonApi/UserRegiste/' + upCoinData.WxAccountID + '?gid=' + upCoinData.UpCoinID + '&wxNum=' + _Mvar.wxNum + '&' + Math.random(),
+                data: $("#saveform").serialize(),
+                dataType: 'json',
+                success: function (ret) {
+                    setOpen = 0;
+                    alert(ret.msg);
+                    if (ret && ret.success) {
+
+                        $(".tophead img").attr("src", headimg);
+                        $(".tophead p").html(tel);
+                        $(".tophead h3").html(_Mvar.nickname + "<i>" + $("input[name=username]").val() + "</i>");
+                        if (false) {
+                        // if (r2 == "是"){
+                         //   $(".my_con b").html( point * 4);
+                            $("#zh").html("旧车置换");
+                        }
+                        //else
+                            $(".my_con b").html(point);
+
+                        Gamer.AllLayer.addClass("hide");
+                        Gamer.introLayer.removeClass("hide");
+                        cantj += 1;
+                        // $('.game .result .btn').eq(0).removeAttr("onclick").html(ret.message); // 或者直接写您已经领过钱啦 mess ="您已经领过钱啦"
+                        if (!myid || myid == "0")
+                            $.ajax({
+                                url: Gamer.domain + "/Mobile/GetPM/" + upCoinData.WxAccountID + "?type=1&gid=" + upCoinData.UpCoinID + "&wxid=" + _Mvar.wxNum + "&" + Math.random() + "&jsoncallback=",
+                                dataType: "json",
+
+                                success: function (ret) {
+                                    if (ret.error == 0 && ret.List) {
+                                        myid = ret.List;
+                                        $("#myid").html("ID:" + myid);
+                                        $("#usequan").attr("dataid", myid);
+                                    }
+                                }
+                            })
+                        else {
+                            $("#myid").html("ID:" + myid);
+                            $("#usequan").attr("dataid", myid);
+                        }
+                    }
+                }, error: function () {
+
+                    alert("可能是网络原因，请重新提交一下数据。");
+                    setOpen = 0;
+                }, complete: function () {
+                    Gamer.hideLoading();
+                }
+            });
+        }
+        $("#remark2").change(function () {
+            if ($(this).val() == "是") {
+                $(".sfzh").removeClass('hide');
+                point *= 4;
+                $(".game_result i").html(point + "元");
+            } else {
+                $(".sfzh").addClass('hide');
+                point /= 4;
+                $(".game_result i").html(point+"元");
+            }
+        })
+        //自动提交表单
+        function saveData2() {
+            if (canbb) {
+                alert("活动已过期!");
+                return;
+            }
+            //   var login = readCookie('clubUserShow');
+            if (point < 0) {
+                alert('金币数小于0！');
+                setOpen = 0;
+                return;
+            }
+
+            $("input[name=nickname]").val(_Mvar.nickname);
+            $("input[name=headimg]").val(_Mvar.headimg);
+            $("input[name=num]").val(point);
+            $.ajax({
+                url: Gamer.domain + '/CommonApi/UserRegiste/' + upCoinData.WxAccountID + '?gid=' + upCoinData.UpCoinID + '&wxNum=' + _Mvar.wxNum + '&' + Math.random() + "&jsoncallback=",
+                data: $("#saveform").serialize(),
+                dataType: 'json',
+                success: function (ret) {
+                    if (ret && ret.success) {
+
+                    }
+                }, error: function () {
+
+                }
+            });
+        }
+
+
+
+        //兑奖
+        function prizeDown() {
+
+            $(".prizeLayer").removeClass("hide");
+        }
+
+        //重新开始
+        function reStart() {
+            document.addEventListener('touchmove', preventDefault, false);
+            Gamer.gameBtn.removeClass('down');
+            Gamer.gameBtn.find('.txt').removeClass('hide');
+            ifstart = false;
+            Gamer.hideGame();
+            Gamer.gamePlayLayer.removeClass('hide');
+            myCoin = myCoin > point ? myCoin : point;
+
+            $('.game_tip b').text(myCoin + '元');
+            point = 0;
+            $('.second').html(upCoinData.CountDown);
+            $(".ms").html("00");
+            Gamer.gameBtn.on(Gamer.htmlTap, function () {
+                $(this).find('.txt').addClass('hide');
+                $(this).addClass('down');
+                jump();
+                if (!ifstart) {
+                    getDate(upCoinData.CountDown * 1000);
+                    ifstart = true;
+                }
+            }).on('touchend', function () {
+
+                $(this).removeClass('down');
+            })
+
+
+        }
+
+        function onBridgeReady() {
+            if (dataForWeixin.hideToolbar) {
+                WeixinJSBridge.invoke("hideToolbar");
+            } else {
+                WeixinJSBridge.invoke("showToolbar");
+            }
+            if (dataForWeixin.hideOptionMenu) {
+                WeixinJSBridge.invoke("hideOptionMenu");
+            } else {
+                WeixinJSBridge.invoke("showOptionMenu");
+            }
+            WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "img_url": dataForWeixin.img,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.link,
+                    "desc": dataForWeixin.desc,
+                    "title": dataForWeixin.title
+                }, function () { });
+            });
+            WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "img_url": dataForWeixin.img,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.link,
+                    "desc": dataForWeixin.desc,
+                    "title": dataForWeixin.title
+                }, function () { });
+            });
+            WeixinJSBridge.on('menu:share:weibo', function (argv) {
+                WeixinJSBridge.invoke('shareWeibo', {
+                    "content": dataForWeixin.title,
+                    "url": dataForWeixin.link
+                }, function () { });
+            });
+            WeixinJSBridge.on('menu:share:facebook', function (argv) {
+                WeixinJSBridge.invoke('shareFB', {
+                    "img_url": dataForWeixin.img,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.link,
+                    "desc": dataForWeixin.desc,
+                    "title": dataForWeixin.title
+                }, function () { });
+            });
+        };
+
+
+        var dataForWeixin;
+        var url = location.href;
+        dataForWeixin = {
+            hideToolbar: true,
+            hideOptionMenu: false,
+            title: "杭州别克 抢钱大战！",
+            desc: "杭州别克抢钱大战，送你2000元，想要的赶紧去！",
+            img: "http://wx.qqauto.cn/html/upcoin/13/images/share.jpg",
+            link: url,
+            callback: function () {
+                if (!otherID)
+                    $.getJSON(Gamer.domain + "/Mobile/UpdateCoinList/" + upCoinData.WxAccountID + "?gid=" + upCoinData.UpCoinID + "&wxnum=" + _Mvar.wxNum + "&num=" + (myCoin + 100) + "&r=" + Math.random() + "&oID=100&uID=" + myid + "&NickName=" + encodeURIComponent(_Mvar.nickname) + "&HeadimgUrl=" + _Mvar.headimg + "&jsoncallback=", function (ret) {
+                        if (ret) {
+                            var msg;
+                            if (ret.success) {
+                                if (ret.OtherID && !isNaN(ret.OtherID)) {
+                                    otherID = ret.OtherID;
+                                    //  upCoinData.MaxCoin += ret.OtherID;
+                                    if (ret.Num) {
+                                        myCoin = ret.Num;
+                                        dataForWeixin.title = "死劲戳！我在“金华骏宝行”戳一戳抢到现金" + myCoin + "元，小伙伴快上！";
+                                        $(".game_tip b").html(myCoin + "元");
+                                        $(".quan .gold b").html(myCoin);
+                                    }
+                                    if (!myid) {
+                                        var iList = $("#manycount").html();
+                                        if (isNaN(iList))
+                                            iList = 0;
+                                        else
+                                            iList = parseInt(iList) + 1;
+                                        if (ret.UserListID)
+                                            $("#myid").html("ID:" + ret.UserListID);
+                                        // $(".gold b").html(otherID);
+                                        $(".yjyxhb strong").html(iList + "名");
+                                        $("#manycount").html(iList);
+
+                                    }
+                                    msg = "恭喜您获得" + ret.OtherID + "元分享金币奖励!";
+                                }
+                            } else if (ret.msg) {
+                                msg = ret.msg;
+                            }
+                            if (msg)
+                                alert(msg);
+
+                        }
+                    });
+
+
+            }
+        };
+
+        var LazyLoad = {
+            Lazy: $(".lazyLoad"),
+            Count: 0,
+            Len: $(".lazyLoad").size(),
+            Load: function () {
+                LazyLoad.Lazy.each(function () {
+                    var self = $(this);
+                    var img = new Image();
+                    var url;
+                    if (self.is('img'))
+                        url = self.attr('src');
+                    else {
+                        url = self.css("background-image");
+                        url = url.substr(4, url.length - 5);
+                        url = url.replace('"', '');
+                        url = url.replace('"', '');
+                    }
+                    img.src = url;
+                    img.onload = LazyLoad.Complete;
+                    img.onerror = LazyLoad.Complete;
+                });
+
+            },
+            Complete: function () {
+                LazyLoad.Count++;
+                if (LazyLoad.Count == LazyLoad.Len) {
+                    Gamer.hideLoading();
+                    Gamer.coverLayer.removeClass("hide");
+                    //  init2();
+                    init();
+                }
+            }
+        };
+
+        LazyLoad.Load();
+        if (document.addEventListener) {
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        } else if (document.attachEvent) {
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }
+
+    </script>
+    <div style="display:none;">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_5934394'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D5934394' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_5934394'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D5934394' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

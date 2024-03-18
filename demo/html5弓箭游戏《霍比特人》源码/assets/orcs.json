@@ -1,0 +1,2287 @@
+{"frames": [
+	{
+		"filename":"orc_archer_aim_top_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 264,"w": 107,"h": 79	},
+		"spriteSourceSize": {"x": 37,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 848,"y": 102,"w": 93,"h": 80	},
+		"spriteSourceSize": {"x": 41,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 649,"y": 621,"w": 84,"h": 77	},
+		"spriteSourceSize": {"x": 51,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1099,"y": 1518,"w": 86,"h": 90	},
+		"spriteSourceSize": {"x": 54,"y": 40,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 991,"y": 0,"w": 87,"h": 93	},
+		"spriteSourceSize": {"x": 56,"y": 37,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1017,"y": 1112,"w": 88,"h": 99	},
+		"spriteSourceSize": {"x": 56,"y": 36,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 545,"y": 702,"w": 90,"h": 95	},
+		"spriteSourceSize": {"x": 54,"y": 36,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 898,"y": 0,"w": 91,"h": 98	},
+		"spriteSourceSize": {"x": 52,"y": 35,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1008,"y": 1510,"w": 89,"h": 102	},
+		"spriteSourceSize": {"x": 50,"y": 33,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1098,"y": 1614,"w": 87,"h": 105	},
+		"spriteSourceSize": {"x": 49,"y": 33,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 493,"y": 0,"w": 103,"h": 109	},
+		"spriteSourceSize": {"x": 47,"y": 31,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1189,"y": 1168,"w": 84,"h": 131	},
+		"spriteSourceSize": {"x": 47,"y": 11,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 649,"y": 385,"w": 99,"h": 114	},
+		"spriteSourceSize": {"x": 27,"y": 29,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 398,"y": 1895,"w": 110,"h": 113	},
+		"spriteSourceSize": {"x": 15,"y": 30,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 302,"y": 1079,"w": 112,"h": 112	},
+		"spriteSourceSize": {"x": 15,"y": 31,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 330,"y": 149,"w": 111,"h": 113	},
+		"spriteSourceSize": {"x": 16,"y": 31,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 401,"y": 1376,"w": 109,"h": 112	},
+		"spriteSourceSize": {"x": 18,"y": 32,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 416,"y": 1052,"w": 107,"h": 114	},
+		"spriteSourceSize": {"x": 18,"y": 28,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 437,"y": 688,"w": 106,"h": 114	},
+		"spriteSourceSize": {"x": 19,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 443,"y": 128,"w": 104,"h": 113	},
+		"spriteSourceSize": {"x": 22,"y": 24,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 510,"y": 1923,"w": 103,"h": 111	},
+		"spriteSourceSize": {"x": 24,"y": 22,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 547,"y": 385,"w": 100,"h": 110	},
+		"spriteSourceSize": {"x": 30,"y": 21,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 637,"y": 813,"w": 99,"h": 107	},
+		"spriteSourceSize": {"x": 33,"y": 22,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 729,"y": 1067,"w": 96,"h": 104	},
+		"spriteSourceSize": {"x": 37,"y": 24,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 750,"y": 265,"w": 95,"h": 101	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 719,"y": 1345,"w": 96,"h": 100	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 750,"y": 515,"w": 95,"h": 100	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_aim_top_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 827,"y": 1187,"w": 94,"h": 100	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1566,"y": 1661,"w": 61,"h": 78	},
+		"spriteSourceSize": {"x": 71,"y": 95,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1572,"y": 396,"w": 61,"h": 78	},
+		"spriteSourceSize": {"x": 71,"y": 95,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1566,"y": 1496,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1550,"y": 0,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1904,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1741,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1432,"y": 1741,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1359,"y": 1497,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1629,"y": 1634,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1629,"y": 1552,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1629,"y": 1470,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1514,"y": 232,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1188,"y": 1966,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1509,"y": 365,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 942,"y": 499,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1430,"y": 1941,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1487,"y": 0,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 753,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1516,"y": 84,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1566,"y": 1577,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1566,"y": 874,"w": 61,"h": 82	},
+		"spriteSourceSize": {"x": 71,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1629,"y": 837,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1139,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1222,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1305,"w": 61,"h": 81	},
+		"spriteSourceSize": {"x": 71,"y": 92,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_25.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1388,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_26.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1567,"y": 1822,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_27.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1568,"y": 958,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_28.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1568,"y": 1040,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_29.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1568,"y": 565,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_30.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1568,"y": 647,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_31.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1572,"y": 314,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_32.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1572,"y": 476,"w": 61,"h": 80	},
+		"spriteSourceSize": {"x": 71,"y": 93,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_33.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1577,"y": 168,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_34.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1579,"y": 81,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_bot_35.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1613,"y": 0,"w": 61,"h": 79	},
+		"spriteSourceSize": {"x": 71,"y": 94,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1637,"w": 94,"h": 100	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 801,"y": 0,"w": 95,"h": 100	},
+		"spriteSourceSize": {"x": 42,"y": 26,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1518,"w": 94,"h": 117	},
+		"spriteSourceSize": {"x": 49,"y": 17,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1404,"w": 95,"h": 112	},
+		"spriteSourceSize": {"x": 49,"y": 20,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 836,"y": 737,"w": 94,"h": 114	},
+		"spriteSourceSize": {"x": 49,"y": 20,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_attack_top_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1861,"w": 94,"h": 114	},
+		"spriteSourceSize": {"x": 49,"y": 20,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1289,"y": 418,"w": 80,"h": 128	},
+		"spriteSourceSize": {"x": 65,"y": 45,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1301,"w": 83,"h": 127	},
+		"spriteSourceSize": {"x": 80,"y": 45,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 913,"y": 1907,"w": 92,"h": 123	},
+		"spriteSourceSize": {"x": 86,"y": 45,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 718,"y": 1595,"w": 97,"h": 124	},
+		"spriteSourceSize": {"x": 92,"y": 44,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 751,"y": 121,"w": 95,"h": 124	},
+		"spriteSourceSize": {"x": 96,"y": 44,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 923,"y": 979,"w": 92,"h": 121	},
+		"spriteSourceSize": {"x": 94,"y": 47,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 738,"y": 739,"w": 96,"h": 117	},
+		"spriteSourceSize": {"x": 90,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 738,"y": 621,"w": 96,"h": 116	},
+		"spriteSourceSize": {"x": 87,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 637,"y": 702,"w": 99,"h": 109	},
+		"spriteSourceSize": {"x": 74,"y": 63,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 281,"y": 1432,"w": 118,"h": 102	},
+		"spriteSourceSize": {"x": 48,"y": 69,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 180,"y": 978,"w": 126,"h": 99	},
+		"spriteSourceSize": {"x": 40,"y": 72,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1602,"w": 139,"h": 90	},
+		"spriteSourceSize": {"x": 29,"y": 80,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1431,"w": 147,"h": 81	},
+		"spriteSourceSize": {"x": 24,"y": 87,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 139,"y": 1922,"w": 137,"h": 65	},
+		"spriteSourceSize": {"x": 34,"y": 111,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 149,"y": 1481,"w": 130,"h": 47	},
+		"spriteSourceSize": {"x": 38,"y": 128,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 149,"y": 1432,"w": 130,"h": 47	},
+		"spriteSourceSize": {"x": 35,"y": 128,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 141,"y": 1604,"w": 133,"h": 44	},
+		"spriteSourceSize": {"x": 26,"y": 123,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1739,"w": 138,"h": 44	},
+		"spriteSourceSize": {"x": 23,"y": 124,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1558,"w": 139,"h": 42	},
+		"spriteSourceSize": {"x": 22,"y": 126,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1514,"w": 140,"h": 42	},
+		"spriteSourceSize": {"x": 21,"y": 128,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1694,"w": 139,"h": 43	},
+		"spriteSourceSize": {"x": 21,"y": 129,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 139,"y": 1989,"w": 137,"h": 43	},
+		"spriteSourceSize": {"x": 22,"y": 131,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1967,"w": 137,"h": 43	},
+		"spriteSourceSize": {"x": 22,"y": 131,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_death_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1922,"w": 137,"h": 43	},
+		"spriteSourceSize": {"x": 22,"y": 131,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 512,"y": 1595,"w": 102,"h": 117	},
+		"spriteSourceSize": {"x": 39,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 627,"y": 1105,"w": 100,"h": 118	},
+		"spriteSourceSize": {"x": 40,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 649,"y": 501,"w": 99,"h": 118	},
+		"spriteSourceSize": {"x": 40,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 730,"y": 922,"w": 96,"h": 118	},
+		"spriteSourceSize": {"x": 42,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 828,"y": 858,"w": 94,"h": 119	},
+		"spriteSourceSize": {"x": 43,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 913,"y": 1518,"w": 93,"h": 120	},
+		"spriteSourceSize": {"x": 44,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 914,"y": 1289,"w": 92,"h": 120	},
+		"spriteSourceSize": {"x": 45,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 943,"y": 100,"w": 91,"h": 120	},
+		"spriteSourceSize": {"x": 46,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 913,"y": 1640,"w": 93,"h": 120	},
+		"spriteSourceSize": {"x": 45,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1739,"w": 94,"h": 120	},
+		"spriteSourceSize": {"x": 44,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 729,"y": 1173,"w": 96,"h": 120	},
+		"spriteSourceSize": {"x": 43,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 701,"y": 0,"w": 98,"h": 119	},
+		"spriteSourceSize": {"x": 42,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 650,"y": 145,"w": 99,"h": 118	},
+		"spriteSourceSize": {"x": 41,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 616,"y": 1354,"w": 101,"h": 118	},
+		"spriteSourceSize": {"x": 40,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 615,"y": 1858,"w": 101,"h": 118	},
+		"spriteSourceSize": {"x": 40,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 512,"y": 1475,"w": 102,"h": 118	},
+		"spriteSourceSize": {"x": 39,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_invisible.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 2036,"w": 1,"h": 1	},
+		"spriteSourceSize": {"x": -2,"y": -2,"w": 200,"h": 200	},
+		"sourceSize": {"w": 200,"h": 200	}
+	},
+	{
+		"filename":"orc_archer_move_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 534,"y": 804,"w": 101,"h": 117	},
+		"spriteSourceSize": {"x": 54,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 512,"y": 1354,"w": 102,"h": 119	},
+		"spriteSourceSize": {"x": 52,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 525,"y": 987,"w": 102,"h": 116	},
+		"spriteSourceSize": {"x": 49,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 616,"y": 1591,"w": 100,"h": 117	},
+		"spriteSourceSize": {"x": 45,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 718,"y": 1721,"w": 97,"h": 115	},
+		"spriteSourceSize": {"x": 44,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 923,"y": 1102,"w": 92,"h": 120	},
+		"spriteSourceSize": {"x": 44,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 627,"y": 1225,"w": 100,"h": 118	},
+		"spriteSourceSize": {"x": 47,"y": 50,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 718,"y": 1474,"w": 97,"h": 119	},
+		"spriteSourceSize": {"x": 50,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 932,"y": 590,"w": 91,"h": 115	},
+		"spriteSourceSize": {"x": 52,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1212,"y": 300,"w": 82,"h": 116	},
+		"spriteSourceSize": {"x": 54,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1125,"y": 302,"w": 85,"h": 116	},
+		"spriteSourceSize": {"x": 55,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_archer_move_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 932,"y": 707,"w": 91,"h": 119	},
+		"spriteSourceSize": {"x": 55,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_big_attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1100,"y": 1213,"w": 87,"h": 150	},
+		"spriteSourceSize": {"x": 129,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1196,"y": 764,"w": 84,"h": 150	},
+		"spriteSourceSize": {"x": 129,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 205,"y": 214,"w": 123,"h": 151	},
+		"spriteSourceSize": {"x": 129,"y": 83,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1277,"w": 156,"h": 152	},
+		"spriteSourceSize": {"x": 124,"y": 82,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1127,"w": 170,"h": 148	},
+		"spriteSourceSize": {"x": 121,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 838,"w": 182,"h": 138	},
+		"spriteSourceSize": {"x": 115,"y": 96,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 0,"w": 257,"h": 144	},
+		"spriteSourceSize": {"x": 15,"y": 91,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 507,"w": 197,"h": 147	},
+		"spriteSourceSize": {"x": 10,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 978,"w": 178,"h": 147	},
+		"spriteSourceSize": {"x": 31,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 158,"y": 1277,"w": 134,"h": 153	},
+		"spriteSourceSize": {"x": 77,"y": 81,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 438,"y": 345,"w": 107,"h": 152	},
+		"spriteSourceSize": {"x": 105,"y": 82,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 438,"y": 499,"w": 105,"h": 148	},
+		"spriteSourceSize": {"x": 107,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 323,"y": 690,"w": 112,"h": 149	},
+		"spriteSourceSize": {"x": 100,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 718,"y": 1838,"w": 97,"h": 150	},
+		"spriteSourceSize": {"x": 115,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_attack_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1080,"y": 0,"w": 87,"h": 150	},
+		"spriteSourceSize": {"x": 129,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1035,"y": 222,"w": 88,"h": 147	},
+		"spriteSourceSize": {"x": 120,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1195,"y": 945,"w": 84,"h": 151	},
+		"spriteSourceSize": {"x": 139,"y": 83,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1008,"y": 1370,"w": 89,"h": 138	},
+		"spriteSourceSize": {"x": 150,"y": 95,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 381,"y": 0,"w": 110,"h": 126	},
+		"spriteSourceSize": {"x": 155,"y": 105,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 412,"y": 1193,"w": 109,"h": 159	},
+		"spriteSourceSize": {"x": 158,"y": 72,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 510,"y": 1729,"w": 103,"h": 192	},
+		"spriteSourceSize": {"x": 164,"y": 40,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 545,"y": 499,"w": 102,"h": 201	},
+		"spriteSourceSize": {"x": 166,"y": 35,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 399,"y": 1536,"w": 111,"h": 191	},
+		"spriteSourceSize": {"x": 161,"y": 44,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 308,"y": 865,"w": 114,"h": 185	},
+		"spriteSourceSize": {"x": 160,"y": 50,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 847,"y": 394,"w": 93,"h": 194	},
+		"spriteSourceSize": {"x": 164,"y": 41,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 523,"y": 1168,"w": 102,"h": 184	},
+		"spriteSourceSize": {"x": 142,"y": 61,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 717,"w": 194,"h": 119	},
+		"spriteSourceSize": {"x": 49,"y": 124,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 146,"w": 208,"h": 66	},
+		"spriteSourceSize": {"x": 32,"y": 186,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 332,"w": 198,"h": 60	},
+		"spriteSourceSize": {"x": 36,"y": 183,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 452,"w": 197,"h": 53	},
+		"spriteSourceSize": {"x": 36,"y": 185,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 394,"w": 197,"h": 56	},
+		"spriteSourceSize": {"x": 36,"y": 188,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 656,"w": 196,"h": 59	},
+		"spriteSourceSize": {"x": 35,"y": 192,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 271,"w": 200,"h": 59	},
+		"spriteSourceSize": {"x": 28,"y": 196,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 214,"w": 203,"h": 55	},
+		"spriteSourceSize": {"x": 25,"y": 194,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1188,"y": 1817,"w": 84,"h": 147	},
+		"spriteSourceSize": {"x": 131,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1430,"w": 83,"h": 147	},
+		"spriteSourceSize": {"x": 131,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1256,"y": 0,"w": 83,"h": 147	},
+		"spriteSourceSize": {"x": 131,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1212,"y": 150,"w": 83,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1188,"y": 1365,"w": 84,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1203,"y": 420,"w": 84,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1187,"y": 1667,"w": 85,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1125,"y": 152,"w": 85,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1098,"y": 1721,"w": 87,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1025,"y": 649,"w": 88,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1025,"y": 499,"w": 88,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1008,"y": 1614,"w": 88,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1017,"y": 962,"w": 88,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1099,"y": 1871,"w": 87,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1115,"y": 490,"w": 86,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1169,"y": 0,"w": 85,"h": 148	},
+		"spriteSourceSize": {"x": 131,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1187,"y": 1518,"w": 85,"h": 147	},
+		"spriteSourceSize": {"x": 131,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_idle_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1203,"y": 570,"w": 84,"h": 147	},
+		"spriteSourceSize": {"x": 131,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 199,"y": 394,"w": 124,"h": 146	},
+		"spriteSourceSize": {"x": 100,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 199,"y": 542,"w": 123,"h": 146	},
+		"spriteSourceSize": {"x": 101,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 259,"y": 0,"w": 120,"h": 147	},
+		"spriteSourceSize": {"x": 103,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 399,"y": 1729,"w": 109,"h": 145	},
+		"spriteSourceSize": {"x": 112,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 547,"y": 243,"w": 101,"h": 140	},
+		"spriteSourceSize": {"x": 118,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 827,"y": 1042,"w": 94,"h": 143	},
+		"spriteSourceSize": {"x": 118,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1108,"y": 799,"w": 86,"h": 144	},
+		"spriteSourceSize": {"x": 120,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1282,"y": 719,"w": 80,"h": 142	},
+		"spriteSourceSize": {"x": 124,"y": 88,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1297,"y": 274,"w": 77,"h": 141	},
+		"spriteSourceSize": {"x": 131,"y": 87,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1275,"y": 1098,"w": 81,"h": 143	},
+		"spriteSourceSize": {"x": 132,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 847,"y": 247,"w": 94,"h": 145	},
+		"spriteSourceSize": {"x": 123,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 324,"y": 542,"w": 112,"h": 144	},
+		"spriteSourceSize": {"x": 108,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 278,"y": 1750,"w": 119,"h": 143	},
+		"spriteSourceSize": {"x": 104,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 278,"y": 1604,"w": 119,"h": 144	},
+		"spriteSourceSize": {"x": 105,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 294,"y": 1229,"w": 116,"h": 145	},
+		"spriteSourceSize": {"x": 108,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 424,"y": 841,"w": 108,"h": 144	},
+		"spriteSourceSize": {"x": 116,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 598,"y": 0,"w": 101,"h": 143	},
+		"spriteSourceSize": {"x": 123,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 615,"y": 1714,"w": 101,"h": 142	},
+		"spriteSourceSize": {"x": 123,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 629,"y": 923,"w": 99,"h": 142	},
+		"spriteSourceSize": {"x": 124,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 913,"y": 1762,"w": 93,"h": 143	},
+		"spriteSourceSize": {"x": 127,"y": 86,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1008,"y": 1224,"w": 90,"h": 144	},
+		"spriteSourceSize": {"x": 128,"y": 85,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1099,"y": 1370,"w": 87,"h": 146	},
+		"spriteSourceSize": {"x": 128,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 750,"y": 368,"w": 95,"h": 145	},
+		"spriteSourceSize": {"x": 117,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 325,"y": 367,"w": 111,"h": 145	},
+		"spriteSourceSize": {"x": 104,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_big_move_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 196,"y": 717,"w": 125,"h": 146	},
+		"spriteSourceSize": {"x": 99,"y": 84,"w": 304,"h": 280	},
+		"sourceSize": {"w": 304,"h": 280	}
+	},
+	{
+		"filename":"orc_patrol_attack_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1431,"y": 1144,"w": 67,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1358,"y": 1033,"w": 71,"h": 115	},
+		"spriteSourceSize": {"x": 70,"y": 58,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1431,"y": 1263,"w": 67,"h": 112	},
+		"spriteSourceSize": {"x": 74,"y": 61,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1418,"y": 0,"w": 67,"h": 110	},
+		"spriteSourceSize": {"x": 74,"y": 63,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1364,"y": 912,"w": 68,"h": 109	},
+		"spriteSourceSize": {"x": 74,"y": 64,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1358,"y": 1150,"w": 71,"h": 110	},
+		"spriteSourceSize": {"x": 74,"y": 63,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1500,"y": 1139,"w": 65,"h": 116	},
+		"spriteSourceSize": {"x": 74,"y": 57,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 278,"y": 1895,"w": 118,"h": 121	},
+		"spriteSourceSize": {"x": 15,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1297,"y": 149,"w": 79,"h": 123	},
+		"spriteSourceSize": {"x": 54,"y": 50,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1115,"y": 640,"w": 85,"h": 122	},
+		"spriteSourceSize": {"x": 48,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1699,"w": 81,"h": 122	},
+		"spriteSourceSize": {"x": 52,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1357,"y": 1699,"w": 73,"h": 122	},
+		"spriteSourceSize": {"x": 60,"y": 51,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1371,"y": 539,"w": 68,"h": 120	},
+		"spriteSourceSize": {"x": 65,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1502,"y": 753,"w": 63,"h": 119	},
+		"spriteSourceSize": {"x": 70,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1630,"y": 1833,"w": 59,"h": 116	},
+		"spriteSourceSize": {"x": 74,"y": 57,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1499,"y": 1741,"w": 66,"h": 114	},
+		"spriteSourceSize": {"x": 74,"y": 59,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1499,"y": 1857,"w": 66,"h": 114	},
+		"spriteSourceSize": {"x": 74,"y": 59,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1441,"y": 517,"w": 66,"h": 115	},
+		"spriteSourceSize": {"x": 74,"y": 58,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_attack_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1359,"y": 1379,"w": 69,"h": 116	},
+		"spriteSourceSize": {"x": 72,"y": 57,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1378,"y": 118,"w": 68,"h": 126	},
+		"spriteSourceSize": {"x": 71,"y": 49,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1823,"w": 81,"h": 122	},
+		"spriteSourceSize": {"x": 75,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1007,"y": 1907,"w": 90,"h": 110	},
+		"spriteSourceSize": {"x": 81,"y": 61,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 817,"y": 1295,"w": 95,"h": 107	},
+		"spriteSourceSize": {"x": 87,"y": 63,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 924,"y": 853,"w": 92,"h": 107	},
+		"spriteSourceSize": {"x": 92,"y": 63,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1008,"y": 1764,"w": 88,"h": 106	},
+		"spriteSourceSize": {"x": 91,"y": 64,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 942,"y": 394,"w": 91,"h": 103	},
+		"spriteSourceSize": {"x": 88,"y": 68,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 914,"y": 1411,"w": 92,"h": 101	},
+		"spriteSourceSize": {"x": 84,"y": 72,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1107,"y": 1068,"w": 86,"h": 98	},
+		"spriteSourceSize": {"x": 80,"y": 76,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1357,"y": 1941,"w": 71,"h": 100	},
+		"spriteSourceSize": {"x": 89,"y": 73,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1947,"w": 80,"h": 99	},
+		"spriteSourceSize": {"x": 79,"y": 75,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 549,"y": 145,"w": 93,"h": 89	},
+		"spriteSourceSize": {"x": 68,"y": 84,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 443,"y": 243,"w": 102,"h": 80	},
+		"spriteSourceSize": {"x": 62,"y": 91,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 184,"y": 865,"w": 120,"h": 63	},
+		"spriteSourceSize": {"x": 43,"y": 115,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 172,"y": 1180,"w": 124,"h": 47	},
+		"spriteSourceSize": {"x": 37,"y": 131,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 172,"y": 1127,"w": 128,"h": 51	},
+		"spriteSourceSize": {"x": 30,"y": 127,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 141,"y": 1650,"w": 131,"h": 47	},
+		"spriteSourceSize": {"x": 21,"y": 123,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 140,"y": 1786,"w": 136,"h": 45	},
+		"spriteSourceSize": {"x": 19,"y": 126,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1785,"w": 138,"h": 42	},
+		"spriteSourceSize": {"x": 17,"y": 129,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1829,"w": 138,"h": 44	},
+		"spriteSourceSize": {"x": 16,"y": 129,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 0,"y": 1875,"w": 138,"h": 45	},
+		"spriteSourceSize": {"x": 16,"y": 130,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 140,"y": 1833,"w": 136,"h": 46	},
+		"spriteSourceSize": {"x": 17,"y": 131,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 140,"y": 1739,"w": 136,"h": 45	},
+		"spriteSourceSize": {"x": 17,"y": 132,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_death_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 141,"y": 1558,"w": 136,"h": 44	},
+		"spriteSourceSize": {"x": 17,"y": 132,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1500,"y": 1020,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1499,"y": 1377,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1448,"y": 112,"w": 66,"h": 118	},
+		"spriteSourceSize": {"x": 74,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1431,"y": 1023,"w": 67,"h": 119	},
+		"spriteSourceSize": {"x": 73,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1364,"y": 669,"w": 68,"h": 119	},
+		"spriteSourceSize": {"x": 72,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1376,"y": 274,"w": 68,"h": 120	},
+		"spriteSourceSize": {"x": 72,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1364,"y": 790,"w": 68,"h": 120	},
+		"spriteSourceSize": {"x": 72,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1371,"y": 417,"w": 68,"h": 120	},
+		"spriteSourceSize": {"x": 72,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1430,"y": 1379,"w": 67,"h": 120	},
+		"spriteSourceSize": {"x": 73,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1441,"y": 396,"w": 66,"h": 119	},
+		"spriteSourceSize": {"x": 74,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1432,"y": 1501,"w": 66,"h": 119	},
+		"spriteSourceSize": {"x": 74,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1434,"y": 781,"w": 66,"h": 118	},
+		"spriteSourceSize": {"x": 74,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1434,"y": 661,"w": 66,"h": 118	},
+		"spriteSourceSize": {"x": 74,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1432,"y": 1622,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1434,"y": 901,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1446,"y": 246,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_idle_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1446,"y": 246,"w": 66,"h": 117	},
+		"spriteSourceSize": {"x": 74,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_00.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 650,"y": 265,"w": 98,"h": 116	},
+		"spriteSourceSize": {"x": 54,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_01.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 836,"y": 617,"w": 94,"h": 118	},
+		"spriteSourceSize": {"x": 58,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_02.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1018,"y": 828,"w": 88,"h": 118	},
+		"spriteSourceSize": {"x": 63,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_03.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1281,"y": 916,"w": 81,"h": 115	},
+		"spriteSourceSize": {"x": 68,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_04.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1357,"y": 1823,"w": 72,"h": 116	},
+		"spriteSourceSize": {"x": 73,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_05.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1502,"y": 634,"w": 64,"h": 117	},
+		"spriteSourceSize": {"x": 77,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_06.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1630,"y": 1715,"w": 60,"h": 116	},
+		"spriteSourceSize": {"x": 77,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_07.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1630,"y": 1122,"w": 59,"h": 115	},
+		"spriteSourceSize": {"x": 78,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_08.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1630,"y": 1239,"w": 58,"h": 116	},
+		"spriteSourceSize": {"x": 79,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_09.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1500,"y": 1496,"w": 64,"h": 119	},
+		"spriteSourceSize": {"x": 73,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_10.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1289,"y": 548,"w": 80,"h": 119	},
+		"spriteSourceSize": {"x": 61,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_11.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1035,"y": 371,"w": 88,"h": 117	},
+		"spriteSourceSize": {"x": 57,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_12.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1107,"y": 948,"w": 86,"h": 118	},
+		"spriteSourceSize": {"x": 59,"y": 52,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_13.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1274,"y": 1579,"w": 82,"h": 118	},
+		"spriteSourceSize": {"x": 63,"y": 53,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_14.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1341,"y": 0,"w": 75,"h": 116	},
+		"spriteSourceSize": {"x": 69,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_15.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1359,"y": 1262,"w": 70,"h": 115	},
+		"spriteSourceSize": {"x": 71,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_16.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1431,"y": 1823,"w": 66,"h": 114	},
+		"spriteSourceSize": {"x": 72,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_17.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1500,"y": 1257,"w": 65,"h": 115	},
+		"spriteSourceSize": {"x": 73,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_18.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1500,"y": 1617,"w": 64,"h": 114	},
+		"spriteSourceSize": {"x": 73,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_19.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1502,"y": 874,"w": 62,"h": 114	},
+		"spriteSourceSize": {"x": 75,"y": 56,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_20.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1509,"y": 448,"w": 61,"h": 115	},
+		"spriteSourceSize": {"x": 76,"y": 55,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_21.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 1358,"y": 1579,"w": 72,"h": 117	},
+		"spriteSourceSize": {"x": 68,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_22.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 943,"y": 222,"w": 90,"h": 116	},
+		"spriteSourceSize": {"x": 57,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_23.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 616,"y": 1474,"w": 100,"h": 115	},
+		"spriteSourceSize": {"x": 53,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	},
+	{
+		"filename":"orc_patrol_move_24.png",
+		"rotated": false,
+		"trimmed": true,
+		"frame": {"x": 650,"y": 265,"w": 98,"h": 116	},
+		"spriteSourceSize": {"x": 54,"y": 54,"w": 210,"h": 210	},
+		"sourceSize": {"w": 210,"h": 210	}
+	}
+],
+"meta": {
+	"app": "ShoeBox",
+	"size": {"w":2048,"h":2048}
+}
+}

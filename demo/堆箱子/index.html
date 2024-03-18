@@ -1,0 +1,1786 @@
+﻿<html>
+	<head>
+		<title>
+		  swing-block
+		</title>
+		<meta name="description" content="堆箱子"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--<link rel="shortcut icon" href="documents/images/favicon.ico"/>-->
+		<style type="text/css">
+			body { overflow:hidden; background: #000000; margin:0; padding:0; }
+		</style>
+	</head>
+	<body>
+		<div id="ads" >
+		<table style="width:100%;margin:auto" ><tr>
+			<td align="center" style="width:40%">	
+			<a style="display:inline-block;margin-left:20px;font-size:18px;color:#FFFFFF" target="_blank" title="u.pingan.com" 
+				href="http://m.jubit.cn:80/Monitor/transurl.aspx?s=MTM5ODE2MTM5ODE3aHR0cDovL3d4Lmp1Yml0LmNuLzJiMDE4L2RldGFpbHMuY2h0bWw=teq1"><br />
+			<span></span></a>
+		</td><td align="center" id="rankSC" style="width:60%;font-size: 12px"></td></tr>
+		</table>
+	
+</div>
+	
+		<p id="shareImg" style="position:fixed;left:0px;top:0px;z-index:100;display:none;text-align:center;">
+								<img src="imgs/tip-share.jpg" width="100%"/>
+		</p>
+		<script type="text/javascript">
+		    var aeb = "yi588";
+		    var vlx = null;
+		    var mode = "front";
+		    var backSurface;
+		    var backContext = null;
+		    var baseURL = "imgs/";
+		    var imageManager = null;
+		    var mainBox = null;
+		    var ballBox = null;
+		    var snowBox = null;
+		    var world;
+		    var level = 0;
+		    var expTimer = 0;
+		    var currentDialogContent = null;
+		    var ticksTillNextM = 0;
+		    var delayM = 100;
+		    var ticksTillNextL = 0;
+		    var delayL = 200;
+		    var gameoverTicks = 0;
+		    var endOfLevelTicks = 0;
+		    var tE = 0;
+		    var tS = 4;
+		    var maxB = 600;
+
+		    var moveLeftDown = false;
+		    var moveRightDown = false;
+		    var moveUpDown = false;
+		    var moveDownDown = false;
+		    var zoomInDown = false;
+		    var zoomOutDown = false;
+
+		    var nxtTrophy = 0;
+		    var nxtBonus = 0;
+		    var worldWidth = 0;
+		    var worldHeight = 0;
+		    var ticks = 0;
+		    var isPaused = false;
+		    var map = null;
+		    var rCount = 0;
+		    var bottomCover = null;
+
+		    var spinSpeed = 0;
+		    var spinTouchIndex = 0;
+		    var spinTouchCount = 0;
+		    var spinCyclesComplete = 0;
+		    var lvNo = 0;
+		    var _score = 0;
+		    var _lives = 0;
+		    var _gravity = 0.2;
+		    var _jewelCount = 0;
+		    var bonusRunCount = 0;
+		    var _finishNextScale = 0;
+		    var _startNextScale = 0;
+		    var _yscroll = 0;
+
+		    var scoreArray = new Array();
+		    var nameArray = new Array();
+		    var rank = 0;
+		    var totalScrore = 0;
+
+		    function startGame() {
+		        vlx = new VectorlightGame();
+		        //setTimeout(cc9fbfa57ac204ba2ab4496dd9fef8f33, 2000);
+
+		        vlx.gameInit2("stage", 1658, 320, 460, 33, true);
+		        backSurface = document.getElementById("gameSurface");
+		        backContext = backSurface.getContext('2d');
+
+		        if (vlx.useTouch) {
+		            backSurface.addEventListener('touchstart', _touchstart, false);
+		            //document.body.addEventListener('touchstart', touchProcess);
+		        } else {
+		            backSurface.addEventListener('mousedown', _mousedown, false);
+		        }
+
+		        imageManager = new ImageManager();
+		        imageManager._baseURL = baseURL;
+		        imageManager._onLoaded = imagesLoaded;
+
+		        var images = new Object();
+		        addImageSet(images, "f0", 1);
+		        addImageSet(images, "f1", 1);
+		        addImageSet(images, "f2", 1);
+		        addImageSet(images, "f3", 1);
+		        addImageSet(images, "f4", 1);
+		        addImageSet(images, "f5", 1);
+		        addImageSet(images, "f6", 1);
+		        addImageSet(images, "f7", 1);
+		        addImageSet(images, "f8", 1);
+		        addImageSet(images, "f9", 1);
+		        addImageSet(images, "f1c", 1);
+		        addImageSet(images, "c1", 5, "png");
+		        addImageSet(images, "swing", 1);
+		        addImageSet(images, "v3", 1, "jpg");
+		        addImageSet(images, "v2", 1);
+
+		        imageManager._load(images);
+		    }
+
+		    var evX;
+		    var evY;
+
+		    function cPos(x, y) {
+		        evX = x;
+		        evY = y - 50;
+		    }
+
+		    function _touchstart(ev) {
+		        var _touch = ev.touches[0];
+		        mousedownProcess(_touch.pageX, _touch.pageY);
+
+		        if (ev != null) {
+		            ev.stopPropagation();
+		            ev.preventDefault();
+		        }
+		        return false;
+		    }
+
+		    function _mousedown(ev) {
+		        if (ev.which == 1) {
+		            mousedownProcess(ev.clientX, ev.clientY);
+		        }
+
+		        return false;
+		    }
+
+		    function mousedownProcess(x, y) {
+		        if (gameoverTicks > 0 || mode != "game") {
+		            return;
+		        }
+
+		        if (!world._demo) {
+		            cPos(x, y);
+		            detatchBlock();
+		        }
+
+		        return false;
+		    }
+
+		    function imagesLoaded() {
+		        setupFront();
+		    }
+
+		    function touchProcess(e) {
+		        if (mode == "game") {
+		            return cD(e);
+		        }
+		        return true;
+		    }
+
+		    function cD(e) {
+		        if (e != null) {
+		            e.stopPropagation();
+		            e.preventDefault();
+		        }
+		        return false;
+		    }
+
+		    function showAd() {
+		        vlx.dg('a2f031c38ef2e41e0b67b4823cd28ab6e').style.top = "0px";
+		    }
+
+		    function hideAd() {
+		        vlx.dg('a2f031c38ef2e41e0b67b4823cd28ab6e').style.top = "-100px";
+		    }
+
+		    function quit() {
+		        setupFront();
+		    }
+
+
+
+		    function showPopup(item) {
+		        $('.miniPopupItem').hide();
+		        $('#' + item).show();
+
+		        $('#mainPopup').fadeIn();
+		    }
+
+		    function hidePopup(onClosed) {
+		        $('#mainPopup').fadeOut();
+		    }
+
+		    function setupHighscore() {
+		        mode = "finish";
+
+		        var un = vlx.getUsername();
+		        if (un == null) {
+		            un = "";
+		        }
+
+		        vlx.dg("usernameInput").value = un;
+		        showPopup("highscore");
+
+		        return false;
+		    }
+
+		    function retry() {
+		        hidePopup(null);
+		        $('#shareImg').hide();
+		        setupGame();
+		        return false;
+		    }
+
+		    function saveHighscore() {
+		        vlx.setUsername(vlx.dg("usernameInput").value);
+		        hidePopup(null);
+
+		        vlx.sA(110, _score);
+
+		        setupFront();
+
+		        if (vlx.useTouch) {
+		            window.scrollTo(0, vlx.loadScrollY);
+		        }
+
+		        saveScore();
+
+
+		        return false;
+		    }
+
+		    function saveScore() {
+
+		        var nickName = "匿名玩家";
+		        if ($("#usernameInput").val() != '')
+		            nickName = $("#usernameInput").val();
+		        $.post('/serv/ActivityApiJson.ashx',
+							{ LoginName: 'Y2xvdWRuZXd0aGlua2luZw==',
+							    LoginPwd: '2!!5AED!#CA8BF9#C087E070B2C5407B',
+							    Name: nickName,
+							    Phone: '13617343589',
+							    K1: totalScore,
+							    DistinctKeys: 'none',
+							    ActivityID: 144268
+							},
+							function (data) {
+							    data = eval(data);
+							    var randStr = "";
+							    if (data.Status == 0) {
+							        var j = 0;
+							        var tempTable = '<table align="center" style="margin:0 auto;color:#FFFFFF;font-size:12px;" >';
+							        for (i = 0; i < rank && j < 5; i++) {
+							            j++;
+							            tempTable += '<tr><td>第' + j + '名&nbsp;</td><td>' + nameArray[i] + '&nbsp;</td><td>' + scoreArray[i] + '分</td></tr>';
+							        }
+							        j++;
+							        tempTable += '<tr><td>第' + j + '名&nbsp;</td><td>' + nickName + '&nbsp;</td><td>' + totalScore + '分</td></tr>';
+							        for (i = rank; i < nameArray.length && i < 4; i++) {
+							            j++;
+							            tempTable += '<tr><td>第' + j + '名&nbsp;</td><td>' + nameArray[i] + '&nbsp;</td><td>' + scoreArray[i] + '分</td></tr>';
+							        }
+							        tempTable += "</table>";
+							        $('.bestScore').html(tempTable);
+							        $('#hint').html('成功进入了排行榜第' + (rank + 1) + '名!');
+							        $('._continue').hide();
+							        showPopup("summary");
+
+							    }
+							    else {
+							        alert('网络错误,提交失败!');
+							    }
+							},
+							'json');
+		    }
+
+
+		    function setupFinish() {
+		        mode = "finish";
+		        showPopup("summary");
+
+		        //$('#bestBy').html($('#bestBy2').html());
+		        //$('#bestLevNo').html($('#bestLevNo2').html());
+		        totalScore = _score;
+		        var s = vlx.pad(_score, 3);
+		        $('#totalTrophy').html(s);
+		        $('#shareImg').show();
+		        showRank2();
+
+
+		    }
+
+		    function showRank2() {
+		        $.post('/serv/gameapi.ashx',
+						 { activityid: 144268, sortfield: 'K1', count: 5 },
+						 function (callbackData) {
+						     callbackData = eval(callbackData);
+						     scoreArray = new Array();
+						     nameArray = new Array();
+
+						     var isShow = false;
+						     var randStr = '';
+						     rank = 0;
+						     for (i = 0; i < callbackData.length; i++) {
+						         nameArray[i] = callbackData[i].Name;
+						         scoreArray[i] = callbackData[i].K1;
+
+						         if (callbackData[i].K1 < _score && !isShow) {
+						             rank = i;
+						             isShow = true;
+						         }
+						     }
+						     var tempTable = '<table align="center" style="margin:0 auto;color:#FFFFFF;font-size:12px;" >';
+						     for (i = 0; i < callbackData.length; i++) {
+
+						         if (nameArray[i].length > 5)
+						             nameArray[i] = nameArray[i].substring(0, 4) + '…';
+						         else
+						             nameArray[i] = nameArray[i];
+
+						         var j = i + 1;
+						         tempTable += '<tr><td>第' + j + '名&nbsp;</td><td>' + nameArray[i] + '&nbsp;</td><td>' + scoreArray[i] + '分&nbsp;</td></tr>';
+						     }
+						     tempTable += "</table>";
+						     $(".bestScore").html(tempTable);
+						     if (isShow) {
+						         $('#endTitle').html("恭喜你!");
+						         $('._continue').show();
+						         $('#hint').html('获得第' + (rank + 1) + "名,快输入昵称上排行榜!");
+						         $('#infos').html('太强了!我在史上最变态的游戏《堆箱子》中获得了第' + (rank + 1) + '名!你敢挑战吗?');
+						     }
+						     else {
+						         $('#endTitle').html("很遗憾!");
+						         $('#hint').html("你未能进入排行榜,再来一次吧!");
+						         $('._continue').hide();
+						     }
+						 },
+						'json');
+
+		    }
+
+
+
+		    function setupFront() {
+		        hideAd();
+		        mode = "game";
+		        vlx.sh("front");
+		        vlx.sh("gameSurface");
+		        //vlx.hd("bestScore2");
+
+		        setupWorld(1, true);
+		    }
+
+		    function setupLevSelect() {
+		        showPopup("levSelect");
+
+		        return false;
+		    }
+
+		    function levSelected() {
+		        setupGame();
+		        hidePopup();
+		        $('#shareImg').hide();
+		        return false;
+		    }
+
+		    function setupGame() {
+		        try {
+		            util_createUnknownAccount();
+		        } catch (e) { }
+		        showAd();
+		        vlx.rG();
+		        //vlx.gA(110, "bestBy2", "bestLevNo2");
+		        showRank();
+		        $('#infos').html('史上最变态的游戏《堆箱子》')
+
+		        mode = "game";
+		        vlx.hd("front");
+		        vlx.sh("gameSurface");
+		        //vlx.sh("bestScore2");
+
+		        _score = 0;
+		        _lives = 5;
+		        updateScore();
+		        lvNo = 0;
+
+		        nextLevel();
+		    }
+		    function showRank() {
+		        $.post('/serv/gameapi.ashx',
+						 { activityid: 144268, sortfield: 'K1', count: 5 },
+						 function (callbackData) {
+						     callbackData = eval(callbackData);
+						     scoreArray = new Array();
+						     nameArray = new Array();
+						     var isShow = false;
+						     var randStr = '';
+						     rank = 0;
+						     for (i = 0; i < callbackData.length; i++) {
+						         if (callbackData[i].Name.length > 5)
+						             nameArray[i] = callbackData[i].Name.substring(0, 4) + '…';
+						         else
+						             nameArray[i] = callbackData[i].Name;
+						         scoreArray[i] = callbackData[i].K1;
+						     }
+						     var b = callbackData.length;
+						     var tempTable = '<table align="center" style="margin:0 auto;color:#FFFFFF;font-size:12px;"  ><caption >排行榜</caption>';
+						     for (i = 0; i < callbackData.length; i++) {
+
+						         if (nameArray[i].length > 5)
+						             nameArray[i] = nameArray[i].substring(0, 4) + '…';
+						         else
+						             nameArray[i] = nameArray[i];
+
+						         var j = i + 1;
+						         tempTable += '<tr><td>第' + j + '名&nbsp;</td><td>' + nameArray[i] + '&nbsp;</td><td>' + scoreArray[i] + '分&nbsp;</td></tr>';
+						     }
+						     tempTable += "</table>";
+						     $("#rankSC").html(tempTable);
+						     //toggleRank(0,callbackData.length);
+
+						 },
+						'json');
+
+		    }
+
+		    function toggleRank(a, b) {
+		        if (a == b)
+		            a = 0;
+		        var c = a + 1;
+		        $('#ranklist').html('第' + c + '名');
+		        $('#bestLevNo2').html(scoreArray[a] + '分');
+		        $('#bestBy2').html(nameArray[a]);
+		        a++;
+		        setTimeout("toggleRank(" + a + "," + b + ")", 10000);
+		    }
+
+
+
+		    function nextLevel() {
+		        if (_lives > 0) {
+		            lvNo++;
+		            endOfLevelTicks = 0;
+		            setupWorld(lvNo, false);
+		        }
+		    }
+
+		    function setupWorld(lv, demo) {
+		        world = new GameWorld(3);
+		        world._demo = demo;
+		        world._width = backSurface.width;
+		        world._height = backSurface.height;
+		        world._camera._x = 0;
+		        world._camera._y = 0;
+		        world._camera._viewport._width = backSurface.width;
+		        world._camera._viewport._height = backSurface.height;
+		        world._isComplete = false;
+		        world._swing = addPiece(1, "swing", 0, -160, 90);
+		        world._swing._onUpdated = swingMove;
+		        world._swing._swingDir = 1;
+		        world._swing._swingSpeed = 2;
+		        world._swing._block = null;
+		        world._swing._moving = false;
+		        world._swing._movingTicks = 0;
+		        world._swing._setMovement(0, 0, 1);
+		        _score = 0;
+
+		        mainBox = new BoundingBox(0, 0, world._width, world._height);
+		        lvNo = lv;
+		        _yscroll = 0;
+
+		        createSwingBlock();
+		        createBackground(256);
+		        createBackground(0);
+		        if (!world._demo) {
+		            createBackground2(mainBox._height - 16);
+		        }
+		    }
+
+		    var _lastBackY = 0;
+
+		    function createBackground(y) {
+		        var p = addPiece(0, "v3", 0, y, 0);
+		        p._onUpdated = backUpdated;
+		        _lastBackY = y;
+		    }
+
+		    function createBackground2(y) {
+		        var p = addPiece(0, "v2", 16, y, 0);
+		        p._onUpdated = backUpdated;
+		        world._bottom = p;
+		    }
+
+		    function backUpdated(p) {
+		        if (p._y > world._camera._y + mainBox._height) {
+		            return false;
+		        }
+
+		        return true;
+		    }
+
+		    var _nextblockid = 0;
+
+		    function createSwingBlock() {
+		        var b = addBlock(1, "c1", 0, 0);
+		        b._blockid = _nextblockid;
+		        b._isStopped = false;
+		        b._fadeIn(1, 10);
+		        b._onUpdated = updateBlink;
+		        world._swing._block = b;
+
+		        _nextblockid++;
+		        calculateSwingBlockPos(b);
+		    }
+
+		    function detatchBlock() {
+		        var b = world._swing._block;
+		        if (b != null) {
+		            var dir = -world._swing._swingDir;
+
+		            if (world._swing._swingSpeed < 0) {
+		                dir = world._swing._swingDir;
+		            }
+
+		            b._setMovement((dir * Math.abs(world._swing._swingSpeed)) * 1.2, 1, 1);
+		            b._onUpdated = blockMove;
+		            b._isFallingOff = false;
+		            world._swing._block = null;
+		        }
+		    }
+
+		    function blockMove(b) {
+		        updateBlink(b);
+
+		        if (b._isFallingOff) {
+		            return true;
+		        }
+		        if (b._y > world._camera._y + mainBox._height) {
+		            if (!b._isStopped) {
+		                stopBox(b, false);
+		            }
+		            return false;
+		        }
+
+		        if (b._isStopped) {
+		            return true;
+		        }
+
+		        b._direction._y += 0.1;
+		        b._direction._x *= 0.98;
+
+		        var i;
+		        var bx1 = b._x;
+		        var by1 = b._y + b._height;
+		        var bx2 = b._x + b._width;
+		        var by2 = b._y + b._height;
+
+		        for (i = 1; i < world._layers[1].length; i++) {
+		            var o = world._layers[1][i];
+
+		            if (o != b && o != world._swing._block) {
+		                if (o._hitTest(bx1, by1, 1) || o._hitTest(bx2, by2, 1)) {
+		                    var cB1x = b._x + b._halfWidth;
+		                    var cO2x = o._x + o._halfWidth;
+		                    var diff = cB1x - cO2x;
+
+		                    if (diff < -20) {
+		                        boxFallOff(b, diff + 15);
+		                    } else if (diff > 20) {
+		                        boxFallOff(b, diff - 15);
+		                    } else {
+		                        stopBox(b, o, true);
+		                    }
+		                }
+		            }
+		        }
+
+		        if (b._y > mainBox._height - (b._height + 16)) {
+		            b._y = mainBox._height - (b._height + 16);
+		            stopBox(b, null, false);
+		        }
+
+		        return true;
+		    }
+
+		    function boxFallOff(b, v) {
+		        var maxSpeed = 7;
+
+		        if (v < -maxSpeed) {
+		            v = -maxSpeed;
+		        } else if (v > maxSpeed) {
+		            v = maxSpeed;
+		        }
+		        b._direction._x = 0;
+		        b._direction._y = 0;
+		        b._speed = 0;
+		        b._isStopped = true;
+		        gameoverTicks = 50;
+
+		        b._onUpdated = boxFallOffUpdate;
+		        b._rotateStep = v * 1;
+		        b._fallSpeed = Math.abs(v * 0.1);
+		        b._dirSpeed = v * 0.7;
+		        b._isFallingOff = true;
+		    }
+
+		    function boxFallOffUpdate(b) {
+		        updateBlink(b);
+		        b._rotate += b._rotateStep;
+		        b._y += b._fallSpeed;
+		        b._x += b._dirSpeed;
+
+		        b._fallSpeed += 0.25;
+		        b._dirSpeed *= 0.94;
+		        b._rotateStep *= 0.98;
+		        return true;
+		    }
+
+		    function stopBox(b, hit, hitBox) {
+		        b._direction._x = 0;
+		        b._direction._y = 0;
+		        b._speed = 0;
+		        b._isStopped = true;
+		        b._onUpdated = updateBlink;
+
+		        if (hitBox && world._layers[1][world._layers[1].length - 2] != hit) {
+		            hitBox = false;
+		        }
+
+		        if (_score > 0 && !hitBox) {
+		            gameoverTicks = 50;
+		        } else {
+		            _score++;
+		            updateScore();
+		            if (_score > 2) {
+		                _yscroll += 40;
+		            }
+		            createSwingBlock();
+		        }
+		    }
+
+		    function calculateSwingBlockPos(b) {
+		        var p = new Point2();
+		        p._x = 160;
+		        p._y = 320;
+		        var o = new Point2();
+		        o._x = 160;
+		        o._y = 160;
+
+		        var r = Common_RotatePoint(p, o, MatrixUtility_DegToRad(world._swing._rotate - 90));
+		        b._x = world._swing._x + (r._x - b._halfWidth);
+		        b._y = ((r._y - 160) - b._halfHeight) + (world._swing._y + world._swing._halfHeight);
+		    }
+
+		    function Common_RotatePoint(p, origin, theta) {
+		        var r = new Point2();
+		        r._x = Math.cos(theta) * (p._x - origin._x) - Math.sin(theta) * (p._y - origin._y) + origin._x;
+		        r._y = Math.sin(theta) * (p._x - origin._x) + Math.cos(theta) * (p._y - origin._y) + origin._y;
+
+		        return r;
+		    }
+
+		    var MatrixUtility_HalfPI = Math.PI * 0.5;
+		    var MatrixUtility_PI180 = 180 / Math.PI;
+
+		    function MatrixUtility_RadToDeg(rad) {
+		        return MatrixUtility_PI180 * rad;
+		    }
+
+		    function MatrixUtility_DegToRad(deg) {
+		        return deg * 0.0174532925199432957;
+		    }
+
+		    function swingMove(s) {
+		        var g = 0.05;
+		        var maxSwingXOff = world._swing._halfWidth - 80;
+		        var centerSwingX = world._swing._x + world._swing._halfWidth;
+
+		        if (world._swing._moving) {
+		            world._swing._movingTicks--;
+		            var stop = false;
+
+		            if (world._swing._movingTicks <= 0) {
+		                stop = true;
+		            } else {
+		                if (world._swing._direction._x > 0 && centerSwingX > mainBox._width - maxSwingXOff) {
+		                    stop = true;
+		                } else if (world._swing._direction._x < 0 && centerSwingX < maxSwingXOff) {
+		                    stop = true;
+		                }
+		            }
+		            if (stop) {
+		                world._swing._moving = false;
+		                world._swing._direction._x = 0;
+		            }
+		        } else {
+		            if (Math.random() > 0.9) {
+
+		                world._swing._moving = true;
+		                world._swing._direction._x = 1 - (Math.random() * 2);
+		                world._swing._movingTicks = (50 + (Math.random() * 100)) >> 0;
+
+		                if (world._swing._direction._x < 0) {
+		                    world._swing._direction._x -= 1;
+		                } else {
+		                    world._swing._direction._x += 1;
+		                }
+
+		                if (world._swing._direction._x > 0 && centerSwingX > mainBox._width - maxSwingXOff) {
+		                    world._swing._direction._x = -world._swing._direction._x;
+		                } else if (world._swing._direction._x < 0 && centerSwingX < maxSwingXOff) {
+		                    world._swing._direction._x = -world._swing._direction._x;
+		                }
+
+		                world._swing._speed = 1 + (Math.random() * (lvNo * 0.1));
+
+		                //world._swing._direction._x = -1;
+		            }
+		        }
+
+		        world._swing._rotate += (world._swing._swingDir * world._swing._swingSpeed);
+
+		        if ((world._swing._swingDir > 0 && world._swing._rotate > 90) || (world._swing._swingDir < 0 && world._swing._rotate < 90)) {
+		            world._swing._swingSpeed -= g;
+		        } else if ((world._swing._swingDir < 0 && world._swing._rotate > 90) || (world._swing._swingDir > 0 && world._swing._rotate < 90)) {
+		            world._swing._swingSpeed += g;
+		        }
+
+		        if ((world._swing._swingDir > 0 && world._swing._rotate > 170) || (world._swing._swingDir < 0 && world._swing._rotate < 10)) {
+		            world._swing._swingDir = -world._swing._swingDir;
+		        }
+
+		        if (s._block != null) {
+		            calculateSwingBlockPos(s._block);
+		        }
+
+		        return true;
+		    }
+
+		    function addBlock(layer, name, x, y) {
+		        var m = new ComplexGameVisual();
+		        m._load(name, 5, 1);
+
+		        m._frames.push(imageManager._images[name + "_4"]);
+		        m._frames.push(imageManager._images[name + "_3"]);
+		        m._frames.push(imageManager._images[name + "_2"]);
+		        m._frames.push(imageManager._images[name + "_1"]);
+
+		        m._isPaused = true;
+		        m._rotate = 0;
+		        m._x = x;
+		        m._y = y;
+
+		        world._addObject(layer, m);
+		        return m;
+		    }
+
+		    function updateBlink(b) {
+		        if (b._isPaused || b._currentFrame >= b._frames.length - 1) {
+		            if (Math.random() > 0.98) {
+		                b._isPaused = false;
+		                b._currentFrame = 0;
+		            }
+		        }
+
+		        return true;
+		    }
+
+		    function addPiece(layer, name, x, y, angle) {
+		        var m = world._addComplex(layer, name, angle);
+		        m._x = x;
+		        m._y = y;
+		        m._src = name;
+
+		        return m;
+		    }
+
+		    function addSimplePiece(layer, name, x, y) {
+		        var m = world._add(layer, name);
+		        m._x = x;
+		        m._y = y;
+		        m._src = name;
+
+		        return m;
+		    }
+
+		    function beginGame(p) {
+		        isPaused = false;
+		    }
+
+		    function addImageSet(images, baseName, count, ext) {
+		        var i;
+		        var tmp;
+
+		        if (ext == null) {
+		            ext = "png";
+		        }
+
+		        for (i = 1; i <= count; i++) {
+		            tmp = baseName + "_" + i;
+		            images[tmp] = tmp + "." + ext;
+		        }
+		    }
+
+		    function gameLoop() {
+		        if (imageManager._loaded && world != null) {
+		            switch (mode) {
+		                case "game":
+		                    updateInGame();
+		                    break;
+		                default:
+		                    if (world != null) {
+		                        world._renderAndUpdate(backContext);
+		                    }
+		                    break;
+		            }
+		        }
+		    }
+
+		    function updateInGame() {
+		        world._renderAndUpdate(backContext);
+		        if (!world._demo) {
+		            renderScore(backContext);
+		        }
+
+		        if (_yscroll > 0) {
+		            world._camera._y -= 1;
+		            world._swing._y -= 1;
+		            _yscroll--;
+
+		            if (world._camera._y < _lastBackY) {
+		                createBackground(_lastBackY - 256);
+		            }
+		        }
+
+		        if (endOfLevelTicks == 0) {
+
+		        } else {
+		            endOfLevelTicks--;
+		            if (endOfLevelTicks <= 0) {
+		                nextLevel();
+		            }
+		        }
+
+		        if (gameoverTicks == 0) {
+		            if (!world._demo) { }
+		        } else {
+		            gameoverTicks--;
+		            if (gameoverTicks <= 0) {
+		                if (!world._demo) {
+		                    setupFinish();
+		                } else {
+		                    gameoverTicks = 0;
+		                }
+		            }
+		        }
+
+		        ticks++;
+		    }
+
+		    var scoreImages = new Array();
+
+		    function updateScore() {
+
+		        $('#infos').html('太难了!我在史上最难的游戏《堆箱子》中堆了' + _score + '个箱子!你敢挑战我吗?');
+
+		        var s = vlx.pad(_score, 3);
+
+		        scoreImages = new Array();
+		        scoreImages.push(imageManager._images["f" + s.charAt(0) + "_1"]);
+		        scoreImages.push(imageManager._images["f" + s.charAt(1) + "_1"]);
+		        scoreImages.push(imageManager._images["f" + s.charAt(2) + "_1"]);
+		    }
+
+		    function renderScore(context) {
+		        //var img = imageManager._images["km_1"];
+		        var i;
+		        var x = (320 - (26 * 3)) - 2;
+		        var y = 6;
+
+		        for (i = 0; i < scoreImages.length; i++) {
+		            context.drawImage(scoreImages[i], x, y);
+		            x += scoreImages[i].width + 2;
+		        }
+		        //context.drawImage(img, x + 1, y);
+		    }
+
+		    function renderLives(context) { }
+
+		    /* Image Manager */
+		    function ImageManager() {
+		        this._baseURL = "";
+		        this._images = {};
+		        this._toLoadCount = 0;
+		        this._loadedCount = 0;
+		        this._loaded = false;
+		        this._onLoaded = null;
+
+		        this._load = function (list) {
+		            var img;
+
+		            for (x in list) {
+		                this._toLoadCount++;
+
+		                img = new Image();
+		                img.onload = this._loadingComplete;
+		                img.src = this._baseURL + list[x];
+		                img.imageManager = this;
+
+		                this._images[x] = img;
+		            }
+		        }
+
+		        this._loadingComplete = function (e) {
+		            var imageManager = this.imageManager;
+		            imageManager._loadedCount++;
+
+		            if (imageManager._loadedCount == imageManager._toLoadCount) {
+		                imageManager._loaded = true;
+		                if (imageManager._onLoaded != null) {
+		                    imageManager._onLoaded();
+		                }
+		            }
+		            this._imageManager = null;
+		        }
+		    }
+
+		    function GameWorld(layerCount) {
+		        this._layers = new Array();
+		        this._background = "rgba(255, 255, 255, 0.0)";
+		        this._width = 0;
+		        this._height = 0;
+		        this._camera = new Camera();
+
+		        this._initLayers = function (layerCount) {
+		            var i;
+
+		            for (i = 0; i < layerCount; i++) {
+		                var _newLayer = new Array();
+		                _newLayer._contentType = 0;
+		                this._layers.push(_newLayer);
+		            }
+		        }
+		        this._initLayers(layerCount);
+
+		        this._freezeLayer = function (layer) {
+		            var i;
+
+		            for (i = 0; i < this._layers[layer].length; i++) {
+		                this._layers[layer][i]._isMoveable = false;
+		            }
+		        }
+
+		        this._add = function (layer, baseImage) {
+		            var obj = new GameVisual();
+		            obj._load(baseImage, 1, 1);
+
+		            this._addObject(layer, obj);
+		            return obj;
+		        }
+
+		        this._addAnimatedObject = function (layer, baseImage, count, delay) {
+		            var obj = new GameVisual();
+		            obj._load(baseImage, count, delay);
+
+		            this._addObject(layer, obj);
+		            return obj;
+		        }
+
+		        this._addComplex = function (layer, baseImage, rotate) {
+		            var obj = new ComplexGameVisual();
+		            obj._load(baseImage, 1, 1);
+		            obj._rotate = rotate;
+
+		            this._addObject(layer, obj);
+		            return obj;
+		        }
+
+		        this._addObject = function (layer, obj) {
+		            this._layers[layer].push(obj);
+		        }
+
+		        this._remove = function (layer, obj) {
+		            var l = this._layers[layer];
+		            var i = this._indexOf(layer, obj);
+
+		            l.splice(i, 1);
+		        }
+
+		        this._sendToTop = function (layer, obj) {
+		            var l = this._layers[layer];
+		            this._remove(layer, obj);
+		            l.unshift(obj);
+		        }
+
+		        this._indexOf = function (layer, obj) {
+		            var l = this._layers[layer];
+		            var result = -1;
+
+		            for (var a = l.length - 1; a >= 0; a--) {
+		                if (l[a] == obj) {
+		                    result = a;
+		                    break;
+		                }
+		            }
+
+		            return a;
+		        }
+
+		        this._render = function (context) {
+		            var i;
+		            var a;
+		            var defaultOpacity = context.globalAlpha;
+
+		            this._clearBackground(context);
+
+		            for (i = 0; i < this._layers.length; i++) {
+		                var layer = this._layers[i];
+		                for (a = layer.length - 1; a >= 0; a--) {
+		                    layer[a]._render(context, this._camera);
+		                }
+		            }
+
+		            context.globalAlpha = defaultOpacity;
+		        }
+
+		        this._update = function () {
+		            var i;
+		            var a;
+
+		            for (i = 0; i < this._layers.length; i++) {
+		                var layer = this._layers[i];
+		                for (a = layer.length - 1; a >= 0; a--) {
+		                    if (!layer[a]._update()) {
+		                        layer.splice(i, 1);
+		                    }
+		                }
+		            }
+		        }
+
+		        this._renderAndUpdate = function (context) {
+		            var i;
+		            var a;
+		            var obj;
+
+		            this._clearBackground(context);
+
+		            for (i = 0; i < this._layers.length; i++) {
+		                var layer = this._layers[i];
+		                switch (layer._contentType) {
+		                    case 1:
+		                        context.save();
+		                        for (a = 0; a < layer.length; a++) {
+		                            layer[a]._renderSimple(context);
+		                            if (!layer[a]._update()) {
+		                                layer.splice(a, 1);
+		                                a--;
+		                            }
+		                        }
+		                        context.restore();
+		                        break;
+		                    case 2:
+		                        context.save();
+		                        for (a = 0; a < layer.length; a++) {
+		                            obj = layer[a];
+		                            context.drawImage(obj._frames[0], obj._x, obj._y);
+		                            if (!obj._update()) {
+		                                layer.splice(a, 1);
+		                                a--;
+		                            }
+		                        }
+		                        context.restore();
+		                        break;
+		                    default:
+		                        for (a = 0; a < layer.length; a++) {
+		                            layer[a]._render(context, this._camera);
+		                            if (!layer[a]._update()) {
+		                                layer.splice(a, 1);
+		                                a--;
+		                            }
+		                        }
+		                        break;
+		                }
+		            }
+		        }
+
+		        this._clearBackground = function (context) {
+		            if (this._background != null) {
+		                //context.fillStyle = this.background;
+		                context.clearRect(0, 0, this._width, this._height);
+		            }
+		        }
+		    }
+
+		    /* Game Visual */
+		    function GameVisual() {
+		        this._id = 0;
+		        this._frames = new Array();
+		        this._x = 0;
+		        this._y = 0;
+		        this._width = 0;
+		        this._height = 0;
+		        this._halfWidth = 0;
+		        this._halfHeight = 0;
+		        this._currentFrame = 0;
+		        this._repeat = false;
+		        this._isPaused = false;
+		        this._isVisible = true;
+		        this._direction = new Point2();
+		        this._speed = 0;
+		        this._opacity = 1;
+		        this._isMoveable = false;
+		        this._boundingBox = null;
+		        this._clipAction = 0;
+		        this._removeWhenAnimated = false;
+		        this._initDelay = 0;
+
+		        this._onRemove = null;
+		        this._onPreMove = null;
+		        this._onMoved = null;
+		        this._onUpdated = null;
+
+		        this._setOpacity = function (value) {
+		            this._opacity = value;
+		        }
+
+		        this._setX = function (value) {
+		            this._x = value;
+		        }
+
+		        this._setY = function (value) {
+		            this._y = value;
+		        }
+
+		        this._getCenterX = function () {
+		            return this._x + this._halfWidth;
+		        }
+
+		        this._getCenterY = function () {
+		            return this._y + this._halfHeight;
+		        }
+
+		        // Getters/Setters
+		        this._getGridX = function () {
+		            return Math.round(this._x / map._cellWidth);
+		        }
+		        this._setGridX = function (value) {
+		            this._setX(value * map._cellWidth);
+		        }
+		        this._getGridY = function () {
+		            return Math.round((this._y + map._cellHeight) / map._cellHeight);
+		        }
+		        this._setGridY = function (value) {
+		            this._y = (value * map._cellHeight) - map._cellHeight;
+		        }
+
+		        // End Getters/Setters
+		        this._load = function (baseImage, count, delay) {
+		            var i, a;
+		            var tmp;
+
+		            for (i = 1; i <= count; i++) {
+		                tmp = baseImage + "_" + i;
+
+		                this._width = imageManager._images[tmp].width;
+		                this._height = imageManager._images[tmp].height;
+		                this._halfWidth = this._width >> 1;
+		                this._halfHeight = this._height >> 1;
+
+		                for (a = 0; a < delay; a++) {
+		                    this._frames.push(imageManager._images[tmp]);
+		                }
+		            }
+		        }
+
+		        this._render = function (context, camera) {
+		            var cx = ((this._x - camera._x) * camera._zoom) >> 0;
+		            var cy = ((this._y - camera._y) * camera._zoom) >> 0;
+
+		            if (cx >= -this._width && cy >= -this._height && cx < camera._viewport._width && cy < camera._viewport._height) {
+		                if (this._isVisible && this._initDelay == 0) {
+
+		                    context.save();
+		                    context.globalAlpha = this._opacity;
+		                    //context.drawImage(this.frames[this.currentFrame], cx, cy);
+		                    context.translate((cx + this._halfWidth) >> 0, (cy + this._halfHeight) >> 0);
+		                    context.scale(camera._zoom, camera._zoom);
+		                    context.translate(-this._halfWidth, -this._halfHeight);
+		                    context.drawImage(this._frames[this._currentFrame], 0, 0);
+		                    context.restore();
+
+		                    rCount++;
+		                }
+		            }
+		        }
+
+		        this._renderSimple = function (context, camera) {
+		            if (this._isVisible) {
+		                context.drawImage(this.frames[this.currentFrame], this._x, this._y);
+		            }
+		        }
+
+		        this._update = function () {
+		            if (this._initDelay > 0) {
+		                this._initDelay--;
+		            } else if (this._isVisible) {
+		                if (!this._isPaused) {
+		                    this._currentFrame++;
+		                    if (this._currentFrame >= this._frames.length) {
+		                        if (this._repeat) {
+		                            this._currentFrame = 0;
+		                        } else {
+		                            this._currentFrame--;
+		                            this._animationComplete();
+
+		                            if (this._removeWhenAnimated) {
+		                                return false;
+		                            }
+		                        }
+		                    }
+		                }
+
+		                if (this._isMoveable) {
+		                    if (this._onPreMove != null) {
+		                        this._onPreMove(this);
+		                    }
+
+		                    this._x += (this._direction._x * this._speed);
+		                    this._y += (this._direction._y * this._speed);
+
+		                    if (this._onMoved != null) {
+		                        if (this._onMoved(this)) {
+		                            return false;
+		                        }
+		                    }
+
+		                    if (this._boundingBox != null) {
+		                        switch (this._clipAction) {
+		                            case 1:
+		                                if (this._x <= this._boundingBox._x - this._width || this._x >= this._boundingBox._right || this._y <= this._boundingBox._y - this._height || this._y >= this._boundingBox._bottom) {
+		                                    this._remove(this);
+		                                    return false;
+		                                }
+		                                break;
+		                            case 2:
+		                                if (this._direction._x < 0 && this._x <= this._boundingBox._x) {
+		                                    this._direction._x = -this._direction._x;
+		                                    this._x = this._boundingBox._x;
+		                                } else if (this._direction._x > 0 && this._x >= this._boundingBox._right - this._width) {
+		                                    this._direction._x = -this._direction._x;
+		                                    this._x = this._boundingBox._right - this._width;
+		                                }
+
+		                                if (this._direction._y < 0 && this._y <= this._boundingBox._y) {
+		                                    this._direction._y = -this._direction._y;
+		                                    this._y = this._boundingBox._y;
+		                                } else if (this._direction._y > 0 && this._y >= this._boundingBox._bottom - this._height) {
+		                                    this._direction._y = -this._direction._y;
+		                                    this._y = this._boundingBox._bottom - this._height;
+		                                }
+		                                break;
+		                            case 3:
+		                                if (this._direction._x < 0 && this._x + this._width <= this._boundingBox._x) {
+		                                    this._x = this._boundingBox._right;
+		                                } else if (this._direction._x > 0 && this._x >= this._boundingBox._right) {
+		                                    this._x = this._boundingBox._x - this._width;
+		                                }
+
+		                                if (this._direction._y < 0 && this._y <= this._boundingBox._y - this._height) {
+		                                    this._y = this._boundingBox._bottom;
+		                                } else if (this._direction._y > 0 && this._y >= this._boundingBox._bottom) {
+		                                    this._y = this._boundingBox._y - this._height;
+		                                }
+		                                break;
+		                            case 4:
+		                                if (this._direction._x < 0 && this._x <= this._boundingBox._x) {
+		                                    this._x = this._boundingBox._x;
+		                                } else if (this._direction._x > 0 && this._x >= this._boundingBox._right - this._width) {
+		                                    this._x = this._boundingBox._right - this._width;
+		                                }
+
+		                                if (this._direction._y < 0 && this._y <= this._boundingBox._y) {
+		                                    this._y = this._boundingBox._y;
+		                                } else if (this._direction._y > 0 && this._y >= this._boundingBox._bottom - this._height) {
+		                                    this._y = this._boundingBox._bottom - this._height;
+		                                }
+		                                break;
+		                        }
+		                    }
+		                }
+		            }
+
+		            if (this._onUpdated != null) {
+		                return this._onUpdated(this);
+		            }
+
+		            return true;
+		        }
+
+		        this._animationComplete = function () { }
+
+		        this._remove = function () {
+		            if (this._onRemove != null) {
+		                this._onRemove(this);
+		            }
+		        }
+
+		        this._getCurrentImage = function () {
+		            return this._frames[this._currentFrame];
+		        }
+
+		        this._hitTest = function (x, y, diff) {
+		            if (x >= this._x - diff && x < this._x + this._width + diff && y >= this._y - diff && y < this._y + this._height + diff) {
+		                return true;
+		            } else {
+		                return false;
+		            }
+		        }
+
+		        this._setMovement = function (xDir, yDir, speed) {
+		            this._isMoveable = true;
+		            this._direction._x = xDir;
+		            this._direction._y = yDir;
+		            this._speed = speed;
+		        }
+		    }
+
+		    function ComplexGameVisual() {
+		        this._inheritFrom = GameVisual;
+		        this._inheritFrom();
+
+		        this._rotate = 0;
+		        this._scaleX = 1;
+		        this._scaleY = 1;
+		        this._clipRect = null;
+		        this._alphaFadeout = -1;
+		        this._alphaFadeoutDelay = -1;
+		        this._alphaFadeoutStep = 0;
+		        this._alphaFadein = -1;
+		        this._alphaFadeinDelay = -1;
+		        this._alphaFadeinStep = 0;
+		        this._removeOnFadeout = false;
+		        this._onFadeoutComplete = null;
+		        this._onRenderComplete = null;
+		        this._originX = 0;
+		        this._originY = 0;
+
+		        this._baseLoad = this._load;
+		        this._load = function (baseImage, count, delay) {
+		            this._baseLoad(baseImage, count, delay);
+		            this._originX = this._halfWidth;
+		            this._originY = this._halfHeight;
+		        }
+
+		        this._fadeOut = function (delay, length) {
+		            this._alphaFadeoutDelay = delay;
+		            this._alphaFadeoutStep = 1 / length;
+		            this._alphaFadeout = length;
+		        }
+
+		        this._fadeIn = function (delay, length) {
+		            this._alphaFadeinDelay = delay;
+		            this._alphaFadeinStep = 1 / length;
+		            this._alphaFadein = length;
+		            this._opacity = 0;
+		        }
+
+		        this._render = function (context, camera) {
+		            if (this._isVisible) {
+		                var cx = this._x - camera._x;
+		                var cy = this._y - camera._y;
+
+		                if (cx >= -this._width && cy >= -this._height && cx < camera._viewport._width && cy < camera._viewport._height) {
+		                    context.save();
+
+		                    if (this._clipRect != null) {
+		                        context.beginPath();
+		                        for (var i = 0; i < this._clipRect.length; i++) {
+		                            context.rect(this._clipRect[i]._x, this._clipRect[i]._y, this._clipRect[i]._width, this._clipRect[i]._height);
+		                        }
+		                        context.clip();
+		                    }
+		                    context.globalAlpha = this._opacity;
+		                    context.translate((cx + this._originX) >> 0, (cy + this._originY) >> 0);
+		                    context.scale(this._scaleX, this._scaleY);
+		                    context.rotate(this._rotate * 0.0174532925199432957);
+		                    context.translate(-this._originX, -this._originY);
+		                    context.drawImage(this._frames[this._currentFrame], 0, 0);
+
+		                    if (this._onRenderComplete != null) {
+		                        this._onRenderComplete(this, context);
+		                    }
+
+		                    context.restore();
+
+		                    rCount++;
+		                }
+		            }
+		        }
+
+		        this._baseUpdate = this._update;
+		        this._update = function () {
+		            var r = this._baseUpdate();
+
+		            if (this._alphaFadeoutDelay <= 0) {
+		                if (this._alphaFadeout > 0) {
+		                    this._alphaFadeout--;
+		                    this._opacity -= this._alphaFadeoutStep;
+		                    if (this._alphaFadeout <= 0) {
+		                        if (this._onFadeoutComplete != null) {
+		                            this._onFadeoutComplete(this);
+		                        }
+		                        if (this._removeOnFadeout) {
+		                            return false;
+		                        }
+		                    }
+		                }
+		            } else {
+		                this._alphaFadeoutDelay--;
+		            }
+
+		            if (this._alphaFadeinDelay <= 0) {
+		                if (this._alphaFadein > 0) {
+		                    this._alphaFadein--;
+		                    this._opacity += this._alphaFadeinStep;
+		                }
+		            } else {
+		                this._alphaFadeinDelay--;
+		            }
+
+		            return r;
+		        }
+		    }
+
+		    function Point2() {
+		        this._x = 0;
+		        this._y = 0;
+		    }
+
+		    function Size2() {
+		        this._width = 0;
+		        this._height = 0;
+		    }
+
+		    function BoundingBox(x, y, width, height) {
+		        this._x = x;
+		        this._y = y;
+		        this._width = width;
+		        this._height = height;
+		        this._right = x + width;
+		        this._bottom = y + height;
+
+		        this._hitTest = function (x, y, diff) {
+		            if (x >= this._x - diff && x < this._right + diff && y >= this._y - diff && y < this._bottom + diff) {
+		                return true;
+		            } else {
+		                return false;
+		            }
+		        }
+		    }
+
+		    function Camera() {
+		        this._x = 0;
+		        this._y = 0;
+		        this._zoom = 1;
+		        this._viewport = new Size2();
+		    }
+		</script>
+		<script src="js/jquery.min.js">
+		</script>
+		<script src="js/gameFN.js" type="text/javascript">
+		</script>
+		<script src="js/util.js" type="text/javascript">
+		</script>
+		<style>
+			* { margin: 0; -webkit-user-select: none; font-family:Arial; } #gameContainer
+			{ width:320px; height:460px; position:relative; } #gameContainer #stage,
+			#gameContainer #splashContainer { position:absolute; top:0px; left:0px;
+			} #gameContainer #stage { width:320px; height:460px; } #gameSurface { background:none;
+			position:absolute; top:0px; } #dialog { position:absolute; width:320px;
+			height:460px; background:#000000; top:0px; opacity:0.9; z-index:2; } .sbutton
+			{ font-weight:bold; text-decoration:none; border:1px solid #565656; -webkit-box-shadow:0
+			0 3px 1px rgba(0,0,0,0.4); -moz-box-shadow:0 0 3px 1px rgba(0,0,0,0.4);
+			box-shadow:0 0 3px 1px rgba(0,0,0,0.4); border-radius:5px; -webkit-border-radius:5px;
+			-moz-border-radius:5px; padding:8px 14px 8px 14px; background:#ECEDEB;
+			color:#565656; } .sbutton:hover { background:#fCfDfB; color:#666666; text-decoration:none;
+			} .sbutton span { display:block; float:left; width:16px; height:16px; overflow:hidden;
+			margin-top:2px; margin-left:-4px; } .sbutton strong { float:left; margin-left:4px;
+			} .textOnly { font-weight:bold; } a.start { width:131px; height:131px;
+			background:black; opacity:0; display:block; text-decoration:none; position:absolute;
+			top:160px; left:94px; } #front { width:320px; height:460px; position:absolute;
+			} .popupContent { position:absolute; width:320px; height:460px; z-index:3;
+			top:0px; } .miniPopup { z-index:2; position:absolute; overflow:hidden;
+			width:248px; left:18px; top:40px; background:url(imgs/vertical.png)
+			repeat-x; padding:24px 16px; border:1px solid #565656; -webkit-box-shadow:0
+			0 10px 3px rgba(0,0,0,0.4); -moz-box-shadow:0 0 10px 3px rgba(0,0,0,0.4);
+			box-shadow:0 0 10px 3px rgba(0,0,0,0.4); border-radius:5px; -webkit-border-radius:5px;
+			-moz-border-radius:5px; } .miniPopup p { float:left; width:100%; color:#ffffff;
+			} .miniPopup .buttons { float:left; width:100%; padding:8px 0 0 0;text-align:center; } 
+				.miniPopup
+			.buttons a { } #summary { } #summary .timeUp { text-align:center;
+			font-size:20px; font-weight:bold; margin-bottom:5px; } #summary .youCollected
+			{ text-align:center; font-size:16px;margin-bottom:5px; } #summary .youCollected span { background:url(imgs/trophy2_1.png)
+			no-repeat 0 center; padding: 4px 0 4px 20px; } #summary .bestScore { margin:15px
+			0; text-align:center; font-size:11px; border-top: 1px solid #FFFFFF; padding-top:15px;color:#FFFFFF;
+			} 
+			#summary .buttons ._continue { } 
+			#summary .buttons
+			._retry { margin-left:8px; } #highscore { } #highscore .enterName { font-size:28px;
+			color:#ffffff; text-align:center; } #highscore .username { margin:6px 0;
+			text-align:center; } #highscore input { padding:4px; font-size:14px; border:1px
+			solid #444444; font-family:Arial; -webkit-user-select:auto; } 
+			#highscore .notice 
+			{ 
+				margin:6px 0; color:#cccccc; font-style:italic; font-size:11px;line-height:11px; text-align:center;
+			} 
+			#highscore .buttons a 
+			{
+				margin-top:1px;
+			} 
+			#levSelect { } 
+			#levSelect .chooseLength 
+			{ 
+				margin:5px 0; 
+				font-size:20px; text-align:center;
+			} 
+			#levSelect .gameLength 
+			{ 
+				margin:5px 0; 
+				text-align:center; 
+			} 
+			#levSelect select 
+			{ 
+				padding:4px; font-size:14px;
+				border:1px solid #444444; 
+				font-family:Arial; 
+				-webkit-user-select:auto;
+			} 
+			#levSelect .buttons a 
+			{ 
+				margin-top:10px;
+				display: inline-block;
+			} 
+			.bestScore2
+			{
+				position:absolute; top:1px; 
+				left:1px; font-family:Arial; font-size:12px;color:#eeeeee;
+				list-style-type:none;
+				margin:0px;
+				padding:0px;
+				text-align:center;
+				width:120px;
+			}
+		</style>
+		<div id="gameContainer" style="margin:0 auto;">
+			<div id="stage" style="display: block; ">
+				<canvas id="gameSurface" width="320" height="366" style="display: block; ">
+				</canvas>
+				<ul id="bestScore2" class="bestScore2" style="display: none; ">
+					<li>滚动排行榜</li>
+					<li>
+					<span id="ranklist">
+						World best:
+					</span>
+					<strong id="bestLevNo2">
+						1
+					</strong>
+					<span>
+						by
+					</span>
+					<strong id="bestBy2">
+						Dan
+					</strong></li>
+				</ul>
+				<div id="mainPopup" class="miniPopup" style="display:none;">
+					<div id="summary" class="miniPopupItem" style="display:none;">
+					
+						<p id="endTitle" class="timeUp">
+						</p>
+						<p class="youCollected">
+							分数:
+							<span id="totalTrophy">
+								X 10
+							</span>
+						</p>
+						<p id="hint" style="text-align:center;">
+						</p>
+						<p class="bestScore">
+							<span>
+								World best:
+							</span>
+							<strong id="bestLevNo">
+								1
+							</strong>
+							<span>
+								by
+							</span>
+							<strong id="bestBy">
+								Dan
+							</strong>
+						</p>
+						<div class="buttons">
+							<a class="sbutton _continue" href="#" onclick="return setupHighscore();">
+							输入昵称
+							</a>
+							<a class="sbutton _retry" href="#" onclick="return retry();">
+								重新开始
+							</a>
+						</div>
+					</div>
+					<div id="highscore" class="miniPopupItem" style="display:none;">
+						
+						<p class="enterName">
+							请输入昵称：
+						</p>
+						<p class="username">
+							<input id="usernameInput" type="text" maxlength="50" placeholder='匿名玩家'>
+						</p>
+						<p class="notice">
+									你这么厉害,赶快分享让小伙伴们知道!
+						</p>
+						<div class="buttons">
+							<a class="sbutton" href="#" onclick="return saveHighscore();">
+								保存高分
+							</a>
+						</div>
+					</div>
+					<div id="levSelect" class="miniPopupItem" style="display:none;">
+						<p class="chooseLength">
+							操作指南
+						</p>
+						<p class="gameLength">
+							点击屏幕上的摆臂放下木箱。<br />堆得越高越好！
+						</p>
+						<div class="buttons">
+							<a class="sbutton" href="#" onclick="return levSelected();" ontouchstart="levSelected()">
+								开始
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="front" style="display: block; ">
+					<a id="startPlay" class="sbutton" href="#" onclick="return setupLevSelect();"
+					style="position:absolute; top:260px; left:100px; width:92px; height:30px; font-size:30px; text-align:center; line-height:30px;">
+						PLAY
+					</a>
+				</div>
+				<div id="dialog" style="display:none;">
+				</div>
+				<div id="gameover" class="popupContent" style="display:none;">
+					<p id="gameoverTitle" style="text-align:center; font-size:28px; color:#ffffff; font-family:Arial; top:100px; position:absolute; width:320px;">
+						GAME OVER
+					</p>
+					<p id="finishLogin" style="position:absolute; width:320px; text-align:center; top:150px; color:#22b022; font-size:120%;">
+					</p>
+					<a id="quit1" class="sbutton" href="#" onclick="quit(); return false;"
+					style="left:50px; top:276px; position:absolute;">
+						QUIT
+					</a>
+					<a id="retry1" class="sbutton" href="#" onclick="retry(); return false;"
+					style="right:50px; top:276px; position:absolute;">
+						RETRY
+					</a>
+				</div>
+			</div>
+			<div id="a2f031c38ef2e41e0b67b4823cd28ab6e" style="display:none; left: 0px; z-index: 999; position: absolute; width: 320px; height: 0px; top: -100px; ">
+
+			</div>
+			<script type="text/javascript">
+
+			</script>
+			<style>
+				#splashContainer { background:#000000; width:320px; height:460px; }#splash
+				{ background:#ffffff; width:320px; height:460px; }#splash a { text-decoration:none;
+				}#splash a:hover { text-decoration:none; }#splash .logo { display:block;
+				font-family:Arial; font-size:22px; font-weight:bold; text-align:center;
+				color:#222222; padding-top:150px; }#splash .free { font-family:Arial; font-size:12px;
+				color:#666666; text-align:center; }#splash #loadingProgress { font-family:Arial;
+				font-size:16px; font-weight:bold; color:#ef1010; text-align:center; margin-top:50px;
+				width:100%;}
+			</style>
+			<div id="splashContainer" style="display: none; ">
+				<div id="splash" style="z-index: 1; opacity: 1; ">
+					<a href="#" class="logo">
+						
+					</a>
+					<div class="free">
+						Free Mobile Games
+					</div>
+					<div id="loadingProgress">
+						Loading 100%
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		    function run() {
+		        //doCheck();
+		        //updateAfterChange(false);
+		        startGame();
+		    }
+
+		    //document.body.onload = start;
+			
+		</script>
+		<input type="hidden" id="hidmobile" value="1"/>
+		<input type="hidden" id="hidun" value=""/>
+		<input type="hidden" id="instanceid" value=""/>
+		<input type="hidden" id="baseurl" value=""/>
+		<script type="text/javascript">
+		    run();
+		    showRank();
+//		    function cc9fbfa57ac204ba2ab4496dd9fef8f33() {
+//		        if ($('#a2f031c38ef2e41e0b67b4823cd28ab6e').css('display') == 'none') {
+//		            $('body').html('<p style="padding:10px; background:#000000; color:#ffffff; font-size:18px;">本网站3g.cn偷走了这场比赛。播放原来在这里： <a id="noCopy" href="http://www.yi588.com" style="color:blue; text-decoration:underline;">www.yi588.com</a></p>');
+//		        }
+//		    }
+		</script>
+<div id="infos" style="display:none">史上最变态的游戏-堆箱子</div>
+<!--<img src="http://m.jubit.cn:80/Monitor/transurl.aspx?s=MTM5ODE2MTM5ODE4aHR0cDovL2Nsb3VkbmV3dGhpbmtpbmcuY29tZW9uY2xvdWQubmV0L2dhbWUvc3dpbmctYmxvY2svaW5kZXguaHRt" style="display:none;" />-->
+<script type="text/javascript">
+    var appId = "";
+    var wxid = "jubitclub";
+    var imgUrl = "http://cloudnewthinking.comeoncloud.net/game/swing-block/imgs/swing_block.jpg";
+    var shareLink = "http://cloudnewthinking.comeoncloud.net/game/swing-block/index.htm";
+
+    // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "appid": appId,
+                "img_url": imgUrl,
+                "img_width": "700",
+                "img_height": "420",
+                "link": shareLink,
+                "desc": '堆箱子',
+                "title": $('#infos').html()
+            }, function (res) {
+                //if (res.err_msg == 'send_app_msg:ok') {
+                AddLog(0);
+                //}
+            })
+        });
+
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function (argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "appid": appId,
+                "img_url": imgUrl,
+                "img_width": "700",
+                "img_height": "420",
+                "link": shareLink,
+                "desc": '堆箱子',
+                "title": $('#infos').html()
+            }, function (res) {
+
+            })
+        });
+    }, false)
+</script>
+
+
+	</body>
+
+</html>

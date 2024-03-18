@@ -1,0 +1,37 @@
+{
+"file": "Sprites.png"
+,
+"frames": {
+	"arrow": {"x":697, "y":995, "w":142, "h":140, "offX":0,"offY":1,"sourceW":142,"sourceH":141},
+	"beijing-1": {"x":0, "y":331, "w":480, "h":331, "offX":0,"offY":0,"sourceW":480,"sourceH":331},
+	"beijing-2": {"x":0, "y":0, "w":794, "h":330, "offX":0,"offY":0,"sourceW":794,"sourceH":330},
+	"btn-chouyade-1": {"x":795, "y":0, "w":322, "h":142, "offX":52,"offY":35,"sourceW":426,"sourceH":212},
+	"btn-gengduoyouxi-1": {"x":242, "y":1243, "w":198, "h":50, "offX":0,"offY":10,"sourceW":198,"sourceH":71},
+	"btn-zaichouyici-1": {"x":0, "y":1243, "w":241, "h":103, "offX":0,"offY":11,"sourceW":241,"sourceH":125},
+	"btn-zhaorenbangmang-1": {"x":468, "y":998, "w":228, "h":103, "offX":9,"offY":11,"sourceW":241,"sourceH":125},
+	"chendi-1": {"x":0, "y":663, "w":480, "h":334, "offX":0,"offY":2,"sourceW":480,"sourceH":336},
+	"daji": {"x":1120, "y":475, "w":208, "h":210, "offX":39,"offY":17,"sourceW":280,"sourceH":251},
+	"duihuakuang-1": {"x":442, "y":1137, "w":413, "h":187, "offX":0,"offY":0,"sourceW":413,"sourceH":187},
+	"mao-1": {"x":481, "y":331, "w":380, "h":331, "offX":47,"offY":0,"sourceW":480,"sourceH":331},
+	"mao-2": {"x":862, "y":143, "w":252, "h":331, "offX":121,"offY":0,"sourceW":480,"sourceH":331},
+	"mao-3": {"x":857, "y":663, "w":262, "h":330, "offX":136,"offY":0,"sourceW":480,"sourceH":331},
+	"mao-4": {"x":481, "y":663, "w":375, "h":331, "offX":105,"offY":0,"sourceW":480,"sourceH":331},
+	"mao-5": {"x":1115, "y":143, "w":232, "h":331, "offX":137,"offY":0,"sourceW":480,"sourceH":331},
+	"mao-6": {"x":856, "y":995, "w":282, "h":331, "offX":99,"offY":0,"sourceW":480,"sourceH":331},
+	"number-0": {"x":1118, "y":0, "w":57, "h":79, "offX":0,"offY":0,"sourceW":57,"sourceH":79},
+	"number-1": {"x":1139, "y":1258, "w":50, "h":87, "offX":0,"offY":0,"sourceW":50,"sourceH":87},
+	"number-2": {"x":795, "y":143, "w":65, "h":90, "offX":0,"offY":0,"sourceW":65,"sourceH":90},
+	"number-3": {"x":1139, "y":1082, "w":56, "h":87, "offX":0,"offY":0,"sourceW":56,"sourceH":87},
+	"number-4": {"x":795, "y":234, "w":65, "h":89, "offX":0,"offY":0,"sourceW":65,"sourceH":89},
+	"number-5": {"x":936, "y":545, "w":69, "h":94, "offX":0,"offY":0,"sourceW":69,"sourceH":94},
+	"number-6": {"x":1139, "y":1170, "w":55, "h":87, "offX":0,"offY":0,"sourceW":55,"sourceH":87},
+	"number-7": {"x":1006, "y":564, "w":67, "h":89, "offX":0,"offY":0,"sourceW":67,"sourceH":89},
+	"number-8": {"x":862, "y":545, "w":73, "h":90, "offX":0,"offY":0,"sourceW":73,"sourceH":90},
+	"number-9": {"x":1006, "y":475, "w":69, "h":88, "offX":0,"offY":0,"sourceW":69,"sourceH":88},
+	"tuoxie-1": {"x":1120, "y":686, "w":174, "h":197, "offX":0,"offY":0,"sourceW":174,"sourceH":197},
+	"tuoxie-2": {"x":1139, "y":884, "w":173, "h":197, "offX":0,"offY":0,"sourceW":174,"sourceH":197},
+	"word-haochangkuai-1": {"x":0, "y":1137, "w":441, "h":105, "offX":0,"offY":0,"sourceW":441,"sourceH":105},
+	"word-pa-1": {"x":862, "y":475, "w":111, "h":69, "offX":0,"offY":0,"sourceW":111,"sourceH":69},
+	"word-xiaopengyou-1": {"x":0, "y":998, "w":467, "h":138, "offX":0,"offY":0,"sourceW":467,"sourceH":138}
+
+}}

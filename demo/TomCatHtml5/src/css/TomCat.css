@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.tomAnimate{text-align: center;position: relative;}
+.tomAnimate img{display:block;width: 100%;}
+.tomBtn{position: absolute;border: none;width:50px;height:50px;}
+.cymbal{bottom:170px;left: 10px;z-index: 1;background: url("../../src/Button/cymbal.png")no-repeat;background-size: contain;}
+.drink{bottom:110px;left: 10px;z-index: 1;background: url("../../src/Button/drink.png")no-repeat;background-size: contain;}
+.eat{bottom:50px;left: 10px;z-index: 1;background: url("../../src/Button/eat.png")no-repeat;background-size: contain;}
+.fart{bottom:170px;right: 10px;z-index: 1;background: url("../../src/Button/fart.png")no-repeat;background-size: contain;}
+.pie{bottom:110px;right: 10px;z-index: 1;background: url("../../src/Button/pie.png")no-repeat;background-size: contain;}
+.scratch{bottom:50px;right: 10px;z-index: 1;background: url("../../src/Button/scratch.png")no-repeat;background-size: contain;}
+.knockout{top:20%;left: 50%;width: 120px;height: 120px;margin-left: -60px;opacity: 0;}
+.stomach{top:70%;left: 50%;width: 80px;height: 80px;margin-left: -40px;opacity: 0;}
+.footRight{top:90%;left: 42%;width: 40px;height: 40px;margin-left: -20px;opacity: 0;}
+.footLeft{top:90%;left: 57%;width: 40px;height: 40px;margin-left: -20px;opacity: 0;}
+.angry{top:82%;left:72%;width: 40px;height: 40px;margin-left: -20px;opacity: 0;}

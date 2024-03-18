@@ -1,0 +1,493 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>俄罗斯方块</title>
+<script type="text/javascript">
+	var context;
+	var mycanvas;
+	var showtab;
+	var showcxt;
+	var boxW = 10;
+	var boxH = 15;
+	var cellSize = 30;
+	var container;
+	var border = 1;
+	var shapeNow = null;
+	var shapeNext = null;
+	var auto = null;
+	var score = 0;
+	var key_left = 37;
+	var key_up = 38;
+	var key_right = 39;
+	var key_down = 40;
+	var key_pause = 80;
+	var pause = false;
+	var speed = 1000;
+	var upscore;
+	var uppoint = 20;
+	var stike_v = new Array(['type','stike_v'], [3,-1], [4,-1],[5,-1], [6,-1]);
+	var stike_h = new Array(['type','stike_h'], [4,-4], [4,-3],[4,-2], [4,-1]);
+	var stone = new Array(['type', 'stone'], [4,-2], [5,-2], [4,-1], [5,-1]);
+	var lquard_v = new Array(['type', 'lquard_v'], [4,-2], [5,-2], [5,-1], [6,-1]);
+	var lquard_h = new Array(['type', 'lquard_h'], [6,-3], [5,-2], [6,-2], [5,-1]);
+	var rquard_v = new Array(['type', 'rquard_v'], [5,-2], [6,-2], [4,-1], [5,-1]);
+	var rquard_h = new Array(['type', 'rquard_h'], [5,-3], [5,-2], [6,-2], [6,-1]);
+	var triangle_up = new Array(['type', 'triangle_up'], [5,-2], [4,-1], [5,-1], [6,-1]);
+	var triangle_left = new Array(['type', 'triangle_left'], [5,-3], [4,-2], [5,-2], [5,-1]);
+	var triangle_down = new Array(['type', 'triangle_down'], [4,-2], [5,-2], [6,-2], [5,-1]);
+	var triangle_right = new Array(['type', 'triangle_right'], [5,-3], [5,-2], [6,-2], [5,-1]);
+	var lseven_up = new Array(['type', 'lseven_up'], [6,-2], [4,-1], [5,-1], [6,-1]);
+	var lseven_left = new Array(['type', 'lseven_left'], [4,-3], [5,-3], [5,-2], [5,-1]);
+	var lseven_down = new Array(['type', 'lseven_down'], [4,-2], [5,-2], [6,-2], [4,-1]);
+	var lseven_right = new Array(['type', 'lseven_right'], [4,-3], [4,-2], [4,-1], [5,-1]);
+	var rseven_up = new Array(['type', 'rseven_up'], [4,-2], [4,-1], [5,-1], [6,-1]);
+	var rseven_left = new Array(['type', 'rseven_left'], [5,-3], [4,-3], [4,-2], [4,-1]);
+	var rseven_down = new Array(['type', 'rseven_down'], [4,-2], [5,-2], [6,-2], [6,-1]);
+	var rseven_right = new Array(['type', 'rseven_right'], [5,-3], [5,-2], [5,-1], [4,-1]);
+	var shapeCollection = [stike_v, stike_h, stone, 
+					lquard_v, lquard_h, rquard_v, rquard_h,
+					triangle_up, triangle_left, triangle_down, triangle_right,
+					lseven_up, lseven_left, lseven_down, lseven_right,
+					rseven_up, rseven_left, rseven_down, rseven_right];
+	
+	window.onload = function(){
+		mycanvas = $$('myCanvas');
+		context = $$('myCanvas').getContext("2d");
+		showtab = $$('showTab');
+		showcxt = showtab.getContext("2d");
+		drawCanvas();
+		initContainer();
+		drawShowtab();
+		document.onkeydown = function(e){  
+			shapeAction(e.which);
+		};
+	}
+	
+	function $$(id){  
+		return document.getElementById(id);   
+	}	
+
+	function initContainer() {
+		container = new Array(boxW);
+		for(var i=0;i<boxW;i++) {
+			container[i] = new Array(boxH);
+			for(var j=0;j<boxH;j++) {
+				container[i][j] = 0 ; 
+			}
+		}	
+	}	
+	function drawCanvas() {
+		drawBox(mycanvas, 0, 0, boxW, boxH);
+	}
+	function drawShowtab() {
+		showtab.width = 4 * cellSize;
+		showtab.height = 4 * cellSize;
+	}
+	function drawBox(canvas, startx, starty, width, height) {
+		var cx = canvas.getContext('2d');
+		var drawX = startx;
+		var drawY = starty;
+		var x = width * cellSize;
+		var y = height * cellSize;
+		canvas.width = x;
+		canvas.height = y;
+		for(var j=0;j<=height;j++) {
+			drawLine(cx, startx, drawY, x, drawY);
+			drawY += cellSize;
+		}
+		for(var i=0;i<=width;i++) {
+			drawLine(cx, drawX, starty, drawX, y);
+			drawX += cellSize;
+		}			
+	}
+	
+	function Shape(arr) {
+		this.shape_arr = arr;
+	}
+	
+	Shape.prototype = {
+		shape_arr:null,
+		move : function(offsetX, offsetY){
+			var state = checkPos(this.shape_arr, offsetX, offsetY);
+			if(state == 'move') {
+				this.clear();
+				this.drawNew(offsetX, offsetY);	
+			} 
+			if(state == 'solidify'){
+				this.solidify();
+			}
+		},
+		clear : function() {
+			var pos;
+			for(var i=1;i<this.shape_arr.length;i++) {
+				pos = this.shape_arr[i];
+				clearRect(pos[0], pos[1]);
+			}			
+		}, 
+		drawNew : function(offsetX, offsetY){
+			var pos;
+			for(var i=1;i<this.shape_arr.length;i++) {
+				pos = this.shape_arr[i];
+				pos[0] += offsetX;
+				pos[1] += offsetY;
+				drawRect(pos[0], pos[1]);
+			}	
+		},
+		solidify:function() {
+			var pos;
+			var flag = false;
+			for(var i=1;i<this.shape_arr.length;i++) {
+				pos = this.shape_arr[i];
+				posX = pos[0];
+				posY = pos[1];
+				container[posX][posY] = 1;
+				flag = (posY < 1);
+			}
+			if(flag) endGame();
+			else {
+				checkFullRow();
+				restartTimer();
+			}
+		}, 
+		change : function() {
+			//window.clearInterval(auto);
+			var type = this.shape_arr[0][1];
+			var newShape;
+			if(type == 'stike_v') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'stike_h'], [x, y-3],[x, y-2],[x, y-1],[x, y]);
+			} 
+			if(type == 'stike_h') {
+				x = this.shape_arr[1][0]-1;
+				y = this.shape_arr[4][1];
+				newShape = new Array(['type', 'stike_v'], [x, y],[x+1, y],[x+2, y],[x+3, y]);
+			}
+			if(type == 'lquard_v') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'lquard_h'], [x+1, y-1],[x, y],[x+1, y],[x, y+1]);
+			}
+			if(type == 'lquard_h') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'lquard_v'], [x-1, y],[x, y],[x, y+1],[x+1, y+1]);
+			}
+			if(type == 'rquard_v') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'rquard_h'], [x-1, y-1],[x-1, y],[x, y],[x, y+1]);
+			}
+			if(type == 'rquard_h') {
+				x = this.shape_arr[3][0];
+				y = this.shape_arr[3][1];
+				newShape = new Array(['type', 'rquard_v'], [x, y],[x+1, y],[x-1, y+1],[x, y+1]);
+			}
+			if(type == 'triangle_up') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'triangle_left'], [x+1, y-1],[x, y],[x+1, y],[x+1, y+1]);
+			}
+			if(type == 'triangle_left') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'triangle_down'], [x, y],[x+1, y],[x+2, y],[x+1, y+1]);
+			}
+			if(type == 'triangle_down') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'triangle_right'], [x, y-1],[x, y],[x+1, y],[x, y+1]);
+			}
+			if(type == 'triangle_right') {
+				x = this.shape_arr[2][0];
+				y = this.shape_arr[2][1];
+				newShape = new Array(['type', 'triangle_up'], [x, y-1],[x-1, y],[x, y],[x+1, y]);
+			}
+			if(type == 'lseven_up') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'lseven_left'], [x-2, y],[x-1, y],[x-1, y+1],[x-1, y+2]);
+			}
+			if(type == 'lseven_left') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'lseven_down'], [x, y],[x+1, y],[x+2, y],[x, y+1]);
+			}
+			if(type == 'lseven_down') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'lseven_right'], [x, y],[x, y+1],[x, y+2],[x+1, y+2]);
+			}
+			if(type == 'lseven_right') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'lseven_up'], [x+2, y],[x, y+1],[x+1, y+1],[x+2, y+1]);
+			}
+			if(type == 'rseven_up') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'rseven_left'], [x+1, y],[x+1, y+1],[x+1, y+2],[x, y+2]);
+			}
+			if(type == 'rseven_left') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'rseven_down'], [x-1, y],[x, y],[x+1, y],[x+1, y+1]);
+			}
+			if(type == 'rseven_down') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'rseven_right'], [x, y],[x+1, y],[x, y+1],[x, y+2]);
+			}
+			if(type == 'rseven_right') {
+				x = this.shape_arr[1][0];
+				y = this.shape_arr[1][1];
+				newShape = new Array(['type', 'rseven_up'], [x, y],[x, y+1],[x+1, y+1],[x+2, y+1]);
+			}			
+			if(newShape && (checkPos(newShape, 0, 0) == 'move')) changeShape(newShape);
+			//auto = window.setInterval("shapeNow.move(0, 1)", speed);  //换型的时候自动停止
+		}
+	}
+	
+	function checkPos(arr, offsetX, offsetY){
+		var pos;
+		for(var i=1;i<arr.length;i++) {
+			pos = arr[i];
+			posX = pos[0] + offsetX;
+			posY = pos[1] + offsetY;
+			if(posX < 0 || posX >= boxW || (container[posX][posY] == 1 && offsetY == 0))  return 'none';
+			if((container[posX][posY] == 1) || (posY >= boxH)) return 'solidify';
+		}
+		return 'move';
+	}
+	
+	function drawLine(cx, startX, startY, endX, endY) { 
+		cx.beginPath();  
+		cx.moveTo(startX, startY);  
+		cx.lineTo(endX, endY);  
+		cx.closePath();  
+		cx.stroke();  
+	}
+		
+	function drawRect(posX, posY) {
+		context.fillStyle = "blue";
+		context.fillRect(cellSize*posX+border, cellSize*posY+border, cellSize-border*2, cellSize-border*2);  
+	}
+	
+	function clearRect(posX, posY) {
+		context.fillStyle = "white";
+		context.fillRect(cellSize*posX+border, cellSize*posY+border, cellSize-border*2, cellSize-border*2);  
+	}
+	
+	function startGame() {
+		speed = $$('level').value * 100;
+		startbtn.disabled = true;
+		$$('pause').disable = false;
+		mycanvas.focus(); 
+		var i = parseInt(19*Math.random());
+		shapeNext = new Shape(colneShapeArray(shapeCollection[i])); 
+		randomShape();
+		auto = window.setInterval("shapeNow.move(0, 1)", speed);  
+	}
+	
+	function checkFullRow(){	
+		var rows = new Array();
+		var shapearr = shapeNow.shape_arr;
+		var t = {};
+		for(var i=1;i<shapearr.length;i++) {
+			var rn = shapearr[i][1];
+			if(typeof t[rn] =='undefined') {
+				rows.push(rn);
+				t[rn] = true;
+			}
+		}
+		for(var j=0;j<rows.length;j++){
+			var flag = true;
+			for(var i=0;(i<boxW) && flag;i++) {
+				if(container[i][rows[j]] == 0) flag = false;
+			}
+			if(flag) {
+				clearRow(rows[j]);
+				score++;
+				upscore++;
+				if(upscore == uppoint &&　speed > 100) {speed -= 100;upscore=0;}
+			}
+		}
+		$$('score').innerHTML = '得分:' + score;
+	}
+	
+	function shapeAction(keyCode) {
+		if(keyCode == key_down) shapeNow.move(0,1);
+		if(keyCode == key_up) shapeNow.change();
+		if(keyCode == key_left) shapeNow.move(-1,0);
+		if(keyCode == key_right) shapeNow.move(1,0);
+		if(keyCode == key_pause) onPause();
+	}
+	
+	function restartTimer() {
+		window.clearInterval(auto);
+		randomShape();
+		auto = window.setInterval("shapeNow.move(0, 1)", speed);  
+	}
+	
+	function changeShape(shape) {
+		shapeNow.clear();
+		shapeNow = new Shape(shape);
+		shapeNow.drawNew(0, 0);
+	}
+	
+	function randomShape() {
+		var i = parseInt(19*Math.random());
+		shapeNow = shapeNext;
+		shapeNext = new Shape(colneShapeArray(shapeCollection[i]));
+		drawSample(shapeNext.shape_arr[0][1]);
+		return shapeNow;
+	}
+	
+	function endGame() {
+		window.clearInterval(auto);
+		startbtn.disabled = false;
+		alert("游戏结束。你的得分："+score);		
+		context.clearRect(0, 0, context.width, context.height);  
+		drawCanvas();
+		initContainer();
+		drawShowtab();
+		score = 0;
+		upscore=0;
+	}
+	
+	function clearRow(rowno) {
+		for(var j=rowno;j>0;j--){
+			for(var i=0;i<boxW;i++) {
+				clearRect(i,j);
+				container[i][j] = container[i][j-1];
+				if(container[i][j] == 1) drawRect(i,j);
+			}
+		}
+	}
+	
+	function colneShapeArray(array) {
+		var size = array.length;
+		var newArr = new Array(size);
+		for(var i=0;i<size;i++) {
+			newArr[i] = new Array(2);
+			newArr[i][0] = array[i][0];
+			newArr[i][1] = array[i][1];			
+		}
+		return newArr;
+	}
+	
+	function onPause(){
+		if(pause){
+			auto = window.setInterval("shapeNow.move(0, 1)", speed);
+			$$('pause').innerHTML = '暂停';
+			pause = false;
+		} else {
+			window.clearInterval(auto);
+			$$('pause').innerHTML = '回到游戏';
+			pause = true;
+		}
+	}
+	
+	function drawShowRect(pos) {
+		var posX = pos[0];
+		var posY = pos[1];
+		showcxt.fillStyle = "green";
+		showcxt.fillRect(cellSize*posX+border, cellSize*posY+border, cellSize-border*2, cellSize-border*2);  
+	}
+	function clearShow() {
+		showcxt.clearRect(0, 0, showtab.width, showtab.height);  
+	}
+	
+	function drawSample(type){
+		clearShow();
+		var sampleArray;
+		switch(type) {
+			case 'stone':
+				sampleArray = new Array([1,1], [2,1], [1,2], [2,2]);
+				break;
+			case 'stike_v':
+				sampleArray = new Array([0,1], [1,1], [2,1], [3,1]);
+				break;
+			case 'stike_h':
+				sampleArray = new Array([1,0], [1,1], [1,2], [1,3]);
+				break;				
+			case 'lquard_v':
+				sampleArray = new Array([1,1], [2,1], [2,2], [3,2]);
+				break;
+			case 'lquard_h':
+				sampleArray = new Array([2,1], [1,2], [2,2], [1,3]);
+				break;
+			case 'rquard_v':
+				sampleArray = new Array([3,1], [2,1], [2,2], [1,2]);
+				break;
+			case 'rquard_h':
+				sampleArray = new Array([1,1], [1,2], [2,2], [2,3]);
+				break;
+			case 'triangle_up':
+				sampleArray = new Array([1,2], [2,2], [3,2], [2,1]);
+				break;
+			case 'triangle_left':
+				sampleArray = new Array([2,1], [2,2], [2,3], [1,2]);
+				break;
+			case 'triangle_down':
+				sampleArray = new Array([1,1], [2,1], [3,1], [2,2]);
+				break;
+			case 'triangle_right':
+				sampleArray = new Array([1,1], [1,2], [1,3], [2,2]);
+				break;
+			case 'lseven_up':
+				sampleArray = new Array([1,2], [2,2], [3,2], [3,1]);
+				break;
+			case 'lseven_left':
+				sampleArray = new Array([1,1], [2,1], [2,2], [2,3]);
+				break;
+			case 'lseven_down':
+				sampleArray = new Array([1,1], [2,1], [3,1], [1,2]);
+				break;
+			case 'lseven_right':
+				sampleArray = new Array([1,1], [1,2], [1,3], [2,3]);
+				break;
+			case 'rseven_up':
+				sampleArray = new Array([1,1], [1,2], [2,2], [3,2]);
+				break;
+			case 'rseven_left':
+				sampleArray = new Array([1,1], [2,1], [1,2], [1,3]);
+				break;
+			case 'rseven_down':
+				sampleArray = new Array([1,1], [2,1], [3,1], [3,2]);
+				break;
+			case 'rseven_right':
+				sampleArray = new Array([2,1], [2,2], [2,3], [1,3]);
+				break;		
+			default: return;
+		}
+		for(var i=0;i<sampleArray.length;i++){ 
+			drawShowRect(sampleArray[i]);
+		}
+	}
+	
+	
+</script>
+<body>
+	<div style="width:100%;  margin-left: auto;margin-right: auto;" align="center">  
+		<div style="width:40%; float:left; ">
+			<div style="width:100%;  margin-left: auto;margin-right: auto;" align="center">
+				<canvas  style="width:30%;  margin-left: auto;margin-right: auto;" align="center" id="showTab" />
+			</div>
+			<div style="width:100%;  margin-left: auto;margin-right: auto;" align="center">
+				<label id="score">得分:0</label>
+				<select id="level">
+					<option value="10">初级</option>
+					<option value="7">中级</option>
+					<option value="3">高级</option>
+				</select>
+				<button id="startbtn" onclick="startGame()">开始游戏</button>
+				<button id="pause" disabled="true" onclick="onPause()">暂停</button>
+			</div>
+		</div>  		
+		<div  style="width:60%;">
+			<canvas id="myCanvas" />
+		</div>  
+    </div>   
+</body>
+</html>

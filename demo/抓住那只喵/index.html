@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>抓住那只喵</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="easeljs-0.7.1.min.js"></script>
+    <script src="circle.js"></script>
+</head>
+<body>
+<div align="center">
+    <canvas width="550px" height="500px" id="gameView"></canvas>
+    <hr>
+    <button id="btn" style="color: red;">向那只喵认输</button>
+</div>
+<script>
+   var btn= document.getElementById("btn");
+   btn.onclick = function () {
+       window.location.reload();
+   };
+</script>
+<script src="js2.js"></script>
+<!--<script src="A.js"></script>-->
+</body>
+</html>

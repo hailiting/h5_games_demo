@@ -1,0 +1,116 @@
+{"frames": [
+
+{
+	"filename": "popup_menu_bg.png",
+	"frame": {"x":2,"y":2,"w":355,"h":478},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":478},
+	"sourceSize": {"w":355,"h":478}
+},
+{
+	"filename": "popup_menu_button1.png",
+	"frame": {"x":359,"y":124,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_menu_button1_press.png",
+	"frame": {"x":359,"y":185,"w":209,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":209,"h":59},
+	"sourceSize": {"w":209,"h":59}
+},
+{
+	"filename": "popup_menu_button2.png",
+	"frame": {"x":359,"y":2,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "popup_menu_button2_press.png",
+	"frame": {"x":359,"y":63,"w":210,"h":59},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":59},
+	"sourceSize": {"w":210,"h":59}
+},
+{
+	"filename": "popup_menu_fx_button.png",
+	"frame": {"x":359,"y":246,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_fx_button_press.png",
+	"frame": {"x":359,"y":324,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_fxoff_button.png",
+	"frame": {"x":359,"y":402,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_fxoff_button_press.png",
+	"frame": {"x":460,"y":246,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_music_button.png",
+	"frame": {"x":561,"y":246,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_music_button_press.png",
+	"frame": {"x":460,"y":324,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_musicoff_button.png",
+	"frame": {"x":561,"y":324,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+},
+{
+	"filename": "popup_menu_musicoff_button_press.png",
+	"frame": {"x":460,"y":402,"w":99,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":76},
+	"sourceSize": {"w":99,"h":76}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI_options.png",
+	"format": "RGBA8888",
+	"size": {"w":662,"h":482},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fee449ebb0d00d3ba0af8238860456c6:cd911d6207f573723f6cf9e80e917fe9:fadf4d8ef754d8cca412184b1a290e27$"
+}
+}

@@ -1,0 +1,36 @@
+    		*{
+                margin:0;
+                padding:0;
+    		}
+        body{
+            background: #000;
+            overflow: hidden;
+        }
+        #bg,canvas,#game{
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #bg{
+          background-size: cover;
+          background-color: #9342ff;
+        }
+        .hide{
+            display: none;
+        }
+        #share{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.5);
+          display: none;
+          z-index: 110;
+        }
+        #share img{
+             width: 130px; position: absolute; right: 0; top: 0;
+        }

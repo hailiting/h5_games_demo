@@ -1,0 +1,468 @@
+{"frames": [
+
+{
+	"filename": "Image/Animar 5.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/Animar 6.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/finger.png",
+	"frame": {"x":125,"y":2,"w":56,"h":172},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":56,"h":172},
+	"sourceSize": {"w":56,"h":172}
+},
+{
+	"filename": "Image/fire1.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/fire12.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/fire2.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/fire3.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gold.png",
+	"frame": {"x":893,"y":200,"w":60,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":18,"w":60,"h":60},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gold.png.png",
+	"frame": {"x":955,"y":132,"w":60,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "Image/gp_fire_explosion0.png.png",
+	"frame": {"x":613,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion1.png.png",
+	"frame": {"x":666,"y":208,"w":51,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":51,"h":53},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion2.png.png",
+	"frame": {"x":955,"y":194,"w":54,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":1,"w":54,"h":60},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion3.png.png",
+	"frame": {"x":735,"y":70,"w":56,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":56,"h":66},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion4.png.png",
+	"frame": {"x":603,"y":71,"w":63,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":63,"h":67},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion5.png.png",
+	"frame": {"x":690,"y":2,"w":63,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":63,"h":66},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion6.png.png",
+	"frame": {"x":553,"y":2,"w":64,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":64,"h":67},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion7.png.png",
+	"frame": {"x":536,"y":100,"w":65,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":65,"h":67},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion8.png.png",
+	"frame": {"x":468,"y":100,"w":66,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":67},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_fire_explosion9.png.png",
+	"frame": {"x":886,"y":134,"w":66,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":3,"w":66,"h":64},
+	"sourceSize": {"w":67,"h":67}
+},
+{
+	"filename": "Image/gp_gold_anim1.png.png",
+	"frame": {"x":828,"y":201,"w":63,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":17,"w":63,"h":62},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_gold_anim3.png.png",
+	"frame": {"x":80,"y":185,"w":69,"h":71},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":11,"w":69,"h":71},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_gold_anim5.png.png",
+	"frame": {"x":292,"y":171,"w":79,"h":92},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":4,"w":79,"h":92},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_gold_anim7.png.png",
+	"frame": {"x":373,"y":2,"w":88,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":88,"h":96},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_gold_anim9.png.png",
+	"frame": {"x":183,"y":2,"w":93,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":93,"h":96},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_lightning_explosion0.png.png",
+	"frame": {"x":744,"y":138,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion1.png.png",
+	"frame": {"x":793,"y":69,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion2.png.png",
+	"frame": {"x":823,"y":2,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion3.png.png",
+	"frame": {"x":815,"y":135,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion4.png.png",
+	"frame": {"x":864,"y":68,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion5.png.png",
+	"frame": {"x":894,"y":2,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion6.png.png",
+	"frame": {"x":619,"y":2,"w":69,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":3,"w":69,"h":66},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion7.png.png",
+	"frame": {"x":454,"y":170,"w":69,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":69,"h":67},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion8.png.png",
+	"frame": {"x":324,"y":100,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_lightning_explosion9.png.png",
+	"frame": {"x":396,"y":100,"w":70,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":70,"h":68},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/gp_silver_anim1.png.png",
+	"frame": {"x":954,"y":68,"w":63,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":17,"w":63,"h":62},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim2.png.png",
+	"frame": {"x":755,"y":2,"w":66,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":15,"w":66,"h":65},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim3.png.png",
+	"frame": {"x":151,"y":176,"w":69,"h":71},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":11,"w":69,"h":71},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim4.png.png",
+	"frame": {"x":2,"y":185,"w":76,"h":78},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":7,"w":76,"h":78},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim5.png.png",
+	"frame": {"x":373,"y":170,"w":79,"h":92},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":4,"w":79,"h":92},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim6.png.png",
+	"frame": {"x":525,"y":169,"w":86,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":86,"h":94},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim7.png.png",
+	"frame": {"x":463,"y":2,"w":88,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":88,"h":96},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_silver_anim9.png.png",
+	"frame": {"x":278,"y":2,"w":93,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":93,"h":96},
+	"sourceSize": {"w":96,"h":96}
+},
+{
+	"filename": "Image/gp_water_explosion0.png.png",
+	"frame": {"x":719,"y":206,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":51,"h":51},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion2.png.png",
+	"frame": {"x":965,"y":2,"w":52,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":52,"h":62},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion3.png.png",
+	"frame": {"x":680,"y":138,"w":62,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":62,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion4.png.png",
+	"frame": {"x":613,"y":140,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion5.png.png",
+	"frame": {"x":668,"y":70,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion7.png.png",
+	"frame": {"x":222,"y":172,"w":68,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":69},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion8.png.png",
+	"frame": {"x":183,"y":100,"w":69,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":70},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/gp_water_explosion9.png.png",
+	"frame": {"x":254,"y":100,"w":68,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":69},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/grill.png",
+	"frame": {"x":2,"y":2,"w":121,"h":181},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":121,"h":181},
+	"sourceSize": {"w":122,"h":181}
+},
+{
+	"filename": "Image/lightning.png",
+	"frame": {"x":744,"y":138,"w":69,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":5,"w":69,"h":64},
+	"sourceSize": {"w":71,"h":69}
+},
+{
+	"filename": "Image/plant222.png",
+	"frame": {"x":772,"y":204,"w":54,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":14,"w":54,"h":50},
+	"sourceSize": {"w":82,"h":78}
+},
+{
+	"filename": "Image/plant2222.png",
+	"frame": {"x":772,"y":204,"w":54,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":14,"w":54,"h":50},
+	"sourceSize": {"w":82,"h":78}
+},
+{
+	"filename": "Image/plant22222.png",
+	"frame": {"x":772,"y":204,"w":54,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":14,"w":54,"h":50},
+	"sourceSize": {"w":82,"h":78}
+},
+{
+	"filename": "Image/water11.png",
+	"frame": {"x":719,"y":206,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":51,"h":51},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "Image/water122.png",
+	"frame": {"x":719,"y":206,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":51,"h":51},
+	"sourceSize": {"w":70,"h":71}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "db_tuto_gold.png",
+	"format": "RGBA8888",
+	"size": {"w":1019,"h":265},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4fac049b495f446ccdc882607c89adc1:94c591c879491e59fd3c2ae6bb08a6b9:a17654099627a98e9f082eca493fe0de$"
+}
+}

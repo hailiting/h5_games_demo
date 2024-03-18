@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta charset="utf-8">
+
+        <!-- Set the title bar of the page -->
+        <title>HTML游戏</title>
+
+        <!-- Set the background colour of the document -->
+        <style>
+            body {
+              background: #000000;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+            <!-- Create the canvas element the game draws to -->
+            <canvas id="canvas" width="1366" height="380" style="position: absolute; left: 0px; top: 0px;">
+               <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
+
+        <script type="text/javascript" async="" src="http://game.9g.com/zdsjd/o.js"></script><script language="javascript">
+                                                                                                 var mebtnopenurl = 'http://game.9g.com/gototop.html';
+                                                                                                 window.shareData = {
+                                                                                                     "imgUrl": "http://game.9g.com/zdsjd/icon.png",
+                                                                                                     "timeLineLink": "http://game.9g.com/zdsjd/game.html?f=zf",
+                                                                                                     "tTitle": "屌丝扯纸大作战，看你多久能扯完一卷卫生纸",
+                                                                                                     "tContent": "你是否就是屌丝中的战斗机？"
+                                                                                                 };
+
+                                                                                                 function goHome() {
+                                                                                                     window.location = mebtnopenurl;
+                                                                                                 }
+                                                                                                 function clickMore() {
+                                                                                                     if ((window.location + "").indexOf("zf", 1) > 0) {
+                                                                                                         window.location = "http://game.9g.com/goto9g.html?f=zdsjd";
+                                                                                                     }
+                                                                                                     else {
+                                                                                                         goHome();
+                                                                                                     }
+                                                                                                 }
+                                                                                                 function dp_share() {
+                                                                                                     document.title = "屌丝扯纸大作战我共用了：" + myData.scoreName + "，看你多久能扯完一卷卫生纸";
+                                                                                                     document.getElementById("share").style.display = "";
+                                                                                                     window.shareData.tTitle = document.title;
+                                                                                                 }
+                                                                                                 function dp_Ranking() {
+                                                                                                     window.location = mebtnopenurl;
+                                                                                                 }
+
+                                                                                                 function showAd() {
+                                                                                                 }
+                                                                                                 function hideAd() {
+                                                                                                 }
+                                                                                                 document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+                                                                                                     WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                                                                                                         WeixinJSBridge.invoke('sendAppMessage', {
+                                                                                                             "img_url": window.shareData.imgUrl,
+                                                                                                             "link": window.shareData.timeLineLink,
+                                                                                                             "desc": window.shareData.tContent,
+                                                                                                             "title": window.shareData.tTitle
+                                                                                                         }, onShareComplete);
+                                                                                                     });
+
+                                                                                                     WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                                                                                                         WeixinJSBridge.invoke('shareTimeline', {
+                                                                                                             "img_url": window.shareData.imgUrl,
+                                                                                                             "img_width": "640",
+                                                                                                             "img_height": "640",
+                                                                                                             "link": window.shareData.timeLineLink,
+                                                                                                             "desc": window.shareData.tContent,
+                                                                                                             "title": window.shareData.tTitle
+                                                                                                         }, onShareComplete);
+                                                                                                     });
+                                                                                                 }, false);
+		</script>
+		 <div id="share" style="display: none">
+			<img width="100%" src="http://game.9g.com/share.png" style="position: fixed; z-index: 9999; top: 0; left: 0; display: " ontouchstart="document.getElementById('share').style.display='none';">
+		</div>
+		<div style="display: none;">
+			<script type="text/javascript">
+			    var myData = { gameid: "zdsjd" };
+			    window.shareData.timeLineLink = "http://game.9g.com/gamecenter.html?gameid=" + myData.gameid + (localStorage.myuid ? "&uid=" + localStorage.myuid : "");
+			    function dp_submitScore(score) {
+			        if (score) {
+			            myData.score = Math.round(score * 1000);
+			            myData.scoreName = score + "秒";
+			            if (confirm("屌丝扯纸大作战您共用了：" + score + "秒！\n要不要通知下小伙伴们呢？")) {
+			                dp_share();
+			            }
+
+			        }
+			    }
+			    function onShareComplete(res) {
+			        if (localStorage.myuid && myData.score != undefined) {
+			            setTimeout(function () {
+			                if (confirm("要将成绩提交到HTML游戏排行榜吗？")) {
+			                    window.location = "http://wx.9g.com/rank/submit2.jsp?gameid=" + myData.gameid + "&uid=" + localStorage.myuid + "&score=" + myData.score + "&scorename=" + encodeURIComponent(myData.scoreName);
+			                }
+			                else {
+			                    document.location.href = mebtnopenurl;
+			                }
+			            }, 500);
+			        }
+			        else {
+			            document.location.href = mebtnopenurl;
+			        }
+			    }
+			</script>
+			 <!-- Run the game code -->
+        <script type="text/javascript" src="js/bumf.js"></script>
+    <div style="display:none;">
+    <script type="text/javascript">        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0ae524064813b8dc07ece5ce724a7b04' type='text/javascript'%3E%3C/script%3E"));</script><script src=" http://hm.baidu.com/h.js?0ae524064813b8dc07ece5ce724a7b04" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=0ae524064813b8dc07ece5ce724a7b04" target="_blank"><img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"></a>
+    <script type="text/javascript">        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_2947366'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D2947366' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_2947366"><a href="http://www.cnzz.com/stat/website.php?web_id=2947366" target="_blank" title="站长统计">站长统计</a></span><script src=" http://s5.cnzz.com/stat.php?id=2947366" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=2947366&amp;t=z" charset="utf-8" type="text/javascript"></script>
+    </div>
+    
+
+</div></body></html>

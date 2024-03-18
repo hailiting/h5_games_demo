@@ -1,0 +1,316 @@
+{"frames": [
+
+{
+	"filename": "gp_water_explosion0.png",
+	"frame": {"x":73,"y":73,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":51,"h":51},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion1.png",
+	"frame": {"x":126,"y":73,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":51,"h":51},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion10.png",
+	"frame": {"x":599,"y":55,"w":59,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":68},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion11.png",
+	"frame": {"x":660,"y":55,"w":59,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":68},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion12.png",
+	"frame": {"x":491,"y":66,"w":54,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":54,"h":55},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion13.png",
+	"frame": {"x":721,"y":55,"w":58,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":68},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion2.png",
+	"frame": {"x":479,"y":2,"w":52,"h":62},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":52,"h":62},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion3.png",
+	"frame": {"x":415,"y":2,"w":62,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":62,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion4.png",
+	"frame": {"x":281,"y":2,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion5.png",
+	"frame": {"x":348,"y":2,"w":65,"h":66},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":65,"h":66},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion6.png",
+	"frame": {"x":213,"y":2,"w":66,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":68},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion7.png",
+	"frame": {"x":73,"y":2,"w":68,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":69},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion8.png",
+	"frame": {"x":2,"y":2,"w":69,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":70},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_explosion9.png",
+	"frame": {"x":143,"y":2,"w":68,"h":69},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":69},
+	"sourceSize": {"w":70,"h":71}
+},
+{
+	"filename": "gp_water_move0.png",
+	"frame": {"x":2,"y":74,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move1.png",
+	"frame": {"x":335,"y":70,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move10.png",
+	"frame": {"x":2,"y":74,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move2.png",
+	"frame": {"x":284,"y":70,"w":49,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":49,"h":53},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move3.png",
+	"frame": {"x":335,"y":70,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move4.png",
+	"frame": {"x":2,"y":74,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":50},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move5.png",
+	"frame": {"x":232,"y":72,"w":50,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":4,"w":50,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move6.png",
+	"frame": {"x":533,"y":2,"w":50,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":50,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move7.png",
+	"frame": {"x":547,"y":59,"w":50,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":50,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move8.png",
+	"frame": {"x":533,"y":2,"w":50,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":50,"h":55},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_move9.png",
+	"frame": {"x":232,"y":72,"w":50,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":4,"w":50,"h":52},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_over.png",
+	"frame": {"x":179,"y":73,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":51,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine0.png",
+	"frame": {"x":387,"y":70,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine1.png",
+	"frame": {"x":439,"y":70,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine10.png",
+	"frame": {"x":585,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine11.png",
+	"frame": {"x":637,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine2.png",
+	"frame": {"x":689,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine3.png",
+	"frame": {"x":741,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine4.png",
+	"frame": {"x":781,"y":55,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine5.png",
+	"frame": {"x":793,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine6.png",
+	"frame": {"x":833,"y":55,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine7.png",
+	"frame": {"x":845,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine8.png",
+	"frame": {"x":885,"y":55,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "gp_water_shine9.png",
+	"frame": {"x":897,"y":2,"w":50,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":50,"h":51},
+	"sourceSize": {"w":60,"h":60}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tiles_water.png",
+	"format": "RGBA8888",
+	"size": {"w":949,"h":126},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6aa98c3b7fc69bfeaf11fc6676d7e3d8:5b6d0f4c66ad04b6e15cbce273367814:f18efe715a9461c3052576a6d48f23fc$"
+}
+}

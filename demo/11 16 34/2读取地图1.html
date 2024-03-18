@@ -1,0 +1,68 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+.nullBox{border:1px outset #FCDAD5;}
+.box{border:1px outset  #FCDAD5;filter:Alpha(opacity=0,FinishOpacity=100,Style=3);background-color:#511F90;}
+.wall{border:2px outset #09F;background-color:#3CF;}
+.target{filter:Alpha(opacity=1000,FinishOpacity=0,Style=2);background-color:#C3F;}
+</style>
+<body bgcolor=white>
+<script language="javascript">
+WIDTH=50;
+X=100;
+Y=10;
+var map=[
+"0000wwwww",
+"0000wffmw",
+"www0wbbfw",
+"wtw0wfbfw",
+"wtwwwfwww",
+"wtffffww0",
+"wffffffw0",
+"wwwwfffw0",
+"000wwwww0"
+];
+function rect(x,y,w,s)
+{
+	document.write("<span style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"' class='"+s+"'></span>");
+	}
+	function man(x,y,w)
+{
+	document.write("<img src='photo/man1.gif' style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"'>");	
+		}
+	function readMap()
+	{
+		x=X;
+		y=Y;
+		for(i=0;i<map.length;i++)
+		{
+			for(j=0;j<map[i].length;j++)
+			{
+				switch(map[i].charAt(j))
+				{
+					case 'f':rect(x,y,WIDTH,"nullBox");
+					break;
+					case 'w':rect(x,y,WIDTH,"wall");
+					break;
+					case 'b':rect(x,y,WIDTH,"nullBox");rect(x,y,WIDTH,"box");
+					break;
+					case 'm':rect(x,y,WIDTH,"nullBox");man(x,y,WIDTH);
+					break;
+					case 't':rect(x,y,WIDTH,"target");
+					break;
+					default:;
+					}
+					x+=WIDTH;
+				}
+				y+=WIDTH;
+				x=X;
+			}
+		}
+		readMap();
+</script>
+</body>
+</html>

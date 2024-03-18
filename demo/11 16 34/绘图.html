@@ -1,0 +1,34 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+.nullBox{border:1px outset #FCDAD5;}
+.box{border:1px outset  #FCDAD5;filter:Alpha(opacity=0,FinishOpacity=100,Style=3);background-color:#511F90;}
+.wall{border:2px outset #50A625;background-color:#F3C246;}
+.target{filter:Alpha(opacity=1000,FinishOpacity=0,Style=2);background-color:#E33539;}
+</style>
+<body>
+<script language="javascript">
+WIDTH=50;
+function rect(x,y,w,s)
+{
+	document.write("<span style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"' class='"+s+"'></span>");
+	}
+function man(x,y,w)
+{
+	document.write("<img src='photo/man.gif' style='position:absolute;left:"+x+";top:"+y+";width:"+w+";height:"+w+"'>");	
+		}
+rect(10,0,WIDTH,"target");
+rect(10,150,WIDTH,"wall");
+rect(10,300,WIDTH,"box");
+rect(10,450,WIDTH,"box");
+rect(10,450,WIDTH,"target");
+rect(200,450,WIDTH,"nullBox");
+man(200,100,WIDTH)
+
+</script>
+</body>
+</html>
