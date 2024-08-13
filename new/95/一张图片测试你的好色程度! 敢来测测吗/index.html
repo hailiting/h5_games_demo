@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http://1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title>一张图片测试你的好色程度! 敢来测测吗？</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+      <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+<link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript">
+        
+      </script>
+      <script type="text/javascript">
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+            var share_callback_hy = function () {
+                ajax = new XMLHttpRequest();
+                ajax.open('GET', '/materials/wx_share?f=wx&ref=' + window.location.href, true);
+                ajax.send(null);
+            }
+
+            var share_callback_pyq = function () {
+                ajax = new XMLHttpRequest();
+                ajax.open('GET', '/materials/wx_share?f=wx&ref=' + window.location.href, true);
+                ajax.send(null);
+            }
+
+             
+            var dataForWeixin = {
+              appId: 'wx78f81724e6590b1d',                              
+              TLImg: "http://1251008728.cdn.myqcloud.com/1251008728/haose/haose_cover.jpg",
+              url: "http://www.lanrenmb.com/wcs/6",
+              title: "一张图片测试你的好色程度!敢来测测吗？",
+              desc: "快来看一下吧"
+           };
+
+           var name = "" ;
+
+           var onBridgeReady = function(){
+                WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                    WeixinJSBridge.invoke('sendAppMessage', {
+                        "appid": dataForWeixin.appId,
+                            "img_url": dataForWeixin.TLImg,
+                            "img_width": "120",
+                            "img_height": "120",
+                            "link": dataForWeixin.url,
+                            "title": name + dataForWeixin.title,
+                            "desc": dataForWeixin.desc 
+                    });
+                    share_callback_hy();
+                    setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+                });
+                WeixinJSBridge.on('menu:share:timeline', function(argv){
+                    WeixinJSBridge.invoke('shareTimeline', {
+                        "appid": dataForWeixin.appId,
+                        "img_url":dataForWeixin.TLImg,
+                        "img_width": "120",
+                        "img_height": "120",
+                        "link": dataForWeixin.url,
+                        "title": name + dataForWeixin.title,
+                        "desc": name + dataForWeixin.desc
+                    });
+                    share_callback_pyq();
+                    setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+                });
+            };
+            if(document.addEventListener){
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            }else if(document.attachEvent){
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            } 
+      </script>
+      <style type="text/css">
+        #pageOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1987;
+	width: 100%;
+	background: #000;
+	visibility: hidden
+}
+
+.pageOverlayTip {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1987;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity = 85);
+	opacity: 0.85;
+	visibility: hidden
+}
+
+#pageblank {
+	position: fixed;
+	z-index: 1987;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity = 70);
+	opacity: 0.7;
+}
+
+.icon-wxshare {
+	background-image:
+		url("http://hainan.qiniudn.com/wxshare.png");
+	background-position: 0 0;
+}
+      </style>
+    </head>
+    <body> 
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<div class="ad" style="text-align: center;"><!-- 视觉欺骗 --> 
+
+  <div class="container-fluid"> 
+    
+    <div class="row-fluid"> 
+      <div class="span12  text-center"> 
+       <!-- <img src="http://1251008728.cdn.myqcloud.com/1251008728/haose/haose.jpg" class="img-polaroid" onclick="document.getElementById('pageOverlay').style.visibility = 'visible'"> -->
+        <img src="http://1251008728.cdn.myqcloud.com/1251008728/haose/haose.jpg" class="img-polaroid"> 
+      </div> 
+    </div> 
+    <div class="row-fluid"> 
+<!--
+      <div class="span12 text-center"> 
+        <a class="btn btn-info btn-mini disabled">↑↑ 轻触图片放大查看</a> 
+      </div> 
+-->
+    </div> 
+    <div class="row-fluid"> 
+      <div class="span12"> 
+        <p></p> 
+        <p>60秒内，你能找到几只海豚？[这图很有趣。孩子们第一眼看到的是一群玩耍的海豚，但是成年人第一眼看到的却是“另一些东西”。画名为《海豚的爱》]</p> 
+      </div> 
+    </div> 
+  </div> 
+  <p></p> 
+  <div class="container-fluid"> 
+    <div class="row-fluid"> 
+      <div class="span12" onclick="location.href='http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd'"> 
+        <a class="btn btn-large btn-success btn-block"> 
+          <i class="icon-plus icon-white"></i> 添加关注，抽取土豪金 </a> 
+      </div> 
+    </div> 
+    <p></p> 
+    <div class="row-fluid"> 
+      <div class="span6 text-center" onclick="document.getElementById('pageOverlayShare').style.visibility = 'visible'"> 
+        <a class="btn btn-large btn-block"><i class="icon-share"></i> 转发给好友
+        </a> 
+      </div> 
+      <div class="span6 text-center" onclick="document.getElementById('pageOverlayShare').style.visibility = 'visible'"> 
+        <a class="btn btn-large btn-block"> 
+          <i class="icon-wxshare"></i>分享到朋友圈 </a> 
+      </div> 
+    </div> 
+    <div class="row-fluid"> 
+      <p></p> 
+    </div> 
+  </div> 
+  <style> 
+    #pageOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1987;
+	width: 100%;
+	background: #000;
+	visibility: hidden
+}
+
+.pageOverlayTip {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1987;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity = 85);
+	opacity: 0.85;
+	visibility: hidden
+}
+
+#pageblank {
+	position: fixed;
+	z-index: 1987;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity = 70);
+	opacity: 0.7;
+}
+
+.icon-wxshare {
+	background-image:
+		url("http://hainan.qiniudn.com/wxshare.png");
+	background-position: 0 0;
+}
+</style> 
+<div id="pageOverlayShare" class="pageOverlayTip" onclick="this.style.visibility = 'hidden'"> 
+  <img src="http://www.lanrenmb.com/wap/126/img/guide.png" width="100%"> 
+</div> 
+<div id="pageOverlay" onclick="this.style.visibility = 'hidden'"> 
+  <div> 
+    <img id="bigimg" src="http://1251008728.cdn.myqcloud.com/1251008728/shijue/xiaoshidian.jpg" width="98%" class="img-polaroid"> 
+  </div> 
+  <div id="pageblank"></div> 
+</div> 
+<div id="pageOverlayShare" class="pageOverlayTip" onclick="this.style.visibility = 'hidden'"> 
+  <!--<img src="/enjoy/Tpl/public/../../../uploads/images/tip.gif" width="100%"> -->
+</div> 
+<div id="pageOverlayAdd" class="pageOverlayTip" onclick="this.style.visibility = 'hidden'"> 
+  <!--<img src="/enjoy/Tpl/public/../../../uploads/images/tip2.gif" width="100%"> -->
+</div> 
+  </body>
+    <CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</html>

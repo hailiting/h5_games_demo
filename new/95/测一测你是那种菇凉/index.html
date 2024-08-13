@@ -1,0 +1,1147 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http://1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title>测一测你是那种范儿的菇凉？-微信测试题源码【http://www.lanrenmb.com/weiceshi/】</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1,initial-scale=0.8" />
+ <!--<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var result=0;
+          var result_message;
+          var a = 0;
+          var b = 0;
+          var c = 0;
+          var d = 0;
+          var e = 0;
+          var res_arr = [];          
+
+          $(".options ul li").click(function(){
+              var  node = $(this).parent().parent().parent();
+              var next_node = $(node).next();
+
+                          var dataScore = $(this).attr("data-score");
+
+            $(node).hide();
+
+            if(parseInt(dataScore) > 100){
+                $(".result-"+dataScore).show();
+            }else{
+                $(".question-"+dataScore).show();
+            }
+          });
+
+          $(".prev a").click(function(){
+              var node = $(this).parent().parent();
+              var prev_node = $(node).prev();
+
+              if(prev_node.hasClass("question")){
+                  $(node).hide();
+                  $(prev_node).show();
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+
+
+        var share_callback_hy = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_hy&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+        var share_callback_pyq = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_pyq&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+
+        var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http://1251008728.cdn.myqcloud.com/1251008728/aiqing/faner_cover.jpg",
+              url: "http://www.lanrenmb.com/wcs/1",
+              title: "测一测你是那种范儿的菇凉？",
+              desc: "文艺女青年、小清新、物质女？没人能三言两语就解释清楚，但人们往往能通过直觉和气场判定。菇凉菇凉，测测你是哪种范儿吧！"
+        };
+
+
+
+        var onBridgeReady = function(){
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_hy_bb',
+                    "title":  dataForWeixin.title,
+                    "desc": dataForWeixin.desc 
+                });
+                share_callback_hy();
+                setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv){              
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "appid": dataForWeixin.appId,
+                    "img_url":dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_pyq_bb',
+                    "title": dataForWeixin.title,
+                    "desc": dataForWeixin.desc
+                });
+                share_callback_pyq();
+		setTimeout(function () {location.href = "http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+            });
+        };
+        if(document.addEventListener){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if(document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }  
+      </script>
+      <style type="text/css">
+        body{
+
+          background: #000;
+
+          background: url("http://1251008728.cdn.myqcloud.com/1251008728/2014/manyanswers/bg.png") no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding: 20px 10px;
+          height: 100%;
+          min-height: 500px;
+      }
+
+      .title{
+          margin: 0 auto;
+          width: 80%;
+      }
+
+      .title h2{
+        background: #90ab8b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 20px;
+        font-weight: normal;
+          margin-bottom: 0;
+      }
+
+      .title-sub{
+          padding: 10px 20px;
+          color: #fff;
+          text-align: center;
+          /*border: 1px solid #b374b1;*/
+          border-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin: 0 auto;
+          background: rgba(231, 231, 231, 0.2) none repeat scroll 0 0 !important;
+          background: #e7e7e7;
+          filter:Alpha(opacity=20);
+      }
+
+      .question{
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: none;
+      }
+
+      .question-title{
+          text-align: center;
+          color: #fff;
+      }
+
+      .question:first-child, .question.current{
+          display: block;
+      }
+      .result{
+          display:none;
+      }
+
+      .options ul{
+          padding: 0;
+      }
+      .options li{
+          margin: 20px 0;
+          padding: 5px 15px;
+          list-style-type: none;
+      }
+
+      .options li div{
+          padding-left: 20px;
+      }
+      .options.button li{
+          border: 1px solid #8760a3;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          color: white;
+          background:rgba(142, 99, 167, 0.6) none repeat scroll 0 0 !important;
+
+          background:#8e63a7;
+          filter:Alpha(opacity=60);
+      }
+
+      .options.button li{
+          padding: 5px 0;
+      }
+
+      .options li.selected{
+          background: #cf6271 !important;
+      }
+      .prev{
+          margin-top: 30px;
+          font-weight: 300;
+          font-size: 12px;
+          float: right;
+          padding-bottom: 50px;
+      }
+      .prev a:link{
+          color: #fff;
+      }
+
+      .tools-button{
+          padding: 10px 0;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+          background:rgba(159, 66, 61, 0.3) none repeat scroll 0 0;
+          background: #9f423d;
+          filter:Alpha(opacity=30);
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          margin-top: 30px;
+
+      }
+
+      .share{
+          background:rgba(49, 126, 172, 0.6) none repeat scroll 0 0;
+          background: #317eac;
+          filter:Alpha(opacity=60);
+      }
+            #tip {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+   #mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: #333;
+                filter: alpha(Opacity=90);
+                -moz-opacity: 0.9;
+                opacity: 0.9;
+            }
+      </style>
+    </head>
+    <body>
+
+
+
+ <link rel="stylesheet" href="http://1251008728.cdn.myqcloud.com/1251008728/assets/css/flexslider.css" type="text/css" media="screen" />
+  <!-- FlexSlider -->
+   <script src="http://1251008728.cdn.myqcloud.com/1251008728/assets/javascripts/jquery.flexslider.js"></script>
+ 
+
+<div class="title header-title">
+  <h2>
+    测一测你是那种范儿的菇凉？
+  </h2>
+  <div class="title-sub">
+文艺女青年、小清新、物质女？没人能三言两语就解释清楚，但人们往往能通过直觉和气场判定。菇凉菇凉，测测你是哪种范儿吧！
+  </div>
+</div>
+
+
+
+
+
+ 
+    <div class="question question-1 current">
+      <div class="question-title">
+          1.你对星座知识有一定了解吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="2">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-2 ">
+      <div class="question-title">
+          2.以前觉得只要找个爱自己的人就好了，现在发现自己如果不爱对方，也很痛苦是吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="3">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="4">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-3 ">
+      <div class="question-title">
+          3.水果之中有没有你巨讨厌吃的种类？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="4">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  no
+  
+
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-4 ">
+      <div class="question-title">
+          4.有没有在观看演唱会时，表现得很疯狂？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="5">
+                  <div>
+                  有过
+                  </div>
+               </li>
+            
+            
+              <li data-score="6">
+                  <div>
+                  不会很疯
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-5 ">
+      <div class="question-title">
+          5、你更喜欢在喜欢的异性面前表现得懒懒的样子吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="6">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="7">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-6 ">
+      <div class="question-title">
+          6.中学时代，最喜欢看的下面的小说类型是？
+
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="7">
+                  <div>
+                  言情
+                  </div>
+               </li>
+            
+            
+              <li data-score="8">
+                  <div>
+                  武侠
+                  </div>
+               </li>
+            
+            
+              <li data-score="9">
+                  <div>
+                  悬疑
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-7 ">
+      <div class="question-title">
+          7.有没有在餐厅，打碎过别人的杯子碗碟之类的餐具？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="9">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-8 ">
+      <div class="question-title">
+          8.如果朋友告诉你有人暗恋你，你第一时间会？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  很意外
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  好奇是谁
+                  </div>
+               </li>
+            
+            
+              <li data-score="10">
+                  <div>
+                  觉得是玩笑
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-9 ">
+      <div class="question-title">
+          9. 你如果要去森林里拍照，你会拍？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  一棵树
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  一朵花
+                  </div>
+               </li>
+            
+            
+              <li data-score="12">
+                  <div>
+                  天空
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-10 ">
+      <div class="question-title">
+          10. 觉得你身边的人都没有人可以真的了解你吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="12">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-11 ">
+      <div class="question-title">
+          11.喜欢听下面哪一种外国歌曲？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="14">
+                  <div>
+                  英文歌
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  韩语歌
+                  </div>
+               </li>
+            
+            
+              <li data-score="15">
+                  <div>
+                  日语歌
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-12 ">
+      <div class="question-title">
+          12. 有没有去戏剧院看过话剧？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="15">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="16">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-13 ">
+      <div class="question-title">
+          13. 你对社会新闻很关心吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="14">
+                  <div>
+                  很关心
+                  </div>
+               </li>
+            
+            
+              <li data-score="15">
+                  <div>
+                  不关心
+                  </div>
+               </li>
+            
+            
+              <li data-score="16">
+                  <div>
+                  不确定
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-14 ">
+      <div class="question-title">
+          14.会不会因为一朵花开，而心生对生活的希望
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="16">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="17">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-15 ">
+      <div class="question-title">
+          15.旅游归来，总是要把游记发在不同的社区、论坛上？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="17">
+                  <div>
+                  是的，有几个
+                  </div>
+               </li>
+            
+            
+              <li data-score="18">
+                  <div>
+                  不是，一般就一个
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-16 ">
+      <div class="question-title">
+          16.如果去淘衣服，你会选择去下面哪一个地方？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="18">
+                  <div>
+                  街头小店淘
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  商场淘
+                  </div>
+               </li>
+            
+            
+              <li data-score="20">
+                  <div>
+                  服装批发市场淘
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-17 ">
+      <div class="question-title">
+          17.新年里，如果有机会，你会选择去下面哪个地方？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="110">
+                  <div>
+                  去音乐厅听音乐会
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  去看跨年演唱会
+                  </div>
+               </li>
+            
+            
+              <li data-score="300">
+                  <div>
+                  去看节目丰富的晚会
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-18 ">
+      <div class="question-title">
+          18.你喜欢下面哪一种糖果？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="500">
+                  <div>
+                  巧克力
+                  </div>
+               </li>
+            
+            
+              <li data-score="20">
+                  <div>
+                  奶糖
+                  </div>
+               </li>
+            
+            
+              <li data-score="400">
+                  <div>
+                  水果糖
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-19 ">
+      <div class="question-title">
+          19.下面几条裙子，你更新换哪一条？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="200">
+                  <div>
+                  蓝色波点短裙
+                  </div>
+               </li>
+            
+            
+              <li data-score="400">
+                  <div>
+                  田园风格的碎花裙
+                  </div>
+               </li>
+            
+            
+              <li data-score="110">
+                  <div>
+                  波西米亚长裙
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-20 ">
+      <div class="question-title">
+          20.你站在街头，不知道何去何从，一般会是什么原因？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="200">
+                  <div>
+                  感情受困
+                  </div>
+               </li>
+            
+            
+              <li data-score="500">
+                  <div>
+                  工作丢了
+                  </div>
+               </li>
+            
+            
+              <li data-score="300">
+                  <div>
+                  生活打击
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+
+
+
+<div class="result result-110">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                A.女文青。你的外表看不出什么文艺女青年。可是你的骨子里却打上了文艺女青年的烙印。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-200">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                B. 八卦女青年。雀雀切切的说，你走的完全是八卦的路线。其实八卦也是一种人生的态度。八卦女们善良、真实热爱生活，又何尝不是一种人生的升华呀。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+                       
+			</div>
+          </div>
+
+<div class="result result-300">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                C.伪文青。你是一枚典型的伪文青。你热爱文学、文化、艺术。只是现实的生活，让你不得不面对人间世俗，十指沾满了阳春水。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-400">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                D.小清新。你对外界的一切表现的有些淡。是个喜欢拿着相机到处跑，却不会是拿着相机拍下照后还对照片中的文化与内容有所思考的女青年。你的清新，像三月的小雨，然其他人与你相处很舒服。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-500">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                E. 物质女。对于一个十分注重现实生活的女子来说，如何让自己赚更多的钱，如何消费得起自己想要买的东西，是你首要关心的。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+
+       <div id="mask" onclick="mask();"></div>
+       <div id="tip"  onclick="mask();"><img  style="width:320px;" src="http://www.lanrenmb.com/wap/126/img/guide.png"/>
+       </div>
+<br/>
+
+<div id="ad" style="margin:0px auto;text-align:center; margin-top:5px;">
+<div class="bdsharebuttonbox"  style="margin:0px auto;text-align:center; margin-top:5px;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+</div>
+</body>
+    
+
+   
+
+</html>

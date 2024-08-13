@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>First Game in Html</title>
+
+
+<link href="style/Guess.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+
+
+function MainFrame(){}
+MainFrame.prototype={
+GameMap:[],
+MapHeight:100,
+MapWidth:100,
+NumAvail:10000,
+BlockWidth:7,
+isOver:false,
+ColorEnum: [[0, -3], [-3, 0], [-6, 0], [-8, 0], [-11, 0], [-35, 0], [-30, 0], [0, 0]],
+
+
+CreateMap:function()
+{
+var map=document.getElementById("map");
+var w=this.BlockWidth*this.MapWidth;
+var h=this.BlockWidth*this.MapHeight;
+map.style.width=w+"px";
+map.style.height=h+"px";
+for(var i=0;i<this.MapHeight;i++){
+                    this.GameMap.push([]);
+                    for(var j=0;j<this.MapWidth;j++){
+
+
+                        this.GameMap[i][j]=0;
+                    }
+        }
+               //创建table td填充div根据HorizontalNum,VerticalNum的数量决定，创//建HorizontalNum * VerticalNum的表格区域
+
+
+                var table = document.createElement("table");
+                table.id="area";
+                var tbody = document.createElement("tbody");
+                table.cellPadding=0;
+                table.cellSpacing=0;
+                table.appendChild(tbody);
+                for(var i=0;i<this.MapHeight;i++){
+                    var tr = document.createElement("tr");
+
+
+                    for(var j=0;j<this.MapWidth;j++){
+                        var td = document.createElement("td");
+
+
+                        tr.appendChild(td);
+                    }
+
+
+
+
+                    tbody.appendChild(tr);
+                }
+
+
+
+
+map.appendChild(table);
+},
+
+
+reDraw:function(){
+
+
+var tb=this.getTable();
+
+
+
+
+for(var i=0;i<this.MapHeight;i++){
+for(var j=0;j<this.MapWidth;j++){
+if(this.GameMap[i][j]==1){
+tb.rows[i].cells[j].style.backgroundImage="url(images/bg2.gif)";
+                        tb.rows[i].cells[j].style.backgroundPosition="0px 0px";
+
+
+}
+}
+}
+
+
+},
+
+FirstNum:function(){
+var x_val=document.getElementById("guess_num");
+
+
+if(this.NumAvail==10000)
+{
+
+
+x_val.value=Math.floor(Math.random()*10000);
+
+
+}
+else if(this.NumAvail==1)
+{
+for(var i=0;i<this.MapHeight;i++){
+for(var j=0;j<this.MapWidth;j++)
+{
+if(this.GameMap[i][j]==0)
+{x_val.value=i*100+j+'Win';
+break;
+}
+}}
+
+
+this.GameOver();
+}
+
+
+else if(this.NumAvail<=0)
+{
+var y_val=document.getElementById("posi_value");
+var z_val=document.getElementById("num_value");
+y_val.value="Input is wrong, please play again.";
+z_val.value=this.NumAvail;
+y_val.disabled="true";
+z_val.disabled="true";
+this.isOver=true;
+}
+
+
+else
+
+
+{
+var k=Math.floor(Math.random()*this.NumAvail)+1;
+var j=k;
+
+
+
+
+
+
+for(var i=0;i<this.MapHeight;i++){
+for(var j=0;j<this.MapWidth;j++)
+{
+
+
+
+if(k==1 && this.GameMap[i][j]==0)
+{
+
+x_val.value=i*100+j;
+k--;
+break;
+}
+else if(this.GameMap[i][j]==0)
+{
+
+k--;
+}
+}}
+}
+
+var x_val=document.getElementById("num_left");
+x_val.value=this.NumAvail;
+},
+
+
+GameOver:function(){
+
+
+
+var y_val=document.getElementById("posi_value");
+var z_val=document.getElementById("num_value");
+y_val.value="Game Over";
+y_val.disabled="true";
+z_val.disabled="true";
+this.isOver=true;
+},
+
+
+
+
+
+
+
+
+Compare:function()
+{
+
+
+
+
+var y_val=document.getElementById("posi_value");
+var z_val=document.getElementById("num_value");
+
+
+if(y_val.value==4 && z_val.value==4)
+{
+this.GameOver();}
+else{
+
+
+
+var x_val=document.getElementById("guess_num");
+
+
+for(var i=0;i<this.MapHeight;i++){
+for(var j=0;j<this.MapWidth;j++){
+
+
+
+if(this.GameMap[i][j]==0)
+{
+
+
+
+
+if(!this.CompareNum(x_val.value,i*100+j,y_val.value,z_val.value))
+
+{
+
+this.GameMap[i][j]=1;
+this.NumAvail--;
+
+
+//var z_val=document.getElementById("num_value");
+
+
+//z_val.value=this.NumAvail;
+
+
+
+}
+
+}
+}
+}
+
+
+}
+
+
+
+
+},
+
+CompareNum:function(num1,num2,pos_right,num_right)
+{
+var pos_right2=0;
+var num_right21=0;
+var num_right22=0;
+var num_right2=0;
+
+
+for(var i=1;i<5;i++)
+{
+if(this.GetNum(num1,i)==this.GetNum(num2,i))
+{
+pos_right2++;
+}
+}
+
+
+var temp=0;
+
+
+for(var i=1;i<5;i++)
+{
+temp=0;
+for(var j=1;j<5;j++)
+{
+if(this.GetNum(num1,i)==this.GetNum(num2,j))
+{
+temp=1;
+
+}
+}
+num_right21+=temp;
+
+
+}
+
+
+
+
+for(var i=1;i<5;i++)
+{
+temp=0;
+for(var j=1;j<5;j++)
+{
+if(this.GetNum(num1,j)==this.GetNum(num2,i))
+{
+temp=1;
+
+}
+
+
+}
+num_right22+=temp;
+
+
+}
+
+
+
+
+
+
+
+if(num_right21>num_right22)
+{num_right2=num_right22;}
+else
+{num_right2=num_right21;}
+
+if(pos_right==pos_right2 && num_right==num_right2)
+{return true;}
+else
+{
+return false;
+}
+},
+
+
+
+GetNum:function(numGet,index)
+{
+var numNew=numGet;
+for(var i=1;i<index;i++)
+{
+numNew=Math.floor(numNew/10);
+}
+return numNew-Math.floor(numNew/10)*10;
+},
+
+
+
+getTable:function()
+{
+return document.getElementById("area");
+}
+}
+
+
+var t=new MainFrame();
+window.onload=InitGame;
+function InitGame()
+{
+t.CreateMap();
+btn_reDraw=document.getElementById("submit");
+btn_correct=document.getElementById("correct");
+t.FirstNum();
+btn_reDraw.onclick=function(){
+if(t.isOver==false){
+
+t.Compare();
+t.reDraw();
+t.FirstNum();
+
+}
+/*
+if(t.isOver==false){
+t.FirstNum();}*/
+}
+
+
+btn_correct.onclick=function(){
+if(t.isOver==false){
+t.GameOver();
+}}
+}
+
+
+
+
+    </script>
+</head>
+
+
+<body onkeydown="KeyDown(event)">
+<div id="map"></div>
+
+
+    <div id="frame_right_top">
+<div id="frt_inside">
+<p>Guess&nbsp;&nbsp;<input name="guess_num" disabled="ture" type="text" id="guess_num"/></p>
+<p>位置正确个数&nbsp;&nbsp;<input name="posi_value" type="text" id="posi_value" value="0"/></p>
+<p>数字正确个数&nbsp;&nbsp;<input name="num_value" type="text" id="num_value" value="0"/></p>
+<p>剩余可能数&nbsp;&nbsp;<input name="num_left" disabled="ture" type="text" id="num_left" value="0"/></p>
+<p><input id="submit" type="button" value="submit"/>
+<input id="correct" type="button" value="Correct!"/></p>
+</div>
+</div>
+
+
+
+
+<div id="frame_right_top">
+<div id="frt_inside">
+<br><br><br><p><a href="http://blog.csdn.net/newbie724/article/details/7057935" target="_blank">>By newbie724</a>
+</p><br><br><br>
+</div>
+</div>
+
+
+<div id="frame_right_top">
+<div id="frt_inside">
+<br><br><br><p>F5刷新重新开始</p>
+<p>说明：心里想个数字，电脑猜。以对比1234（心里所想）和2031（电脑所猜）为例，有1个位置对，3个数字对。</p><br><br><br>
+</div>
+</div>
+
+
+
+
+</body>
+
+</html>
+

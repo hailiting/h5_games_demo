@@ -1,0 +1,2 @@
+1、修改index.html页面即可。
+2、windows主机需要设置plist和json文件格式支持，设置方法请百度，不难。

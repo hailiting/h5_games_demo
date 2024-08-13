@@ -1,0 +1,27 @@
+ #map{border:3px solid green;background-image:url(../images/grid2.gif);float:left;margin-right:20px;}
+
+
+
+
+        #preview{float:left;}
+
+
+        #previewArea{border:2px solid green;width:140px;height:168px;padding-left:28px;}
+
+
+        #map td{width:7px;height:7px;}
+
+
+        #preview td{width:28px;height:28px;}
+
+
+        #perviewTable{margin-top:56px;}
+
+
+        #score,#rank{font-size:20px;color:Red;font-weight:bold;}
+
+
+#frt_inside{border:2px solid green;margin-top:10px;padding-left:25px;width:200px}
+
+
+#frame_right_top{margin-left:750px;}

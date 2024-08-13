@@ -1,0 +1,4 @@
+四个index-样式.html 里面的游戏项目路径没有替换 无法直接打开游戏
+打开index-样式.html文件，自己在相关路径处加/index.html即可打开游戏
+
+可以参考index.html和index1.html文件
