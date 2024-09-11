@@ -120,6 +120,36 @@
         // Register an empty service worker to trigger web app install banners.
         navigator.serviceWorker.register("sw.js", { scope: "./" });
       }
+
+      setInterval(() => {
+        const runtime = window.cr_getC2Runtime();
+        if (runtime) {
+          let obj = {};
+          const variable = [
+            "GameState",
+            "Score",
+            "WalkDist",
+            "BestScore",
+            "StateShaking",
+            "NewPlatformX",
+            "Background",
+            "Fullscreen",
+            "Sound",
+            "Sound_Volume",
+            "Music",
+            "Music_Volume",
+            "GAME_NAME",
+          ];
+
+          for (const a of variable) {
+            obj = {
+              ...obj,
+              [a]: runtime.getEventVariableByName(a).getValue(),
+            };
+          }
+          console.log({ obj });
+        }
+      }, 1000);
     </script>
   </body>
 </html>
